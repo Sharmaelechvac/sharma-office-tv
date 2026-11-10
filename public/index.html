@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#07090d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Sharma Office TV</title>
+  <link rel="icon" href="/logo.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="board" id="board">
+    <header class="top">
+      <img class="logo" src="/logo.png" alt="Sharma Electric &amp; HVAC">
+      <div class="when">
+        <div class="clock" id="clock">--:--</div>
+        <div class="date" id="date">—</div>
+      </div>
+      <div class="weather" id="weather">
+        <div class="wx-now">
+          <div class="wx-temp" id="wx-temp">—°</div>
+          <div class="wx-label" id="wx-label">Orlando weather</div>
+        </div>
+        <div class="wx-hours" id="wx-hours"></div>
+      </div>
+      <div class="top-actions">
+        <button type="button" class="fs-btn" id="fs-btn" title="Full screen">Full screen</button>
+        <div class="live-pill"><span class="dot"></span> Live</div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="panel crews" data-panel="crews">
+        <div class="ph">
+          <h2>Today’s crews</h2>
+          <span class="tag" data-tag>Connecting</span>
+        </div>
+        <p class="sub" data-sub>Schedule: from crew app</p>
+        <div class="body" data-body></div>
+        <div class="more" data-more hidden></div>
+      </section>
+
+      <section class="panel inspections" data-panel="inspections">
+        <div class="ph">
+          <h2>Inspections</h2>
+          <span class="tag" data-tag>Connecting</span>
+        </div>
+        <p class="sub" data-sub>Today &amp; tomorrow</p>
+        <div class="body" data-body></div>
+        <div class="more" data-more hidden></div>
+      </section>
+
+      <section class="panel bids" data-panel="bids">
+        <div class="ph">
+          <h2>Bids due</h2>
+          <span class="tag" data-tag>Connecting</span>
+        </div>
+        <p class="sub" data-sub>Today &amp; this week</p>
+        <div class="body" data-body></div>
+        <div class="more" data-more hidden></div>
+      </section>
+
+      <section class="panel meetings" data-panel="meetings">
+        <div class="ph">
+          <h2>Today’s meetings</h2>
+          <span class="tag" data-tag>Live</span>
+        </div>
+        <p class="sub" data-sub>Times and titles</p>
+        <div class="body" data-body></div>
+        <div class="more" data-more hidden></div>
+      </section>
+
+      <section class="panel scoreboard" data-panel="scoreboard">
+        <div class="ph">
+          <h2>Scoreboard</h2>
+          <span class="tag" data-tag>Live</span>
+        </div>
+        <p class="sub" data-sub>Houses this month</p>
+        <div class="body score-body" data-body></div>
+        <div class="more" data-more hidden></div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span>Sharma Electric &amp; HVAC · Lic. EC13013924 · CAC1823596</span>
+      <span class="updated" id="updated"></span>
+    </footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

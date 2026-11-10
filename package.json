@@ -1,0 +1,8 @@
+{
+  "name": "sharma-office-tv",
+  "private": true,
+  "description": "Office TV daily summary dashboard for Sharma Electric & HVAC",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  }
+}

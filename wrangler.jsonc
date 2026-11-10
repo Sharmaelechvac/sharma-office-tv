@@ -1,0 +1,35 @@
+{
+  "name": "sharma-tv",
+  "account_id": "6d5175e0d9d02196de0b6f22c673f87a",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-09",
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": {
+    "enabled": true,
+    "traces": { "enabled": true }
+  },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "none",
+    "not_found_handling": "none"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "TV",
+      "id": "77e9a6e605b14f8cbcbb1b3a9aab280d"
+    }
+  ],
+  "services": [
+    { "binding": "CREW", "service": "sharma-crew" },
+    { "binding": "PERMITS", "service": "sharma-permits" },
+    { "binding": "BIDS", "service": "sharma-bids" }
+  ],
+  "vars": {
+    "CREW_URL": "https://sharma-crew.sharma-crew.workers.dev",
+    "PERMITS_URL": "https://sharma-permits.sharma-crew.workers.dev",
+    "BIDS_URL": "https://sharma-bids.sharma-crew.workers.dev"
+  }
+}
