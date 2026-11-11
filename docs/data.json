@@ -1,6 +1,12 @@
 {
  "newBids": [
   {
+   "date": "2026-11-11",
+   "from": "Summit General Contractors",
+   "project": "Dollar Tree #11781 — Ruskin",
+   "received": "Wed 8:13 AM"
+  },
+  {
    "date": "2026-11-10",
    "from": "SEMCO Construction",
    "project": "Christina Fire Rescue Station",
@@ -66,7 +72,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-10T23:02:00-05:00",
+ "updatedAt": "2026-11-11T08:25:47-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
