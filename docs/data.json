@@ -2,6 +2,24 @@
  "newBids": [
   {
    "date": "2026-11-11",
+   "from": "SEMCO Construction",
+   "project": "Lake Alfred Police Evidence Facility",
+   "received": "Wed 11:23 AM"
+  },
+  {
+   "date": "2026-11-11",
+   "from": "EnviroStruct, LLC",
+   "project": "5767 Collier Blvd RV & Boat Storage",
+   "received": "Wed 11:20 AM"
+  },
+  {
+   "date": "2026-11-11",
+   "from": "DBS Corporation",
+   "project": "CarMax #4067 — Clermont",
+   "received": "Wed 10:38 AM"
+  },
+  {
+   "date": "2026-11-11",
    "from": "Summit General Contractors",
    "project": "AutoZone — Holly Hill",
    "received": "Wed 8:42 AM"
@@ -35,24 +53,6 @@
    "from": "S.A. Casey Construction",
    "project": "East Irlo Plaza Pad 2",
    "received": "Tue 7:17 AM"
-  },
-  {
-   "date": "2026-11-09",
-   "from": "Elite Retail Construction",
-   "project": "LUSH — Mall at Millenia",
-   "received": "Mon 5:29 PM"
-  },
-  {
-   "date": "2026-11-09",
-   "from": "Spartan Contracting",
-   "project": "BAC Waterford Lakes",
-   "received": "Mon 11:38 AM"
-  },
-  {
-   "date": "2026-11-09",
-   "from": "S.A. Casey Construction",
-   "project": "Scelfo Medical Clinic",
-   "received": "Mon 8:44 AM"
   }
  ],
  "tasks": {
@@ -78,7 +78,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-11T09:25:53-05:00",
+ "updatedAt": "2026-11-11T11:25:25-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
