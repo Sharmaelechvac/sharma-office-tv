@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#07090d">
+  <title>Sharma Office TV</title>
+  <link rel="icon" href="logo.png">
+  <style>
+    :root {
+      --bg: #07090d; --panel: #121821; --panel-2: #171e28; --line: #2a3442;
+      --gold: #e8a317; --gold-2: #ffd36a; --text: #f3f5f7; --muted: #8d97a8;
+      --ok: #3ee0a0; --rain: #6cb3ff; --soft: rgba(255,255,255,0.04);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; width: 100%; height: 100%; overflow: hidden;
+      background: var(--bg); color: var(--text);
+      font-family: "Segoe UI", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
+      font-feature-settings: "tnum" 1; -webkit-font-smoothing: antialiased;
+    }
+    body {
+      background:
+        radial-gradient(90vw 50vh at 100% -10%, rgba(232,163,23,0.08), transparent 50%),
+        radial-gradient(70vw 40vh at -10% 110%, rgba(62,224,160,0.05), transparent 55%),
+        var(--bg);
+    }
+    .board {
+      width: 100vw; height: 100vh; height: 100dvh;
+      display: grid; grid-template-rows: auto 1fr auto;
+      gap: 1.2vh; padding: 1.5vh 1.5vw 0.9vh; overflow: hidden;
+    }
+    .top { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 1.4vw; overflow: hidden; }
+    .logo { height: 9.2vh; width: auto; max-width: 18vw; object-fit: contain; background: #fff; border-radius: 1.1vh; padding: 0.55vh 0.7vh; }
+    .clock { font-size: clamp(2.4rem, 7.6vh, 9.5vw); font-weight: 720; letter-spacing: -0.04em; line-height: 1; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .clock .sec { font-size: 0.42em; font-weight: 550; color: var(--muted); margin-left: 0.12em; vertical-align: super; }
+    .date { margin-top: 0.45vh; font-size: clamp(0.95rem, 2.35vh, 2.4vw); color: var(--muted); font-weight: 560; white-space: nowrap; }
+    .weather { display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 0.45vh; max-width: 40vw; overflow: hidden; }
+    .wx-now { display: flex; align-items: baseline; gap: 0.7vw; white-space: nowrap; }
+    .wx-temp { font-size: clamp(1.8rem, 5vh, 5.4vw); font-weight: 720; letter-spacing: -0.03em; line-height: 1; }
+    .wx-label { font-size: clamp(0.85rem, 1.9vh, 1.5vw); color: var(--muted); font-weight: 560; }
+    .wx-hours { display: flex; gap: 0.32vw; overflow: hidden; }
+    .hour { display: flex; flex-direction: column; align-items: center; min-width: 2.15vw; padding: 0.35vh 0.28vw 0.4vh; background: var(--soft); border: 1px solid var(--line); border-radius: 0.55vh; font-size: clamp(0.62rem, 1.45vh, 1.05vw); line-height: 1.15; }
+    .hour .h { color: var(--muted); font-weight: 600; }
+    .hour .p { font-weight: 720; }
+    .hour.wet .p { color: var(--rain); }
+    .hour.dry .p { color: var(--ok); }
+    .top-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 0.7vh; }
+    .fs-btn { appearance: none; border: 1px solid var(--line); background: var(--panel); color: var(--text); font: inherit; font-size: clamp(0.8rem, 1.7vh, 1.15vw); font-weight: 650; padding: 0.7vh 0.9vw; border-radius: 0.7vh; cursor: pointer; white-space: nowrap; }
+    .fs-btn:hover { border-color: var(--gold); color: var(--gold-2); }
+    .live-pill { display: flex; align-items: center; gap: 0.4vw; color: var(--ok); font-size: clamp(0.7rem, 1.5vh, 1.05vw); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    .dot { width: 0.85vh; height: 0.85vh; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0.8vh var(--ok); animation: pulse 2.2s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+    .grid { display: grid; grid-template-columns: 1.22fr 1fr 1fr; gap: 1.15vh 1.05vw; min-height: 0; overflow: hidden; }
+    .panel { background: linear-gradient(180deg, var(--panel-2), var(--panel)); border: 1px solid var(--line); border-radius: 1.2vh; padding: 1.15vh 1vw 0.9vh; display: flex; flex-direction: column; min-height: 0; min-width: 0; overflow: hidden; }
+    .ph { display: flex; align-items: baseline; justify-content: space-between; gap: 0.6vw; }
+    h2 { margin: 0; font-size: clamp(1.05rem, 2.55vh, 1.85vw); font-weight: 720; letter-spacing: -0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .tag { flex: 0 0 auto; font-size: clamp(0.62rem, 1.4vh, 0.95vw); font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ok); border: 1px solid rgba(62,224,160,0.35); border-radius: 999px; padding: 0.25vh 0.55vw; }
+    .tag.idle { color: var(--muted); border-color: var(--line); }
+    .sub { margin: 0.35vh 0 0.7vh; font-size: clamp(0.72rem, 1.6vh, 1.1vw); color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .body { flex: 1 1 auto; min-height: 0; overflow: hidden; display: flex; flex-direction: column; gap: 0.55vh; }
+    .row { display: grid; grid-template-columns: auto 1fr auto; gap: 0.55vw; align-items: center; padding: 0.7vh 0.7vw; background: rgba(255,255,255,0.025); border-radius: 0.7vh; overflow: hidden; }
+    .row.simple { grid-template-columns: 1fr; }
+    .badge { font-size: clamp(0.62rem, 1.4vh, 0.95vw); font-weight: 750; letter-spacing: 0.04em; text-transform: uppercase; color: var(--gold-2); background: rgba(232,163,23,0.12); border-radius: 0.45vh; padding: 0.25vh 0.45vw; white-space: nowrap; }
+    .meta { min-width: 0; }
+    .title { font-size: clamp(0.9rem, 2.05vh, 1.35vw); font-weight: 650; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.15; }
+    .detail { margin-top: 0.15vh; font-size: clamp(0.7rem, 1.55vh, 1.05vw); color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .side { font-size: clamp(0.75rem, 1.65vh, 1.1vw); color: var(--muted); font-weight: 650; white-space: nowrap; }
+    .blank { flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--muted); font-size: clamp(0.95rem, 2.1vh, 1.4vw); font-weight: 600; padding: 1vh; }
+    .group { font-size: clamp(0.68rem, 1.45vh, 0.95vw); font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); padding: 0.35vh 0.2vw 0; }
+    .foot { display: flex; justify-content: space-between; align-items: center; gap: 1vw; color: var(--muted); font-size: clamp(0.68rem, 1.45vh, 0.95vw); padding: 0 0.2vw 0.2vh; white-space: nowrap; overflow: hidden; }
+    .updated { color: #6b7380; }
+  </style>
+</head>
+<body>
+  <div class="board">
+    <header class="top">
+      <img class="logo" src="logo.png" alt="Sharma Electric &amp; HVAC">
+      <div class="when">
+        <div class="clock" id="clock">--:--</div>
+        <div class="date" id="date">—</div>
+      </div>
+      <div class="weather">
+        <div class="wx-now">
+          <div class="wx-temp" id="wx-temp">—°</div>
+          <div class="wx-label" id="wx-label">Orlando weather</div>
+        </div>
+        <div class="wx-hours" id="wx-hours"></div>
+      </div>
+      <div class="top-actions">
+        <button type="button" class="fs-btn" id="fs-btn" title="Full screen">Full screen</button>
+        <div class="live-pill"><span class="dot"></span> Live</div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="panel">
+        <div class="ph"><h2>Today’s jobs / tasks</h2><span class="tag" id="jobs-tag">Live</span></div>
+        <p class="sub" id="jobs-sub">Today &amp; tomorrow</p>
+        <div class="body" id="jobs-body"></div>
+      </section>
+
+      <section class="panel">
+        <div class="ph"><h2>New bids</h2><span class="tag" id="bids-tag">Live</span></div>
+        <p class="sub">Scanned from office email, hourly</p>
+        <div class="body" id="bids-body"></div>
+      </section>
+
+      <section class="panel">
+        <div class="ph"><h2>To schedule</h2><span class="tag idle" id="sched-tag">None</span></div>
+        <p class="sub">Waiting for a date</p>
+        <div class="body" id="sched-body"></div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span>Sharma Electric &amp; HVAC · Lic. EC13013924 · CAC1823596</span>
+      <span class="updated" id="updated"></span>
+    </footer>
+  </div>
+
+  <script>
+    const TZ = "America/New_York";
+    const REFRESH_MS = 3 * 60 * 1000;
+    const WORKDAY = [7,8,9,10,11,12,13,14,15,16,17,18];
+    const clockEl = document.getElementById("clock");
+    const dateEl = document.getElementById("date");
+    const updatedEl = document.getElementById("updated");
+    let lastFetchAt = 0;
+
+    function nyParts(d = new Date()) {
+      const parts = new Intl.DateTimeFormat("en-US", {
+        timeZone: TZ, weekday: "long", month: "long", day: "numeric", year: "numeric",
+        hour: "numeric", minute: "2-digit", second: "2-digit", hour12: true
+      }).formatToParts(d);
+      const g = (t) => (parts.find((p) => p.type === t) || {}).value || "";
+      return { weekday: g("weekday"), month: g("month"), day: g("day"), year: g("year"),
+               hour: g("hour"), minute: g("minute"), second: g("second"), dayPeriod: g("dayPeriod") };
+    }
+    function nyISO(d = new Date()) {
+      return new Intl.DateTimeFormat("en-CA", { timeZone: TZ }).format(d);
+    }
+    function addDaysISO(iso, n) {
+      const [y, m, dd] = iso.split("-").map(Number);
+      const dt = new Date(Date.UTC(y, m - 1, dd + n));
+      const p = (x) => String(x).padStart(2, "0");
+      return `${dt.getUTCFullYear()}-${p(dt.getUTCMonth() + 1)}-${p(dt.getUTCDate())}`;
+    }
+    function dayLabel(iso) {
+      const [y, m, dd] = iso.split("-").map(Number);
+      return new Intl.DateTimeFormat("en-US", { timeZone: "UTC", weekday: "long", month: "short", day: "numeric" })
+        .format(new Date(Date.UTC(y, m - 1, dd, 12)));
+    }
+    function tickClock() {
+      const p = nyParts();
+      clockEl.innerHTML = `${p.hour}:${p.minute}<span class="sec">${p.second} ${p.dayPeriod}</span>`;
+      dateEl.textContent = `${p.weekday}, ${p.month} ${p.day}, ${p.year}`;
+    }
+    function el(tag, cls, text) {
+      const n = document.createElement(tag);
+      if (cls) n.className = cls;
+      if (text != null) n.textContent = text;
+      return n;
+    }
+    function taskRow(t) {
+      const r = el("div", "row simple");
+      const meta = el("div", "meta");
+      meta.append(el("div", "title", t.title || "—"));
+      if (t.detail) meta.append(el("div", "detail", t.detail));
+      r.append(meta);
+      return r;
+    }
+    function renderJobs(data) {
+      const body = document.getElementById("jobs-body");
+      const today = nyISO();
+      const tomorrow = addDaysISO(today, 1);
+      const tasks = (data && data.tasks) || {};
+      const tList = tasks[today] || [];
+      const tmList = tasks[tomorrow] || [];
+      body.replaceChildren();
+      if (!tList.length && !tmList.length) {
+        body.append(el("div", "blank", "Nothing on the board — tell Jarvis the day’s jobs"));
+        document.getElementById("jobs-tag").className = "tag idle";
+        document.getElementById("jobs-tag").textContent = "None";
+        return;
+      }
+      document.getElementById("jobs-tag").className = "tag";
+      document.getElementById("jobs-tag").textContent = "Live";
+      if (tList.length) {
+        body.append(el("div", "group", `Today — ${dayLabel(today)}`));
+        tList.forEach((t) => body.append(taskRow(t)));
+      }
+      if (tmList.length) {
+        body.append(el("div", "group", `Tomorrow — ${dayLabel(tomorrow)}`));
+        tmList.forEach((t) => body.append(taskRow(t)));
+      }
+    }
+    function renderBids(data) {
+      const body = document.getElementById("bids-body");
+      const bids = ((data && data.newBids) || []).slice(0, 9);
+      body.replaceChildren();
+      if (!bids.length) {
+        body.append(el("div", "blank", "No new bids"));
+        document.getElementById("bids-tag").className = "tag idle";
+        document.getElementById("bids-tag").textContent = "None";
+        return;
+      }
+      document.getElementById("bids-tag").className = "tag";
+      document.getElementById("bids-tag").textContent = "Live";
+      for (const b of bids) {
+        const r = el("div", "row");
+        r.append(el("span", "badge", "New"));
+        const meta = el("div", "meta");
+        meta.append(el("div", "title", b.project || "—"));
+        if (b.from) meta.append(el("div", "detail", b.from));
+        r.append(meta);
+        r.append(el("div", "side", b.received || ""));
+        body.append(r);
+      }
+    }
+    function renderSchedule(data) {
+      const body = document.getElementById("sched-body");
+      const items = (data && data.toSchedule) || [];
+      body.replaceChildren();
+      if (!items.length) {
+        body.append(el("div", "blank", "Nothing waiting — tell Jarvis what to park here"));
+        document.getElementById("sched-tag").className = "tag idle";
+        document.getElementById("sched-tag").textContent = "None";
+        return;
+      }
+      document.getElementById("sched-tag").className = "tag";
+      document.getElementById("sched-tag").textContent = "Live";
+      items.forEach((t) => body.append(taskRow(typeof t === "string" ? { title: t } : t)));
+    }
+    function wmoText(code) {
+      const c = Number(code);
+      if (c === 0) return "Clear";
+      if (c === 1) return "Mostly clear";
+      if (c === 2) return "Partly cloudy";
+      if (c === 3) return "Cloudy";
+      if (c === 45 || c === 48) return "Fog";
+      if (c >= 51 && c <= 57) return "Drizzle";
+      if (c >= 61 && c <= 67) return "Rain";
+      if (c >= 71 && c <= 77) return "Snow";
+      if (c >= 80 && c <= 82) return "Showers";
+      if (c >= 95) return "Thunderstorms";
+      return "Orlando";
+    }
+    async function loadWeather() {
+      try {
+        const u = new URL("https://api.open-meteo.com/v1/forecast");
+        u.searchParams.set("latitude", "28.5383");
+        u.searchParams.set("longitude", "-81.3792");
+        u.searchParams.set("current", "temperature_2m,weather_code,precipitation_probability,wind_speed_10m");
+        u.searchParams.set("hourly", "precipitation_probability");
+        u.searchParams.set("temperature_unit", "fahrenheit");
+        u.searchParams.set("wind_speed_unit", "mph");
+        u.searchParams.set("timezone", TZ);
+        u.searchParams.set("forecast_days", "1");
+        const res = await fetch(u.toString());
+        const j = await res.json();
+        if (!j || !j.current) return;
+        document.getElementById("wx-temp").textContent = `${Math.round(j.current.temperature_2m)}°`;
+        const bits = ["Orlando", wmoText(j.current.weather_code)];
+        if (j.current.precipitation_probability != null) bits.push(`${Math.round(j.current.precipitation_probability)}% rain`);
+        document.getElementById("wx-label").textContent = bits.join(" · ");
+        const hoursEl = document.getElementById("wx-hours");
+        hoursEl.replaceChildren();
+        const times = (j.hourly && j.hourly.time) || [];
+        const probs = (j.hourly && j.hourly.precipitation_probability) || [];
+        for (let i = 0; i < times.length; i++) {
+          const hour = Number(String(times[i]).slice(11, 13));
+          if (!WORKDAY.includes(hour)) continue;
+          const n = el("div", `hour ${probs[i] >= 40 ? "wet" : "dry"}`);
+          n.append(el("span", "h", hour === 12 ? "12p" : hour > 12 ? `${hour - 12}p` : `${hour}a`));
+          n.append(el("span", "p", probs[i] == null ? "—" : `${Math.round(probs[i])}%`));
+          hoursEl.append(n);
+        }
+      } catch (e) { /* keep last weather */ }
+    }
+    async function loadData() {
+      try {
+        const res = await fetch(`data.json?t=${Date.now()}`, { cache: "no-store" });
+        if (!res.ok) throw new Error("bad status");
+        const data = await res.json();
+        lastFetchAt = Date.now();
+        renderJobs(data);
+        renderBids(data);
+        renderSchedule(data);
+      } catch (e) { /* keep last render */ }
+      updatedEl.textContent = lastFetchAt ? `Updated ${Math.max(0, Math.round((Date.now() - lastFetchAt) / 1000))}s ago` : "";
+    }
+    async function requestWake() {
+      try {
+        if (navigator.wakeLock && document.visibilityState === "visible") {
+          await navigator.wakeLock.request("screen");
+        }
+      } catch (e) { /* ignore */ }
+    }
+    const fsBtn = document.getElementById("fs-btn");
+    fsBtn.addEventListener("click", async () => {
+      try {
+        if (document.fullscreenElement) await document.exitFullscreen();
+        else await document.documentElement.requestFullscreen();
+      } catch (e) { /* ignore */ }
+    });
+
+    tickClock();
+    setInterval(tickClock, 1000);
+    loadWeather();
+    setInterval(loadWeather, 15 * 60 * 1000);
+    loadData();
+    setInterval(loadData, REFRESH_MS);
+    requestWake();
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") { requestWake(); loadData(); loadWeather(); }
+    });
+  </script>
+</body>
+</html>
