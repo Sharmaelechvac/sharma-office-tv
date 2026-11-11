@@ -2,6 +2,18 @@
  "newBids": [
   {
    "date": "2026-11-11",
+   "from": "M.E. Construction",
+   "project": "Terawatt Lee Vista Orlando",
+   "received": "Wed 5:19 PM"
+  },
+  {
+   "date": "2026-11-11",
+   "from": "Fulcrum Construction",
+   "project": "Bob's Discount Furniture - Melbourne",
+   "received": "Wed 4:41 PM"
+  },
+  {
+   "date": "2026-11-11",
    "from": "R.E. Crawford Construction",
    "project": "Bobs Discount - Ocoee, FL",
    "received": "Wed 2:44 PM"
@@ -41,18 +53,6 @@
    "from": "Summit General Contractors",
    "project": "AutoZone — Holly Hill",
    "received": "Wed 8:42 AM"
-  },
-  {
-   "date": "2026-11-11",
-   "from": "Summit General Contractors",
-   "project": "Dollar Tree #11781 — Ruskin",
-   "received": "Wed 8:13 AM"
-  },
-  {
-   "date": "2026-11-10",
-   "from": "SEMCO Construction",
-   "project": "Christina Fire Rescue Station",
-   "received": "Tue 2:21 PM"
   }
  ],
  "tasks": {
@@ -84,7 +84,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-11T15:27:15-05:00",
+ "updatedAt": "2026-11-11T17:29:48-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
