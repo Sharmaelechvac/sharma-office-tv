@@ -3,6 +3,12 @@
   {
    "date": "2026-11-11",
    "from": "S.A. Casey Construction",
+   "project": "Orange County Corrections Booking and Release Center - Pharmacy/Medical Records Relocation",
+   "received": "Wed 12:35 PM"
+  },
+  {
+   "date": "2026-11-11",
+   "from": "S.A. Casey Construction",
    "project": "Police Evidence Facility",
    "received": "Wed 11:26 AM"
   },
@@ -47,12 +53,6 @@
    "from": "Bentley Builders",
    "project": "Leesburg Senior Living",
    "received": "Tue 9:54 AM"
-  },
-  {
-   "date": "2026-11-10",
-   "from": "Horizon Retail Construction",
-   "project": "Lovisa — Melbourne",
-   "received": "Tue 9:19 AM"
   }
  ],
  "tasks": {
@@ -78,7 +78,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-11T12:26:04-05:00",
+ "updatedAt": "2026-11-11T13:26:01-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
