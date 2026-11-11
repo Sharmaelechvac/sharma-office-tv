@@ -109,7 +109,7 @@
       </section>
 
       <section class="panel">
-        <div class="ph"><h2>To schedule</h2><span class="tag idle" id="sched-tag">None</span></div>
+        <div class="ph"><h2>TO SCHEDULE</h2><span class="tag idle" id="sched-tag">None</span></div>
         <p class="sub">Waiting for a date</p>
         <div class="body" id="sched-body"></div>
       </section>
@@ -222,7 +222,19 @@
     }
     function renderSchedule(data) {
       const body = document.getElementById("sched-body");
+      const groups = (data && data.toScheduleGroups) || [];
       const items = (data && data.toSchedule) || [];
+      if (groups.length) {
+        document.getElementById("sched-tag").className = "tag";
+        document.getElementById("sched-tag").textContent = "Live";
+        body.replaceChildren();
+        groups.forEach((g) => {
+          body.append(el("div", "group", g.heading || ""));
+          (g.items || []).forEach((t) => body.append(taskRow(t)));
+        });
+        items.forEach((t) => body.append(taskRow(typeof t === "string" ? { title: t } : t)));
+        return;
+      }
       body.replaceChildren();
       if (!items.length) {
         body.append(el("div", "blank", "Nothing waiting — tell Jarvis what to park here"));
