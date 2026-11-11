@@ -69,6 +69,8 @@
     .detail { margin-top: 0.15vh; font-size: clamp(0.7rem, 1.55vh, 1.05vw); color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .side { font-size: clamp(0.75rem, 1.65vh, 1.1vw); color: var(--muted); font-weight: 650; white-space: nowrap; }
     .blank { flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--muted); font-size: clamp(0.95rem, 2.1vh, 1.4vw); font-weight: 600; padding: 1vh; }
+    .row.wraprow { align-items: start; }
+    .row.wraprow .title { white-space: normal; overflow: visible; text-overflow: unset; line-height: 1.25; }
     .group { font-size: clamp(0.68rem, 1.45vh, 0.95vw); font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); padding: 0.35vh 0.2vw 0; }
     .foot { display: flex; justify-content: space-between; align-items: center; gap: 1vw; color: var(--muted); font-size: clamp(0.68rem, 1.45vh, 0.95vw); padding: 0 0.2vw 0.2vh; white-space: nowrap; overflow: hidden; }
     .updated { color: #6b7380; }
@@ -230,7 +232,7 @@
         body.replaceChildren();
         groups.forEach((g) => {
           body.append(el("div", "group", g.heading || ""));
-          (g.items || []).forEach((t) => body.append(taskRow(t)));
+          (g.items || []).forEach((t) => { const r = taskRow(t); r.classList.add("wraprow"); body.append(r); });
         });
         items.forEach((t) => body.append(taskRow(typeof t === "string" ? { title: t } : t)));
         return;
