@@ -2,6 +2,24 @@
  "newBids": [
   {
    "date": "2026-11-12",
+   "project": "Day Dock at Riverwalk Park",
+   "from": "Saboungi Construction",
+   "received": "Thu 4:23 PM"
+  },
+  {
+   "date": "2026-11-12",
+   "project": "Fortunato Park Fishing Pier and Gazebo Repair",
+   "from": "Saboungi Construction",
+   "received": "Thu 3:56 PM"
+  },
+  {
+   "date": "2026-11-12",
+   "project": "Circles of Care Residential Unit Project",
+   "from": "Landry/French Construction",
+   "received": "Thu 3:54 PM"
+  },
+  {
+   "date": "2026-11-12",
    "from": "Horizon Retail Construction",
    "project": "Lovisa Melbourne, FL",
    "received": "Thu 9:21 AM"
@@ -35,24 +53,6 @@
    "from": "S.A. Casey Construction",
    "project": "Orange County Corrections Booking and Release Center - Pharmacy/Medical Records Relocation",
    "received": "Wed 12:35 PM"
-  },
-  {
-   "date": "2026-11-11",
-   "from": "S.A. Casey Construction",
-   "project": "Police Evidence Facility",
-   "received": "Wed 11:26 AM"
-  },
-  {
-   "date": "2026-11-11",
-   "from": "SEMCO Construction",
-   "project": "Lake Alfred Police Evidence Facility",
-   "received": "Wed 11:23 AM"
-  },
-  {
-   "date": "2026-11-11",
-   "from": "EnviroStruct, LLC",
-   "project": "5767 Collier Blvd RV & Boat Storage",
-   "received": "Wed 11:20 AM"
   }
  ],
  "tasks": {
@@ -84,7 +84,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-12T09:26:05-05:00",
+ "updatedAt": "2026-11-12T16:26:18-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
