@@ -1,6 +1,18 @@
 {
  "newBids": [
   {
+   "date": "2026-11-12",
+   "from": "Horizon Retail Construction",
+   "project": "Lovisa Melbourne, FL",
+   "received": "Thu 9:21 AM"
+  },
+  {
+   "date": "2026-11-12",
+   "from": "S.A. Casey Construction",
+   "project": "Christina Fire Station - Polk County Project",
+   "received": "Thu 8:32 AM"
+  },
+  {
    "date": "2026-11-11",
    "from": "M.E. Construction",
    "project": "Terawatt Lee Vista Orlando",
@@ -41,18 +53,6 @@
    "from": "EnviroStruct, LLC",
    "project": "5767 Collier Blvd RV & Boat Storage",
    "received": "Wed 11:20 AM"
-  },
-  {
-   "date": "2026-11-11",
-   "from": "DBS Corporation",
-   "project": "CarMax #4067 — Clermont",
-   "received": "Wed 10:38 AM"
-  },
-  {
-   "date": "2026-11-11",
-   "from": "Summit General Contractors",
-   "project": "AutoZone — Holly Hill",
-   "received": "Wed 8:42 AM"
   }
  ],
  "tasks": {
@@ -84,7 +84,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-11T17:29:48-05:00",
+ "updatedAt": "2026-11-12T09:26:05-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
