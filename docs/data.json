@@ -1,6 +1,12 @@
 {
  "newBids": [
   {
+   "date": "2026-11-13",
+   "project": "Dollar Tree - Pinellas Park, FL #11474",
+   "from": "Summit General Contractors",
+   "received": "Fri 10:11 AM"
+  },
+  {
    "date": "2026-11-12",
    "project": "Day Dock at Riverwalk Park",
    "from": "Saboungi Construction",
@@ -47,19 +53,13 @@
    "from": "R.E. Crawford Construction",
    "project": "Bobs Discount - Ocoee, FL",
    "received": "Wed 2:44 PM"
-  },
-  {
-   "date": "2026-11-11",
-   "from": "S.A. Casey Construction",
-   "project": "Orange County Corrections Booking and Release Center - Pharmacy/Medical Records Relocation",
-   "received": "Wed 12:35 PM"
   }
  ],
  "tasks": {
   "2026-11-10": [
    {
-    "detail": "132 Balmy Coast Rd, Groveland · NOK Construction",
-    "title": "Glaze — bathroom rough-in"
+    "detail": "132 Balmy Coast Rd, Groveland \u00b7 NOK Construction",
+    "title": "Glaze \u2014 bathroom rough-in"
    }
   ],
   "2026-11-11": [
@@ -73,36 +73,36 @@
    },
    {
     "detail": "Sebring townhouses open item",
-    "title": "Call Z Brothers — exhaust fans"
+    "title": "Call Z Brothers \u2014 exhaust fans"
    }
   ],
   "2026-11-12": [
    {
-    "detail": "3:00–4:00 PM · Lot 69, Bella Collina, 16051 Vetta Dr · HVAC only · Tommy's cell (321) 432-1706",
-    "title": "House walk with Tommy Logan — Logan Construction"
+    "detail": "3:00\u20134:00 PM \u00b7 Lot 69, Bella Collina, 16051 Vetta Dr \u00b7 HVAC only \u00b7 Tommy's cell (321) 432-1706",
+    "title": "House walk with Tommy Logan \u2014 Logan Construction"
    }
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-12T16:26:18-05:00",
+ "updatedAt": "2026-11-13T10:26:21-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
    "items": [
     {
-     "title": "Fri 11/13/2026 — 212 Marion Oaks Golf Rd — ROUGH MECHANICAL (HVAC)",
+     "title": "Fri 11/13/2026 \u2014 212 Marion Oaks Golf Rd \u2014 ROUGH MECHANICAL (HVAC)",
      "detail": "EXJ Root"
     },
     {
-     "title": "Mon 11/16/2026 — 212 Marion Oaks Golf Rd — ROUGH ELECTRIC",
+     "title": "Mon 11/16/2026 \u2014 212 Marion Oaks Golf Rd \u2014 ROUGH ELECTRIC",
      "detail": "EXJ Root"
     },
     {
-     "title": "Tue 11/17/2026 — 17385 SW 25th Cir — ROUGH MECHANICAL (HVAC)",
+     "title": "Tue 11/17/2026 \u2014 17385 SW 25th Cir \u2014 ROUGH MECHANICAL (HVAC)",
      "detail": "EXJ Root"
     },
     {
-     "title": "Wed 11/18/2026 — 17385 SW 25th Cir — ROUGH ELECTRIC",
+     "title": "Wed 11/18/2026 \u2014 17385 SW 25th Cir \u2014 ROUGH ELECTRIC",
      "detail": "EXJ Root"
     }
    ]
