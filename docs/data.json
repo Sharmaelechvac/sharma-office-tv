@@ -2,6 +2,12 @@
  "newBids": [
   {
    "date": "2026-11-13",
+   "project": "Rogers Behavioral Health",
+   "from": "Landry/French Construction",
+   "received": "Fri 10:30 AM"
+  },
+  {
+   "date": "2026-11-13",
    "project": "Dollar Tree - Pinellas Park, FL #11474",
    "from": "Summit General Contractors",
    "received": "Fri 10:11 AM"
@@ -47,12 +53,6 @@
    "from": "Fulcrum Construction",
    "project": "Bob's Discount Furniture - Melbourne",
    "received": "Wed 4:41 PM"
-  },
-  {
-   "date": "2026-11-11",
-   "from": "R.E. Crawford Construction",
-   "project": "Bobs Discount - Ocoee, FL",
-   "received": "Wed 2:44 PM"
   }
  ],
  "tasks": {
@@ -84,7 +84,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-13T10:26:21-05:00",
+ "updatedAt": "2026-11-13T11:26:07-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
