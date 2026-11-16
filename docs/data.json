@@ -1,6 +1,18 @@
 {
  "newBids": [
   {
+   "date": "2026-11-16",
+   "project": "Presbyterian Homes — Port Charlotte (Apartments & Maint. Bldgs)",
+   "from": "Chris-Tel Construction (SmartBidNet)",
+   "received": "Bid due Fri Dec 18, 2026 5:00 PM"
+  },
+  {
+   "date": "2026-11-16",
+   "project": "Advanced Auto Parts — St. Augustine",
+   "from": "Park Eleazer Construction",
+   "received": "Bid due Thu Dec 3, 2026 noon"
+  },
+  {
    "date": "2026-11-13",
    "project": "Antle Project",
    "from": "NOK Construction",
@@ -41,18 +53,6 @@
    "from": "Horizon Retail Construction",
    "project": "Lovisa Melbourne, FL",
    "received": "Thu 9:21 AM"
-  },
-  {
-   "date": "2026-11-12",
-   "from": "S.A. Casey Construction",
-   "project": "Christina Fire Station - Polk County Project",
-   "received": "Thu 8:32 AM"
-  },
-  {
-   "date": "2026-11-11",
-   "from": "M.E. Construction",
-   "project": "Terawatt Lee Vista Orlando",
-   "received": "Wed 5:19 PM"
   }
  ],
  "tasks": {
@@ -110,7 +110,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-15T19:04:00-05:00",
+ "updatedAt": "2026-11-16T08:20:00-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
