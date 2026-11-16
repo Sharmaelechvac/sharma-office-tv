@@ -2,6 +2,12 @@
  "newBids": [
   {
    "date": "2026-11-16",
+   "project": "Academy Sports Bartow, FL",
+   "from": "Horizon Retail Construction",
+   "received": "Mon 5:27 PM"
+  },
+  {
+   "date": "2026-11-16",
    "project": "Lake Alfred Police Evidence Facility - ITB 2026-10",
    "from": "SEMCO Construction, Inc.",
    "received": "Mon 3:42 PM"
@@ -47,12 +53,6 @@
    "project": "Fortunato Park Fishing Pier and Gazebo Repair",
    "from": "Saboungi Construction",
    "received": "Thu 3:56 PM"
-  },
-  {
-   "date": "2026-11-12",
-   "project": "Circles of Care Residential Unit Project",
-   "from": "Landry/French Construction",
-   "received": "Thu 3:54 PM"
   }
  ],
  "tasks": {
@@ -110,7 +110,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-16T16:25:43-05:00",
+ "updatedAt": "2026-11-16T18:25:52-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
