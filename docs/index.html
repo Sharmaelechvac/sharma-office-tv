@@ -2,307 +2,793 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="robots" content="noindex, nofollow, noarchive">
-  <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#07090d">
-  <title>Sharma Office TV</title>
-  <link rel="icon" href="logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Sharma Electric & HVAC · Office TV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #07090d; --panel: #121821; --panel-2: #171e28; --line: #2a3442;
-      --gold: #e8a317; --gold-2: #ffd36a; --text: #f3f5f7; --muted: #8d97a8;
-      --ok: #3ee0a0; --rain: #6cb3ff; --soft: rgba(255,255,255,0.04);
+      --field: #1a2f61;
+      --panel: #264387;
+      --gold: #F0A846;
+      --ink: #1d2433;
+      --gray: #5b6478;
+      --line: #dfe4ee;
+      --white: #ffffff;
+      --safe-x: 96px;
+      --safe-y: 54px;
     }
     * { box-sizing: border-box; }
     html, body {
-      margin: 0; width: 100%; height: 100%; overflow: hidden;
-      background: var(--bg); color: var(--text);
-      font-family: "Segoe UI", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
-      font-feature-settings: "tnum" 1; -webkit-font-smoothing: antialiased;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: var(--field);
+      color: var(--white);
+      font-family: Inter, sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.25;
+      -webkit-font-smoothing: antialiased;
     }
-    body {
-      background:
-        radial-gradient(90vw 50vh at 100% -10%, rgba(232,163,23,0.08), transparent 50%),
-        radial-gradient(70vw 40vh at -10% 110%, rgba(62,224,160,0.05), transparent 55%),
-        var(--bg);
+    .stage {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: var(--field);
     }
     .board {
-      width: 100vw; height: 100vh; height: 100dvh;
-      display: grid; grid-template-rows: auto 1fr auto auto;
-      gap: 1.2vh; padding: 1.5vh 1.5vw 0.9vh; overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1920px;
+      height: 1080px;
+      padding: var(--safe-y) var(--safe-x);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transform-origin: top left;
     }
+    .chrome { flex: 0 0 auto; display: flex; flex-direction: column; }
+    .top {
+      background: var(--white);
+      color: var(--ink);
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 28px;
+      padding: 12px 24px;
+      border-radius: 6px 6px 0 0;
+    }
+    .gold-line { height: 3px; background: var(--gold); border-radius: 0 0 6px 6px; }
+    .logo { height: 80px; width: auto; display: block; }
+    .when { min-width: 0; }
+    .clock {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+    .clock .ampm {
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 0;
+      margin-left: 10px;
+      color: var(--gray);
+    }
+    .date {
+      margin-top: 4px;
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--gray);
+      line-height: 1.1;
+    }
+    .weather { display: flex; align-items: center; gap: 16px; text-align: right; }
+    .temp {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 64px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+    .wx-copy { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+    .wx-now { font-size: 28px; font-weight: 600; color: var(--ink); line-height: 1.15; }
+    .wx-rain { font-size: 28px; font-weight: 400; color: var(--gray); line-height: 1.15; }
+    .main {
+      flex: 1 1 auto;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .opt3b-grid {
+      flex: 1 1 auto;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 16px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      min-width: 0;
+      min-height: 0;
+    }
+    h2, .kicker {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .kicker { font-size: 24px; color: var(--gold); letter-spacing: 0.08em; line-height: 1; }
+    h2 { font-size: 36px; color: var(--white); line-height: 1; }
+    .bids-hero { display: flex; flex-direction: column; gap: 8px; padding: 12px 16px 12px; }
+    .bids-hero .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      flex-wrap: nowrap;
+      min-height: 68px;
+      overflow: visible;
+    }
+    .bids-hero .num {
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 600;
+      font-size: 64px;
+      color: var(--gold);
+      line-height: 64px;
+      letter-spacing: -0.04em;
+      overflow: visible;
+    }
+    .sort-label {
+      font-size: 24px;
+      color: var(--line);
+      line-height: 1.2;
+      margin: 0 0 0 auto;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .bid-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 10px;
+      flex: 1 1 auto;
+      min-height: 0;
+      align-content: start;
+      overflow: hidden;
+    }
+    .bid {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      padding: 4px 12px;
+      background: var(--field);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      min-width: 0;
+    }
+    .bid .name { font-weight: 600; font-size: 28px; line-height: 1.15; }
+    .bid .from { font-size: 24px; line-height: 1.2; color: var(--line); }
+    .bid .when {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--line);
+      line-height: 1.2;
+    }
+    .bid.due .when { color: var(--gold); font-weight: 600; }
+    .bid-more {
+      grid-column: 1 / -1;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--gold);
+      padding: 6px 4px 2px;
+    }
+    .empty { color: var(--line); font-size: 28px; padding: 12px 4px; }
+    .sched-rail { display: flex; flex-direction: column; gap: 12px; min-height: 0; }
+    .next-card { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; flex: 0 0 auto; }
+    .next-card .headline {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      text-transform: none;
+    }
+    .next-card .trade {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.1;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--gold);
+    }
+    .next-card .meta { font-size: 24px; color: var(--line); }
+    .week-card {
+      flex: 1 1 auto;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 14px 16px 16px;
+      overflow: hidden;
+    }
+    .week-card h2 { font-size: 24px; }
+    .week-list { flex: 1 1 auto; min-height: 0; overflow: hidden; display: flex; flex-direction: column; gap: 8px; }
+    .week-row {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 10px;
+      align-items: start;
+      padding: 6px 10px;
+      background: var(--field);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+    }
+    .week-row .d {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--gold);
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+    .week-row .t { font-size: 24px; font-weight: 600; line-height: 1.2; }
+    .week-row .t span { display: block; font-weight: 400; color: var(--line); }
     .ticker {
-      display: flex; align-items: stretch; overflow: hidden;
-      background: #0b0f16; border: 1px solid var(--line); border-radius: 0.9vh;
-      min-height: 5.2vh;
+      flex: 0 0 auto;
+      display: flex;
+      align-items: stretch;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      overflow: hidden;
+      min-height: 64px;
+      background: var(--panel);
     }
     .ticker-label {
-      flex: 0 0 auto; display: flex; align-items: center; gap: 0.5vw;
-      background: var(--gold); color: #111; font-weight: 800;
-      font-size: clamp(0.85rem, 2vh, 1.4vw); letter-spacing: 0.06em; text-transform: uppercase;
-      padding: 0 1vw; white-space: nowrap;
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      background: var(--gold);
+      color: var(--ink);
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0 20px;
     }
-    .ticker-label .dot { background: #111; box-shadow: none; animation: pulse 1.6s ease-in-out infinite; }
-    .ticker-viewport { flex: 1 1 auto; overflow: hidden; display: flex; align-items: center; position: relative; }
-    .ticker-track {
-      display: flex; align-items: center; gap: 0; white-space: nowrap; will-change: transform;
-      animation: ticker-scroll 90s linear infinite;
-      font-size: clamp(0.95rem, 2.2vh, 1.5vw); font-weight: 620;
+    .ticker-copy {
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      font-size: 28px;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
     }
-    .ticker-track span { padding: 0 1.6vw; }
-    .ticker-track .sep { color: var(--gold); padding: 0; font-weight: 800; }
-    @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-    .top { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 1.4vw; overflow: hidden; }
-    .logo { height: 9.2vh; width: auto; max-width: 18vw; object-fit: contain; background: #fff; border-radius: 1.1vh; padding: 0.55vh 0.7vh; }
-    .clock { font-size: clamp(2.4rem, 7.6vh, 9.5vw); font-weight: 720; letter-spacing: -0.04em; line-height: 1; font-variant-numeric: tabular-nums; white-space: nowrap; }
-    .clock .sec { font-size: 0.42em; font-weight: 550; color: var(--muted); margin-left: 0.12em; vertical-align: super; }
-    .date { margin-top: 0.45vh; font-size: clamp(0.95rem, 2.35vh, 2.4vw); color: var(--muted); font-weight: 560; white-space: nowrap; }
-    .weather { display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 0.45vh; max-width: 40vw; overflow: hidden; }
-    .wx-now { display: flex; align-items: baseline; gap: 0.7vw; white-space: nowrap; }
-    .wx-temp { font-size: clamp(1.8rem, 5vh, 5.4vw); font-weight: 720; letter-spacing: -0.03em; line-height: 1; }
-    .wx-label { font-size: clamp(0.85rem, 1.9vh, 1.5vw); color: var(--muted); font-weight: 560; }
-    .wx-hours { display: flex; gap: 0.32vw; overflow: hidden; }
-    .hour { display: flex; flex-direction: column; align-items: center; min-width: 2.15vw; padding: 0.35vh 0.28vw 0.4vh; background: var(--soft); border: 1px solid var(--line); border-radius: 0.55vh; font-size: clamp(0.62rem, 1.45vh, 1.05vw); line-height: 1.15; }
-    .hour .h { color: var(--muted); font-weight: 600; }
-    .hour .p { font-weight: 720; }
-    .hour.wet .p { color: var(--rain); }
-    .hour.dry .p { color: var(--ok); }
-    .top-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 0.7vh; }
-    .fs-btn { appearance: none; border: 1px solid var(--line); background: var(--panel); color: var(--text); font: inherit; font-size: clamp(0.8rem, 1.7vh, 1.15vw); font-weight: 650; padding: 0.7vh 0.9vw; border-radius: 0.7vh; cursor: pointer; white-space: nowrap; }
-    .fs-btn:hover { border-color: var(--gold); color: var(--gold-2); }
-    .live-pill { display: flex; align-items: center; gap: 0.4vw; color: var(--ok); font-size: clamp(0.7rem, 1.5vh, 1.05vw); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
-    .dot { width: 0.85vh; height: 0.85vh; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0.8vh var(--ok); animation: pulse 2.2s ease-in-out infinite; }
-    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
-    .grid { display: grid; grid-template-columns: 1.22fr 1fr 1fr; gap: 1.15vh 1.05vw; min-height: 0; overflow: hidden; }
-    .panel { background: linear-gradient(180deg, var(--panel-2), var(--panel)); border: 1px solid var(--line); border-radius: 1.2vh; padding: 1.15vh 1vw 0.9vh; display: flex; flex-direction: column; min-height: 0; min-width: 0; overflow: hidden; }
-    .ph { display: flex; align-items: baseline; justify-content: space-between; gap: 0.6vw; }
-    h2 { margin: 0; font-size: clamp(1.05rem, 2.55vh, 1.85vw); font-weight: 720; letter-spacing: -0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .tag { flex: 0 0 auto; font-size: clamp(0.62rem, 1.4vh, 0.95vw); font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ok); border: 1px solid rgba(62,224,160,0.35); border-radius: 999px; padding: 0.25vh 0.55vw; }
-    .tag.idle { color: var(--muted); border-color: var(--line); }
-    .sub { margin: 0.35vh 0 0.7vh; font-size: clamp(0.72rem, 1.6vh, 1.1vw); color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .body { flex: 1 1 auto; min-height: 0; overflow: hidden; display: flex; flex-direction: column; gap: 0.55vh; }
-    .row { display: grid; grid-template-columns: auto 1fr auto; gap: 0.55vw; align-items: center; padding: 0.7vh 0.7vw; background: rgba(255,255,255,0.025); border-radius: 0.7vh; overflow: hidden; }
-    .row.simple { grid-template-columns: 1fr; }
-    .badge { font-size: clamp(0.62rem, 1.4vh, 0.95vw); font-weight: 750; letter-spacing: 0.04em; text-transform: uppercase; color: var(--gold-2); background: rgba(232,163,23,0.12); border-radius: 0.45vh; padding: 0.25vh 0.45vw; white-space: nowrap; }
-    .meta { min-width: 0; }
-    .title { font-size: clamp(0.9rem, 2.05vh, 1.35vw); font-weight: 650; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.15; }
-    .detail { margin-top: 0.15vh; font-size: clamp(0.7rem, 1.55vh, 1.05vw); color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .side { font-size: clamp(0.75rem, 1.65vh, 1.1vw); color: var(--muted); font-weight: 650; white-space: nowrap; }
-    .blank { flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--muted); font-size: clamp(0.95rem, 2.1vh, 1.4vw); font-weight: 600; padding: 1vh; }
-    .row.wraprow { align-items: start; }
-    .row.wraprow .title { white-space: normal; overflow: visible; text-overflow: unset; line-height: 1.25; }
-    .group { font-size: clamp(0.68rem, 1.45vh, 0.95vw); font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); padding: 0.35vh 0.2vw 0; }
-    .foot { display: flex; justify-content: space-between; align-items: center; gap: 1vw; color: var(--muted); font-size: clamp(0.68rem, 1.45vh, 0.95vw); padding: 0 0.2vw 0.2vh; white-space: nowrap; overflow: hidden; }
-    .updated { color: #6b7380; }
+    .ticker-copy .ticker-line { white-space: nowrap; }
+    .ticker-copy strong { font-weight: 600; }
+    .foot {
+      flex: 0 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      font-size: 28px;
+      color: var(--line);
+      line-height: 1.2;
+    }
+    .foot-right { display: flex; align-items: center; gap: 16px; flex: 0 0 auto; }
+    .foot .updated {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--white);
+      white-space: nowrap;
+    }
+    .flag-stale {
+      display: none;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      border-radius: 4px;
+      padding: 4px 12px 5px;
+      background: var(--field);
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .flag-stale.on { display: inline-block; }
   </style>
 </head>
 <body>
-  <div class="board">
-    <header class="top">
-      <img class="logo" src="logo.png" alt="Sharma Electric &amp; HVAC">
-      <div class="when">
-        <div class="clock" id="clock">--:--</div>
-        <div class="date" id="date">—</div>
+  <div class="stage">
+    <div class="board" id="board">
+      <div class="chrome">
+        <header class="top">
+          <img class="logo" src="logo.png" alt="Sharma Electric & HVAC">
+          <div class="when">
+            <div class="clock" id="clock">--:--<span class="ampm"></span></div>
+            <div class="date" id="date"></div>
+          </div>
+          <div class="weather">
+            <div class="temp" id="wx-temp">--°</div>
+            <div class="wx-copy">
+              <div class="wx-now" id="wx-now">Orlando weather</div>
+              <div class="wx-rain" id="wx-rain"></div>
+            </div>
+          </div>
+        </header>
+        <div class="gold-line"></div>
       </div>
-      <div class="weather">
-        <div class="wx-now">
-          <div class="wx-temp" id="wx-temp">—°</div>
-          <div class="wx-label" id="wx-label">Orlando weather</div>
+
+      <main class="main">
+        <div class="opt3b-grid">
+          <section class="panel bids-hero">
+            <div class="section-head">
+              <h2>New bids</h2>
+              <div class="num" id="bid-count">0</div>
+              <p class="sort-label">Due dates first, then newest received</p>
+            </div>
+            <div class="bid-list" id="bid-list"></div>
+          </section>
+          <aside class="sched-rail">
+            <section class="panel next-card" id="next-card"></section>
+            <section class="panel week-card">
+              <h2 id="week-heading">Also this week</h2>
+              <div class="week-list" id="week-list"></div>
+            </section>
+          </aside>
         </div>
-        <div class="wx-hours" id="wx-hours"></div>
-      </div>
-      <div class="top-actions">
-        <button type="button" class="fs-btn" id="fs-btn" title="Full screen">Full screen</button>
-        <div class="live-pill"><span class="dot"></span> Live</div>
-      </div>
-    </header>
+        <div class="ticker">
+          <div class="ticker-label">News</div>
+          <div class="ticker-copy" id="ticker-copy"></div>
+        </div>
+      </main>
 
-    <main class="grid">
-      <section class="panel">
-        <div class="ph"><h2>Today’s jobs / tasks</h2><span class="tag" id="jobs-tag">Live</span></div>
-        <p class="sub" id="jobs-sub">Today &amp; tomorrow</p>
-        <div class="body" id="jobs-body"></div>
-      </section>
-
-      <section class="panel">
-        <div class="ph"><h2>New bids</h2><span class="tag" id="bids-tag">Live</span></div>
-        <p class="sub">Scanned from office email, hourly</p>
-        <div class="body" id="bids-body"></div>
-      </section>
-
-      <section class="panel">
-        <div class="ph"><h2>TO SCHEDULE</h2><span class="tag idle" id="sched-tag">None</span></div>
-        <p class="sub">Waiting for a date</p>
-        <div class="body" id="sched-body"></div>
-      </section>
-    </main>
-
-    <div class="ticker" aria-label="News ticker">
-      <div class="ticker-label"><span class="dot"></span> Sharma Live</div>
-      <div class="ticker-viewport"><div class="ticker-track" id="ticker-track"><span>Loading…</span></div></div>
+      <footer class="foot">
+        <span>Sharma Electric & HVAC · Lic. EC13013924 · CAC1823596</span>
+        <div class="foot-right">
+          <span class="updated" id="updated">Updated —</span>
+          <span class="flag-stale" id="flag-stale">Data is old</span>
+        </div>
+      </footer>
     </div>
-
-    <footer class="foot">
-      <span>Sharma Electric &amp; HVAC · Lic. EC13013924 · CAC1823596</span>
-      <span class="updated" id="updated"></span>
-    </footer>
   </div>
 
   <script>
     const TZ = "America/New_York";
     const REFRESH_MS = 3 * 60 * 1000;
-    const WORKDAY = [7,8,9,10,11,12,13,14,15,16,17,18];
-    const clockEl = document.getElementById("clock");
-    const dateEl = document.getElementById("date");
-    const updatedEl = document.getElementById("updated");
-    let lastFetchAt = 0;
+    const WEATHER_MS = 15 * 60 * 1000;
+    const STALE_MS = 2 * 60 * 60 * 1000;
+    const LICENSE_RE = /\b(?:LIC\.?\s*)?(?:EC|CAC)\d+\b/i;
 
-    function nyParts(d = new Date()) {
-      const parts = new Intl.DateTimeFormat("en-US", {
-        timeZone: TZ, weekday: "long", month: "long", day: "numeric", year: "numeric",
-        hour: "numeric", minute: "2-digit", second: "2-digit", hour12: true
-      }).formatToParts(d);
-      const g = (t) => (parts.find((p) => p.type === t) || {}).value || "";
-      return { weekday: g("weekday"), month: g("month"), day: g("day"), year: g("year"),
-               hour: g("hour"), minute: g("minute"), second: g("second"), dayPeriod: g("dayPeriod") };
+    let lastData = null;
+    let lastUpdatedAt = null;
+    let dataLoadError = false;
+
+    const PHONE_RE = /(?:\+?1[\s.-]*)?(?:\(?\d{3}\)?[\s.-]+)\d{3}[\s.-]\d{4}\b/g;
+    const EMAIL_RE = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
+
+    function stripPII(text) {
+      if (text == null) return "";
+      return String(text)
+        .replace(EMAIL_RE, "")
+        .replace(PHONE_RE, "")
+        .replace(/[·|,;]\s*(?=[·|,;]|$)/g, "")
+        .replace(/\s{2,}/g, " ")
+        .replace(/\s+([,.;])/g, "$1")
+        .trim();
     }
-    function nyISO(d = new Date()) {
-      return new Intl.DateTimeFormat("en-CA", { timeZone: TZ }).format(d);
-    }
-    function addDaysISO(iso, n) {
-      const [y, m, dd] = iso.split("-").map(Number);
-      const dt = new Date(Date.UTC(y, m - 1, dd + n));
-      const p = (x) => String(x).padStart(2, "0");
-      return `${dt.getUTCFullYear()}-${p(dt.getUTCMonth() + 1)}-${p(dt.getUTCDate())}`;
-    }
-    function dayLabel(iso) {
-      const [y, m, dd] = iso.split("-").map(Number);
-      return new Intl.DateTimeFormat("en-US", { timeZone: "UTC", weekday: "long", month: "short", day: "numeric" })
-        .format(new Date(Date.UTC(y, m - 1, dd, 12)));
-    }
-    function tickClock() {
-      const p = nyParts();
-      clockEl.innerHTML = `${p.hour}:${p.minute}<span class="sec">${p.second} ${p.dayPeriod}</span>`;
-      dateEl.textContent = `${p.weekday}, ${p.month} ${p.day}, ${p.year}`;
-    }
+
     function el(tag, cls, text) {
       const n = document.createElement(tag);
       if (cls) n.className = cls;
-      if (text != null) n.textContent = text;
+      if (text != null && text !== "") n.textContent = text;
       return n;
     }
-    function taskRow(t) {
-      const r = el("div", "row simple");
-      const meta = el("div", "meta");
-      meta.append(el("div", "title", t.title || "—"));
-      if (t.detail) meta.append(el("div", "detail", t.detail));
-      r.append(meta);
-      return r;
-    }
-    function renderJobs(data) {
-      const body = document.getElementById("jobs-body");
-      const today = nyISO();
-      const tomorrow = addDaysISO(today, 1);
-      const tasks = (data && data.tasks) || {};
-      const tList = tasks[today] || [];
-      const tmList = tasks[tomorrow] || [];
-      body.replaceChildren();
-      if (!tList.length && !tmList.length) {
-        body.append(el("div", "blank", "Nothing on the board — tell Jarvis the day’s jobs"));
-        document.getElementById("jobs-tag").className = "tag idle";
-        document.getElementById("jobs-tag").textContent = "None";
-        return;
-      }
-      document.getElementById("jobs-tag").className = "tag";
-      document.getElementById("jobs-tag").textContent = "Live";
-      if (tList.length) {
-        body.append(el("div", "group", `Today — ${dayLabel(today)}`));
-        tList.forEach((t) => body.append(taskRow(t)));
-      }
-      if (tmList.length) {
-        body.append(el("div", "group", `Tomorrow — ${dayLabel(tomorrow)}`));
-        tmList.forEach((t) => body.append(taskRow(t)));
-      }
-    }
-    function renderBids(data) {
-      const body = document.getElementById("bids-body");
-      const bids = ((data && data.newBids) || []).slice(0, 9);
-      body.replaceChildren();
-      if (!bids.length) {
-        body.append(el("div", "blank", "No new bids"));
-        document.getElementById("bids-tag").className = "tag idle";
-        document.getElementById("bids-tag").textContent = "None";
-        return;
-      }
-      document.getElementById("bids-tag").className = "tag";
-      document.getElementById("bids-tag").textContent = "Live";
-      for (const b of bids) {
-        const r = el("div", "row");
-        r.append(el("span", "badge", "New"));
-        const meta = el("div", "meta");
-        meta.append(el("div", "title", b.project || "—"));
-        if (b.from) meta.append(el("div", "detail", b.from));
-        r.append(meta);
-        r.append(el("div", "side", b.received || ""));
-        body.append(r);
-      }
-    }
-    function renderSchedule(data) {
-      const body = document.getElementById("sched-body");
-      const groups = (data && data.toScheduleGroups) || [];
-      const items = (data && data.toSchedule) || [];
-      if (groups.length) {
-        document.getElementById("sched-tag").className = "tag";
-        document.getElementById("sched-tag").textContent = "Live";
-        body.replaceChildren();
-        groups.forEach((g) => {
-          body.append(el("div", "group", g.heading || ""));
-          (g.items || []).forEach((t) => { const r = taskRow(t); r.classList.add("wraprow"); body.append(r); });
-        });
-        items.forEach((t) => body.append(taskRow(typeof t === "string" ? { title: t } : t)));
-        return;
-      }
-      body.replaceChildren();
-      if (!items.length) {
-        body.append(el("div", "blank", "Nothing waiting — tell Jarvis what to park here"));
-        document.getElementById("sched-tag").className = "tag idle";
-        document.getElementById("sched-tag").textContent = "None";
-        return;
-      }
-      document.getElementById("sched-tag").className = "tag";
-      document.getElementById("sched-tag").textContent = "Live";
-      items.forEach((t) => body.append(taskRow(typeof t === "string" ? { title: t } : t)));
-    }
-    function renderTicker(data) {
-      const track = document.getElementById("ticker-track");
-      const items = [];
-      const custom = (data && data.ticker) || [];
-      custom.forEach((t) => { if (t) items.push(String(t)); });
-      const news = (data && data.news) || [];
-      news.forEach((n) => {
-        if (!n) return;
-        const headline = typeof n === "string" ? n : n.headline;
-        if (!headline) return;
-        const source = typeof n === "string" ? "" : (n.source || "");
-        items.push(`NEWS — ${headline}${source ? " · " + source : ""}`);
+
+    function nyParts(d) {
+      const fmt = new Intl.DateTimeFormat("en-US", {
+        timeZone: TZ,
+        weekday: "long", year: "numeric", month: "long", day: "numeric",
+        hour: "numeric", minute: "2-digit", hour12: true
       });
-      const today = nyISO();
-      const tasks = ((data && data.tasks) || {})[today] || [];
-      tasks.forEach((t) => { if (t && t.title) items.push(`TODAY — ${t.title}${t.detail ? " · " + t.detail : ""}`); });
-      const bids = ((data && data.newBids) || []).slice(0, 6);
-      bids.forEach((b) => { if (b && b.project) items.push(`NEW BID — ${b.project}${b.from ? " · " + b.from : ""}${b.received ? " · " + b.received : ""}`); });
-      const groups = (data && data.toScheduleGroups) || [];
-      groups.forEach((g) => (g.items || []).forEach((t) => { if (t && t.title) items.push(`TO SCHEDULE — ${t.title}`); }));
-      const flat = (data && data.toSchedule) || [];
-      flat.forEach((t) => { const title = typeof t === "string" ? t : t && t.title; if (title) items.push(`TO SCHEDULE — ${title}`); });
-      if (!items.length) items.push("Sharma Electric & HVAC · Lic. EC13013924 · CAC1823596");
-      // Duplicate the set twice for a seamless loop; duration scales with content length.
-      const oneSet = items.map((t) => `<span>${t.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</span><span class="sep">◆</span>`).join("");
-      track.innerHTML = oneSet + oneSet;
-      const secs = Math.max(45, Math.min(300, items.join(" ").length / 9));
-      track.style.animationDuration = `${secs}s`;
+      const out = { weekday: "", month: "", day: "", year: "", hour: "", minute: "", dayPeriod: "" };
+      for (const p of fmt.formatToParts(d)) {
+        if (p.type === "dayPeriod") out.dayPeriod = p.value.toUpperCase();
+        else if (p.type in out) out[p.type] = p.value;
+      }
+      return out;
     }
+
+    function nyISO(d) {
+      const f = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" });
+      return f.format(d);
+    }
+
+    function nyWeekdayShort(d) {
+      return new Intl.DateTimeFormat("en-US", { timeZone: TZ, weekday: "short" }).format(d);
+    }
+
+    function tickClock() {
+      const now = new Date();
+      const p = nyParts(now);
+      const hour = p.hour;
+      const clock = document.getElementById("clock");
+      clock.replaceChildren(document.createTextNode(`${hour}:${p.minute}`), el("span", "ampm", p.dayPeriod));
+      document.getElementById("date").textContent = `${p.weekday}, ${p.month} ${p.day}, ${p.year}`;
+      stampFreshness();
+    }
+
+    function scaleBoard() {
+      const board = document.getElementById("board");
+      const s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+      board.style.transform = `scale(${s})`;
+      board.style.left = `${Math.round((window.innerWidth - 1920 * s) / 2)}px`;
+      board.style.top = `${Math.round((window.innerHeight - 1080 * s) / 2)}px`;
+    }
+
+    function parseDueMs(text) {
+      const m = String(text || "").match(/\bdue\b\s+(.+)/i);
+      if (!m) return null;
+      let s = m[1].trim().replace(/\bnoon\b/i, "12:00 PM");
+      const d = new Date(s);
+      return isNaN(d.getTime()) ? null : d.getTime();
+    }
+
+    function receivedSortKey(dateISO, received) {
+      const t = String(received || "").match(/(\d{1,2}):(\d{2})\s*([AP]M)/i);
+      let minutes = 0;
+      if (t) {
+        let h = parseInt(t[1], 10) % 12;
+        if (/pm/i.test(t[3])) h += 12;
+        minutes = h * 60 + parseInt(t[2], 10);
+      }
+      return `${dateISO || "0000-00-00"}-${String(minutes).padStart(4, "0")}`;
+    }
+
+    function formatDueLabel(received) {
+      const m = String(received || "").match(/\bdue\b\s+(.+)/i);
+      if (!m) return stripPII(received);
+      let s = m[1].trim();
+      s = s.replace(/,\s*\d{4}\b/, ",").replace(/\s+\d{4}\b/, "");
+      s = s.replace(/\s+/g, " ").replace(/,\s*/g, ", ").replace(/,\s*,/g, ",").trim();
+      s = s.replace(/\s+(noon|\d{1,2}:\d{2}\s*[AP]M)$/i, ", $1");
+      s = s.replace(/,\s*,/g, ",").replace(/,\s*/g, ", ");
+      return "Due " + s;
+    }
+
+    function formatReceivedLabel(dateISO, received) {
+      const timeM = String(received || "").match(/(\d{1,2}:\d{2}\s*[AP]M)/i);
+      let time = timeM ? timeM[1].replace(/\s+/g, " ").replace(/am/i, "AM").replace(/pm/i, "PM") : "";
+      if (dateISO && dateISO === nyISO(new Date())) {
+        return time ? `Received today, ${time}` : "Received today";
+      }
+      let wd = "";
+      if (dateISO) {
+        const [y, mo, da] = dateISO.split("-").map(Number);
+        if (y) wd = nyWeekdayShort(new Date(y, mo - 1, da, 12));
+      }
+      if (!wd) {
+        const m = String(received || "").match(/\b(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b/i);
+        if (m) wd = m[1][0].toUpperCase() + m[1].slice(1, 3).toLowerCase();
+      }
+      if (wd && time) return `Received ${wd}, ${time}`;
+      if (wd) return `Received ${wd}`;
+      if (time) return `Received ${time}`;
+      return "Received";
+    }
+
+    function displayTrade(s) {
+      return String(s || "").replace(/[A-Za-z0-9]+/g, (w) => {
+        if (/^(HVAC|TUG|EXJ|ITB|HQ|SF|AM|PM)$/i.test(w)) return w.toUpperCase();
+        return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+      });
+    }
+
+    function prettyName(s) {
+      return String(s || "").replace(/\s+-\s+/g, " — ").replace(/\s+/g, " ").trim();
+    }
+
+    function parseLooseDate(text) {
+      const m = String(text || "").match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+      if (m) return `${m[3]}-${m[1].padStart(2, "0")}-${m[2].padStart(2, "0")}`;
+      const iso = String(text || "").match(/(\d{4})-(\d{2})-(\d{2})/);
+      return iso ? iso[0] : null;
+    }
+
+    function shortDateLabel(iso, fallback) {
+      if (iso) {
+        const [y, mo, da] = iso.split("-").map(Number);
+        const d = new Date(y, mo - 1, da, 12);
+        return `${nyWeekdayShort(d)} ${mo}/${da}`;
+      }
+      return fallback || "";
+    }
+
+    function parseScheduleItem(raw, heading) {
+      const title = stripPII(typeof raw === "string" ? raw : (raw && (raw.title || raw.project || raw.name)) || "");
+      const detail = stripPII(typeof raw === "string" ? "" : (raw && (raw.detail || raw.notes || raw.who || "")) || "");
+      const givenDate = typeof raw === "object" && raw ? (raw.date || raw.when || "") : "";
+      const parts = title.split(/\s+[—–]\s+|\s{1,2}-{1,2}\s+/);
+      let datePart = "", address = title, trade = "";
+      if (parts.length >= 3) {
+        datePart = parts[0];
+        address = parts.slice(1, -1).join(" — ");
+        trade = parts[parts.length - 1];
+      } else if (parts.length === 2) {
+        if (parseLooseDate(parts[0])) { datePart = parts[0]; address = parts[1]; }
+        else { address = parts[0]; trade = parts[1]; }
+      }
+      const dateISO = parseLooseDate(givenDate) || parseLooseDate(datePart) || parseLooseDate(title);
+      return {
+        dateISO,
+        dateLabel: shortDateLabel(dateISO, datePart),
+        address: prettyName(address),
+        trade: displayTrade(trade),
+        detail,
+        heading: stripPII(heading || "")
+      };
+    }
+
+    function collectBids(data) {
+      const raw = (data && (data.newBids || data.bids || data.new_bids)) || [];
+      return raw.map((b) => {
+        if (!b) return null;
+        const project = stripPII(prettyName(b.project || b.name || b.title || ""));
+        const from = stripPII(b.from || b.builder || b.company || "");
+        const received = stripPII(b.received || b.note || "");
+        const dueText = b.due || b.dueDate || b.due_date || b.bidDue || "";
+        const dueMs = parseDueMs(dueText) || parseDueMs(received);
+        const dateISO = b.date || b.receivedDate || "";
+        if (!project) return null;
+        return {
+          project, from, received, dueMs, dateISO,
+          recency: receivedSortKey(dateISO, received)
+        };
+      }).filter(Boolean);
+    }
+
+    function sortBids(bids) {
+      return bids.slice().sort((a, b) => {
+        if (a.dueMs != null && b.dueMs != null) return a.dueMs - b.dueMs;
+        if (a.dueMs != null) return -1;
+        if (b.dueMs != null) return 1;
+        if (a.recency !== b.recency) return a.recency < b.recency ? 1 : -1;
+        return 0;
+      });
+    }
+
+    function fitOverflow(container, extraClass) {
+      const more = container.querySelector("." + extraClass);
+      if (more) more.remove();
+      const kids = [...container.children];
+      kids.forEach((n) => { n.style.display = ""; });
+      let hidden = 0;
+      for (let i = kids.length - 1; i >= 0; i--) {
+        if (container.scrollHeight <= container.clientHeight + 1) break;
+        kids[i].style.display = "none";
+        hidden++;
+      }
+      if (!hidden) return;
+      const n = el("div", extraClass, `+${hidden} more`);
+      container.appendChild(n);
+      while (container.scrollHeight > container.clientHeight + 1) {
+        const visible = [...container.children].filter((c) => c !== n && c.style.display !== "none");
+        if (!visible.length) break;
+        visible[visible.length - 1].style.display = "none";
+        hidden++;
+        n.textContent = `+${hidden} more`;
+      }
+    }
+
+    function renderBids(data) {
+      const list = document.getElementById("bid-list");
+      const bids = sortBids(collectBids(data));
+      document.getElementById("bid-count").textContent = String(bids.length);
+      list.replaceChildren();
+      if (!bids.length) {
+        list.append(el("div", "empty", "No new bids"));
+        return;
+      }
+      for (const b of bids) {
+        const card = el("div", b.dueMs != null ? "bid due" : "bid");
+        card.append(el("div", "name", b.project));
+        if (b.from) card.append(el("div", "from", b.from));
+        const when = b.dueMs != null ? formatDueLabel(b.received) : formatReceivedLabel(b.dateISO, b.received);
+        if (when) card.append(el("div", "when", when));
+        list.append(card);
+      }
+      fitOverflow(list, "bid-more");
+    }
+
+    function collectSchedule(data) {
+      const items = [];
+      for (const g of (data && data.toScheduleGroups) || []) {
+        for (const raw of (g && g.items) || []) items.push(parseScheduleItem(raw, g.heading));
+      }
+      for (const raw of (data && data.toSchedule) || []) items.push(parseScheduleItem(raw, ""));
+      const todayTasks = ((data && data.tasks) || {})[nyISO(new Date())] || [];
+      for (const raw of todayTasks) items.push(parseScheduleItem(raw, ""));
+      return items.filter((it) => it.address || it.trade);
+    }
+
+    function sharedTag(items) {
+      const tags = items.map((it) => {
+        const first = (it.detail || "").split("·")[0].trim();
+        return first;
+      }).filter(Boolean);
+      if (tags.length && tags.every((t) => t === tags[0])) return tags[0];
+      return "";
+    }
+
+    function itemTime(detail) {
+      const m = String(detail || "").match(/\b(\d{1,2}:\d{2}\s*[AP]M)\b/i);
+      return m ? m[1].replace(/\s+/g, " ").replace(/am/i, "AM").replace(/pm/i, "PM") : "";
+    }
+
+    function itemWho(detail) {
+      return String(detail || "")
+        .split("·")
+        .map((s) => s.trim())
+        .filter((s) => s && !/^\d{1,2}:\d{2}\s*[AP]M$/i.test(s));
+    }
+
+    function renderSchedule(data) {
+      const items = collectSchedule(data).sort((a, b) => String(a.dateISO || "9999").localeCompare(String(b.dateISO || "9999")));
+      const today = nyISO(new Date());
+      const upcoming = items.filter((it) => !it.dateISO || it.dateISO >= today);
+      const next = upcoming[0] || null;
+      const rest = next ? upcoming.slice(1) : upcoming;
+
+      const nextCard = document.getElementById("next-card");
+      nextCard.replaceChildren();
+      nextCard.append(el("div", "kicker", "Next"));
+      if (!next) {
+        nextCard.append(el("div", "empty", "Nothing on the board"));
+      } else {
+        nextCard.append(el("div", "headline", next.address || "Job"));
+        if (next.trade) nextCard.append(el("div", "trade", next.trade));
+        const who = itemWho(next.detail);
+        const time = itemTime(next.detail);
+        const when = next.dateISO === today ? "Today" : (next.dateLabel || "");
+        const meta = [when, ...who, time].filter(Boolean).join(" · ");
+        if (meta) nextCard.append(el("div", "meta", meta));
+      }
+
+      const heading = document.getElementById("week-heading");
+      const weekList = document.getElementById("week-list");
+      weekList.replaceChildren();
+      if (!rest.length) {
+        heading.textContent = "Also this week";
+        weekList.append(el("div", "empty", "Nothing else this week"));
+        return;
+      }
+      const tag = sharedTag(rest);
+      heading.textContent = tag ? `Also this week · ${tag}` : "Also this week";
+      for (const it of rest) {
+        const row = el("div", "week-row");
+        row.append(el("div", "d", it.dateLabel || ""));
+        const t = el("div", "t", it.address || "");
+        const bits = [it.trade];
+        const time = itemTime(it.detail);
+        if (time) bits.push(time);
+        const sub = bits.filter(Boolean).join(" · ");
+        if (sub) t.append(el("span", "", sub));
+        row.append(t);
+        weekList.append(row);
+      }
+      fitOverflow(weekList, "bid-more");
+    }
+
+    function tickerHeadline(n) {
+      const raw = typeof n === "string" ? n : (n && n.headline) || "";
+      return stripPII(raw);
+    }
+
+    function shortHead(text) {
+      const t = text.replace(/\s+[—–-]\s+/, " — ");
+      const cut = t.split(/\s+[—–]\s+/)[0];
+      const words = cut.split(/\s+/);
+      if (words.length <= 4) return cut;
+      return words.slice(0, 3).join(" ");
+    }
+
+    function renderTicker(data) {
+      const host = document.getElementById("ticker-copy");
+      host.replaceChildren();
+      const parts = [];
+      const news = (data && data.news) || [];
+      for (const n of news) {
+        const headline = tickerHeadline(n);
+        if (!headline) continue;
+        parts.push({ strong: shortHead(headline), rest: headline.replace(shortHead(headline), "").replace(/^\s*[—–-]\s*/, "").trim() || headline });
+      }
+      const ticker = (data && data.ticker) || [];
+      for (const t of ticker) {
+        const s = stripPII(t);
+        if (!s || LICENSE_RE.test(s)) continue;
+        parts.push({ strong: "", rest: s });
+      }
+      if (!parts.length) {
+        host.append(el("span", "", "No news on the board"));
+        return;
+      }
+      const line = el("span", "ticker-line");
+      parts.forEach((p, i) => {
+        if (i) line.append(document.createTextNode("  ·  "));
+        if (p.strong && p.rest && p.rest !== p.strong) {
+          line.append(el("strong", "", p.strong));
+          line.append(document.createTextNode("\u00a0\u00a0" + p.rest));
+        } else {
+          line.append(el("strong", "", p.strong || p.rest));
+        }
+      });
+      host.append(line);
+    }
+
+    function firstTimestamp(data) {
+      if (!data || typeof data !== "object") return null;
+      const keys = ["updatedAt", "updated_at", "lastUpdated", "last_updated", "updated"];
+      for (const k of keys) {
+        if (data[k]) {
+          const d = new Date(data[k]);
+          if (!isNaN(d.getTime())) return d;
+        }
+      }
+      return null;
+    }
+
+    function stampFreshness() {
+      const updatedEl = document.getElementById("updated");
+      const flag = document.getElementById("flag-stale");
+      if (dataLoadError && !lastUpdatedAt) {
+        updatedEl.textContent = "Can't reach data";
+        flag.classList.add("on");
+        return;
+      }
+      if (!lastUpdatedAt) {
+        updatedEl.textContent = "Updated —";
+        flag.classList.remove("on");
+        return;
+      }
+      const p = nyParts(lastUpdatedAt);
+      const today = nyISO(new Date());
+      const stampDay = nyISO(lastUpdatedAt);
+      const time = `${p.hour}:${p.minute} ${p.dayPeriod}`;
+      updatedEl.textContent = stampDay === today ? `Updated ${time}` : `Updated ${p.month} ${p.day}, ${time}`;
+      flag.classList.toggle("on", (Date.now() - lastUpdatedAt.getTime()) > STALE_MS);
+    }
+
+    function renderAll(data) {
+      lastData = data;
+      lastUpdatedAt = firstTimestamp(data);
+      renderBids(data);
+      renderSchedule(data);
+      renderTicker(data);
+      stampFreshness();
+    }
+
     function wmoText(code) {
       const c = Number(code);
       if (c === 0) return "Clear";
@@ -317,15 +803,44 @@
       if (c >= 95) return "Thunderstorms";
       return "Orlando";
     }
+
+    function fmtHour(h) {
+      const n = Number(h);
+      if (n === 0) return "12 AM";
+      if (n === 12) return "12 PM";
+      return n > 12 ? `${n - 12} PM` : `${n} AM`;
+    }
+
+    function rainLine(hourly, nowHour) {
+      const times = (hourly && hourly.time) || [];
+      const probs = (hourly && hourly.precipitation_probability) || [];
+      const points = [];
+      for (let i = 0; i < times.length; i++) {
+        const h = Number(String(times[i]).slice(11, 13));
+        if (h < nowHour || h > 22) continue;
+        points.push({ h, p: Number(probs[i] || 0) });
+      }
+      if (!points.length) return "";
+      const nowP = points[0].p;
+      let peak = points[0];
+      for (const pt of points) if (pt.p > peak.p) peak = pt;
+      const rise = points.find((pt) => pt.h > nowHour && pt.p >= Math.max(40, nowP + 15));
+      if (rise && peak.h > nowHour && peak.p >= 40) {
+        return `Rain rises after ${fmtHour(rise.h)} · ${Math.round(peak.p)}% by ${fmtHour(peak.h)}`;
+      }
+      if (nowP >= 40) return `${Math.round(nowP)}% rain now · peak ${Math.round(peak.p)}% at ${fmtHour(peak.h)}`;
+      if (peak.p >= 40) return `Rain later · ${Math.round(peak.p)}% by ${fmtHour(peak.h)}`;
+      return `Rain stays low · ${Math.round(Math.max(...points.map((p) => p.p)))}% at most`;
+    }
+
     async function loadWeather() {
       try {
         const u = new URL("https://api.open-meteo.com/v1/forecast");
         u.searchParams.set("latitude", "28.5383");
         u.searchParams.set("longitude", "-81.3792");
-        u.searchParams.set("current", "temperature_2m,weather_code,precipitation_probability,wind_speed_10m");
+        u.searchParams.set("current", "temperature_2m,weather_code,precipitation_probability");
         u.searchParams.set("hourly", "precipitation_probability");
         u.searchParams.set("temperature_unit", "fahrenheit");
-        u.searchParams.set("wind_speed_unit", "mph");
         u.searchParams.set("timezone", TZ);
         u.searchParams.set("forecast_days", "1");
         const res = await fetch(u.toString());
@@ -334,34 +849,25 @@
         document.getElementById("wx-temp").textContent = `${Math.round(j.current.temperature_2m)}°`;
         const bits = ["Orlando", wmoText(j.current.weather_code)];
         if (j.current.precipitation_probability != null) bits.push(`${Math.round(j.current.precipitation_probability)}% rain`);
-        document.getElementById("wx-label").textContent = bits.join(" · ");
-        const hoursEl = document.getElementById("wx-hours");
-        hoursEl.replaceChildren();
-        const times = (j.hourly && j.hourly.time) || [];
-        const probs = (j.hourly && j.hourly.precipitation_probability) || [];
-        for (let i = 0; i < times.length; i++) {
-          const hour = Number(String(times[i]).slice(11, 13));
-          if (!WORKDAY.includes(hour)) continue;
-          const n = el("div", `hour ${probs[i] >= 40 ? "wet" : "dry"}`);
-          n.append(el("span", "h", hour === 12 ? "12p" : hour > 12 ? `${hour - 12}p` : `${hour}a`));
-          n.append(el("span", "p", probs[i] == null ? "—" : `${Math.round(probs[i])}%`));
-          hoursEl.append(n);
-        }
+        document.getElementById("wx-now").textContent = bits.join(" · ");
+        const hour = Number(new Intl.DateTimeFormat("en-US", { timeZone: TZ, hour: "numeric", hourCycle: "h23" }).format(new Date()));
+        document.getElementById("wx-rain").textContent = rainLine(j.hourly, hour);
       } catch (e) { /* keep last weather */ }
     }
+
     async function loadData() {
       try {
         const res = await fetch(`data.json?t=${Date.now()}`, { cache: "no-store" });
         if (!res.ok) throw new Error("bad status");
         const data = await res.json();
-        lastFetchAt = Date.now();
-        renderJobs(data);
-        renderBids(data);
-        renderSchedule(data);
-        renderTicker(data);
-      } catch (e) { /* keep last render */ }
-      updatedEl.textContent = lastFetchAt ? `Updated ${Math.max(0, Math.round((Date.now() - lastFetchAt) / 1000))}s ago` : "";
+        dataLoadError = false;
+        renderAll(data);
+      } catch (e) {
+        dataLoadError = !lastData;
+        stampFreshness();
+      }
     }
+
     async function requestWake() {
       try {
         if (navigator.wakeLock && document.visibilityState === "visible") {
@@ -369,18 +875,13 @@
         }
       } catch (e) { /* ignore */ }
     }
-    const fsBtn = document.getElementById("fs-btn");
-    fsBtn.addEventListener("click", async () => {
-      try {
-        if (document.fullscreenElement) await document.exitFullscreen();
-        else await document.documentElement.requestFullscreen();
-      } catch (e) { /* ignore */ }
-    });
 
+    scaleBoard();
+    window.addEventListener("resize", () => { scaleBoard(); if (lastData) { renderBids(lastData); renderSchedule(lastData); } });
     tickClock();
     setInterval(tickClock, 1000);
     loadWeather();
-    setInterval(loadWeather, 15 * 60 * 1000);
+    setInterval(loadWeather, WEATHER_MS);
     loadData();
     setInterval(loadData, REFRESH_MS);
     requestWake();
