@@ -329,6 +329,13 @@
       flex-direction: column;
       gap: 12px;
     }
+    /* Fix: with 3+ targets the main card overflowed upward into the header (2026-11-17) */
+    .main.targets-many .targets > .target:not(.target-mini) { justify-content: flex-start; min-height: 0; }
+    .main.targets-many .targets > .target:not(.target-mini) .target-name { font-size: 46px; margin: 10px 0 6px; }
+    .main.targets-many .ring-wrap { width: 132px; height: 132px; margin-top: 4px; }
+    .main.targets-many .ring-core .days { font-size: 44px; }
+    .main.targets-many .ring-core .unit { font-size: 18px; }
+    .main.targets-many .ring-core .unit-sub { font-size: 13px; }
     .mini-row {
       display: grid;
       gap: 12px;
