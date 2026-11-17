@@ -29,9 +29,30 @@
     }
     .board {
       width: 100vw; height: 100vh; height: 100dvh;
-      display: grid; grid-template-rows: auto 1fr auto;
+      display: grid; grid-template-rows: auto 1fr auto auto;
       gap: 1.2vh; padding: 1.5vh 1.5vw 0.9vh; overflow: hidden;
     }
+    .ticker {
+      display: flex; align-items: stretch; overflow: hidden;
+      background: #0b0f16; border: 1px solid var(--line); border-radius: 0.9vh;
+      min-height: 5.2vh;
+    }
+    .ticker-label {
+      flex: 0 0 auto; display: flex; align-items: center; gap: 0.5vw;
+      background: var(--gold); color: #111; font-weight: 800;
+      font-size: clamp(0.85rem, 2vh, 1.4vw); letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 0 1vw; white-space: nowrap;
+    }
+    .ticker-label .dot { background: #111; box-shadow: none; animation: pulse 1.6s ease-in-out infinite; }
+    .ticker-viewport { flex: 1 1 auto; overflow: hidden; display: flex; align-items: center; position: relative; }
+    .ticker-track {
+      display: flex; align-items: center; gap: 0; white-space: nowrap; will-change: transform;
+      animation: ticker-scroll 90s linear infinite;
+      font-size: clamp(0.95rem, 2.2vh, 1.5vw); font-weight: 620;
+    }
+    .ticker-track span { padding: 0 1.6vw; }
+    .ticker-track .sep { color: var(--gold); padding: 0; font-weight: 800; }
+    @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
     .top { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 1.4vw; overflow: hidden; }
     .logo { height: 9.2vh; width: auto; max-width: 18vw; object-fit: contain; background: #fff; border-radius: 1.1vh; padding: 0.55vh 0.7vh; }
     .clock { font-size: clamp(2.4rem, 7.6vh, 9.5vw); font-weight: 720; letter-spacing: -0.04em; line-height: 1; font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -116,6 +137,11 @@
         <div class="body" id="sched-body"></div>
       </section>
     </main>
+
+    <div class="ticker" aria-label="News ticker">
+      <div class="ticker-label"><span class="dot"></span> Sharma Live</div>
+      <div class="ticker-viewport"><div class="ticker-track" id="ticker-track"><span>Loading…</span></div></div>
+    </div>
 
     <footer class="foot">
       <span>Sharma Electric &amp; HVAC · Lic. EC13013924 · CAC1823596</span>
@@ -248,6 +274,27 @@
       document.getElementById("sched-tag").textContent = "Live";
       items.forEach((t) => body.append(taskRow(typeof t === "string" ? { title: t } : t)));
     }
+    function renderTicker(data) {
+      const track = document.getElementById("ticker-track");
+      const items = [];
+      const custom = (data && data.ticker) || [];
+      custom.forEach((t) => { if (t) items.push(String(t)); });
+      const today = nyISO();
+      const tasks = ((data && data.tasks) || {})[today] || [];
+      tasks.forEach((t) => { if (t && t.title) items.push(`TODAY — ${t.title}${t.detail ? " · " + t.detail : ""}`); });
+      const bids = ((data && data.newBids) || []).slice(0, 6);
+      bids.forEach((b) => { if (b && b.project) items.push(`NEW BID — ${b.project}${b.from ? " · " + b.from : ""}${b.received ? " · " + b.received : ""}`); });
+      const groups = (data && data.toScheduleGroups) || [];
+      groups.forEach((g) => (g.items || []).forEach((t) => { if (t && t.title) items.push(`TO SCHEDULE — ${t.title}`); }));
+      const flat = (data && data.toSchedule) || [];
+      flat.forEach((t) => { const title = typeof t === "string" ? t : t && t.title; if (title) items.push(`TO SCHEDULE — ${title}`); });
+      if (!items.length) items.push("Sharma Electric & HVAC · Lic. EC13013924 · CAC1823596");
+      // Duplicate the set twice for a seamless loop; duration scales with content length.
+      const oneSet = items.map((t) => `<span>${t.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</span><span class="sep">◆</span>`).join("");
+      track.innerHTML = oneSet + oneSet;
+      const secs = Math.max(45, Math.min(180, items.join(" ").length / 9));
+      track.style.animationDuration = `${secs}s`;
+    }
     function wmoText(code) {
       const c = Number(code);
       if (c === 0) return "Clear";
@@ -303,6 +350,7 @@
         renderJobs(data);
         renderBids(data);
         renderSchedule(data);
+        renderTicker(data);
       } catch (e) { /* keep last render */ }
       updatedEl.textContent = lastFetchAt ? `Updated ${Math.max(0, Math.round((Date.now() - lastFetchAt) / 1000))}s ago` : "";
     }
