@@ -892,6 +892,9 @@
       letter-spacing: 0.06em;
     }
     .foot .id { color: var(--gold); letter-spacing: 0.14em; }
+    .foot .foot-links { display: flex; gap: 18px; }
+    .foot .foot-link { color: var(--gold); text-decoration: none; letter-spacing: 0.14em; border: 1px solid var(--gold); border-radius: 6px; padding: 2px 14px; }
+    .foot .foot-link:hover { background: rgba(240,168,70,0.15); }
   </style>
 </head>
 <body>
@@ -966,6 +969,7 @@
 
       <footer class="foot">
         <span class="id">LIC EC13013924 · CAC1823596</span>
+        <span class="foot-links"><a class="foot-link" href="https://sharma-permits.sharma-crew.workers.dev" target="_blank" rel="noopener">Permit Board ›</a><a class="foot-link" href="https://sharma-bids.sharma-crew.workers.dev" target="_blank" rel="noopener">Bid Board ›</a></span>
         <span id="foot-right"></span>
       </footer>
     </div>
