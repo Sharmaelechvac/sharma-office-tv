@@ -84,10 +84,39 @@
     .hdr {
       flex: 0 0 auto;
       display: grid;
-      grid-template-columns: auto 1fr auto;
+      grid-template-columns: auto auto minmax(0, 1fr) max-content;
       align-items: center;
-      gap: 28px;
-      min-height: 88px;
+      gap: 20px;
+      min-height: 96px;
+    }
+    .hdr-clock {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-width: 0;
+    }
+    .hdr-clock .clock { font-size: 64px; }
+    .hdr-date { display: flex; flex-direction: column; gap: 2px; }
+    .hdr-date .dow { margin-top: 0; }
+    .hdr-wx {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 14px;
+      min-width: 0;
+      overflow: hidden;
+    }
+    .hdr-wx .temp { font-size: 64px; flex: 0 0 auto; }
+    .hdr-wx .wx-copy { min-width: 0; overflow: hidden; }
+    .hdr-wx .wx-copy .loc { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .hdr-wx .wx-rain {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--mute);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .brand { display: flex; align-items: center; gap: 20px; }
     .logo-chip {
@@ -119,10 +148,15 @@
     }
     .hdr-right {
       display: flex;
-      align-items: center;
-      gap: 20px;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 4px;
       font-family: "IBM Plex Mono", monospace;
+      flex: 0 0 auto;
+      min-width: max-content;
     }
+    .hdr-right .ops, .hdr-right .updated { line-height: 1.1; }
     .ops {
       font-family: "Barlow Semi Condensed", sans-serif;
       font-weight: 700;
@@ -162,14 +196,91 @@
       flex: 1 1 auto;
       min-height: 0;
       display: grid;
-      grid-template-columns: 400px 1fr 500px;
+      grid-template-columns: 430px 1fr 460px;
       gap: 16px;
     }
     .main.targets-2 {
-      grid-template-columns: 320px 1fr 1fr 500px;
+      grid-template-columns: 430px 1fr 1fr 430px;
       gap: 14px;
     }
-    .main.targets-many { grid-template-columns: 340px 1.35fr 440px; }
+    .main.targets-many { grid-template-columns: 430px 1.35fr 420px; }
+
+    .owner {
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      padding: 18px 20px 16px;
+    }
+    .owner .panel-head { margin-bottom: 12px; flex: 0 0 auto; }
+    .owner-list {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .own-day {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 10px 0 2px;
+      flex: 0 0 auto;
+    }
+    .own-day:first-child { margin-top: 0; }
+    .own-item {
+      display: grid;
+      grid-template-columns: 9ch minmax(0, 1fr);
+      column-gap: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(240, 168, 70, 0.12);
+      flex: 0 0 auto;
+    }
+    .own-item:last-child { border-bottom: 0; }
+    .own-item .tm {
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 500;
+      font-size: 28px;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+    .own-item .ttl {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 1.2;
+      min-width: 0;
+    }
+    .own-item .meta {
+      grid-column: 1 / -1;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--mute);
+      line-height: 1.25;
+      margin-top: 2px;
+      min-width: 0;
+    }
+    .own-item.compact { padding: 4px 0; grid-template-columns: 8.5ch minmax(0, 1fr); }
+    .own-item.compact .tm { font-size: 24px; }
+    .own-item.compact .ttl { font-size: 24px; }
+    .own-item.compact .meta { font-size: 22px; }
+    .owner .awaiting {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--mute);
+      line-height: 1.25;
+      margin: auto 0;
+      padding: 12px 0;
+    }
+    .owner .awaiting div { letter-spacing: 0.08em; }
     .targets { display: flex; min-width: 0; min-height: 0; }
     .main.targets-1 .targets,
     .main.targets-0 .targets { flex-direction: column; }
@@ -588,7 +699,21 @@
             <div class="sub">Office command</div>
           </div>
         </div>
-        <div></div>
+        <div class="hdr-clock">
+          <div class="clock" id="clock">--:--<span class="ampm"></span></div>
+          <div class="hdr-date">
+            <div class="dow" id="dow"></div>
+            <div class="full-date" id="full-date"></div>
+          </div>
+        </div>
+        <div class="hdr-wx">
+          <div class="temp" id="wx-temp">--°</div>
+          <div class="wx-copy">
+            <div class="cond" id="wx-cond">Orlando</div>
+            <div class="loc" id="wx-loc">Weather</div>
+            <div class="wx-rain" id="rain-line"></div>
+          </div>
+        </div>
         <div class="hdr-right">
           <div class="ops" id="ops">Ops <span class="sep">//</span> Live</div>
           <div class="updated" id="updated">Updated —</div>
@@ -597,38 +722,13 @@
       </header>
 
       <div class="main targets-2" id="main">
-        <section class="hud systems">
+        <section class="hud owner">
           <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
           <div class="panel-head">
-            <h2 class="kicker">Systems</h2>
-            <div class="tag">ORL</div>
+            <h2 class="kicker">Sanjay // Today</h2>
+            <div class="tag" id="owner-tag"></div>
           </div>
-          <div class="clock" id="clock">--:--<span class="ampm"></span></div>
-          <div class="dow" id="dow"></div>
-          <div class="full-date" id="full-date"></div>
-          <div class="wx-row">
-            <div class="temp" id="wx-temp">--°</div>
-            <div class="wx-copy">
-              <div class="cond" id="wx-cond">Orlando</div>
-              <div class="loc" id="wx-loc">Weather</div>
-            </div>
-          </div>
-          <div class="rain">
-            <div class="gauge" id="rain-gauge">
-              <svg viewBox="0 0 168 168" aria-hidden="true">
-                <circle cx="84" cy="84" r="70" fill="none" stroke="rgba(240,168,70,0.18)" stroke-width="8"></circle>
-                <circle id="rain-arc" cx="84" cy="84" r="70" fill="none" stroke="#F0A846" stroke-width="8"
-                  stroke-linecap="butt" stroke-dasharray="0 439.8" transform="rotate(-90 84 84)"
-                  style="filter: drop-shadow(0 0 6px rgba(240,168,70,0.65))"></circle>
-              </svg>
-              <div class="gauge-num"><span class="v" id="rain-pct">--%</span></div>
-            </div>
-            <div class="rain-meta">
-              <div class="lbl">Rain chance</div>
-              <div class="line" id="rain-line"></div>
-              <div class="line mute" id="rain-sub"></div>
-            </div>
-          </div>
+          <div class="owner-list" id="owner-list"></div>
         </section>
 
         <div class="targets" id="targets"></div>
@@ -668,8 +768,6 @@
     const STALE_MS = 2 * 60 * 60 * 1000;
     const TICKER_PX_PER_SEC = 90;
     const LICENSE_RE = /\b(?:LIC\.?\s*)?(?:EC|CAC)\d+\b/i;
-    const PHONE_RE = /(?:\+?1[\s.-]*)?(?:\(?\d{3}\)?[\s.-]+)\d{3}[\s.-]\d{4}\b/g;
-    const EMAIL_RE = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
     const RING_C = 2 * Math.PI * 118;
 
     let lastData = null;
@@ -680,13 +778,7 @@
 
     function stripPII(text) {
       if (text == null) return "";
-      return String(text)
-        .replace(EMAIL_RE, "")
-        .replace(PHONE_RE, "")
-        .replace(/[·|,;]\s*(?=[·|,;]|$)/g, "")
-        .replace(/\s{2,}/g, " ")
-        .replace(/\s+([,.;])/g, "$1")
-        .trim();
+      return String(text).trim();
     }
 
     function el(tag, cls, text) {
@@ -1094,18 +1186,46 @@
       return String(detail || "").split("·").map((s) => s.trim()).filter((s) => s && !/^\d{1,2}:\d{2}\s*[AP]M$/i.test(s));
     }
 
-    function fitOverflow(container) {
+    function fitOverflow(container, itemSelector) {
+      [...container.querySelectorAll(":scope > .empty.more")].forEach((n) => n.remove());
       const kids = [...container.children];
       kids.forEach((n) => { n.style.display = ""; });
-      let hidden = 0;
-      for (let i = kids.length - 1; i >= 0; i--) {
-        if (container.scrollHeight <= container.clientHeight + 1) break;
-        kids[i].style.display = "none";
-        hidden++;
+      let hiddenItems = 0;
+      const isItem = (n) => itemSelector ? n.matches(itemSelector) : true;
+      const hideOrphanHeaders = () => {
+        const nodes = [...container.children];
+        for (let i = 0; i < nodes.length; i++) {
+          if (!nodes[i].classList.contains("own-day") || nodes[i].style.display === "none") continue;
+          let has = false;
+          for (let j = i + 1; j < nodes.length; j++) {
+            if (nodes[j].classList.contains("own-day") || nodes[j].classList.contains("more")) break;
+            if (nodes[j].style.display !== "none") { has = true; break; }
+          }
+          if (!has) nodes[i].style.display = "none";
+        }
+      };
+      const hideFromEnd = () => {
+        const visible = [...container.children].filter((n) => n.style.display !== "none" && !n.classList.contains("more"));
+        for (let i = visible.length - 1; i >= 0; i--) {
+          const node = visible[i];
+          node.style.display = "none";
+          if (isItem(node)) hiddenItems++;
+          return true;
+        }
+        return false;
+      };
+      while (container.scrollHeight > container.clientHeight + 1) {
+        if (!hideFromEnd()) break;
       }
-      if (hidden) {
-        const n = el("div", "empty", "+" + hidden + " more");
+      hideOrphanHeaders();
+      if (hiddenItems) {
+        const n = el("div", "empty more", "+" + hiddenItems + " more");
         container.appendChild(n);
+        while (container.scrollHeight > container.clientHeight + 1) {
+          if (!hideFromEnd()) break;
+          hideOrphanHeaders();
+          n.textContent = "+" + hiddenItems + " more";
+        }
       }
     }
 
@@ -1271,11 +1391,112 @@
       );
     }
 
+
+    function shiftISO(iso, days) {
+      const [y, m, d] = iso.split("-").map(Number);
+      const dt = new Date(y, m - 1, d + days, 12);
+      return dt.getFullYear() + "-" + String(dt.getMonth() + 1).padStart(2, "0") + "-" + String(dt.getDate()).padStart(2, "0");
+    }
+
+    function extractTime(text) {
+      const m = String(text || "").match(/\b(\d{1,2}:\d{2}\s*[AP]M)\b/i);
+      return m ? m[1].replace(/\s+/g, " ").replace(/am/i, "AM").replace(/pm/i, "PM") : "";
+    }
+
+    function timeSortKey(time) {
+      const t = String(time || "").match(/(\d{1,2}):(\d{2})\s*([AP]M)/i);
+      if (!t) return -1;
+      let h = parseInt(t[1], 10) % 12;
+      if (/pm/i.test(t[3])) h += 12;
+      return h * 60 + parseInt(t[2], 10);
+    }
+
+    function normalizeOwnerItem(raw, fallbackDate) {
+      if (!raw) return null;
+      if (typeof raw === "string") raw = { title: raw };
+      const date = parseLooseDate(raw.date || raw.day || "") || fallbackDate || null;
+      const title = stripPII(raw.title || raw.name || raw.event || raw.project || "");
+      const location = stripPII(raw.location || raw.place || raw.where || raw.address || "");
+      const notes = stripPII(raw.notes || raw.note || raw.detail || raw.details || "");
+      const phone = stripPII(raw.phone || raw.cell || raw.tel || raw.mobile || "");
+      let time = stripPII(raw.time || raw.when || raw.start || "");
+      if (!time) time = extractTime(title) || extractTime(notes) || extractTime(location);
+      if (!title && !time && !location && !notes && !phone) return null;
+      return { date, time, title, location, notes, phone };
+    }
+
+    function collectOwnerSchedule(data) {
+      const items = [];
+      const rawList = data && (data.mySchedule || data.my_schedule || data.ownerSchedule);
+      if (Array.isArray(rawList) && rawList.length) {
+        for (const raw of rawList) {
+          const it = normalizeOwnerItem(raw, null);
+          if (it) items.push(it);
+        }
+      } else {
+        const tasks = (data && data.tasks) || {};
+        const today = nyISO(new Date());
+        for (let i = 0; i <= 2; i++) {
+          const d = shiftISO(today, i);
+          for (const raw of (tasks[d] || [])) {
+            const it = normalizeOwnerItem(raw, d);
+            if (it) items.push(it);
+          }
+        }
+      }
+      const today = nyISO(new Date());
+      const last = shiftISO(today, 2);
+      return items
+        .filter((it) => it.date && it.date >= today && it.date <= last)
+        .sort((a, b) => String(a.date).localeCompare(String(b.date)) || timeSortKey(a.time) - timeSortKey(b.time));
+    }
+
+    function renderOwnerItem(it, compact) {
+      const row = el("div", compact ? "own-item compact" : "own-item");
+      if (it.time) row.append(el("div", "tm", it.time));
+      if (it.title) row.append(el("div", "ttl", it.title));
+      const bits = compact
+        ? [it.location, it.phone].filter(Boolean)
+        : [it.location, it.notes, it.phone].filter(Boolean);
+      if (bits.length) row.append(el("div", "meta", bits.join(" · ")));
+      return row;
+    }
+
+    function renderOwnerSchedule(data) {
+      const list = document.getElementById("owner-list");
+      const tag = document.getElementById("owner-tag");
+      const items = collectOwnerSchedule(data);
+      list.replaceChildren();
+      if (!items.length) {
+        if (tag) tag.textContent = "";
+        const a = el("div", "awaiting");
+        a.append(el("div", "", "Awaiting sync"), el("div", "", "from My Day"));
+        list.append(a);
+        return;
+      }
+      const today = nyISO(new Date());
+      const byDay = {};
+      for (const it of items) {
+        (byDay[it.date] || (byDay[it.date] = [])).push(it);
+      }
+      const days = Object.keys(byDay).sort();
+      if (tag) tag.textContent = items.length === 1 ? "1 item" : items.length + " items";
+      for (const day of days) {
+        const compact = day !== today;
+        if (day !== today) list.append(el("div", "own-day", shortDateLabel(day, day)));
+        for (const it of byDay[day]) list.append(renderOwnerItem(it, compact));
+      }
+      const refit = () => { if (document.getElementById("owner-list") === list) fitOverflow(list, ".own-item"); };
+      requestAnimationFrame(refit);
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(refit);
+    }
+
     function renderAll(data) {
       lastData = data;
       lastUpdatedAt = firstTimestamp(data);
       renderTargets(data);
       renderSchedule(data);
+      renderOwnerSchedule(data);
       renderTicker(data);
       stampFreshness();
     }
@@ -1348,17 +1569,11 @@
         document.getElementById("wx-cond").textContent = wmoText(j.current.weather_code);
         const nowP = j.current.precipitation_probability;
         const loc = document.getElementById("wx-loc");
-        loc.replaceChildren(document.createTextNode("Orlando"));
-        if (nowP != null) loc.append(el("span", "wx-nowp", Math.round(nowP) + "%"));
+        loc.textContent = nowP != null ? "Orlando · " + Math.round(nowP) + "%" : "Orlando";
         const hour = Number(new Intl.DateTimeFormat("en-US", { timeZone: TZ, hour: "numeric", hourCycle: "h23" }).format(new Date()));
         const rain = rainSummary(j.hourly, hour);
-        const C = 2 * Math.PI * 70;
-        const arc = document.getElementById("rain-arc");
-        const drawn = Math.max(0, Math.min(1, (rain.peak || 0) / 100)) * C;
-        arc.setAttribute("stroke-dasharray", drawn.toFixed(1) + " " + C.toFixed(1));
-        document.getElementById("rain-pct").textContent = Math.round(rain.peak || 0) + "%";
-        document.getElementById("rain-line").textContent = rain.line;
-        document.getElementById("rain-sub").textContent = rain.sub;
+        const rainLine = document.getElementById("rain-line");
+        if (rainLine) rainLine.textContent = rain.line || "";
       } catch (e) { /* keep last weather */ }
     }
 
@@ -1400,7 +1615,7 @@
     }
 
     scaleBoard();
-    window.addEventListener("resize", () => { scaleBoard(); if (lastData) { renderTargets(lastData); renderSchedule(lastData); } });
+    window.addEventListener("resize", () => { scaleBoard(); if (lastData) { renderTargets(lastData); renderSchedule(lastData); renderOwnerSchedule(lastData); } });
     tickClock();
     setInterval(tickClock, 1000);
     loadWeather();
