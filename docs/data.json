@@ -4,14 +4,19 @@
  ],
  "news": [
   {
-   "headline": "FLOOD WATCH — NWS Melbourne: Orange, Osceola, Seminole, Brevard & Volusia, Tue 5 PM through Fri 7 PM — 3–6 in. of rain, isolated 8–12 in.",
+   "headline": "FLOOD WATCH — NWS Melbourne: Orange, Osceola, Seminole, Brevard & Volusia, Tue 5 PM through Fri 7 PM — 3–6 in. of rain, isolated 8–12 in.; Flood Warning for St. Johns River near Cocoa and Astor",
    "source": "National Weather Service, Melbourne",
    "date": "2026-11-17"
   },
   {
-   "headline": "Florida home sales fell 10.1% in October; new contracts dropped 15.7%",
-   "source": "Sharma News — Finance",
-   "date": "2026-11-17"
+   "headline": "Florida single-family closed sales fell 10.1% in October to 19,049; median price rose 2.2% to $420,000, new contracts dropped 15.7%",
+   "source": "Momentum Research / Florida housing data",
+   "date": "2026-11-16"
+  },
+  {
+   "headline": "Central Florida new construction: 2,919 active listings across Orange, Seminole, Osceola, Lake & Polk on Nov 16 — Polk most at 1,071, median $333,415",
+   "source": "New Home Guide Orlando",
+   "date": "2026-11-16"
   },
   {
    "headline": "Sarasota County votes Nov 18 on 1,000 more homes at Palmer Ranch East — up to 5,702 homes total",
@@ -19,23 +24,18 @@
    "date": "2026-11-17"
   },
   {
-   "headline": "Florida's 9th-edition building code takes effect Dec 31 — new EV-charging and home battery-storage rules; permit filings expected to surge before the deadline",
-   "source": "Tampa Bay Monthly",
-   "date": "2026-11-16"
-  },
-  {
-   "headline": "HB 803 permit exemption reminder: structural, electrical, plumbing and mechanical work still needs a permit at any price",
-   "source": "Palm Beach County Building Division guidance",
-   "date": "2026-11-16"
-  },
-  {
-   "headline": "Copper settled below $6 on Monday — COMEX $5.9975/lb, down 1.35%",
-   "source": "Sharma News — Finance",
+   "headline": "Florida's 9th-edition building code takes effect Dec 31 — permit application date governs which edition applies; flood documentation and coastal corrosion rules among the changes",
+   "source": "Greenberg Traurig",
    "date": "2026-11-17"
   },
   {
-   "headline": "Fed held rates Oct 28 at 3.75–4.00% (prime 7.00%); next decision Dec 9 — banks tightened lending standards for small firms in the Fed's October survey",
-   "source": "Federal Reserve",
+   "headline": "Copper trading at $5.97/lb Tue, consolidating near $5.88 support — AI data-center and grid-upgrade demand cited as structural driver",
+   "source": "Traders Union",
+   "date": "2026-11-17"
+  },
+  {
+   "headline": "Markets Mon: S&P 500 fell 1.92% to 7,417 and Nasdaq fell 2.49% as the 10-year yield reached 5.15%; Fed held at 3.75–4.00%, October minutes due Wed",
+   "source": "Daily Market Report / Federal Reserve",
    "date": "2026-11-17"
   },
   {
@@ -44,14 +44,14 @@
    "date": "2026-11-16"
   },
   {
-   "headline": "NBA: Magic 115, Celtics 105 — Orlando's 4th straight win, 40-point 4th quarter in Boston; Bane 24 pts (Mon night)",
-   "source": "ESPN / NBA.com",
+   "headline": "NBA Mon: Magic 115, Celtics 105 — Orlando's 4th straight win, Bane 24 pts · Heat 128, Rockets 110 — Miami's 5th straight win",
+   "source": "Associated Press / Scoreboard Roundup",
    "date": "2026-11-16"
   },
   {
-   "headline": "NFL Week 10: Jaguars 40, Titans 23 (Jags 7–2, AFC South leaders) · Colts 24, Dolphins 22 · Bucs 3–6 out of the bye, Mayfield (ankle/foot) one to watch — Week 11 Sun: Jags at Giants, Bucs at Lions, Dolphins at Bills",
-   "source": "Bleacher Report / USA Today",
-   "date": "2026-11-15"
+   "headline": "NFL Week 11 Sun: Jaguars (7–2) at Giants · Buccaneers (3–6) at Lions · Dolphins (1–8) at Bills",
+   "source": "NBC Sports / Sports Illustrated",
+   "date": "2026-11-17"
   }
  ],
  "newBids": [
@@ -165,7 +165,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-17T11:51:10.066960-05:00",
+ "updatedAt": "2026-11-17T11:59:37.752954-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
