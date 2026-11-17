@@ -114,7 +114,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-17T10:13:15.947077-05:00",
+ "updatedAt": "2026-11-17T10:24:10.161610-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -128,7 +128,11 @@
      "detail": "EXJ Root"
     },
     {
-     "title": "Wed 11/18/2026 — 17385 SW 25th Cir — ROUGH ELECTRIC",
+     "title": "Thu 11/19/2026 — 212 Marion Oaks Golf Rd — ROUGH ELECTRIC",
+     "detail": "EXJ Root"
+    },
+    {
+     "title": "Fri 11/20/2026 — 17385 SW 25th Cir — ROUGH ELECTRIC",
      "detail": "EXJ Root"
     }
    ]
