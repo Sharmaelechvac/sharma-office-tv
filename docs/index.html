@@ -332,8 +332,8 @@
     /* Fix: with 3+ targets the main card overflowed upward into the header (2026-11-17) */
     .main.targets-many .targets > .target:not(.target-mini) { justify-content: flex-start; min-height: 0; }
     .main.targets-many .targets > .target:not(.target-mini) .target-name { font-size: 46px; margin: 10px 0 6px; }
-    .main.targets-many .ring-wrap { width: 132px; height: 132px; margin-top: 4px; }
-    .main.targets-many .ring-core .days { font-size: 44px; }
+    .main.targets-many .ring-wrap { width: 112px; height: 112px; margin-top: 2px; }
+    .main.targets-many .ring-core .days { font-size: 38px; }
     .main.targets-many .ring-core .unit { font-size: 18px; }
     .main.targets-many .ring-core .unit-sub { font-size: 13px; }
     .mini-row {
@@ -644,14 +644,14 @@
       display: flex;
       flex-direction: column;
       align-items: stretch;
-      gap: 6px;
-      padding: 8px 0;
+      gap: 2px;
+      padding: 5px 0;
       border-bottom: 1px solid rgba(240, 168, 70, 0.12);
     }
     .week-row:last-child { border-bottom: 0; }
     .week-row .d {
       font-family: "IBM Plex Mono", monospace;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 500;
       color: var(--gold);
       letter-spacing: 0.04em;
@@ -660,18 +660,18 @@
       align-items: baseline;
       gap: 16px;
     }
-    .week-row .d .tm { display: inline; color: var(--mute); font-size: 24px; margin-top: 0; }
-    .week-row .t { font-size: 28px; font-weight: 600; line-height: 1.25; }
+    .week-row .d .tm { display: inline; color: var(--mute); font-size: 20px; margin-top: 0; }
+    .week-row .t { font-size: 24px; font-weight: 600; line-height: 1.2; }
     .mission .panel-head .kicker { letter-spacing: 0.12em; }
     .mission .panel-head .tag { white-space: nowrap; }
     .systems .panel-head .tag { white-space: nowrap; }
     .week-row .t span {
       display: block;
       font-family: "IBM Plex Mono", monospace;
-      font-size: 24px;
+      font-size: 19px;
       font-weight: 500;
       color: var(--mute);
-      margin-top: 4px;
+      margin-top: 2px;
     }
     .empty { color: var(--mute); font-size: 28px; padding: 8px 0; }
 

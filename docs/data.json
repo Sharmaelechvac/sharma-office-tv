@@ -1,243 +1,249 @@
 {
- "ticker": [
-  "LIC. EC13013924 · CAC1823596"
- ],
- "news": [
-  {
-   "headline": "FLOOD WATCH — NWS Melbourne: Orange, Osceola, Seminole, Brevard & Volusia, Tue 5 PM through Fri 7 PM — 3–6 in. of rain, isolated 8–12 in.; Flood Warning for St. Johns River near Cocoa and Astor",
-   "source": "National Weather Service, Melbourne",
-   "date": "2026-11-17"
-  },
-  {
-   "headline": "Florida single-family closed sales fell 10.1% in October to 19,049; median price rose 2.2% to $420,000, new contracts dropped 15.7%",
-   "source": "Momentum Research / Florida housing data",
-   "date": "2026-11-16"
-  },
-  {
-   "headline": "Central Florida new construction: 2,919 active listings across Orange, Seminole, Osceola, Lake & Polk on Nov 16 — Polk most at 1,071, median $333,415",
-   "source": "New Home Guide Orlando",
-   "date": "2026-11-16"
-  },
-  {
-   "headline": "Sarasota County votes Nov 18 on 1,000 more homes at Palmer Ranch East — up to 5,702 homes total",
-   "source": "Sarasota Herald-Tribune",
-   "date": "2026-11-17"
-  },
-  {
-   "headline": "Florida's 9th-edition building code takes effect Dec 31 — permit application date governs which edition applies; flood documentation and coastal corrosion rules among the changes",
-   "source": "Greenberg Traurig",
-   "date": "2026-11-17"
-  },
-  {
-   "headline": "Copper trading at $5.97/lb Tue, consolidating near $5.88 support — AI data-center and grid-upgrade demand cited as structural driver",
-   "source": "Traders Union",
-   "date": "2026-11-17"
-  },
-  {
-   "headline": "Markets Mon: S&P 500 fell 1.92% to 7,417 and Nasdaq fell 2.49% as the 10-year yield reached 5.15%; Fed held at 3.75–4.00%, October minutes due Wed",
-   "source": "Daily Market Report / Federal Reserve",
-   "date": "2026-11-17"
-  },
-  {
-   "headline": "Florida workers' comp: OIR approved NCCI's −7.4% average rate cut for new and renewal policies from Jan 1, 2027",
-   "source": "Florida Office of Insurance Regulation",
-   "date": "2026-11-16"
-  },
-  {
-   "headline": "NBA Mon: Magic 115, Celtics 105 — Orlando's 4th straight win, Bane 24 pts · Heat 128, Rockets 110 — Miami's 5th straight win",
-   "source": "Associated Press / Scoreboard Roundup",
-   "date": "2026-11-16"
-  },
-  {
-   "headline": "NFL Week 11 Sun: Jaguars (7–2) at Giants · Buccaneers (3–6) at Lions · Dolphins (1–8) at Bills",
-   "source": "NBC Sports / Sports Illustrated",
-   "date": "2026-11-17"
-  }
- ],
- "newBids": [
-  {
-   "date": "2026-11-17",
-   "project": "Burrito Guyz Project",
-   "from": "S.A Casey Construction, Inc.",
-   "received": "Tue 8:23 AM"
-  },
-  {
-   "date": "2026-11-16",
-   "project": "Academy Sports Bartow, FL",
-   "from": "Horizon Retail Construction",
-   "received": "Mon 5:27 PM"
-  },
-  {
-   "date": "2026-11-16",
-   "project": "Lake Alfred Police Evidence Facility - ITB 2026-10",
-   "from": "SEMCO Construction, Inc.",
-   "received": "Mon 3:42 PM"
-  },
-  {
-   "date": "2026-11-16",
-   "project": "Presbyterian Homes — Port Charlotte (Apartments & Maint. Bldgs)",
-   "from": "Chris-Tel Construction (SmartBidNet)",
-   "received": "Bid due Fri Dec 18, 2026 5:00 PM"
-  },
-  {
-   "date": "2026-11-16",
-   "project": "Advanced Auto Parts — St. Augustine",
-   "from": "Park Eleazer Construction",
-   "received": "Bid due Thu Dec 3, 2026 noon"
-  },
-  {
-   "date": "2026-11-13",
-   "project": "Antle Project",
-   "from": "NOK Construction",
-   "received": "Fri 11:35 AM"
-  },
-  {
-   "date": "2026-11-13",
-   "project": "Rogers Behavioral Health",
-   "from": "Landry/French Construction",
-   "received": "Fri 10:30 AM"
-  },
-  {
-   "date": "2026-11-13",
-   "project": "Dollar Tree - Pinellas Park, FL #11474",
-   "from": "Summit General Contractors",
-   "received": "Fri 10:11 AM"
-  },
-  {
-   "date": "2026-11-12",
-   "project": "Day Dock at Riverwalk Park",
-   "from": "Saboungi Construction",
-   "received": "Thu 4:23 PM"
-  }
- ],
- "tasks": {
-  "2026-11-10": [
-   {
-    "detail": "132 Balmy Coast Rd, Groveland · NOK Construction",
-    "title": "Glaze — bathroom rough-in"
-   }
+  "ticker": [
+    "LIC. EC13013924 · CAC1823596"
   ],
-  "2026-11-11": [
-   {
-    "detail": "2107 Corena Dr project",
-    "title": "Call Billy Hastings"
-   },
-   {
-    "detail": "",
-    "title": "Roberto at Lake Nona"
-   },
-   {
-    "detail": "Sebring townhouses open item",
-    "title": "Call Z Brothers — exhaust fans"
-   }
+  "news": [
+    {
+      "headline": "FLOOD WATCH — NWS Melbourne: Orange, Osceola, Seminole, Brevard & Volusia, Tue 5 PM through Fri 7 PM — 3–6 in. of rain, isolated 8–12 in.; Flood Warning for St. Johns River near Cocoa and Astor",
+      "source": "National Weather Service, Melbourne",
+      "date": "2026-11-17"
+    },
+    {
+      "headline": "Florida single-family closed sales fell 10.1% in October to 19,049; median price rose 2.2% to $420,000, new contracts dropped 15.7%",
+      "source": "Momentum Research / Florida housing data",
+      "date": "2026-11-16"
+    },
+    {
+      "headline": "Central Florida new construction: 2,919 active listings across Orange, Seminole, Osceola, Lake & Polk on Nov 16 — Polk most at 1,071, median $333,415",
+      "source": "New Home Guide Orlando",
+      "date": "2026-11-16"
+    },
+    {
+      "headline": "Sarasota County votes Nov 18 on 1,000 more homes at Palmer Ranch East — up to 5,702 homes total",
+      "source": "Sarasota Herald-Tribune",
+      "date": "2026-11-17"
+    },
+    {
+      "headline": "Florida's 9th-edition building code takes effect Dec 31 — permit application date governs which edition applies; flood documentation and coastal corrosion rules among the changes",
+      "source": "Greenberg Traurig",
+      "date": "2026-11-17"
+    },
+    {
+      "headline": "Copper trading at $5.97/lb Tue, consolidating near $5.88 support — AI data-center and grid-upgrade demand cited as structural driver",
+      "source": "Traders Union",
+      "date": "2026-11-17"
+    },
+    {
+      "headline": "Markets Mon: S&P 500 fell 1.92% to 7,417 and Nasdaq fell 2.49% as the 10-year yield reached 5.15%; Fed held at 3.75–4.00%, October minutes due Wed",
+      "source": "Daily Market Report / Federal Reserve",
+      "date": "2026-11-17"
+    },
+    {
+      "headline": "Florida workers' comp: OIR approved NCCI's −7.4% average rate cut for new and renewal policies from Jan 1, 2027",
+      "source": "Florida Office of Insurance Regulation",
+      "date": "2026-11-16"
+    },
+    {
+      "headline": "NBA Mon: Magic 115, Celtics 105 — Orlando's 4th straight win, Bane 24 pts · Heat 128, Rockets 110 — Miami's 5th straight win",
+      "source": "Associated Press / Scoreboard Roundup",
+      "date": "2026-11-16"
+    },
+    {
+      "headline": "NFL Week 11 Sun: Jaguars (7–2) at Giants · Buccaneers (3–6) at Lions · Dolphins (1–8) at Bills",
+      "source": "NBC Sports / Sports Illustrated",
+      "date": "2026-11-17"
+    }
   ],
-  "2026-11-12": [
-   {
-    "detail": "3:00–4:00 PM · Lot 69, Bella Collina, 16051 Vetta Dr · HVAC only · Tommy's cell (321) 432-1706",
-    "title": "House walk with Tommy Logan — Logan Construction"
-   }
+  "newBids": [
+    {
+      "date": "2026-11-17",
+      "project": "Jessamine Project",
+      "from": "NOK Construction",
+      "received": "Tue 11/17"
+    },
+    {
+      "date": "2026-11-17",
+      "project": "Burrito Guyz Project",
+      "from": "S.A Casey Construction, Inc.",
+      "received": "Tue 8:23 AM"
+    },
+    {
+      "date": "2026-11-16",
+      "project": "Academy Sports Bartow, FL",
+      "from": "Horizon Retail Construction",
+      "received": "Mon 5:27 PM"
+    },
+    {
+      "date": "2026-11-16",
+      "project": "Lake Alfred Police Evidence Facility - ITB 2026-10",
+      "from": "SEMCO Construction, Inc.",
+      "received": "Mon 3:42 PM"
+    },
+    {
+      "date": "2026-11-16",
+      "project": "Presbyterian Homes — Port Charlotte (Apartments & Maint. Bldgs)",
+      "from": "Chris-Tel Construction (SmartBidNet)",
+      "received": "Bid due Fri Dec 18, 2026 5:00 PM"
+    },
+    {
+      "date": "2026-11-16",
+      "project": "Advanced Auto Parts — St. Augustine",
+      "from": "Park Eleazer Construction",
+      "received": "Bid due Thu Dec 3, 2026 noon"
+    },
+    {
+      "date": "2026-11-13",
+      "project": "Antle Project",
+      "from": "NOK Construction",
+      "received": "Fri 11:35 AM"
+    },
+    {
+      "date": "2026-11-13",
+      "project": "Rogers Behavioral Health",
+      "from": "Landry/French Construction",
+      "received": "Fri 10:30 AM"
+    },
+    {
+      "date": "2026-11-13",
+      "project": "Dollar Tree - Pinellas Park, FL #11474",
+      "from": "Summit General Contractors",
+      "received": "Fri 10:11 AM"
+    },
+    {
+      "date": "2026-11-12",
+      "project": "Day Dock at Riverwalk Park",
+      "from": "Saboungi Construction",
+      "received": "Thu 4:23 PM"
+    }
   ],
-  "2026-11-16": [
-   {
-    "detail": "9:00 AM · county inspection today · BR Ross Construction",
-    "title": "178 Fisher Loop — electrical underground"
-   },
-   {
-    "detail": "Z Brothers Construction · Santiago Plan 2118 · after Fisher Loop",
-    "title": "Underground — 614 Marion Oaks Trail, Ocala"
-   },
-   {
-    "detail": "EXJ Root · TUG inspection Tue 11/17 · #261557-2026",
-    "title": "TUG install — 14065 SW 48th Ave, Ocala"
-   },
-   {
-    "detail": "EXJ Root · TUG inspection Tue 11/17 · #261558-2026",
-    "title": "TUG install — 16321 SW 26th Terrace Rd, Ocala"
-   },
-   {
-    "detail": "EXJ Root · TUG inspection Tue 11/17 · #261556-2026",
-    "title": "TUG install — 601 Marion Oaks Golf Rd, Ocala"
-   },
-   {
-    "title": "Walk — W Eunice Dr, Citrus Springs",
-    "detail": "Z Brothers · end of day · house number to confirm"
-   }
+  "tasks": {
+    "2026-11-10": [
+      {
+        "detail": "132 Balmy Coast Rd, Groveland · NOK Construction",
+        "title": "Glaze — bathroom rough-in"
+      }
+    ],
+    "2026-11-11": [
+      {
+        "detail": "2107 Corena Dr project",
+        "title": "Call Billy Hastings"
+      },
+      {
+        "detail": "",
+        "title": "Roberto at Lake Nona"
+      },
+      {
+        "detail": "Sebring townhouses open item",
+        "title": "Call Z Brothers — exhaust fans"
+      }
+    ],
+    "2026-11-12": [
+      {
+        "detail": "3:00–4:00 PM · Lot 69, Bella Collina, 16051 Vetta Dr · HVAC only · Tommy's cell (321) 432-1706",
+        "title": "House walk with Tommy Logan — Logan Construction"
+      }
+    ],
+    "2026-11-16": [
+      {
+        "detail": "9:00 AM · county inspection today · BR Ross Construction",
+        "title": "178 Fisher Loop — electrical underground"
+      },
+      {
+        "detail": "Z Brothers Construction · Santiago Plan 2118 · after Fisher Loop",
+        "title": "Underground — 614 Marion Oaks Trail, Ocala"
+      },
+      {
+        "detail": "EXJ Root · TUG inspection Tue 11/17 · #261557-2026",
+        "title": "TUG install — 14065 SW 48th Ave, Ocala"
+      },
+      {
+        "detail": "EXJ Root · TUG inspection Tue 11/17 · #261558-2026",
+        "title": "TUG install — 16321 SW 26th Terrace Rd, Ocala"
+      },
+      {
+        "detail": "EXJ Root · TUG inspection Tue 11/17 · #261556-2026",
+        "title": "TUG install — 601 Marion Oaks Golf Rd, Ocala"
+      },
+      {
+        "title": "Walk — W Eunice Dr, Citrus Springs",
+        "detail": "Z Brothers · end of day · house number to confirm"
+      }
+    ]
+  },
+  "toSchedule": [],
+  "updatedAt": "2026-11-17T11:59:37.752954-05:00",
+  "toScheduleGroups": [
+    {
+      "heading": "EXJ ROOT ROUGHS",
+      "items": [
+        {
+          "title": "Tue 11/17/2026 — 212 Marion Oaks Golf Rd — ROUGH MECHANICAL (HVAC)",
+          "detail": "EXJ Root"
+        },
+        {
+          "title": "Wed 11/18/2026 — 17385 SW 25th Cir — ROUGH MECHANICAL (HVAC)",
+          "detail": "EXJ Root"
+        },
+        {
+          "title": "Thu 11/19/2026 — 212 Marion Oaks Golf Rd — ROUGH ELECTRIC",
+          "detail": "EXJ Root"
+        },
+        {
+          "title": "Fri 11/20/2026 — 17385 SW 25th Cir — ROUGH ELECTRIC",
+          "detail": "EXJ Root"
+        }
+      ]
+    },
+    {
+      "heading": "EXJ ROOT TUGS",
+      "items": [
+        {
+          "title": "Fri 11/20/2026 — 498 Marion Oaks Golf Rd — TUG INSTALLATION",
+          "detail": "EXJ Root · Morgan Weston · 10:00 AM"
+        }
+      ]
+    },
+    {
+      "heading": "BELLA COLLINA — LOGAN",
+      "items": [
+        {
+          "title": "Thu 11/19/2026 — Lot 69, 16051 Vetta Dr — HVAC ROUGH",
+          "detail": "Logan Construction · HVAC"
+        }
+      ]
+    }
+  ],
+  "mySchedule": [
+    {
+      "date": "2026-11-17",
+      "time": "8:00 AM",
+      "title": "BNI Networking",
+      "location": "Winter Park Golf Course, Winter Park, FL"
+    },
+    {
+      "date": "2026-11-17",
+      "time": "1:30 PM",
+      "title": "Lake Nona",
+      "notes": "Field block after BNI (per My Day)"
+    },
+    {
+      "date": "2026-11-19",
+      "time": "All day",
+      "title": "DNR El Prado – Underground electrical",
+      "location": "4008 W El Prado Blvd, Tampa, FL 33629",
+      "notes": "Mukherjee Residence (DNR Contracting). Underground electrical incl. Ufer bond."
+    },
+    {
+      "date": "2026-11-20",
+      "time": "10:00 AM",
+      "title": "TUG Installation — 498 Marion Oaks Golf Rd (EXJ Root)",
+      "location": "498 Marion Oaks Golf Rd, Ocala, FL 34473",
+      "notes": "Service: TUG Installation. Parcel 8005-0767-22."
+    },
+    {
+      "date": "2026-11-21",
+      "time": "All day",
+      "title": "Momma Sharma's Birthday"
+    }
   ]
- },
- "toSchedule": [],
- "updatedAt": "2026-11-17T11:59:37.752954-05:00",
- "toScheduleGroups": [
-  {
-   "heading": "EXJ ROOT ROUGHS",
-   "items": [
-    {
-     "title": "Tue 11/17/2026 — 212 Marion Oaks Golf Rd — ROUGH MECHANICAL (HVAC)",
-     "detail": "EXJ Root"
-    },
-    {
-     "title": "Wed 11/18/2026 — 17385 SW 25th Cir — ROUGH MECHANICAL (HVAC)",
-     "detail": "EXJ Root"
-    },
-    {
-     "title": "Thu 11/19/2026 — 212 Marion Oaks Golf Rd — ROUGH ELECTRIC",
-     "detail": "EXJ Root"
-    },
-    {
-     "title": "Fri 11/20/2026 — 17385 SW 25th Cir — ROUGH ELECTRIC",
-     "detail": "EXJ Root"
-    }
-   ]
-  },
-  {
-   "heading": "EXJ ROOT TUGS",
-   "items": [
-    {
-     "title": "Fri 11/20/2026 — 498 Marion Oaks Golf Rd — TUG INSTALLATION",
-     "detail": "EXJ Root · Morgan Weston · 10:00 AM"
-    }
-   ]
-  },
-  {
-   "heading": "BELLA COLLINA — LOGAN",
-   "items": [
-    {
-     "title": "Thu 11/19/2026 — Lot 69, 16051 Vetta Dr — HVAC ROUGH",
-     "detail": "Logan Construction · HVAC"
-    }
-   ]
-  }
- ],
- "mySchedule": [
-  {
-   "date": "2026-11-17",
-   "time": "8:00 AM",
-   "title": "BNI Networking",
-   "location": "Winter Park Golf Course, Winter Park, FL"
-  },
-  {
-   "date": "2026-11-17",
-   "time": "1:30 PM",
-   "title": "Lake Nona",
-   "notes": "Field block after BNI (per My Day)"
-  },
-  {
-   "date": "2026-11-19",
-   "time": "All day",
-   "title": "DNR El Prado – Underground electrical",
-   "location": "4008 W El Prado Blvd, Tampa, FL 33629",
-   "notes": "Mukherjee Residence (DNR Contracting). Underground electrical incl. Ufer bond."
-  },
-  {
-   "date": "2026-11-20",
-   "time": "10:00 AM",
-   "title": "TUG Installation — 498 Marion Oaks Golf Rd (EXJ Root)",
-   "location": "498 Marion Oaks Golf Rd, Ocala, FL 34473",
-   "notes": "Service: TUG Installation. Parcel 8005-0767-22."
-  },
-  {
-   "date": "2026-11-21",
-   "time": "All day",
-   "title": "Momma Sharma's Birthday"
-  }
- ]
 }
