@@ -804,6 +804,111 @@
       font-weight: 500;
       color: var(--mute);
     }
+    .insp-band {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: stretch;
+      min-height: 142px;
+      padding: 0;
+      overflow: hidden;
+    }
+    .insp-head {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+      background: rgba(240, 168, 70, 0.10);
+      border-right: 1px solid rgba(240, 168, 70, 0.32);
+      padding: 12px 22px;
+      width: 210px;
+    }
+    .insp-head .kicker {
+      color: var(--gold);
+      font-size: 27px;
+      letter-spacing: 0.14em;
+      line-height: 1.08;
+      white-space: normal;
+    }
+    .insp-head .tag {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mute);
+    }
+    .insp-list {
+      flex: 1 1 auto;
+      min-width: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: stretch;
+      padding: 10px 18px;
+    }
+    .insp-item {
+      flex: 1 1 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2px;
+      padding: 4px 16px;
+      border-left: 1px solid rgba(240, 168, 70, 0.18);
+    }
+    .insp-item:first-child { border-left: 0; padding-left: 4px; }
+    .insp-item .tm {
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 600;
+      font-size: 23px;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      line-height: 1.15;
+      white-space: nowrap;
+    }
+    .insp-item .addr {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 29px;
+      line-height: 1.05;
+      letter-spacing: 0.01em;
+    }
+    .insp-item .type {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--gold);
+      line-height: 1.15;
+    }
+    .insp-item .meta {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 21px;
+      font-weight: 500;
+      color: var(--mute);
+      line-height: 1.25;
+    }
+    .insp-item .status {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+      line-height: 1.15;
+    }
+    .insp-item .status.partial, .insp-item .status.done { color: var(--gold); }
+    .insp-empty {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      line-height: 1.1;
+      align-self: center;
+    }
     .comms {
       flex: 0 0 auto;
       display: flex;
@@ -959,6 +1064,15 @@
           <div class="tag" id="today-tag"></div>
         </div>
         <div class="today-list" id="today-list"></div>
+      </section>
+
+      <section class="hud insp-band" id="today-inspections">
+        <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+        <div class="insp-head">
+          <h2 class="kicker">TODAY'S INSPECTIONS</h2>
+          <div class="tag" id="insp-tag"></div>
+        </div>
+        <div class="insp-list" id="insp-list"></div>
       </section>
 
       <div class="hud comms" id="ticker">
@@ -1510,6 +1624,49 @@
       fitOverflow(weekList);
     }
 
+    function collectInspections(data) {
+      const raw = data && data.todayInspections;
+      if (!raw) return { date: "", entries: [] };
+      if (Array.isArray(raw)) return { date: "", entries: raw };
+      return { date: raw.date || "", entries: Array.isArray(raw.entries) ? raw.entries : [] };
+    }
+
+    function renderInspectionItem(it) {
+      const row = el("div", "insp-item");
+      if (it.time) row.append(el("div", "tm", it.time));
+      row.append(el("div", "addr", it.title || it.address || "Inspection"));
+      const type = it.type || it.trade || "";
+      if (type) row.append(el("div", "type", type));
+      const meta = [it.number || it.inspectionNumber || "", it.inspector ? "Insp. " + it.inspector : "", it.inspectorPhone || it.phone || ""].filter(Boolean).join(" \u00B7 ");
+      if (meta) row.append(el("div", "meta", meta));
+      if (it.notes) row.append(el("div", "meta", it.notes));
+      if (it.status) {
+        const cls = /partial/i.test(it.status) ? "status partial" : (/approv|pass/i.test(it.status) ? "status done" : "status");
+        row.append(el("div", cls, it.status));
+      }
+      return row;
+    }
+
+    function renderInspections(data) {
+      const list = document.getElementById("insp-list");
+      if (!list) return;
+      const tag = document.getElementById("insp-tag");
+      const wrap = collectInspections(data);
+      const entries = wrap.entries.slice().sort((a, b) => timeSortKey(a.time || "") - timeSortKey(b.time || ""));
+      list.replaceChildren();
+      if (tag) {
+        const bits = [];
+        if (wrap.date) bits.push(shortDateLabel(wrap.date, wrap.date));
+        bits.push(entries.length === 1 ? "1 inspection" : entries.length + " inspections");
+        tag.textContent = bits.join(" \u00B7 ");
+      }
+      if (!entries.length) {
+        list.append(el("div", "insp-empty", "No inspections today"));
+        return;
+      }
+      for (const it of entries) list.append(renderInspectionItem(it));
+    }
+
     function tickerHeadline(n) {
       const raw = typeof n === "string" ? n : (n && n.headline) || "";
       return stripPII(raw);
@@ -1788,6 +1945,7 @@
       renderTargets(data);
       renderSchedule(data);
       renderOwnerSchedule(data);
+      renderInspections(data);
       renderTicker(data);
       stampFreshness();
     }
@@ -1909,10 +2067,10 @@
     if (document.fonts && document.fonts.ready) {
       document.fonts.ready.then(() => {
         scaleBoard();
-        if (lastData) { renderTargets(lastData); renderSchedule(lastData); renderOwnerSchedule(lastData); }
+        if (lastData) { renderTargets(lastData); renderSchedule(lastData); renderOwnerSchedule(lastData); renderInspections(lastData); }
       });
     }
-    window.addEventListener("resize", () => { scaleBoard(); if (lastData) { renderTargets(lastData); renderSchedule(lastData); renderOwnerSchedule(lastData); } });
+    window.addEventListener("resize", () => { scaleBoard(); if (lastData) { renderTargets(lastData); renderSchedule(lastData); renderOwnerSchedule(lastData); renderInspections(lastData); } });
     tickClock();
     setInterval(tickClock, 1000);
     loadWeather();

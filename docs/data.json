@@ -171,7 +171,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-17T11:59:37.752954-05:00",
+  "updatedAt": "2026-11-17T13:07:16.450499-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
@@ -245,5 +245,44 @@
       "time": "All day",
       "title": "Momma Sharma's Birthday"
     }
-  ]
+  ],
+  "todayInspections": {
+    "date": "2026-11-17",
+    "entries": [
+      {
+        "time": "10:59 AM",
+        "title": "178 Fisher Loop, Ocklawaha",
+        "type": "Electrical Underground",
+        "number": "#266804-2026",
+        "inspector": "Douglas Mudge",
+        "inspectorPhone": "(352) 844-6654",
+        "status": "Partial Approval",
+        "notes": "PARTIAL APPROVAL FOR IN-SLAB KITCHEN CONDUIT"
+      },
+      {
+        "time": "4:12 PM",
+        "title": "601 Marion Oaks Golf Rd",
+        "type": "TUG / Preliminary Power Release — Electrical",
+        "number": "#261556-2026",
+        "inspector": "James Calhoun",
+        "status": "Scheduled"
+      },
+      {
+        "time": "4:13 PM",
+        "title": "14065 SW 48th Ave",
+        "type": "TUG / Preliminary Power Release — Electrical",
+        "number": "#261557-2026",
+        "inspector": "James Calhoun",
+        "status": "Scheduled"
+      },
+      {
+        "time": "4:14 PM",
+        "title": "16321 SW 26th Terrace Rd",
+        "type": "TUG / Preliminary Power Release — Electrical",
+        "number": "#261558-2026",
+        "inspector": "James Calhoun",
+        "status": "Scheduled"
+      }
+    ]
+  }
 }
