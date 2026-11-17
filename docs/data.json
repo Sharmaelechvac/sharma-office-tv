@@ -4,53 +4,53 @@
   ],
   "news": [
     {
-      "headline": "FLOOD WATCH — NWS Melbourne: Orange, Osceola, Seminole, Brevard & Volusia, Tue 5 PM through Fri 7 PM — 3–6 in. of rain, isolated 8–12 in.; Flood Warning for St. Johns River near Cocoa and Astor",
+      "headline": "FLOOD WATCH — NWS Melbourne: Orange, Osceola, Seminole, Brevard & Volusia, Tue 5 PM through Fri 7 PM — 3–6 in. of rain, isolated 8–12 in.; St. Johns River near Cocoa at 17.1 ft, major flood stage",
       "source": "National Weather Service, Melbourne",
       "date": "2026-11-17"
     },
     {
-      "headline": "Florida single-family closed sales fell 10.1% in October to 19,049; median price rose 2.2% to $420,000, new contracts dropped 15.7%",
-      "source": "Momentum Research / Florida housing data",
+      "headline": "Florida single-family closed sales fell 10.1% in October to 19,049; median price rose 2.2% to $420,000, new pending sales dropped 15.7%",
+      "source": "Florida Realtors",
       "date": "2026-11-16"
     },
     {
-      "headline": "Central Florida new construction: 2,919 active listings across Orange, Seminole, Osceola, Lake & Polk on Nov 16 — Polk most at 1,071, median $333,415",
-      "source": "New Home Guide Orlando",
-      "date": "2026-11-16"
-    },
-    {
-      "headline": "Sarasota County votes Nov 18 on 1,000 more homes at Palmer Ranch East — up to 5,702 homes total",
+      "headline": "Sarasota County votes Nov 18 on 1,000 more homes at Palmer Ranch East — up to 5,702 homes total, including up to 500 attainable homes",
       "source": "Sarasota Herald-Tribune",
       "date": "2026-11-17"
     },
     {
-      "headline": "Florida's 9th-edition building code takes effect Dec 31 — permit application date governs which edition applies; flood documentation and coastal corrosion rules among the changes",
+      "headline": "Beacon Hill at Princeton opens with 112 workforce housing units in Miami-Dade — described as Florida's first ground-up Live Local Act development to complete",
+      "source": "Florida YIMBY",
+      "date": "2026-11-17"
+    },
+    {
+      "headline": "Florida's 9th-edition building code takes effect Dec 31 — permit application date governs which edition applies; Miami-Dade portal cutoff is 4 PM Dec 30",
       "source": "Greenberg Traurig",
       "date": "2026-11-17"
     },
     {
-      "headline": "Copper trading at $5.97/lb Tue, consolidating near $5.88 support — AI data-center and grid-upgrade demand cited as structural driver",
-      "source": "Traders Union",
+      "headline": "Copper trading near $6.00/lb Tue afternoon, consolidating near $5.88 support — AI data-center and grid-upgrade demand cited as structural driver",
+      "source": "Traders Union / Yahoo Finance",
       "date": "2026-11-17"
     },
     {
-      "headline": "Markets Mon: S&P 500 fell 1.92% to 7,417 and Nasdaq fell 2.49% as the 10-year yield reached 5.15%; Fed held at 3.75–4.00%, October minutes due Wed",
-      "source": "Daily Market Report / Federal Reserve",
+      "headline": "Markets Tue afternoon: S&P 500 down 1.29% to 7,320.95 and Nasdaq down 1.13% at 3:24 PM ET, 10-year yield 5.10%; Fed funds held at 3.75–4.00%, October minutes due Wed",
+      "source": "Pulsafi / Daily Market Report",
       "date": "2026-11-17"
     },
     {
-      "headline": "Florida workers' comp: OIR approved NCCI's −7.4% average rate cut for new and renewal policies from Jan 1, 2027",
+      "headline": "Florida workers' comp: Commissioner Yaworsky approved NCCI's −7.4% average rate cut for new and renewal policies from Jan 1, 2027",
       "source": "Florida Office of Insurance Regulation",
       "date": "2026-11-16"
     },
     {
       "headline": "NBA Mon: Magic 115, Celtics 105 — Orlando's 4th straight win, Bane 24 pts · Heat 128, Rockets 110 — Miami's 5th straight win",
-      "source": "Associated Press / Scoreboard Roundup",
+      "source": "Associated Press",
       "date": "2026-11-16"
     },
     {
-      "headline": "NFL Week 11 Sun: Jaguars (7–2) at Giants · Buccaneers (3–6) at Lions · Dolphins (1–8) at Bills",
-      "source": "NBC Sports / Sports Illustrated",
+      "headline": "NFL Week 11 Sun Nov 22: Jaguars at Giants 4:25 PM · Buccaneers at Lions 1 PM · Dolphins at Bills 1 PM",
+      "source": "Sports Illustrated / NFL Schedule",
       "date": "2026-11-17"
     }
   ],
@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-17T14:49:47.100921-05:00",
+  "updatedAt": "2026-11-17T15:56:33.037139-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
