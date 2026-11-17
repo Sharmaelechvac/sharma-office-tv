@@ -1,11 +1,20 @@
 {
-  "pursuing": ["Antle"],
+  "pursuing": [
+    "Antle"
+  ],
   "targets": [
     {
       "title": "Land Electrical Contract",
       "builder": "Logan Construction",
       "location": "Bella Collina",
       "type": "Contract",
+      "status": "IN PURSUIT"
+    },
+    {
+      "title": "Land Zorn as a builder client",
+      "builder": "Zorn Construction",
+      "location": "Rolling Hills",
+      "type": "Pursuit",
       "status": "IN PURSUIT"
     }
   ]
