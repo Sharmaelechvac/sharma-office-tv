@@ -10,13 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --field: #1a2f61;
-      --panel: #264387;
+      --void: #0b1530;
+      --panel: #1a2f61;
       --gold: #F0A846;
-      --ink: #1d2433;
-      --gray: #5b6478;
-      --line: #dfe4ee;
+      --gold-dim: rgba(240, 168, 70, 0.45);
+      --gold-soft: rgba(240, 168, 70, 0.18);
       --white: #ffffff;
+      --mute: rgba(255, 255, 255, 0.62);
       --safe-x: 96px;
       --safe-y: 54px;
     }
@@ -26,408 +26,632 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
-      background: var(--field);
       color: var(--white);
       font-family: Inter, sans-serif;
       font-size: 28px;
-      font-weight: 400;
       line-height: 1.25;
       -webkit-font-smoothing: antialiased;
+      background: var(--void);
     }
     .stage {
       position: relative;
       width: 100vw;
       height: 100vh;
       overflow: hidden;
-      background: var(--field);
+      background:
+        radial-gradient(ellipse at 50% 42%, #1a2f61 0%, #102044 42%, #0b1530 78%);
     }
+    .stage::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(240, 168, 70, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(240, 168, 70, 0.045) 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+    .stage::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.04) 0,
+        rgba(255, 255, 255, 0.04) 1px,
+        transparent 1px,
+        transparent 4px
+      );
+      -webkit-animation: scan 12s linear infinite;
+      animation: scan 12s linear infinite;
+    }
+    @-webkit-keyframes scan { from { background-position: 0 0; } to { background-position: 0 56px; } }
+    @keyframes scan { from { background-position: 0 0; } to { background-position: 0 56px; } }
+
     .board {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 0; left: 0;
       width: 1920px;
       height: 1080px;
       padding: var(--safe-y) var(--safe-x);
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 16px;
       transform-origin: top left;
     }
-    .chrome { flex: 0 0 auto; display: flex; flex-direction: column; }
-    .top {
-      background: var(--white);
-      color: var(--ink);
+
+    .hdr {
+      flex: 0 0 auto;
       display: grid;
       grid-template-columns: auto 1fr auto;
       align-items: center;
       gap: 28px;
-      padding: 12px 24px;
-      border-radius: 6px 6px 0 0;
+      min-height: 88px;
     }
-    .gold-line { height: 3px; background: var(--gold); border-radius: 0 0 6px 6px; }
-    .logo { height: 80px; width: auto; display: block; }
-    .when { min-width: 0; }
-    .clock {
-      font-family: "IBM Plex Mono", monospace;
-      font-size: 72px;
-      font-weight: 600;
-      line-height: 1;
-      letter-spacing: -0.03em;
-      color: var(--ink);
-    }
-    .clock .ampm {
-      font-size: 28px;
-      font-weight: 500;
-      letter-spacing: 0;
-      margin-left: 10px;
-      color: var(--gray);
-    }
-    .date {
-      margin-top: 4px;
-      font-size: 28px;
-      font-weight: 500;
-      color: var(--gray);
-      line-height: 1.1;
-    }
-    .weather { display: flex; align-items: center; gap: 16px; text-align: right; }
-    .temp {
-      font-family: "IBM Plex Mono", monospace;
-      font-size: 64px;
-      font-weight: 600;
-      line-height: 1;
-      letter-spacing: -0.03em;
-      color: var(--ink);
-    }
-    .wx-copy { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
-    .wx-now { font-size: 28px; font-weight: 600; color: var(--ink); line-height: 1.15; }
-    .wx-rain { font-size: 28px; font-weight: 400; color: var(--gray); line-height: 1.15; }
-    .main {
-      flex: 1 1 auto;
-      min-height: 0;
+    .brand { display: flex; align-items: center; gap: 20px; }
+    .logo-chip {
+      background: #fff;
+      border-radius: 4px;
+      padding: 8px 12px;
+      height: 68px;
       display: flex;
-      flex-direction: column;
-      gap: 12px;
+      align-items: center;
     }
-    .opt3b-grid {
-      flex: 1 1 auto;
-      min-height: 0;
-      display: grid;
-      grid-template-columns: 1.25fr 1fr;
-      gap: 16px;
-    }
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      min-width: 0;
-      min-height: 0;
-    }
-    h2, .kicker {
+    .logo-chip img { height: 52px; width: auto; display: block; }
+    .brand-meta { display: flex; flex-direction: column; gap: 2px; }
+    .kicker {
       font-family: "Barlow Semi Condensed", sans-serif;
       font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
       margin: 0;
-      letter-spacing: 0.06em;
+      line-height: 1;
+    }
+    .brand-meta .kicker { font-size: 28px; color: var(--white); letter-spacing: 0.16em; }
+    .brand-meta .sub {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--gold);
+      letter-spacing: 0.14em;
       text-transform: uppercase;
     }
-    .kicker { font-size: 24px; color: var(--gold); letter-spacing: 0.08em; line-height: 1; }
-    h2 { font-size: 36px; color: var(--white); line-height: 1; }
-    .bids-hero { display: flex; flex-direction: column; gap: 8px; padding: 12px 16px 12px; }
-    .bids-hero .section-head {
+    .hdr-right {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
       gap: 20px;
-      flex-wrap: nowrap;
-      min-height: 68px;
-      overflow: visible;
-    }
-    .bids-hero .num {
       font-family: "IBM Plex Mono", monospace;
-      font-weight: 600;
-      font-size: 64px;
-      color: var(--gold);
-      line-height: 64px;
-      letter-spacing: -0.04em;
-      overflow: visible;
     }
-    .sort-label {
-      font-size: 24px;
-      color: var(--line);
-      line-height: 1.2;
-      margin: 0 0 0 auto;
-      text-align: right;
-      white-space: nowrap;
-    }
-    .bid-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4px 10px;
-      flex: 1 1 auto;
-      min-height: 0;
-      align-content: start;
-      overflow: hidden;
-    }
-    .bid-list.hero-one,
-    .bid-list.is-empty {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      grid-template-columns: none;
-    }
-    .bid-list.is-empty .empty {
-      font-size: 32px;
-      padding: 8px 4px;
-    }
-    .bid.featured {
-      flex: 1 1 auto;
-      justify-content: center;
-      padding: 40px 48px;
-      gap: 14px;
-      border-radius: 6px;
-    }
-    .bid.featured .name {
-      font-family: "Barlow Semi Condensed", sans-serif;
-      font-weight: 700;
-      font-size: 64px;
-      line-height: 1.05;
-      letter-spacing: -0.02em;
-    }
-    .bid.featured .from { font-size: 32px; line-height: 1.25; }
-    .bid.featured .when { font-size: 32px; line-height: 1.25; }
-    .bid {
-      display: flex;
-      flex-direction: column;
-      gap: 1px;
-      padding: 4px 12px;
-      background: var(--field);
-      border: 1px solid var(--line);
-      border-radius: 4px;
-      min-width: 0;
-    }
-    .bid .name { font-weight: 600; font-size: 28px; line-height: 1.15; }
-    .bid .from { font-size: 24px; line-height: 1.2; color: var(--line); }
-    .bid .when {
-      font-family: "IBM Plex Mono", monospace;
-      font-size: 24px;
-      font-weight: 500;
-      color: var(--line);
-      line-height: 1.2;
-    }
-    .bid.due .when { color: var(--gold); font-weight: 600; }
-    .bid-more {
-      grid-column: 1 / -1;
+    .ops {
       font-family: "Barlow Semi Condensed", sans-serif;
       font-weight: 700;
       font-size: 28px;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--gold);
-      padding: 6px 4px 2px;
+      text-shadow: 0 0 14px rgba(240, 168, 70, 0.45);
     }
-    .empty { color: var(--line); font-size: 28px; padding: 12px 4px; }
-    .sched-rail { display: flex; flex-direction: column; gap: 12px; min-height: 0; }
-    .next-card { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; flex: 0 0 auto; }
-    .next-card .headline {
-      font-family: "Barlow Semi Condensed", sans-serif;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.05;
-      letter-spacing: -0.02em;
-      text-transform: none;
-    }
-    .next-card .trade {
-      font-family: "Barlow Semi Condensed", sans-serif;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 1.1;
-      letter-spacing: 0;
-      text-transform: none;
-      color: var(--gold);
-    }
-    .next-card .meta { font-size: 24px; color: var(--line); }
-    .week-card {
-      flex: 1 1 auto;
-      min-height: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      padding: 14px 16px 16px;
-      overflow: hidden;
-    }
-    .week-card h2 { font-size: 24px; }
-    .week-list { flex: 1 1 auto; min-height: 0; overflow: hidden; display: flex; flex-direction: column; gap: 8px; }
-    .week-row {
-      display: grid;
-      grid-template-columns: 170px 1fr;
-      gap: 10px;
-      align-items: start;
-      padding: 6px 10px;
-      background: var(--field);
-      border: 1px solid var(--line);
-      border-radius: 4px;
-    }
-    .week-row .d {
-      font-family: "IBM Plex Mono", monospace;
-      font-size: 24px;
-      font-weight: 500;
-      color: var(--gold);
-      line-height: 1.2;
-      white-space: nowrap;
-    }
-    .week-row .t { font-size: 24px; font-weight: 600; line-height: 1.2; }
-    .week-row .t span { display: block; font-weight: 400; color: var(--line); }
-    .ticker {
-      flex: 0 0 auto;
-      display: flex;
-      align-items: stretch;
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      overflow: hidden;
-      min-height: 64px;
-      background: var(--panel);
-    }
-    .ticker-label {
-      flex: 0 0 auto;
-      display: flex;
-      align-items: center;
-      background: var(--gold);
-      color: var(--ink);
-      font-family: "Barlow Semi Condensed", sans-serif;
-      font-weight: 700;
-      font-size: 28px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 0 20px;
-    }
-    .ticker[hidden] { display: none !important; }
-    .ticker-viewport {
-      flex: 1 1 auto;
-      min-width: 0;
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      align-items: center;
-    }
-    .ticker-track {
-      display: inline-flex;
-      align-items: center;
-      flex-wrap: nowrap;
-      white-space: nowrap;
-      will-change: transform;
-      -webkit-animation: ticker-scroll 40s linear infinite;
-      animation: ticker-scroll 40s linear infinite;
-    }
-    .ticker-set {
-      display: inline-flex;
-      align-items: center;
-      flex-wrap: nowrap;
-      white-space: nowrap;
-      font-size: 28px;
-      line-height: 1.2;
-      padding: 10px 0;
-    }
-    .ticker-sep {
-      display: inline-block;
-      padding: 0 1.15em;
-      color: var(--gold);
-      font-weight: 600;
-    }
-    .ticker-set strong { font-weight: 600; }
-    @-webkit-keyframes ticker-scroll {
-      from { -webkit-transform: translateX(0); transform: translateX(0); }
-      to { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
-    }
-    @keyframes ticker-scroll {
-      from { -webkit-transform: translateX(0); transform: translateX(0); }
-      to { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
-    }
-    .foot {
-      flex: 0 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-      font-size: 28px;
-      color: var(--line);
-      line-height: 1.2;
-    }
-    .foot-right { display: flex; align-items: center; gap: 16px; flex: 0 0 auto; }
-    .foot .updated {
-      font-family: "IBM Plex Mono", monospace;
+    .ops .sep { color: var(--mute); padding: 0 6px; }
+    .ops.stale { color: var(--gold); }
+    .updated {
       font-size: 28px;
       font-weight: 500;
       color: var(--white);
+      letter-spacing: 0.04em;
       white-space: nowrap;
     }
     .flag-stale {
       display: none;
       font-family: "Barlow Semi Condensed", sans-serif;
       font-weight: 700;
-      font-size: 28px;
-      letter-spacing: 0.08em;
+      font-size: 24px;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--gold);
       border: 1px solid var(--gold);
-      border-radius: 4px;
-      padding: 4px 12px 5px;
-      background: var(--field);
+      padding: 5px 12px 6px;
       line-height: 1;
       white-space: nowrap;
+      text-shadow: 0 0 12px rgba(240, 168, 70, 0.55);
+      background: rgba(11, 21, 48, 0.65);
     }
     .flag-stale.on { display: inline-block; }
+
+    .main {
+      flex: 1 1 auto;
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 400px 1fr 500px;
+      gap: 16px;
+    }
+    .main.targets-2 {
+      grid-template-columns: 320px 1fr 1fr 500px;
+      gap: 14px;
+    }
+    .main.targets-many { grid-template-columns: 340px 1.35fr 440px; }
+    .targets { display: flex; min-width: 0; min-height: 0; }
+    .main.targets-1 .targets,
+    .main.targets-0 .targets { flex-direction: column; }
+    .main.targets-2 .targets { display: contents; }
+    .main.targets-many .targets {
+      flex-direction: column;
+      gap: 12px;
+    }
+    .mini-row {
+      display: grid;
+      gap: 12px;
+      flex: 0 0 auto;
+    }
+
+    .hud {
+      position: relative;
+      background: rgba(11, 21, 48, 0.42);
+      border: 1px solid var(--gold-dim);
+      padding: 22px 24px 24px;
+      min-width: 0;
+      min-height: 0;
+    }
+    .hud .c {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-color: var(--gold);
+      border-style: solid;
+      pointer-events: none;
+    }
+    .hud .c.tl { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+    .hud .c.tr { top: -1px; right: -1px; border-width: 2px 2px 0 0; }
+    .hud .c.bl { bottom: -1px; left: -1px; border-width: 0 0 2px 2px; }
+    .hud .c.br { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+
+    .panel-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      width: 100%;
+    }
+    .panel-head .kicker { font-size: 24px; color: var(--gold); letter-spacing: 0.2em; }
+    .panel-head .tag {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--mute);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .systems { display: flex; flex-direction: column; }
+    .clock {
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 600;
+      font-size: 68px;
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      text-shadow: 0 0 22px rgba(240, 168, 70, 0.45);
+    }
+    .main.targets-1 .clock, .main.targets-0 .clock { font-size: 72px; }
+    .clock .ampm {
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      margin-left: 8px;
+      color: var(--gold);
+    }
+    .dow {
+      margin-top: 10px;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .full-date {
+      margin-top: 2px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--mute);
+      letter-spacing: 0.04em;
+    }
+    .wx-row {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-top: 16px;
+      border-top: 1px solid var(--gold-soft);
+    }
+    .temp {
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      text-shadow: 0 0 18px rgba(240, 168, 70, 0.4);
+    }
+    .wx-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .wx-copy .cond {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .wx-copy .loc {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 24px;
+      color: var(--mute);
+      white-space: nowrap;
+    }
+    .rain {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding-top: 16px;
+    }
+    .gauge { width: 140px; height: 140px; position: relative; flex: 0 0 auto; }
+    .gauge svg { width: 140px; height: 140px; display: block; }
+    .gauge-num {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      pointer-events: none;
+    }
+    .gauge-num .v {
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      text-shadow: 0 0 16px rgba(240, 168, 70, 0.55);
+    }
+    .rain-meta { text-align: center; }
+    .rain-meta .lbl {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+    .rain-meta .line {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--white);
+      line-height: 1.3;
+      white-space: nowrap;
+    }
+    .rain-meta .line.mute { color: var(--mute); }
+
+    .target {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 22px 22px 24px;
+    }
+    .target-name {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 0.95;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin: 4px 0 8px;
+      text-shadow: 0 0 24px rgba(240, 168, 70, 0.3);
+    }
+    .main.targets-1 .target-name { font-size: 84px; }
+    .target-from {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--gold);
+      letter-spacing: 0.06em;
+    }
+    .target-loc, .target-when {
+      margin-top: 4px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--mute);
+      letter-spacing: 0.04em;
+    }
+    .ring-wrap { margin-top: 16px; width: 210px; height: 210px; position: relative; }
+    .main.targets-1 .ring-wrap { width: 280px; height: 280px; margin-top: 22px; }
+    .ring-wrap svg { width: 100%; height: 100%; display: block; }
+    .ring-ticks {
+      transform-origin: 140px 140px;
+      -webkit-animation: ring-spin 40s linear infinite;
+      animation: ring-spin 40s linear infinite;
+    }
+    @-webkit-keyframes ring-spin { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(360deg); } }
+    @keyframes ring-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    .ring-core {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+    }
+    .ring-core .days {
+      font-family: "IBM Plex Mono", monospace;
+      font-weight: 600;
+      font-size: 72px;
+      line-height: 0.9;
+      letter-spacing: -0.05em;
+      text-shadow: 0 0 24px rgba(240, 168, 70, 0.55);
+    }
+    .main.targets-1 .ring-core .days { font-size: 96px; }
+    .ring-core .unit {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 4px;
+    }
+    .ring-core .unit-sub {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--mute);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    .ring-core .status {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-shadow: 0 0 16px rgba(240, 168, 70, 0.55);
+      line-height: 1.15;
+      padding: 0 18px;
+    }
+    .empty-target {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .empty-target .msg {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .target-mini {
+      text-align: left;
+      padding: 14px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .target-mini .target-name { font-size: 32px; margin: 4px 0 2px; text-align: left; }
+    .target-mini .target-from, .target-mini .target-loc, .target-mini .target-when { text-align: left; }
+
+    .mission { display: flex; flex-direction: column; }
+    .next-addr {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1.05;
+      margin: 8px 0 6px;
+    }
+    .next-trade {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      letter-spacing: 0.04em;
+      color: var(--gold);
+    }
+    .next-meta {
+      margin-top: 4px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--mute);
+    }
+    .week-rule { height: 1px; background: var(--gold-soft); margin: 12px 0; }
+    .week { display: flex; flex-direction: column; gap: 0; min-height: 0; overflow: hidden; }
+    .week-row {
+      display: grid;
+      grid-template-columns: 128px 1fr;
+      gap: 10px;
+      align-items: start;
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(240, 168, 70, 0.12);
+    }
+    .week-row:last-child { border-bottom: 0; }
+    .week-row .d {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    .week-row .d .tm { display: block; color: var(--mute); font-size: 20px; margin-top: 1px; }
+    .week-row .t { font-size: 24px; font-weight: 600; line-height: 1.2; }
+    .mission .panel-head .kicker { letter-spacing: 0.12em; }
+    .mission .panel-head .tag { white-space: nowrap; }
+    .systems .panel-head .tag { white-space: nowrap; }
+    .week-row .t span {
+      display: block;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--mute);
+      margin-top: 1px;
+    }
+    .empty { color: var(--mute); font-size: 28px; padding: 8px 0; }
+
+    .comms {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: stretch;
+      min-height: 64px;
+      padding: 0;
+      overflow: hidden;
+    }
+    .comms[hidden] { display: none !important; }
+    .comms .panel-label {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 0 22px;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--void);
+      background: var(--gold);
+    }
+    .comms-viewport {
+      flex: 1 1 auto;
+      min-width: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+    .comms-track {
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+      will-change: transform;
+      -webkit-animation: comms-scroll 40s linear infinite;
+      animation: comms-scroll 40s linear infinite;
+    }
+    .comms-set {
+      display: inline-flex;
+      align-items: center;
+      font-size: 28px;
+      line-height: 1.2;
+      padding: 10px 0;
+    }
+    .comms-set strong { font-weight: 600; }
+    .comms-sep {
+      display: inline-block;
+      padding: 0 1.15em;
+      color: var(--gold);
+      font-weight: 600;
+    }
+    @-webkit-keyframes comms-scroll {
+      from { -webkit-transform: translateX(0); transform: translateX(0); }
+      to { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+    }
+    @keyframes comms-scroll {
+      from { -webkit-transform: translateX(0); transform: translateX(0); }
+      to { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+    }
+
+    .foot {
+      flex: 0 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--mute);
+      letter-spacing: 0.06em;
+    }
+    .foot .id { color: var(--gold); letter-spacing: 0.14em; }
   </style>
 </head>
 <body>
   <div class="stage">
     <div class="board" id="board">
-      <div class="chrome">
-        <header class="top">
-          <img class="logo" src="logo.png" alt="Sharma Electric & HVAC">
-          <div class="when">
-            <div class="clock" id="clock">--:--<span class="ampm"></span></div>
-            <div class="date" id="date"></div>
+      <header class="hdr">
+        <div class="brand">
+          <div class="logo-chip"><img src="logo.png" alt="Sharma Electric & HVAC"></div>
+          <div class="brand-meta">
+            <div class="kicker">Sharma Electric & HVAC</div>
+            <div class="sub">Office command</div>
           </div>
-          <div class="weather">
-            <div class="temp" id="wx-temp">--°</div>
-            <div class="wx-copy">
-              <div class="wx-now" id="wx-now">Orlando weather</div>
-              <div class="wx-rain" id="wx-rain"></div>
-            </div>
-          </div>
-        </header>
-        <div class="gold-line"></div>
-      </div>
-
-      <main class="main">
-        <div class="opt3b-grid">
-          <section class="panel bids-hero">
-            <div class="section-head">
-              <h2>Bidding</h2>
-              <div class="num" id="bid-count">0</div>
-              <p class="sort-label">Only jobs we're pursuing</p>
-            </div>
-            <div class="bid-list" id="bid-list"></div>
-          </section>
-          <aside class="sched-rail">
-            <section class="panel next-card" id="next-card"></section>
-            <section class="panel week-card">
-              <h2 id="week-heading">Also this week</h2>
-              <div class="week-list" id="week-list"></div>
-            </section>
-          </aside>
         </div>
-        <div class="ticker" id="ticker">
-          <div class="ticker-label">News</div>
-          <div class="ticker-viewport" id="ticker-viewport"></div>
-        </div>
-      </main>
-
-      <footer class="foot">
-        <span>Sharma Electric & HVAC · Lic. EC13013924 · CAC1823596</span>
-        <div class="foot-right">
-          <span class="updated" id="updated">Updated —</span>
+        <div></div>
+        <div class="hdr-right">
+          <div class="ops" id="ops">Ops <span class="sep">//</span> Live</div>
+          <div class="updated" id="updated">Updated —</div>
           <span class="flag-stale" id="flag-stale">Data is old</span>
         </div>
+      </header>
+
+      <div class="main targets-2" id="main">
+        <section class="hud systems">
+          <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+          <div class="panel-head">
+            <h2 class="kicker">Systems</h2>
+            <div class="tag">ORL</div>
+          </div>
+          <div class="clock" id="clock">--:--<span class="ampm"></span></div>
+          <div class="dow" id="dow"></div>
+          <div class="full-date" id="full-date"></div>
+          <div class="wx-row">
+            <div class="temp" id="wx-temp">--°</div>
+            <div class="wx-copy">
+              <div class="cond" id="wx-cond">Orlando</div>
+              <div class="loc" id="wx-loc">Weather</div>
+            </div>
+          </div>
+          <div class="rain">
+            <div class="gauge" id="rain-gauge">
+              <svg viewBox="0 0 168 168" aria-hidden="true">
+                <circle cx="84" cy="84" r="70" fill="none" stroke="rgba(240,168,70,0.18)" stroke-width="8"></circle>
+                <circle id="rain-arc" cx="84" cy="84" r="70" fill="none" stroke="#F0A846" stroke-width="8"
+                  stroke-linecap="butt" stroke-dasharray="0 439.8" transform="rotate(-90 84 84)"
+                  style="filter: drop-shadow(0 0 6px rgba(240,168,70,0.65))"></circle>
+              </svg>
+              <div class="gauge-num"><span class="v" id="rain-pct">--%</span></div>
+            </div>
+            <div class="rain-meta">
+              <div class="lbl">Rain chance</div>
+              <div class="line" id="rain-line"></div>
+              <div class="line mute" id="rain-sub"></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="targets" id="targets"></div>
+
+        <section class="hud mission">
+          <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+          <div class="panel-head">
+            <h2 class="kicker">Mission schedule</h2>
+            <div class="tag" id="mission-tag"></div>
+          </div>
+          <div id="next-block"></div>
+          <div class="week-rule"></div>
+          <div class="panel-head" style="margin-bottom:6px;">
+            <h2 class="kicker">This week</h2>
+          </div>
+          <div class="week" id="week-list"></div>
+        </section>
+      </div>
+
+      <div class="hud comms" id="ticker">
+        <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+        <div class="panel-label">Comms</div>
+        <div class="comms-viewport" id="ticker-viewport"></div>
+      </div>
+
+      <footer class="foot">
+        <span class="id">LIC EC13013924 · CAC1823596</span>
+        <span id="foot-right"></span>
       </footer>
     </div>
   </div>
@@ -437,17 +661,17 @@
     const REFRESH_MS = 3 * 60 * 1000;
     const WEATHER_MS = 15 * 60 * 1000;
     const STALE_MS = 2 * 60 * 60 * 1000;
-    const LICENSE_RE = /\b(?:LIC\.?\s*)?(?:EC|CAC)\d+\b/i;
-
     const TICKER_PX_PER_SEC = 90;
+    const LICENSE_RE = /\b(?:LIC\.?\s*)?(?:EC|CAC)\d+\b/i;
+    const PHONE_RE = /(?:\+?1[\s.-]*)?(?:\(?\d{3}\)?[\s.-]+)\d{3}[\s.-]\d{4}\b/g;
+    const EMAIL_RE = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
+    const RING_C = 2 * Math.PI * 118;
+
     let lastData = null;
     let lastUpdatedAt = null;
     let dataLoadError = false;
-    let boardConfig = { pursuing: [] };
+    let boardConfig = { pursuing: [], targets: [] };
     let lastTickerKey = "";
-
-    const PHONE_RE = /(?:\+?1[\s.-]*)?(?:\(?\d{3}\)?[\s.-]+)\d{3}[\s.-]\d{4}\b/g;
-    const EMAIL_RE = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
 
     function stripPII(text) {
       if (text == null) return "";
@@ -467,6 +691,10 @@
       return n;
     }
 
+    function corners(node) {
+      ["tl", "tr", "bl", "br"].forEach((c) => node.append(el("span", "c " + c)));
+    }
+
     function nyParts(d) {
       const fmt = new Intl.DateTimeFormat("en-US", {
         timeZone: TZ,
@@ -482,38 +710,59 @@
     }
 
     function nyISO(d) {
-      const f = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" });
-      return f.format(d);
+      return new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" }).format(d);
     }
 
     function nyWeekdayShort(d) {
       return new Intl.DateTimeFormat("en-US", { timeZone: TZ, weekday: "short" }).format(d);
     }
 
+    function monthName(iso) {
+      const p = nyParts(isoToNoon(iso));
+      return p.month;
+    }
+
+    function isoToNoon(iso) {
+      const [y, mo, da] = String(iso).split("-").map(Number);
+      return new Date(y, mo - 1, da, 12);
+    }
+
+    function daysBetweenISO(fromISO, toISO) {
+      if (!fromISO || !toISO) return null;
+      const a = Date.parse(fromISO + "T12:00:00");
+      const b = Date.parse(toISO + "T12:00:00");
+      if (isNaN(a) || isNaN(b)) return null;
+      return Math.round((b - a) / 86400000);
+    }
+
     function tickClock() {
       const now = new Date();
       const p = nyParts(now);
-      const hour = p.hour;
       const clock = document.getElementById("clock");
-      clock.replaceChildren(document.createTextNode(`${hour}:${p.minute}`), el("span", "ampm", p.dayPeriod));
-      document.getElementById("date").textContent = `${p.weekday}, ${p.month} ${p.day}, ${p.year}`;
+      clock.replaceChildren(document.createTextNode(p.hour + ":" + p.minute), el("span", "ampm", p.dayPeriod));
+      document.getElementById("dow").textContent = p.weekday;
+      document.getElementById("full-date").textContent = p.day + " " + p.month + " " + p.year;
       stampFreshness();
     }
 
     function scaleBoard() {
       const board = document.getElementById("board");
       const s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
-      board.style.transform = `scale(${s})`;
-      board.style.left = `${Math.round((window.innerWidth - 1920 * s) / 2)}px`;
-      board.style.top = `${Math.round((window.innerHeight - 1080 * s) / 2)}px`;
+      board.style.transform = "scale(" + s + ")";
+      board.style.left = Math.round((window.innerWidth - 1920 * s) / 2) + "px";
+      board.style.top = Math.round((window.innerHeight - 1080 * s) / 2) + "px";
     }
 
     function parseDueMs(text) {
       const m = String(text || "").match(/\bdue\b\s+(.+)/i);
       if (!m) return null;
-      let s = m[1].trim().replace(/\bnoon\b/i, "12:00 PM");
-      const d = new Date(s);
+      const d = new Date(m[1].trim().replace(/\bnoon\b/i, "12:00 PM"));
       return isNaN(d.getTime()) ? null : d.getTime();
+    }
+
+    function dueISO(ms) {
+      if (ms == null) return null;
+      return nyISO(new Date(ms));
     }
 
     function receivedSortKey(dateISO, received) {
@@ -524,7 +773,7 @@
         if (/pm/i.test(t[3])) h += 12;
         minutes = h * 60 + parseInt(t[2], 10);
       }
-      return `${dateISO || "0000-00-00"}-${String(minutes).padStart(4, "0")}`;
+      return (dateISO || "0000-00-00") + "-" + String(minutes).padStart(4, "0");
     }
 
     function formatDueLabel(received) {
@@ -532,31 +781,24 @@
       if (!m) return stripPII(received);
       let s = m[1].trim();
       s = s.replace(/,\s*\d{4}\b/, ",").replace(/\s+\d{4}\b/, "");
-      s = s.replace(/\s+/g, " ").replace(/,\s*/g, ", ").replace(/,\s*,/g, ",").trim();
+      s = s.replace(/\s+/g, " ").replace(/,\s*/g, ", ").trim();
       s = s.replace(/\s+(noon|\d{1,2}:\d{2}\s*[AP]M)$/i, ", $1");
-      s = s.replace(/,\s*,/g, ",").replace(/,\s*/g, ", ");
       return "Due " + s;
     }
 
     function formatReceivedLabel(dateISO, received) {
       const timeM = String(received || "").match(/(\d{1,2}:\d{2}\s*[AP]M)/i);
-      let time = timeM ? timeM[1].replace(/\s+/g, " ").replace(/am/i, "AM").replace(/pm/i, "PM") : "";
-      if (dateISO && dateISO === nyISO(new Date())) {
-        return time ? `Received today, ${time}` : "Received today";
-      }
+      const time = timeM ? timeM[1].replace(/\s+/g, " ").replace(/am/i, "AM").replace(/pm/i, "PM") : "";
+      const today = nyISO(new Date());
+      if (dateISO && dateISO === today) return time ? "Received today, " + time : "Received today";
       let wd = "";
-      if (dateISO) {
-        const [y, mo, da] = dateISO.split("-").map(Number);
-        if (y) wd = nyWeekdayShort(new Date(y, mo - 1, da, 12));
-      }
+      if (dateISO) wd = nyWeekdayShort(isoToNoon(dateISO));
       if (!wd) {
         const m = String(received || "").match(/\b(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b/i);
         if (m) wd = m[1][0].toUpperCase() + m[1].slice(1, 3).toLowerCase();
       }
-      if (wd && time) return `Received ${wd}, ${time}`;
-      if (wd) return `Received ${wd}`;
-      if (time) return `Received ${time}`;
-      return "Received";
+      const lead = wd && time ? "Received " + wd + ", " + time : (wd ? "Received " + wd : (time ? "Received " + time : "Received"));
+      return lead;
     }
 
     function displayTrade(s) {
@@ -572,7 +814,7 @@
 
     function parseLooseDate(text) {
       const m = String(text || "").match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
-      if (m) return `${m[3]}-${m[1].padStart(2, "0")}-${m[2].padStart(2, "0")}`;
+      if (m) return m[3] + "-" + m[1].padStart(2, "0") + "-" + m[2].padStart(2, "0");
       const iso = String(text || "").match(/(\d{4})-(\d{2})-(\d{2})/);
       return iso ? iso[0] : null;
     }
@@ -580,8 +822,7 @@
     function shortDateLabel(iso, fallback) {
       if (iso) {
         const [y, mo, da] = iso.split("-").map(Number);
-        const d = new Date(y, mo - 1, da, 12);
-        return `${nyWeekdayShort(d)} ${mo}/${da}`;
+        return nyWeekdayShort(new Date(y, mo - 1, da, 12)) + " " + mo + "/" + da;
       }
       return fallback || "";
     }
@@ -612,8 +853,8 @@
     }
 
     function pursuingTokens() {
-      const list = (boardConfig && boardConfig.pursuing) || [];
-      return list.map((t) => String(t || "").trim().toLowerCase()).filter(Boolean);
+      return ((boardConfig && boardConfig.pursuing) || [])
+        .map((t) => String(t || "").trim().toLowerCase()).filter(Boolean);
     }
 
     function bidIsPursued(project) {
@@ -632,10 +873,7 @@
         const dueMs = parseDueMs(dueText) || parseDueMs(received);
         const dateISO = b.date || b.receivedDate || "";
         if (!project) return null;
-        return {
-          project, from, received, dueMs, dateISO,
-          recency: receivedSortKey(dateISO, received)
-        };
+        return { kind: "bid", project, from, location: "", received, dueMs, dateISO, recency: receivedSortKey(dateISO, received) };
       }).filter(Boolean).filter((b) => bidIsPursued(b.project));
     }
 
@@ -649,50 +887,168 @@
       });
     }
 
-    function fitOverflow(container, extraClass) {
-      const more = container.querySelector("." + extraClass);
-      if (more) more.remove();
-      const kids = [...container.children];
-      kids.forEach((n) => { n.style.display = ""; });
-      let hidden = 0;
-      for (let i = kids.length - 1; i >= 0; i--) {
-        if (container.scrollHeight <= container.clientHeight + 1) break;
-        kids[i].style.display = "none";
-        hidden++;
-      }
-      if (!hidden) return;
-      const n = el("div", extraClass, `+${hidden} more`);
-      container.appendChild(n);
-      while (container.scrollHeight > container.clientHeight + 1) {
-        const visible = [...container.children].filter((c) => c !== n && c.style.display !== "none");
-        if (!visible.length) break;
-        visible[visible.length - 1].style.display = "none";
-        hidden++;
-        n.textContent = `+${hidden} more`;
-      }
+    function collectManualTargets() {
+      const list = (boardConfig && boardConfig.targets) || [];
+      return list.map((t) => {
+        if (!t) return null;
+        if (typeof t === "string") t = { title: t };
+        const project = stripPII(t.title || t.name || t.goal || "");
+        if (!project) return null;
+        const from = stripPII(t.builder || t.from || t.company || t.type || "");
+        const location = stripPII(t.location || t.community || t.place || "");
+        const type = stripPII(t.type || "Goal");
+        const status = stripPII(t.status || "IN PURSUIT") || "IN PURSUIT";
+        const dateISO = t.date || t.received || "";
+        const dueText = t.due || t.dueDate || t.due_date || "";
+        const dueMs = parseDueMs(dueText) || (dueText ? Date.parse(dueText) : null);
+        return {
+          kind: "manual",
+          project, from, location, type, status,
+          received: stripPII(t.receivedNote || ""),
+          dueMs: dueMs && !isNaN(dueMs) ? dueMs : null,
+          dateISO: dateISO || "",
+          recency: "0000"
+        };
+      }).filter(Boolean);
     }
 
-    function renderBids(data) {
-      const list = document.getElementById("bid-list");
-      const bids = sortBids(collectBids(data));
-      document.getElementById("bid-count").textContent = String(bids.length);
-      list.replaceChildren();
-      list.classList.toggle("hero-one", bids.length === 1);
-      list.classList.toggle("is-empty", bids.length === 0);
-      if (!bids.length) {
-        list.append(el("div", "empty", "No bids we're pursuing"));
-        return;
+    function collectTargets(data) {
+      return sortBids(collectBids(data)).concat(collectManualTargets());
+    }
+
+    function ringSVG(frac) {
+      const f = Math.max(0, Math.min(1, frac || 0));
+      const dash = (f * RING_C).toFixed(1) + " " + RING_C.toFixed(1);
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("viewBox", "0 0 280 280");
+      svg.setAttribute("aria-hidden", "true");
+      svg.innerHTML =
+        '<circle cx="140" cy="140" r="118" fill="none" stroke="rgba(240,168,70,0.16)" stroke-width="8"></circle>' +
+        (f > 0 ? '<circle cx="140" cy="140" r="118" fill="none" stroke="#F0A846" stroke-width="8" stroke-linecap="butt" stroke-dasharray="' + dash + '" transform="rotate(-90 140 140)" style="filter: drop-shadow(0 0 8px rgba(240,168,70,0.7))"></circle>' : "") +
+        '<circle cx="140" cy="140" r="104" fill="none" stroke="rgba(240,168,70,0.22)" stroke-width="1"></circle>' +
+        '<g class="ring-ticks" transform="translate(140 140)">' +
+        [0,30,60,90,120,150,180,210,240,270,300,330].map((a) =>
+          '<line x1="0" y1="-126" x2="0" y2="-118" stroke="rgba(240,168,70,0.55)" stroke-width="2" transform="rotate(' + a + ')"></line>'
+        ).join("") +
+        "</g>";
+      return svg;
+    }
+
+    function ringForBid(t) {
+      const today = nyISO(new Date());
+      const wrap = el("div", "ring-wrap");
+      const core = el("div", "ring-core");
+      if (t.kind === "manual" && t.dueMs == null && !t.dateISO) {
+        wrap.append(ringSVG(0.28));
+        core.append(el("div", "status", t.status || "IN PURSUIT"));
+        wrap.append(core);
+        return wrap;
       }
-      for (const b of bids) {
-        const cls = (b.dueMs != null ? "bid due" : "bid") + (bids.length === 1 ? " featured" : "");
-        const card = el("div", cls);
-        card.append(el("div", "name", b.project));
-        if (b.from) card.append(el("div", "from", b.from));
-        const when = b.dueMs != null ? formatDueLabel(b.received) : formatReceivedLabel(b.dateISO, b.received);
-        if (when) card.append(el("div", "when", when));
-        list.append(card);
+      if (t.dueMs != null) {
+        const days = daysBetweenISO(today, dueISO(t.dueMs));
+        const overdue = days != null && days < 0;
+        const n = days == null ? 0 : Math.abs(days);
+        wrap.append(ringSVG(overdue ? 0 : Math.min(n, 14) / 14));
+        core.append(el("div", "days", String(n)));
+        core.append(el("div", "unit", n === 1 ? "Day" : "Days"));
+        core.append(el("div", "unit-sub", overdue ? "Overdue" : "Until due"));
+        wrap.append(core);
+        return wrap;
       }
-      if (bids.length > 1) fitOverflow(list, "bid-more");
+      if (t.dateISO) {
+        const days = Math.max(0, daysBetweenISO(t.dateISO, today) || 0);
+        wrap.append(ringSVG(Math.min(days, 7) / 7));
+        core.append(el("div", "days", String(days)));
+        core.append(el("div", "unit", days === 1 ? "Day" : "Days"));
+        core.append(el("div", "unit-sub", "Since received"));
+        wrap.append(core);
+        return wrap;
+      }
+      wrap.append(ringSVG(0.28));
+      core.append(el("div", "status", t.status || "IN PURSUIT"));
+      wrap.append(core);
+      return wrap;
+    }
+
+    function fillTargetCard(card, t, index, total) {
+      corners(card);
+      const head = el("div", "panel-head");
+      head.append(el("h2", "kicker", "Target"));
+      const tag = t.kind === "manual" ? (t.type || "Goal") : (t.bidTag || "Bid");
+      head.append(el("div", "tag", tag));
+      card.append(head);
+      card.append(el("div", "target-name", t.project));
+      if (t.from) card.append(el("div", "target-from", t.from));
+      if (t.location) card.append(el("div", "target-loc", t.location));
+      if (t.kind !== "manual") {
+        const when = t.dueMs != null ? formatDueLabel(t.received) : formatReceivedLabel(t.dateISO, t.received);
+        if (when) card.append(el("div", "target-when", when));
+      }
+      card.append(ringForBid(t));
+    }
+
+    function renderTargets(data) {
+      const items = collectTargets(data);
+      const main = document.getElementById("main");
+      const host = document.getElementById("targets");
+      host.replaceChildren();
+      main.classList.remove("targets-0", "targets-1", "targets-2", "targets-many");
+      const n = items.length;
+      const bidItems = items.filter((t) => t.kind === "bid");
+      items.forEach((t) => {
+        if (t.kind === "bid") {
+          const i = bidItems.indexOf(t);
+          t.bidTag = "Bid 0" + (i + 1) + " of 0" + bidItems.length;
+        }
+      });
+      if (n === 0) {
+        main.classList.add("targets-0");
+        const card = el("section", "hud target empty-target");
+        corners(card);
+        const head = el("div", "panel-head");
+        head.append(el("h2", "kicker", "Target"));
+        card.append(head);
+        card.append(el("div", "msg", "No active targets"));
+        host.append(card);
+      } else if (n === 1) {
+        main.classList.add("targets-1");
+        const card = el("section", "hud target");
+        fillTargetCard(card, items[0], 0, 1);
+        host.append(card);
+      } else if (n === 2) {
+        main.classList.add("targets-2");
+        items.forEach((t, i) => {
+          const card = el("section", "hud target");
+          fillTargetCard(card, t, i, n);
+          host.append(card);
+        });
+      } else {
+        main.classList.add("targets-many");
+        const hero = el("section", "hud target");
+        fillTargetCard(hero, items[0], 0, n);
+        host.append(hero);
+        const rest = items.slice(1);
+        const row = el("div", "mini-row");
+        row.style.gridTemplateColumns = "repeat(" + Math.min(rest.length, 3) + ", 1fr)";
+        rest.slice(0, 3).forEach((t, i) => {
+          const card = el("section", "hud target-mini");
+          corners(card);
+          card.append(el("div", "kicker", t.kind === "manual" ? (t.type || "Goal") : "Bid"));
+          card.append(el("div", "target-name", t.project));
+          if (t.from) card.append(el("div", "target-from", t.from));
+          if (t.location) card.append(el("div", "target-loc", t.location));
+          if (t.kind === "manual") card.append(el("div", "target-when", t.status || "IN PURSUIT"));
+          row.append(card);
+        });
+        if (rest.length > 3) row.append(el("div", "empty", "+" + (rest.length - 3) + " more"));
+        host.append(row);
+      }
+      const bidN = items.filter((t) => t.kind === "bid").length;
+      const manN = items.filter((t) => t.kind === "manual").length;
+      const bits = [];
+      if (bidN) bits.push(bidN === 1 ? "Pursuing 1 bid" : "Pursuing " + bidN + " bids");
+      if (manN) bits.push(manN === 1 ? "1 contract target" : manN + " contract targets");
+      document.getElementById("foot-right").textContent = bits.join(" · ") || "No active targets";
     }
 
     function collectSchedule(data) {
@@ -707,10 +1063,7 @@
     }
 
     function sharedTag(items) {
-      const tags = items.map((it) => {
-        const first = (it.detail || "").split("·")[0].trim();
-        return first;
-      }).filter(Boolean);
+      const tags = items.map((it) => (it.detail || "").split("·")[0].trim()).filter(Boolean);
       if (tags.length && tags.every((t) => t === tags[0])) return tags[0];
       return "";
     }
@@ -721,10 +1074,22 @@
     }
 
     function itemWho(detail) {
-      return String(detail || "")
-        .split("·")
-        .map((s) => s.trim())
-        .filter((s) => s && !/^\d{1,2}:\d{2}\s*[AP]M$/i.test(s));
+      return String(detail || "").split("·").map((s) => s.trim()).filter((s) => s && !/^\d{1,2}:\d{2}\s*[AP]M$/i.test(s));
+    }
+
+    function fitOverflow(container) {
+      const kids = [...container.children];
+      kids.forEach((n) => { n.style.display = ""; });
+      let hidden = 0;
+      for (let i = kids.length - 1; i >= 0; i--) {
+        if (container.scrollHeight <= container.clientHeight + 1) break;
+        kids[i].style.display = "none";
+        hidden++;
+      }
+      if (hidden) {
+        const n = el("div", "empty", "+" + hidden + " more");
+        container.appendChild(n);
+      }
     }
 
     function renderSchedule(data) {
@@ -733,45 +1098,42 @@
       const upcoming = items.filter((it) => !it.dateISO || it.dateISO >= today);
       const next = upcoming[0] || null;
       const rest = next ? upcoming.slice(1) : upcoming;
+      const tag = sharedTag(upcoming);
+      document.getElementById("mission-tag").textContent = tag || "";
 
-      const nextCard = document.getElementById("next-card");
-      nextCard.replaceChildren();
-      nextCard.append(el("div", "kicker", "Next"));
+      const nextBlock = document.getElementById("next-block");
+      nextBlock.replaceChildren();
+      nextBlock.append(el("div", "kicker", "Next"));
       if (!next) {
-        nextCard.append(el("div", "empty", "Nothing on the board"));
+        nextBlock.append(el("div", "empty", "Nothing on the board"));
       } else {
-        nextCard.append(el("div", "headline", next.address || "Job"));
-        if (next.trade) nextCard.append(el("div", "trade", next.trade));
+        nextBlock.append(el("div", "next-addr", next.address || "Job"));
+        if (next.trade) nextBlock.append(el("div", "next-trade", next.trade));
         const who = itemWho(next.detail);
         const time = itemTime(next.detail);
         const when = next.dateISO === today ? "Today" : (next.dateLabel || "");
         const meta = [when, ...who, time].filter(Boolean).join(" · ");
-        if (meta) nextCard.append(el("div", "meta", meta));
+        if (meta) nextBlock.append(el("div", "next-meta", meta));
       }
 
-      const heading = document.getElementById("week-heading");
       const weekList = document.getElementById("week-list");
       weekList.replaceChildren();
       if (!rest.length) {
-        heading.textContent = "Also this week";
         weekList.append(el("div", "empty", "Nothing else this week"));
         return;
       }
-      const tag = sharedTag(rest);
-      heading.textContent = tag ? `Also this week · ${tag}` : "Also this week";
       for (const it of rest) {
         const row = el("div", "week-row");
-        row.append(el("div", "d", it.dateLabel || ""));
-        const t = el("div", "t", it.address || "");
-        const bits = [it.trade];
+        const d = el("div", "d", it.dateLabel || "");
         const time = itemTime(it.detail);
-        if (time) bits.push(time);
-        const sub = bits.filter(Boolean).join(" · ");
-        if (sub) t.append(el("span", "", sub));
+        if (time) d.append(el("span", "tm", time));
+        row.append(d);
+        const t = el("div", "t", it.address || "");
+        if (it.trade) t.append(el("span", "", it.trade));
         row.append(t);
         weekList.append(row);
       }
-      fitOverflow(weekList, "bid-more");
+      fitOverflow(weekList);
     }
 
     function tickerHeadline(n) {
@@ -789,16 +1151,14 @@
 
     function collectTickerParts(data) {
       const parts = [];
-      const news = (data && data.news) || [];
-      for (const n of news) {
+      for (const n of (data && data.news) || []) {
         const headline = tickerHeadline(n);
         if (!headline) continue;
         const lead = shortHead(headline);
         const rest = headline.replace(lead, "").replace(/^\s*[—–-]\s*/, "").trim();
         parts.push({ strong: lead, rest: rest || headline });
       }
-      const ticker = (data && data.ticker) || [];
-      for (const item of ticker) {
+      for (const item of (data && data.ticker) || []) {
         const s = stripPII(item);
         if (!s || LICENSE_RE.test(s)) continue;
         parts.push({ strong: "", rest: s });
@@ -806,13 +1166,9 @@
       return parts;
     }
 
-    function tickerKey(parts) {
-      return parts.map((p) => p.strong + "\t" + p.rest).join("\n");
-    }
-
     function fillTickerSet(set, parts) {
       parts.forEach((p, i) => {
-        if (i) set.append(el("span", "ticker-sep", "·"));
+        if (i) set.append(el("span", "comms-sep", "//"));
         if (p.strong && p.rest && p.rest !== p.strong) {
           set.append(el("strong", "", p.strong));
           set.append(document.createTextNode("\u00a0\u00a0" + p.rest));
@@ -820,15 +1176,7 @@
           set.append(el("strong", "", p.strong || p.rest));
         }
       });
-      set.append(el("span", "ticker-sep", "·"));
-    }
-
-    function setTickerDuration(track, setEl) {
-      const w = setEl.offsetWidth;
-      if (!w) return;
-      const secs = Math.max(10, w / TICKER_PX_PER_SEC);
-      track.style.webkitAnimationDuration = secs + "s";
-      track.style.animationDuration = secs + "s";
+      set.append(el("span", "comms-sep", "//"));
     }
 
     function renderTicker(data) {
@@ -842,28 +1190,30 @@
         return;
       }
       bar.removeAttribute("hidden");
-      const key = tickerKey(parts);
-      if (key === lastTickerKey && viewport.querySelector(".ticker-track")) return;
+      const key = parts.map((p) => p.strong + "\t" + p.rest).join("\n");
+      if (key === lastTickerKey && viewport.querySelector(".comms-track")) return;
       lastTickerKey = key;
-      const track = el("div", "ticker-track");
-      const setA = el("div", "ticker-set");
-      const setB = el("div", "ticker-set");
+      const track = el("div", "comms-track");
+      const setA = el("div", "comms-set");
+      const setB = el("div", "comms-set");
       fillTickerSet(setA, parts);
       fillTickerSet(setB, parts);
       track.append(setA, setB);
       viewport.replaceChildren(track);
-      const apply = function () { setTickerDuration(track, setA); };
-      if (window.requestAnimationFrame) {
-        window.requestAnimationFrame(function () { window.requestAnimationFrame(apply); });
-      } else {
-        apply();
-      }
+      const apply = function () {
+        const w = setA.offsetWidth;
+        if (!w) return;
+        const secs = Math.max(10, w / TICKER_PX_PER_SEC);
+        track.style.webkitAnimationDuration = secs + "s";
+        track.style.animationDuration = secs + "s";
+      };
+      if (window.requestAnimationFrame) window.requestAnimationFrame(function () { window.requestAnimationFrame(apply); });
+      else apply();
     }
 
     function firstTimestamp(data) {
       if (!data || typeof data !== "object") return null;
-      const keys = ["updatedAt", "updated_at", "lastUpdated", "last_updated", "updated"];
-      for (const k of keys) {
+      for (const k of ["updatedAt", "updated_at", "lastUpdated", "last_updated", "updated"]) {
         if (data[k]) {
           const d = new Date(data[k]);
           if (!isNaN(d.getTime())) return d;
@@ -875,28 +1225,39 @@
     function stampFreshness() {
       const updatedEl = document.getElementById("updated");
       const flag = document.getElementById("flag-stale");
+      const ops = document.getElementById("ops");
       if (dataLoadError && !lastUpdatedAt) {
         updatedEl.textContent = "Can't reach data";
         flag.classList.add("on");
+        ops.classList.add("stale");
+        ops.replaceChildren(document.createTextNode("Ops "), el("span", "sep", "//"), document.createTextNode(" Stale"));
         return;
       }
       if (!lastUpdatedAt) {
         updatedEl.textContent = "Updated —";
         flag.classList.remove("on");
+        ops.classList.remove("stale");
         return;
       }
       const p = nyParts(lastUpdatedAt);
       const today = nyISO(new Date());
       const stampDay = nyISO(lastUpdatedAt);
-      const time = `${p.hour}:${p.minute} ${p.dayPeriod}`;
-      updatedEl.textContent = stampDay === today ? `Updated ${time}` : `Updated ${p.month} ${p.day}, ${time}`;
-      flag.classList.toggle("on", (Date.now() - lastUpdatedAt.getTime()) > STALE_MS);
+      const time = p.hour + ":" + p.minute + " " + p.dayPeriod;
+      updatedEl.textContent = stampDay === today ? "Updated " + time : "Updated " + p.month + " " + p.day + ", " + time;
+      const stale = (Date.now() - lastUpdatedAt.getTime()) > STALE_MS;
+      flag.classList.toggle("on", stale);
+      ops.classList.toggle("stale", stale);
+      ops.replaceChildren(
+        document.createTextNode("Ops "),
+        el("span", "sep", "//"),
+        document.createTextNode(stale ? " Stale" : " Live")
+      );
     }
 
     function renderAll(data) {
       lastData = data;
       lastUpdatedAt = firstTimestamp(data);
-      renderBids(data);
+      renderTargets(data);
       renderSchedule(data);
       renderTicker(data);
       stampFreshness();
@@ -921,10 +1282,10 @@
       const n = Number(h);
       if (n === 0) return "12 AM";
       if (n === 12) return "12 PM";
-      return n > 12 ? `${n - 12} PM` : `${n} AM`;
+      return n > 12 ? (n - 12) + " PM" : n + " AM";
     }
 
-    function rainLine(hourly, nowHour) {
+    function rainSummary(hourly, nowHour) {
       const times = (hourly && hourly.time) || [];
       const probs = (hourly && hourly.precipitation_probability) || [];
       const points = [];
@@ -933,17 +1294,24 @@
         if (h < nowHour || h > 22) continue;
         points.push({ h, p: Number(probs[i] || 0) });
       }
-      if (!points.length) return "";
+      if (!points.length) return { peak: 0, line: "", sub: "" };
       const nowP = points[0].p;
       let peak = points[0];
       for (const pt of points) if (pt.p > peak.p) peak = pt;
       const rise = points.find((pt) => pt.h > nowHour && pt.p >= Math.max(40, nowP + 15));
-      if (rise && peak.h > nowHour && peak.p >= 40) {
-        return `Rain rises after ${fmtHour(rise.h)} · ${Math.round(peak.p)}% by ${fmtHour(peak.h)}`;
+      let line = "Peak " + Math.round(peak.p) + "%";
+      let sub = "";
+      if (peak.h > nowHour && peak.p >= 40) {
+        line = "Peak " + Math.round(peak.p) + "% by " + fmtHour(peak.h);
+        if (rise) sub = "Rises after " + fmtHour(rise.h);
+      } else if (nowP >= 40) {
+        line = Math.round(nowP) + "% rain now";
+        sub = "Peak " + Math.round(peak.p) + "% at " + fmtHour(peak.h);
+      } else {
+        line = "Peak " + Math.round(peak.p) + "%";
+        sub = "Rain stays low";
       }
-      if (nowP >= 40) return `${Math.round(nowP)}% rain now · peak ${Math.round(peak.p)}% at ${fmtHour(peak.h)}`;
-      if (peak.p >= 40) return `Rain later · ${Math.round(peak.p)}% by ${fmtHour(peak.h)}`;
-      return `Rain stays low · ${Math.round(Math.max(...points.map((p) => p.p)))}% at most`;
+      return { peak: peak.p, line, sub };
     }
 
     async function loadWeather() {
@@ -959,29 +1327,38 @@
         const res = await fetch(u.toString());
         const j = await res.json();
         if (!j || !j.current) return;
-        document.getElementById("wx-temp").textContent = `${Math.round(j.current.temperature_2m)}°`;
-        const bits = ["Orlando", wmoText(j.current.weather_code)];
-        if (j.current.precipitation_probability != null) bits.push(`${Math.round(j.current.precipitation_probability)}% rain`);
-        document.getElementById("wx-now").textContent = bits.join(" · ");
+        document.getElementById("wx-temp").textContent = Math.round(j.current.temperature_2m) + "°";
+        document.getElementById("wx-cond").textContent = wmoText(j.current.weather_code);
+        const nowP = j.current.precipitation_probability;
+        document.getElementById("wx-loc").textContent = nowP != null ? "Orlando · " + Math.round(nowP) + "%" : "Orlando";
         const hour = Number(new Intl.DateTimeFormat("en-US", { timeZone: TZ, hour: "numeric", hourCycle: "h23" }).format(new Date()));
-        document.getElementById("wx-rain").textContent = rainLine(j.hourly, hour);
+        const rain = rainSummary(j.hourly, hour);
+        const C = 2 * Math.PI * 70;
+        const arc = document.getElementById("rain-arc");
+        const drawn = Math.max(0, Math.min(1, (rain.peak || 0) / 100)) * C;
+        arc.setAttribute("stroke-dasharray", drawn.toFixed(1) + " " + C.toFixed(1));
+        document.getElementById("rain-pct").textContent = Math.round(rain.peak || 0) + "%";
+        document.getElementById("rain-line").textContent = rain.line;
+        document.getElementById("rain-sub").textContent = rain.sub;
       } catch (e) { /* keep last weather */ }
     }
 
     async function loadBoardConfig() {
       try {
-        const res = await fetch(`board-config.json?t=${Date.now()}`, { cache: "no-store" });
+        const res = await fetch("board-config.json?t=" + Date.now(), { cache: "no-store" });
         if (!res.ok) return;
         const cfg = await res.json();
-        if (cfg && Array.isArray(cfg.pursuing)) {
-          boardConfig = { pursuing: cfg.pursuing };
-        }
+        if (!cfg || typeof cfg !== "object") return;
+        boardConfig = {
+          pursuing: Array.isArray(cfg.pursuing) ? cfg.pursuing : (boardConfig.pursuing || []),
+          targets: Array.isArray(cfg.targets) ? cfg.targets : (boardConfig.targets || [])
+        };
       } catch (e) { /* keep last config */ }
     }
 
     async function loadData() {
       try {
-        const dataP = fetch(`data.json?t=${Date.now()}`, { cache: "no-store" });
+        const dataP = fetch("data.json?t=" + Date.now(), { cache: "no-store" });
         const cfgP = loadBoardConfig();
         const res = await dataP;
         await cfgP;
@@ -1004,7 +1381,7 @@
     }
 
     scaleBoard();
-    window.addEventListener("resize", () => { scaleBoard(); if (lastData) { renderBids(lastData); renderSchedule(lastData); } });
+    window.addEventListener("resize", () => { scaleBoard(); if (lastData) { renderTargets(lastData); renderSchedule(lastData); } });
     tickClock();
     setInterval(tickClock, 1000);
     loadWeather();
