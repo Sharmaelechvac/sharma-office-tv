@@ -4,8 +4,8 @@
   ],
   "news": [
     {
-      "headline": "FLOOD WATCH — Central Florida: Orange, Osceola, Seminole, Brevard & Volusia through Fri 7 PM, 3–6 in. of rain expected",
-      "source": "National Weather Service via ORLtoday",
+      "headline": "FLOOD WATCH — NWS Melbourne: Orange, Osceola, Seminole, Brevard & Volusia, Tue 5 PM through Fri 7 PM — 3–6 in. of rain, isolated 8–12 in.",
+      "source": "National Weather Service, Melbourne",
       "date": "2026-11-17"
     },
     {
@@ -19,23 +19,39 @@
       "date": "2026-11-17"
     },
     {
-      "headline": "WWE plans $100M, 98,000 SF Performance Center & HQ in downtown Orlando — city incentive vote Nov 18",
-      "source": "Orlando Business Journal via reports",
+      "headline": "Florida's 9th-edition building code takes effect Dec 31 — new EV-charging and home battery-storage rules; permit filings expected to surge before the deadline",
+      "source": "Tampa Bay Monthly",
+      "date": "2026-11-16"
+    },
+    {
+      "headline": "HB 803 permit exemption reminder: structural, electrical, plumbing and mechanical work still needs a permit at any price",
+      "source": "Palm Beach County Building Division guidance",
+      "date": "2026-11-16"
+    },
+    {
+      "headline": "Copper settled below $6 on Monday — COMEX $5.9975/lb, down 1.35%",
+      "source": "Sharma News — Finance",
       "date": "2026-11-17"
     },
     {
-      "headline": "SupplyHouse to open Atlanta fulfillment center — $19M, 330 jobs, faster HVAC/electrical supply shipping across the Southeast",
-      "source": "Gov. Kemp / EIN News",
-      "date": "2026-11-12"
-    },
-    {
-      "headline": "Leap Partners buys Crowther Heating & Air — its 37th HVAC, plumbing & electrical acquisition across the Southeast, incl. Florida",
-      "source": "PR Newswire",
+      "headline": "Fed held rates Oct 28 at 3.75–4.00% (prime 7.00%); next decision Dec 9 — banks tightened lending standards for small firms in the Fed's October survey",
+      "source": "Federal Reserve",
       "date": "2026-11-17"
     },
     {
-      "headline": "$58.5M construction financing for 279 build-to-rent homes in Deltona — between Orlando & Daytona",
-      "source": "PR Newswire / Anchor Loans"
+      "headline": "Florida workers' comp: OIR approved NCCI's −7.4% average rate cut for new and renewal policies from Jan 1, 2027",
+      "source": "Florida Office of Insurance Regulation",
+      "date": "2026-11-16"
+    },
+    {
+      "headline": "NBA: Magic 115, Celtics 105 — Orlando's 4th straight win, 40-point 4th quarter in Boston; Bane 24 pts (Mon night)",
+      "source": "ESPN / NBA.com",
+      "date": "2026-11-16"
+    },
+    {
+      "headline": "NFL Week 10: Jaguars 40, Titans 23 (Jags 7–2, AFC South leaders) · Colts 24, Dolphins 22 · Bucs 3–6 out of the bye, Mayfield (ankle/foot) one to watch — Week 11 Sun: Jags at Giants, Bucs at Lions, Dolphins at Bills",
+      "source": "Bleacher Report / USA Today",
+      "date": "2026-11-15"
     }
   ],
   "newBids": [
@@ -149,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-17T11:20:55.541287-05:00",
+  "updatedAt": "2026-11-17T11:22:35.528206-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
