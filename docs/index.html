@@ -283,8 +283,10 @@
       font-family: "IBM Plex Mono", monospace;
       font-size: 24px;
       color: var(--mute);
-      white-space: nowrap;
+      line-height: 1.25;
+      white-space: normal;
     }
+    .wx-copy .loc .wx-nowp { display: block; }
     .rain {
       margin-top: auto;
       display: flex;
@@ -407,14 +409,17 @@
     .ring-core .status {
       font-family: "Barlow Semi Condensed", sans-serif;
       font-weight: 700;
-      font-size: 28px;
-      letter-spacing: 0.16em;
+      font-size: 26px;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--gold);
       text-shadow: 0 0 16px rgba(240, 168, 70, 0.55);
-      line-height: 1.15;
-      padding: 0 18px;
+      line-height: 1.05;
+      padding: 0 10px;
+      text-align: center;
+      max-width: 72%;
     }
+    .ring-core .status .ln { display: block; }
     .empty-target {
       flex: 1;
       display: flex;
@@ -934,13 +939,25 @@
       return svg;
     }
 
+
+    function appendStatus(core, status) {
+      const n = el("div", "status");
+      const parts = String(status || "IN PURSUIT").trim().split(/\s+/).filter(Boolean);
+      if (parts.length >= 2) {
+        parts.forEach((p) => n.append(el("span", "ln", p)));
+      } else {
+        n.textContent = status || "IN PURSUIT";
+      }
+      core.append(n);
+    }
+
     function ringForBid(t) {
       const today = nyISO(new Date());
       const wrap = el("div", "ring-wrap");
       const core = el("div", "ring-core");
       if (t.kind === "manual" && t.dueMs == null && !t.dateISO) {
         wrap.append(ringSVG(0.28));
-        core.append(el("div", "status", t.status || "IN PURSUIT"));
+        appendStatus(core, t.status || "IN PURSUIT");
         wrap.append(core);
         return wrap;
       }
@@ -965,7 +982,7 @@
         return wrap;
       }
       wrap.append(ringSVG(0.28));
-      core.append(el("div", "status", t.status || "IN PURSUIT"));
+      appendStatus(core, t.status || "IN PURSUIT");
       wrap.append(core);
       return wrap;
     }
@@ -1330,7 +1347,9 @@
         document.getElementById("wx-temp").textContent = Math.round(j.current.temperature_2m) + "°";
         document.getElementById("wx-cond").textContent = wmoText(j.current.weather_code);
         const nowP = j.current.precipitation_probability;
-        document.getElementById("wx-loc").textContent = nowP != null ? "Orlando · " + Math.round(nowP) + "%" : "Orlando";
+        const loc = document.getElementById("wx-loc");
+        loc.replaceChildren(document.createTextNode("Orlando"));
+        if (nowP != null) loc.append(el("span", "wx-nowp", Math.round(nowP) + "%"));
         const hour = Number(new Intl.DateTimeFormat("en-US", { timeZone: TZ, hour: "numeric", hourCycle: "h23" }).format(new Date()));
         const rain = rainSummary(j.hourly, hour);
         const C = 2 * Math.PI * 70;
