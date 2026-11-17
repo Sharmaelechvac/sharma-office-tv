@@ -57,6 +57,12 @@
   "newBids": [
     {
       "date": "2026-11-17",
+      "project": "Bob's Discount Furniture - Ocoee, FL",
+      "from": "Marco Contractors, Inc.",
+      "received": "Tue 1:19 PM"
+    },
+    {
+      "date": "2026-11-17",
       "project": "Jessamine Project",
       "from": "NOK Construction",
       "received": "Tue 11/17"
@@ -102,18 +108,6 @@
       "project": "Rogers Behavioral Health",
       "from": "Landry/French Construction",
       "received": "Fri 10:30 AM"
-    },
-    {
-      "date": "2026-11-13",
-      "project": "Dollar Tree - Pinellas Park, FL #11474",
-      "from": "Summit General Contractors",
-      "received": "Fri 10:11 AM"
-    },
-    {
-      "date": "2026-11-12",
-      "project": "Day Dock at Riverwalk Park",
-      "from": "Saboungi Construction",
-      "received": "Thu 4:23 PM"
     }
   ],
   "tasks": {
@@ -171,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-17T13:07:16.450499-05:00",
+  "updatedAt": "2026-11-17T13:25:34.848320-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
