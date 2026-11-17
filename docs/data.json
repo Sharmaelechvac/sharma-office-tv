@@ -20,13 +20,13 @@
   },
   {
    "date": "2026-11-16",
-   "project": "Presbyterian Homes \u2014 Port Charlotte (Apartments & Maint. Bldgs)",
+   "project": "Presbyterian Homes — Port Charlotte (Apartments & Maint. Bldgs)",
    "from": "Chris-Tel Construction (SmartBidNet)",
    "received": "Bid due Fri Dec 18, 2026 5:00 PM"
   },
   {
    "date": "2026-11-16",
-   "project": "Advanced Auto Parts \u2014 St. Augustine",
+   "project": "Advanced Auto Parts — St. Augustine",
    "from": "Park Eleazer Construction",
    "received": "Bid due Thu Dec 3, 2026 noon"
   },
@@ -58,8 +58,8 @@
  "tasks": {
   "2026-11-10": [
    {
-    "detail": "132 Balmy Coast Rd, Groveland \u00b7 NOK Construction",
-    "title": "Glaze \u2014 bathroom rough-in"
+    "detail": "132 Balmy Coast Rd, Groveland · NOK Construction",
+    "title": "Glaze — bathroom rough-in"
    }
   ],
   "2026-11-11": [
@@ -73,63 +73,72 @@
    },
    {
     "detail": "Sebring townhouses open item",
-    "title": "Call Z Brothers \u2014 exhaust fans"
+    "title": "Call Z Brothers — exhaust fans"
    }
   ],
   "2026-11-12": [
    {
-    "detail": "3:00\u20134:00 PM \u00b7 Lot 69, Bella Collina, 16051 Vetta Dr \u00b7 HVAC only \u00b7 Tommy's cell (321) 432-1706",
-    "title": "House walk with Tommy Logan \u2014 Logan Construction"
+    "detail": "3:00–4:00 PM · Lot 69, Bella Collina, 16051 Vetta Dr · HVAC only · Tommy's cell (321) 432-1706",
+    "title": "House walk with Tommy Logan — Logan Construction"
    }
   ],
   "2026-11-16": [
    {
-    "detail": "9:00 AM \u00b7 county inspection today \u00b7 BR Ross Construction",
-    "title": "178 Fisher Loop \u2014 electrical underground"
+    "detail": "9:00 AM · county inspection today · BR Ross Construction",
+    "title": "178 Fisher Loop — electrical underground"
    },
    {
-    "detail": "Z Brothers Construction \u00b7 Santiago Plan 2118 \u00b7 after Fisher Loop",
-    "title": "Underground \u2014 614 Marion Oaks Trail, Ocala"
+    "detail": "Z Brothers Construction · Santiago Plan 2118 · after Fisher Loop",
+    "title": "Underground — 614 Marion Oaks Trail, Ocala"
    },
    {
-    "detail": "EXJ Root \u00b7 TUG inspection Tue 11/17 \u00b7 #261557-2026",
-    "title": "TUG install \u2014 14065 SW 48th Ave, Ocala"
+    "detail": "EXJ Root · TUG inspection Tue 11/17 · #261557-2026",
+    "title": "TUG install — 14065 SW 48th Ave, Ocala"
    },
    {
-    "detail": "EXJ Root \u00b7 TUG inspection Tue 11/17 \u00b7 #261558-2026",
-    "title": "TUG install \u2014 16321 SW 26th Terrace Rd, Ocala"
+    "detail": "EXJ Root · TUG inspection Tue 11/17 · #261558-2026",
+    "title": "TUG install — 16321 SW 26th Terrace Rd, Ocala"
    },
    {
-    "detail": "EXJ Root \u00b7 TUG inspection Tue 11/17 \u00b7 #261556-2026",
-    "title": "TUG install \u2014 601 Marion Oaks Golf Rd, Ocala"
+    "detail": "EXJ Root · TUG inspection Tue 11/17 · #261556-2026",
+    "title": "TUG install — 601 Marion Oaks Golf Rd, Ocala"
    },
    {
-    "title": "Walk \u2014 W Eunice Dr, Citrus Springs",
-    "detail": "Z Brothers \u00b7 end of day \u00b7 house number to confirm"
+    "title": "Walk — W Eunice Dr, Citrus Springs",
+    "detail": "Z Brothers · end of day · house number to confirm"
    }
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-17T08:26:41-05:00",
+ "updatedAt": "2026-11-17T10:03:15.941333-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
    "items": [
     {
-     "title": "Fri 11/13/2026 \u2014 212 Marion Oaks Golf Rd \u2014 ROUGH MECHANICAL (HVAC)",
+     "title": "Fri 11/13/2026 — 212 Marion Oaks Golf Rd — ROUGH MECHANICAL (HVAC)",
      "detail": "EXJ Root"
     },
     {
-     "title": "Mon 11/16/2026 \u2014 212 Marion Oaks Golf Rd \u2014 ROUGH ELECTRIC",
+     "title": "Mon 11/16/2026 — 212 Marion Oaks Golf Rd — ROUGH ELECTRIC",
      "detail": "EXJ Root"
     },
     {
-     "title": "Tue 11/17/2026 \u2014 17385 SW 25th Cir \u2014 ROUGH MECHANICAL (HVAC)",
+     "title": "Tue 11/17/2026 — 17385 SW 25th Cir — ROUGH MECHANICAL (HVAC)",
      "detail": "EXJ Root"
     },
     {
-     "title": "Wed 11/18/2026 \u2014 17385 SW 25th Cir \u2014 ROUGH ELECTRIC",
+     "title": "Wed 11/18/2026 — 17385 SW 25th Cir — ROUGH ELECTRIC",
      "detail": "EXJ Root"
+    }
+   ]
+  },
+  {
+   "heading": "EXJ ROOT TUGS",
+   "items": [
+    {
+     "title": "Fri 11/20/2026 — 498 Marion Oaks Golf Rd — TUG INSTALLATION",
+     "detail": "EXJ Root · Morgan Weston · 10:00 AM"
     }
    ]
   }
