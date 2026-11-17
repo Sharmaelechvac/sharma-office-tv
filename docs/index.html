@@ -112,7 +112,7 @@
       flex: 1 1 auto;
       min-height: 0;
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1.25fr 1fr;
       gap: 16px;
     }
     .panel {
@@ -167,6 +167,33 @@
       align-content: start;
       overflow: hidden;
     }
+    .bid-list.hero-one,
+    .bid-list.is-empty {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-template-columns: none;
+    }
+    .bid-list.is-empty .empty {
+      font-size: 32px;
+      padding: 8px 4px;
+    }
+    .bid.featured {
+      flex: 1 1 auto;
+      justify-content: center;
+      padding: 40px 48px;
+      gap: 14px;
+      border-radius: 6px;
+    }
+    .bid.featured .name {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+    .bid.featured .from { font-size: 32px; line-height: 1.25; }
+    .bid.featured .when { font-size: 32px; line-height: 1.25; }
     .bid {
       display: flex;
       flex-direction: column;
@@ -272,18 +299,48 @@
       text-transform: uppercase;
       padding: 0 20px;
     }
-    .ticker-copy {
+    .ticker[hidden] { display: none !important; }
+    .ticker-viewport {
       flex: 1 1 auto;
+      min-width: 0;
+      overflow: hidden;
+      position: relative;
       display: flex;
       align-items: center;
-      padding: 10px 20px;
+    }
+    .ticker-track {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      will-change: transform;
+      -webkit-animation: ticker-scroll 40s linear infinite;
+      animation: ticker-scroll 40s linear infinite;
+    }
+    .ticker-set {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      white-space: nowrap;
       font-size: 28px;
       line-height: 1.2;
-      white-space: nowrap;
-      overflow: hidden;
+      padding: 10px 0;
     }
-    .ticker-copy .ticker-line { white-space: nowrap; }
-    .ticker-copy strong { font-weight: 600; }
+    .ticker-sep {
+      display: inline-block;
+      padding: 0 1.15em;
+      color: var(--gold);
+      font-weight: 600;
+    }
+    .ticker-set strong { font-weight: 600; }
+    @-webkit-keyframes ticker-scroll {
+      from { -webkit-transform: translateX(0); transform: translateX(0); }
+      to { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+    }
+    @keyframes ticker-scroll {
+      from { -webkit-transform: translateX(0); transform: translateX(0); }
+      to { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+    }
     .foot {
       flex: 0 0 auto;
       display: flex;
@@ -345,9 +402,9 @@
         <div class="opt3b-grid">
           <section class="panel bids-hero">
             <div class="section-head">
-              <h2>New bids</h2>
+              <h2>Bidding</h2>
               <div class="num" id="bid-count">0</div>
-              <p class="sort-label">Due dates first, then newest received</p>
+              <p class="sort-label">Only jobs we're pursuing</p>
             </div>
             <div class="bid-list" id="bid-list"></div>
           </section>
@@ -359,9 +416,9 @@
             </section>
           </aside>
         </div>
-        <div class="ticker">
+        <div class="ticker" id="ticker">
           <div class="ticker-label">News</div>
-          <div class="ticker-copy" id="ticker-copy"></div>
+          <div class="ticker-viewport" id="ticker-viewport"></div>
         </div>
       </main>
 
@@ -382,9 +439,12 @@
     const STALE_MS = 2 * 60 * 60 * 1000;
     const LICENSE_RE = /\b(?:LIC\.?\s*)?(?:EC|CAC)\d+\b/i;
 
+    const TICKER_PX_PER_SEC = 90;
     let lastData = null;
     let lastUpdatedAt = null;
     let dataLoadError = false;
+    let boardConfig = { pursuing: [] };
+    let lastTickerKey = "";
 
     const PHONE_RE = /(?:\+?1[\s.-]*)?(?:\(?\d{3}\)?[\s.-]+)\d{3}[\s.-]\d{4}\b/g;
     const EMAIL_RE = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
@@ -551,6 +611,16 @@
       };
     }
 
+    function pursuingTokens() {
+      const list = (boardConfig && boardConfig.pursuing) || [];
+      return list.map((t) => String(t || "").trim().toLowerCase()).filter(Boolean);
+    }
+
+    function bidIsPursued(project) {
+      const name = String(project || "").toLowerCase();
+      return pursuingTokens().some((t) => name.indexOf(t) !== -1);
+    }
+
     function collectBids(data) {
       const raw = (data && (data.newBids || data.bids || data.new_bids)) || [];
       return raw.map((b) => {
@@ -566,7 +636,7 @@
           project, from, received, dueMs, dateISO,
           recency: receivedSortKey(dateISO, received)
         };
-      }).filter(Boolean);
+      }).filter(Boolean).filter((b) => bidIsPursued(b.project));
     }
 
     function sortBids(bids) {
@@ -607,19 +677,22 @@
       const bids = sortBids(collectBids(data));
       document.getElementById("bid-count").textContent = String(bids.length);
       list.replaceChildren();
+      list.classList.toggle("hero-one", bids.length === 1);
+      list.classList.toggle("is-empty", bids.length === 0);
       if (!bids.length) {
-        list.append(el("div", "empty", "No new bids"));
+        list.append(el("div", "empty", "No bids we're pursuing"));
         return;
       }
       for (const b of bids) {
-        const card = el("div", b.dueMs != null ? "bid due" : "bid");
+        const cls = (b.dueMs != null ? "bid due" : "bid") + (bids.length === 1 ? " featured" : "");
+        const card = el("div", cls);
         card.append(el("div", "name", b.project));
         if (b.from) card.append(el("div", "from", b.from));
         const when = b.dueMs != null ? formatDueLabel(b.received) : formatReceivedLabel(b.dateISO, b.received);
         if (when) card.append(el("div", "when", when));
         list.append(card);
       }
-      fitOverflow(list, "bid-more");
+      if (bids.length > 1) fitOverflow(list, "bid-more");
     }
 
     function collectSchedule(data) {
@@ -714,37 +787,77 @@
       return words.slice(0, 3).join(" ");
     }
 
-    function renderTicker(data) {
-      const host = document.getElementById("ticker-copy");
-      host.replaceChildren();
+    function collectTickerParts(data) {
       const parts = [];
       const news = (data && data.news) || [];
       for (const n of news) {
         const headline = tickerHeadline(n);
         if (!headline) continue;
-        parts.push({ strong: shortHead(headline), rest: headline.replace(shortHead(headline), "").replace(/^\s*[—–-]\s*/, "").trim() || headline });
+        const lead = shortHead(headline);
+        const rest = headline.replace(lead, "").replace(/^\s*[—–-]\s*/, "").trim();
+        parts.push({ strong: lead, rest: rest || headline });
       }
       const ticker = (data && data.ticker) || [];
-      for (const t of ticker) {
-        const s = stripPII(t);
+      for (const item of ticker) {
+        const s = stripPII(item);
         if (!s || LICENSE_RE.test(s)) continue;
         parts.push({ strong: "", rest: s });
       }
-      if (!parts.length) {
-        host.append(el("span", "", "No news on the board"));
-        return;
-      }
-      const line = el("span", "ticker-line");
+      return parts;
+    }
+
+    function tickerKey(parts) {
+      return parts.map((p) => p.strong + "\t" + p.rest).join("\n");
+    }
+
+    function fillTickerSet(set, parts) {
       parts.forEach((p, i) => {
-        if (i) line.append(document.createTextNode("  ·  "));
+        if (i) set.append(el("span", "ticker-sep", "·"));
         if (p.strong && p.rest && p.rest !== p.strong) {
-          line.append(el("strong", "", p.strong));
-          line.append(document.createTextNode("\u00a0\u00a0" + p.rest));
+          set.append(el("strong", "", p.strong));
+          set.append(document.createTextNode("\u00a0\u00a0" + p.rest));
         } else {
-          line.append(el("strong", "", p.strong || p.rest));
+          set.append(el("strong", "", p.strong || p.rest));
         }
       });
-      host.append(line);
+      set.append(el("span", "ticker-sep", "·"));
+    }
+
+    function setTickerDuration(track, setEl) {
+      const w = setEl.offsetWidth;
+      if (!w) return;
+      const secs = Math.max(10, w / TICKER_PX_PER_SEC);
+      track.style.webkitAnimationDuration = secs + "s";
+      track.style.animationDuration = secs + "s";
+    }
+
+    function renderTicker(data) {
+      const bar = document.getElementById("ticker");
+      const viewport = document.getElementById("ticker-viewport");
+      const parts = collectTickerParts(data);
+      if (!parts.length) {
+        bar.setAttribute("hidden", "");
+        viewport.replaceChildren();
+        lastTickerKey = "";
+        return;
+      }
+      bar.removeAttribute("hidden");
+      const key = tickerKey(parts);
+      if (key === lastTickerKey && viewport.querySelector(".ticker-track")) return;
+      lastTickerKey = key;
+      const track = el("div", "ticker-track");
+      const setA = el("div", "ticker-set");
+      const setB = el("div", "ticker-set");
+      fillTickerSet(setA, parts);
+      fillTickerSet(setB, parts);
+      track.append(setA, setB);
+      viewport.replaceChildren(track);
+      const apply = function () { setTickerDuration(track, setA); };
+      if (window.requestAnimationFrame) {
+        window.requestAnimationFrame(function () { window.requestAnimationFrame(apply); });
+      } else {
+        apply();
+      }
     }
 
     function firstTimestamp(data) {
@@ -855,9 +968,23 @@
       } catch (e) { /* keep last weather */ }
     }
 
+    async function loadBoardConfig() {
+      try {
+        const res = await fetch(`board-config.json?t=${Date.now()}`, { cache: "no-store" });
+        if (!res.ok) return;
+        const cfg = await res.json();
+        if (cfg && Array.isArray(cfg.pursuing)) {
+          boardConfig = { pursuing: cfg.pursuing };
+        }
+      } catch (e) { /* keep last config */ }
+    }
+
     async function loadData() {
       try {
-        const res = await fetch(`data.json?t=${Date.now()}`, { cache: "no-store" });
+        const dataP = fetch(`data.json?t=${Date.now()}`, { cache: "no-store" });
+        const cfgP = loadBoardConfig();
+        const res = await dataP;
+        await cfgP;
         if (!res.ok) throw new Error("bad status");
         const data = await res.json();
         dataLoadError = false;
