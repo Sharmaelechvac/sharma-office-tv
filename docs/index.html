@@ -839,6 +839,22 @@
       padding: 10px 0;
     }
     .comms-set strong { font-weight: 600; }
+    .comms-src {
+      display: inline-flex;
+      align-items: center;
+      background: #F0A846;
+      color: #1a2f61;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      line-height: 1;
+      padding: 5px 10px 6px;
+      border-radius: 4px;
+      margin-right: 0.45em;
+      white-space: nowrap;
+    }
     .comms-sep {
       display: inline-block;
       padding: 0 1.15em;
@@ -934,7 +950,7 @@
 
       <div class="hud comms" id="ticker">
         <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
-        <div class="panel-label">News</div>
+        <div class="panel-label">Comms</div>
         <div class="comms-viewport" id="ticker-viewport"></div>
       </div>
 
@@ -950,7 +966,7 @@
     const REFRESH_MS = 3 * 60 * 1000;
     const WEATHER_MS = 15 * 60 * 1000;
     const STALE_MS = 2 * 60 * 60 * 1000;
-    const TICKER_PX_PER_SEC = 90;
+    const TICKER_PX_PER_SEC = 130;
     const LICENSE_RE = /\b(?:LIC\.?\s*)?(?:EC|CAC)\d+\b/i;
     const RING_C = 2 * Math.PI * 118;
 
@@ -1485,6 +1501,59 @@
       return stripPII(raw);
     }
 
+    function domainFromUrl(text) {
+      const m = String(text || "").match(/https?:\/\/(?:www\.)?([^\/\s]+)/i);
+      if (!m) return "";
+      const host = m[1].toLowerCase();
+      if (host.indexOf("open-meteo") !== -1) return "Open-Meteo";
+      if (host.indexOf("apnews") !== -1 || host === "ap.org") return "AP";
+      if (host.indexOf("reuters") !== -1) return "Reuters";
+      if (host.indexOf("espn") !== -1) return "ESPN";
+      if (host.indexOf("bleacherreport") !== -1) return "Bleacher Report";
+      if (host.indexOf("usatoday") !== -1) return "USA Today";
+      if (host.indexOf("weather.gov") !== -1 || host.indexOf("noaa") !== -1) return "NWS";
+      const labels = host.split(".").filter(function (part) {
+        return part !== "www" && part !== "com" && part !== "org" && part !== "net" && part !== "gov" && part !== "edu";
+      });
+      return labels.length ? labels[0] : host;
+    }
+
+    function compactSource(src) {
+      const s = String(src || "").replace(/\s+/g, " ").trim();
+      if (!s) return "";
+      const rules = [
+        [/open-?meteo/i, "Open-Meteo"],
+        [/national weather service|\bnws\b|weather\.gov/i, "NWS"],
+        [/^sharma news/i, "Sharma"],
+        [/^federal reserve|\bthe fed\b/i, "Fed"],
+        [/office of insurance regulation|\bncci\b/i, "FL OIR"],
+        [/^espn\b/i, "ESPN"],
+        [/^bleacher report/i, "Bleacher Report"],
+        [/associated press|^ap\b/i, "AP"],
+        [/reuters/i, "Reuters"],
+        [/usa today/i, "USA Today"],
+        [/herald-?tribune/i, "Herald-Tribune"],
+        [/tampa bay monthly/i, "Tampa Bay Monthly"]
+      ];
+      for (let i = 0; i < rules.length; i++) {
+        if (rules[i][0].test(s)) return rules[i][1];
+      }
+      let out = s.split("/")[0].split("\u2014")[0].split("\u2013")[0].split(",")[0].trim();
+      if (out.length > 22) {
+        const clipped = out.slice(0, 22).replace(/\s+\S*$/, "").trim();
+        out = clipped || out.slice(0, 22);
+      }
+      return out;
+    }
+
+    function tickerSource(n) {
+      const obj = typeof n === "string" ? { headline: n } : (n || {});
+      let src = compactSource(obj.source || obj.src || obj.outlet || obj.publisher || obj.byline || obj.attribution || "");
+      if (!src) src = compactSource(domainFromUrl(obj.url || obj.href || obj.link || obj.website || obj.sourceUrl || obj.source_url || ""));
+      if (!src) src = compactSource(domainFromUrl(obj.headline || obj.title || ""));
+      return src || "News";
+    }
+
     function shortHead(text) {
       const t = text.replace(/\s+[—–-]\s+/, " — ");
       const cut = t.split(/\s+[—–]\s+/)[0];
@@ -1500,12 +1569,12 @@
         if (!headline) continue;
         const lead = shortHead(headline);
         const rest = headline.replace(lead, "").replace(/^\s*[—–-]\s*/, "").trim();
-        parts.push({ strong: lead, rest: rest || headline });
+        parts.push({ source: tickerSource(n), strong: lead, rest: rest || headline });
       }
       for (const item of (data && data.ticker) || []) {
-        const s = stripPII(item);
+        const s = stripPII(typeof item === "string" ? item : (item && (item.text || item.headline || item.message)) || "");
         if (!s || LICENSE_RE.test(s)) continue;
-        parts.push({ strong: "", rest: s });
+        parts.push({ source: tickerSource(item), strong: "", rest: s });
       }
       return parts;
     }
@@ -1513,6 +1582,7 @@
     function fillTickerSet(set, parts) {
       parts.forEach((p, i) => {
         if (i) set.append(el("span", "comms-sep", "//"));
+        set.append(el("span", "comms-src", p.source || "News"));
         if (p.strong && p.rest && p.rest !== p.strong) {
           set.append(el("strong", "", p.strong));
           set.append(document.createTextNode("\u00a0\u00a0" + p.rest));
@@ -1534,7 +1604,7 @@
         return;
       }
       bar.removeAttribute("hidden");
-      const key = parts.map((p) => p.strong + "\t" + p.rest).join("\n");
+      const key = parts.map((p) => (p.source || "") + "\t" + p.strong + "\t" + p.rest).join("\n");
       if (key === lastTickerKey && viewport.querySelector(".comms-track")) return;
       lastTickerKey = key;
       const track = el("div", "comms-track");
