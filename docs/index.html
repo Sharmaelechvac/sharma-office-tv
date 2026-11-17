@@ -279,6 +279,14 @@
       const items = [];
       const custom = (data && data.ticker) || [];
       custom.forEach((t) => { if (t) items.push(String(t)); });
+      const news = (data && data.news) || [];
+      news.forEach((n) => {
+        if (!n) return;
+        const headline = typeof n === "string" ? n : n.headline;
+        if (!headline) return;
+        const source = typeof n === "string" ? "" : (n.source || "");
+        items.push(`NEWS — ${headline}${source ? " · " + source : ""}`);
+      });
       const today = nyISO();
       const tasks = ((data && data.tasks) || {})[today] || [];
       tasks.forEach((t) => { if (t && t.title) items.push(`TODAY — ${t.title}${t.detail ? " · " + t.detail : ""}`); });
@@ -292,7 +300,7 @@
       // Duplicate the set twice for a seamless loop; duration scales with content length.
       const oneSet = items.map((t) => `<span>${t.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</span><span class="sep">◆</span>`).join("");
       track.innerHTML = oneSet + oneSet;
-      const secs = Math.max(45, Math.min(180, items.join(" ").length / 9));
+      const secs = Math.max(45, Math.min(300, items.join(" ").length / 9));
       track.style.animationDuration = `${secs}s`;
     }
     function wmoText(code) {

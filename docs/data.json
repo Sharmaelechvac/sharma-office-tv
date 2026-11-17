@@ -3,6 +3,42 @@
   "SHARMA ELECTRIC & HVAC — SERVING ORANGE · OSCEOLA · POLK · SEMINOLE · LAKE · MARION · CITRUS · BREVARD · HERNANDO · PASCO · SUMTER",
   "LIC. EC13013924 · CAC1823596"
  ],
+ "news": [
+  {
+   "headline": "FLOOD WATCH — Central Florida: Orange, Osceola, Seminole, Brevard & Volusia through Fri 7 PM, 3–6 in. of rain expected",
+   "source": "National Weather Service via ORLtoday",
+   "date": "2026-11-17"
+  },
+  {
+   "headline": "Florida home sales fell 10.1% in October; new contracts dropped 15.7%",
+   "source": "Sharma News — Finance",
+   "date": "2026-11-17"
+  },
+  {
+   "headline": "Sarasota County votes Nov 18 on 1,000 more homes at Palmer Ranch East — up to 5,702 homes total",
+   "source": "Sarasota Herald-Tribune",
+   "date": "2026-11-17"
+  },
+  {
+   "headline": "WWE plans $100M, 98,000 SF Performance Center & HQ in downtown Orlando — city incentive vote Nov 18",
+   "source": "Orlando Business Journal via reports",
+   "date": "2026-11-17"
+  },
+  {
+   "headline": "SupplyHouse to open Atlanta fulfillment center — $19M, 330 jobs, faster HVAC/electrical supply shipping across the Southeast",
+   "source": "Gov. Kemp / EIN News",
+   "date": "2026-11-12"
+  },
+  {
+   "headline": "Leap Partners buys Crowther Heating & Air — its 37th HVAC, plumbing & electrical acquisition across the Southeast, incl. Florida",
+   "source": "PR Newswire",
+   "date": "2026-11-17"
+  },
+  {
+   "headline": "$58.5M construction financing for 279 build-to-rent homes in Deltona — between Orlando & Daytona",
+   "source": "PR Newswire / Anchor Loans"
+  }
+ ],
  "newBids": [
   {
    "date": "2026-11-17",
@@ -114,7 +150,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-17T10:24:10.161610-05:00",
+ "updatedAt": "2026-11-17T10:25:31.645210-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
