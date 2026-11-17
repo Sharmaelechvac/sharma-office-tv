@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-17T13:25:34.848320-05:00",
+  "updatedAt": "2026-11-17T14:49:47.100921-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
@@ -254,28 +254,31 @@
         "notes": "PARTIAL APPROVAL FOR IN-SLAB KITCHEN CONDUIT"
       },
       {
-        "time": "4:12 PM",
+        "time": "9:22 AM",
         "title": "601 Marion Oaks Golf Rd",
         "type": "TUG / Preliminary Power Release — Electrical",
         "number": "#261556-2026",
         "inspector": "James Calhoun",
-        "status": "Scheduled"
+        "status": "Approved",
+        "notes": "11/17/26 green sticker in meter enclosure"
       },
       {
-        "time": "4:13 PM",
+        "time": "10:58 AM",
         "title": "14065 SW 48th Ave",
         "type": "TUG / Preliminary Power Release — Electrical",
         "number": "#261557-2026",
         "inspector": "James Calhoun",
-        "status": "Scheduled"
+        "status": "Approved",
+        "notes": "11/17/26 green sticker in meter enclosure"
       },
       {
-        "time": "4:14 PM",
+        "time": "8:43 AM",
         "title": "16321 SW 26th Terrace Rd",
         "type": "TUG / Preliminary Power Release — Electrical",
         "number": "#261558-2026",
         "inspector": "James Calhoun",
-        "status": "Scheduled"
+        "status": "Approved",
+        "notes": "11/17/26 Green sticker in meter enclosure"
       }
     ]
   }
