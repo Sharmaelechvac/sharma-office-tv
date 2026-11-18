@@ -4,14 +4,14 @@
   ],
   "news": [
     {
-      "headline": "FLOOD WATCH — NWS Melbourne: Flood Watch for Orange, Osceola, Seminole, Volusia, Brevard & most of east-central Florida through Fri Nov 20 7 PM — 3–6 in. of rain, isolated 8–12 in.; St. Johns River near Cocoa in major flood at 17.13 ft Tue night, high surf / rip-current risk through Friday",
+      "headline": "FLOOD WATCH — NWS Melbourne: Flood Watch for Orange, Osceola, Seminole, Volusia, Brevard & most of east-central Florida through Fri Nov 20 7 PM — 3–6 in. of rain, isolated 8–12 in.; Flood Warning continues for St. Johns River near Cocoa at major flood stage (NWS statement Wed 8:57 AM), high surf / rip-current risk through Friday",
       "source": "National Weather Service, Melbourne",
       "date": "2026-11-18"
     },
     {
-      "headline": "Florida single-family closed sales fell 10.1% in October to 19,049; median price rose 2.2% to $420,000, new pending sales dropped 15.7% — third straight month of year-over-year declines",
-      "source": "Florida Realtors",
-      "date": "2026-11-16"
+      "headline": "U.S. housing starts rose 9.9% in October to 1.309 million annual rate, beating forecasts — single-family starts up 4.0% to 864,000 — but building permits plunged 7.4% to 1.295 million, lowest since May 2020, with single-family permits down 8.7% to 772,000",
+      "source": "Reuters / U.S. Census Bureau",
+      "date": "2026-11-18"
     },
     {
       "headline": "Builder confidence fell 4 points to 25 in November — lowest since April 2012 — NAHB/Wells Fargo HMI; 46% of builders cut prices, buyer traffic fell to 16",
@@ -24,7 +24,7 @@
       "date": "2026-11-13"
     },
     {
-      "headline": "Copper at lowest since April Wed — LME 3-month fell 3.7% to $12,742.50/ton, below $13,000, amid strong dollar, China demand and AI-stock selloff concerns",
+      "headline": "Copper tumbled below $13,000 Wed — LME 3-month fell 5.4% in midmorning U.S. trading to $12,505.50/ton, lowest since April, amid strong dollar, China demand concerns and AI-stock selloff",
       "source": "Morningstar / Dow Jones Newswires",
       "date": "2026-11-18"
     },
@@ -34,8 +34,8 @@
       "date": "2026-11-17"
     },
     {
-      "headline": "Markets Tue: S&P 500 fell 1.03% to 7,340.53 in a 4th straight decline, Dow fell 1.64% to 50,759.42, Nasdaq fell 0.74%; Fed funds held at 3.75–4.00%, October FOMC minutes due Wed 2 PM ET, markets price ~95% chance of a Dec hike",
-      "source": "Daily Market Report",
+      "headline": "Markets Wed midday look-ahead: futures rose after Nvidia beat — Nasdaq 100 futures +0.8%, S&P 500 futures +0.4% after Tue's 4th straight decline (S&P −1.03% to 7,340.53); October FOMC minutes due today 2 PM ET, Fed funds held at 3.75–4.00%, markets price ~95% chance of a Dec hike",
+      "source": "CNBC",
       "date": "2026-11-18"
     },
     {
@@ -44,13 +44,13 @@
       "date": "2026-11-16"
     },
     {
-      "headline": "NBA Mon: Magic 115, Celtics 105 — Orlando's 4th straight win, Bane 24 pts · Heat 128, Rockets 110 — Miami's 5th straight win",
-      "source": "Flashscore",
-      "date": "2026-11-17"
+      "headline": "NBA: Heat host Milwaukee Bucks tonight Wed 7 PM ET on ESPN; last out Mon — Magic 115, Celtics 105 (Bane 24 pts, Orlando's 4th straight win) · Heat 128, Rockets 110 (Miami's 5th straight win)",
+      "source": "Flashscore / ESPN schedule",
+      "date": "2026-11-18"
     },
     {
-      "headline": "NFL Nov 17 flex: Titans at Jaguars moves to 1 PM ET Sun Nov 29 on FOX, Jets at Dolphins 1 PM Nov 29, Panthers at Buccaneers Mon Nov 30 8:15 PM on ESPN; Bucs QB Mayfield in walking boot ahead of Sun at Detroit",
-      "source": "NFL / Patriots.com",
+      "headline": "NFL Week 11 Sun Nov 22 — all Florida teams on the road: Dolphins at Bills 1 PM ET, Buccaneers at Lions 1 PM ET, Jaguars at Giants 4:25 PM ET; Week 12 flex: Titans at Jaguars moves to 1 PM Sun Nov 29, Panthers at Buccaneers Mon Nov 30 8:15 PM on ESPN",
+      "source": "NFL",
       "date": "2026-11-17"
     }
   ],
@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-18T11:27:59.872512-05:00",
+  "updatedAt": "2026-11-18T12:00:01.877970-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
