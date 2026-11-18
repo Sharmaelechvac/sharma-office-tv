@@ -57,6 +57,12 @@
   "newBids": [
     {
       "date": "2026-11-18",
+      "project": "Polk County Utilities AMI Towers-Northeast Region",
+      "from": "SEMCO Construction, Inc.",
+      "received": "Wed 11:47 AM"
+    },
+    {
+      "date": "2026-11-18",
       "project": "Valencia College Building 4 A&P Renovation",
       "from": "S.A Casey Construction, Inc.",
       "received": "Wed 10:54 AM"
@@ -102,12 +108,6 @@
       "project": "Presbyterian Homes — Port Charlotte (Apartments & Maint. Bldgs)",
       "from": "Chris-Tel Construction (SmartBidNet)",
       "received": "Bid due Fri Dec 18, 2026 5:00 PM"
-    },
-    {
-      "date": "2026-11-16",
-      "project": "Advanced Auto Parts — St. Augustine",
-      "from": "Park Eleazer Construction",
-      "received": "Bid due Thu Dec 3, 2026 noon"
     }
   ],
   "tasks": {
@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-18T12:00:01.877970-05:00",
+  "updatedAt": "2026-11-18T12:25:30.166458-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
