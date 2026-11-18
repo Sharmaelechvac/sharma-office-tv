@@ -57,6 +57,12 @@
   "newBids": [
     {
       "date": "2026-11-18",
+      "project": "Solana Ave TI- Winter Park FL",
+      "from": "MEC General Contractors",
+      "received": "Wed 3:30 PM"
+    },
+    {
+      "date": "2026-11-18",
       "project": "Site Development for the Orange City Public Works Operations Facility",
       "from": "Saboungi Construction",
       "received": "Wed 3:23 PM"
@@ -102,12 +108,6 @@
       "project": "Academy Sports Bartow, FL",
       "from": "Horizon Retail Construction",
       "received": "Mon 5:27 PM"
-    },
-    {
-      "date": "2026-11-16",
-      "project": "Lake Alfred Police Evidence Facility - ITB 2026-10",
-      "from": "SEMCO Construction, Inc.",
-      "received": "Mon 3:42 PM"
     }
   ],
   "tasks": {
@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-18T15:56:54.126932-05:00",
+  "updatedAt": "2026-11-18T16:26:49.446509-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
