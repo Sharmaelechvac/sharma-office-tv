@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-18T07:00:44.635135-05:00",
+  "updatedAt": "2026-11-18T07:46:07.343033-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
@@ -209,23 +209,17 @@
   ],
   "mySchedule": [
     {
-      "date": "2026-11-17",
-      "time": "8:00 AM",
-      "title": "BNI Networking",
-      "location": "Winter Park Golf Course, Winter Park, FL"
-    },
-    {
-      "date": "2026-11-17",
-      "time": "1:30 PM",
-      "title": "Lake Nona",
-      "notes": "Field block after BNI (per My Day)"
-    },
-    {
       "date": "2026-11-19",
       "time": "All day",
       "title": "DNR El Prado – Underground electrical",
       "location": "4008 W El Prado Blvd, Tampa, FL 33629",
       "notes": "Mukherjee Residence (DNR Contracting). Underground electrical incl. Ufer bond."
+    },
+    {
+      "date": "2026-11-19",
+      "time": "All day",
+      "title": "HVAC Rough — Lot 69 Bella Collina, 16051 Vetta Dr (Logan Construction)",
+      "location": "16051 Vetta Dr, Montverde, FL"
     },
     {
       "date": "2026-11-20",
@@ -241,45 +235,7 @@
     }
   ],
   "todayInspections": {
-    "date": "2026-11-17",
-    "entries": [
-      {
-        "time": "10:59 AM",
-        "title": "178 Fisher Loop, Ocklawaha",
-        "type": "Electrical Underground",
-        "number": "#266804-2026",
-        "inspector": "Douglas Mudge",
-        "inspectorPhone": "(352) 844-6654",
-        "status": "Partial Approval",
-        "notes": "PARTIAL APPROVAL FOR IN-SLAB KITCHEN CONDUIT"
-      },
-      {
-        "time": "9:22 AM",
-        "title": "601 Marion Oaks Golf Rd",
-        "type": "TUG / Preliminary Power Release — Electrical",
-        "number": "#261556-2026",
-        "inspector": "James Calhoun",
-        "status": "Approved",
-        "notes": "11/17/26 green sticker in meter enclosure"
-      },
-      {
-        "time": "10:58 AM",
-        "title": "14065 SW 48th Ave",
-        "type": "TUG / Preliminary Power Release — Electrical",
-        "number": "#261557-2026",
-        "inspector": "James Calhoun",
-        "status": "Approved",
-        "notes": "11/17/26 green sticker in meter enclosure"
-      },
-      {
-        "time": "8:43 AM",
-        "title": "16321 SW 26th Terrace Rd",
-        "type": "TUG / Preliminary Power Release — Electrical",
-        "number": "#261558-2026",
-        "inspector": "James Calhoun",
-        "status": "Approved",
-        "notes": "11/17/26 Green sticker in meter enclosure"
-      }
-    ]
+    "date": "2026-11-18",
+    "entries": []
   }
 }
