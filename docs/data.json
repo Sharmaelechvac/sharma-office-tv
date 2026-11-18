@@ -4,53 +4,53 @@
   ],
   "news": [
     {
-      "headline": "FLOOD WATCH — NWS Melbourne: Orange, Osceola, Seminole, Brevard & Volusia, Tue 5 PM through Fri 7 PM — 3–6 in. of rain, isolated 8–12 in.; St. Johns River near Cocoa at 17.1 ft, major flood stage",
+      "headline": "FLOOD WATCH — NWS Melbourne: Flood Watch for Orange, Osceola, Seminole, Volusia, Brevard & most of east-central Florida through Fri Nov 20 7 PM — 3–6 in. of rain, isolated 8–12 in.; St. Johns River near Cocoa in major flood at 17.13 ft Tue night, high surf / rip-current risk through Friday",
       "source": "National Weather Service, Melbourne",
-      "date": "2026-11-17"
+      "date": "2026-11-18"
     },
     {
-      "headline": "Florida single-family closed sales fell 10.1% in October to 19,049; median price rose 2.2% to $420,000, new pending sales dropped 15.7%",
+      "headline": "Florida single-family closed sales fell 10.1% in October to 19,049; median price rose 2.2% to $420,000, new pending sales dropped 15.7% — third straight month of year-over-year declines",
       "source": "Florida Realtors",
       "date": "2026-11-16"
     },
     {
-      "headline": "Sarasota County votes Nov 18 on 1,000 more homes at Palmer Ranch East — up to 5,702 homes total, including up to 500 attainable homes",
-      "source": "Sarasota Herald-Tribune",
+      "headline": "Builder confidence fell 4 points to 25 in November — lowest since April 2012 — NAHB/Wells Fargo HMI; 46% of builders cut prices, buyer traffic fell to 16",
+      "source": "NAHB",
       "date": "2026-11-17"
     },
     {
-      "headline": "Beacon Hill at Princeton opens with 112 workforce housing units in Miami-Dade — described as Florida's first ground-up Live Local Act development to complete",
-      "source": "Florida YIMBY",
-      "date": "2026-11-17"
-    },
-    {
-      "headline": "Florida's 9th-edition building code takes effect Dec 31 — permit application date governs which edition applies; Miami-Dade portal cutoff is 4 PM Dec 30",
+      "headline": "Florida's 9th-edition building code takes effect Dec 31 — permit application date governs which edition applies; Miami-Dade portal cutoff is 4 PM Dec 30, with new flood documentation and coastal corrosion rules",
       "source": "Greenberg Traurig",
+      "date": "2026-11-13"
+    },
+    {
+      "headline": "Copper at lowest since April Wed — LME 3-month fell 3.7% to $12,742.50/ton, below $13,000, amid strong dollar, China demand and AI-stock selloff concerns",
+      "source": "Morningstar / Dow Jones Newswires",
+      "date": "2026-11-18"
+    },
+    {
+      "headline": "Leap Partners acquires Crowther Heating & Air Conditioning in Kilmarnock, VA — its second Virginia acquisition in two months; 37 HVAC, plumbing and electrical companies acquired in four years",
+      "source": "PR Newswire",
       "date": "2026-11-17"
     },
     {
-      "headline": "Copper trading near $6.00/lb Tue afternoon, consolidating near $5.88 support — AI data-center and grid-upgrade demand cited as structural driver",
-      "source": "Traders Union / Yahoo Finance",
-      "date": "2026-11-17"
+      "headline": "Markets Tue: S&P 500 fell 1.03% to 7,340.53 in a 4th straight decline, Dow fell 1.64% to 50,759.42, Nasdaq fell 0.74%; Fed funds held at 3.75–4.00%, October FOMC minutes due Wed 2 PM ET, markets price ~95% chance of a Dec hike",
+      "source": "Daily Market Report",
+      "date": "2026-11-18"
     },
     {
-      "headline": "Markets Tue afternoon: S&P 500 down 1.29% to 7,320.95 and Nasdaq down 1.13% at 3:24 PM ET, 10-year yield 5.10%; Fed funds held at 3.75–4.00%, October minutes due Wed",
-      "source": "Pulsafi / Daily Market Report",
-      "date": "2026-11-17"
-    },
-    {
-      "headline": "Florida workers' comp: Commissioner Yaworsky approved NCCI's −7.4% average rate cut for new and renewal policies from Jan 1, 2027",
+      "headline": "Florida workers' comp: Commissioner Yaworsky approved NCCI's −7.4% average rate cut for new and renewal policies from Jan 1, 2027 — 11th straight year of reductions",
       "source": "Florida Office of Insurance Regulation",
       "date": "2026-11-16"
     },
     {
       "headline": "NBA Mon: Magic 115, Celtics 105 — Orlando's 4th straight win, Bane 24 pts · Heat 128, Rockets 110 — Miami's 5th straight win",
-      "source": "Associated Press",
-      "date": "2026-11-16"
+      "source": "Flashscore",
+      "date": "2026-11-17"
     },
     {
-      "headline": "NFL Week 11 Sun Nov 22: Jaguars at Giants 4:25 PM · Buccaneers at Lions 1 PM · Dolphins at Bills 1 PM",
-      "source": "Sports Illustrated / NFL Schedule",
+      "headline": "NFL Nov 17 flex: Titans at Jaguars moves to 1 PM ET Sun Nov 29 on FOX, Jets at Dolphins 1 PM Nov 29, Panthers at Buccaneers Mon Nov 30 8:15 PM on ESPN; Bucs QB Mayfield in walking boot ahead of Sun at Detroit",
+      "source": "NFL / Patriots.com",
       "date": "2026-11-17"
     }
   ],
@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-17T15:56:33.037139-05:00",
+  "updatedAt": "2026-11-18T07:00:44.635135-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
