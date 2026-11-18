@@ -56,6 +56,18 @@
   ],
   "newBids": [
     {
+      "date": "2026-11-18",
+      "project": "Valencia College Building 4 A&P Renovation",
+      "from": "S.A Casey Construction, Inc.",
+      "received": "Wed 10:54 AM"
+    },
+    {
+      "date": "2026-11-18",
+      "project": "AutoZone - Miami, FL",
+      "from": "Summit General Contractors",
+      "received": "Wed 10:48 AM"
+    },
+    {
       "date": "2026-11-17",
       "project": "Bob's Discount Furniture - Ocoee, FL",
       "from": "Marco Contractors, Inc.",
@@ -96,18 +108,6 @@
       "project": "Advanced Auto Parts — St. Augustine",
       "from": "Park Eleazer Construction",
       "received": "Bid due Thu Dec 3, 2026 noon"
-    },
-    {
-      "date": "2026-11-13",
-      "project": "Antle Project",
-      "from": "NOK Construction",
-      "received": "Fri 11:35 AM"
-    },
-    {
-      "date": "2026-11-13",
-      "project": "Rogers Behavioral Health",
-      "from": "Landry/French Construction",
-      "received": "Fri 10:30 AM"
     }
   ],
   "tasks": {
@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-18T07:46:07.343033-05:00",
+  "updatedAt": "2026-11-18T11:27:59.872512-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
