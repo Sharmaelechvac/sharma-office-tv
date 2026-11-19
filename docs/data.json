@@ -56,6 +56,12 @@
   ],
   "newBids": [
     {
+      "date": "2026-11-19",
+      "project": "TJ Maxx Bartow, FL",
+      "from": "Horizon Retail Construction",
+      "received": "Thu 9:36 AM"
+    },
+    {
       "date": "2026-11-18",
       "project": "Solana Ave TI- Winter Park FL",
       "from": "MEC General Contractors",
@@ -102,12 +108,6 @@
       "project": "Burrito Guyz Project",
       "from": "S.A Casey Construction, Inc.",
       "received": "Tue 8:23 AM"
-    },
-    {
-      "date": "2026-11-16",
-      "project": "Academy Sports Bartow, FL",
-      "from": "Horizon Retail Construction",
-      "received": "Mon 5:27 PM"
     }
   ],
   "tasks": {
@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-19T07:39:52-05:00",
+  "updatedAt": "2026-11-19T10:25:29-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
