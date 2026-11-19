@@ -57,6 +57,18 @@
   "newBids": [
     {
       "date": "2026-11-19",
+      "project": "Haughton Patio",
+      "from": "Nok Construction",
+      "received": "Thu 2:10 PM"
+    },
+    {
+      "date": "2026-11-19",
+      "project": "RejuvenX Chiropractic-TI",
+      "from": "EnviroStruct, LLC",
+      "received": "Thu 2:04 PM"
+    },
+    {
+      "date": "2026-11-19",
       "project": "Academy Sports TI Corta Commons Bartow FL",
       "from": "MEC General Contractors",
       "received": "Thu 11:35 AM"
@@ -96,18 +108,6 @@
       "project": "Valencia College Building 4 A&P Renovation",
       "from": "S.A Casey Construction, Inc.",
       "received": "Wed 10:54 AM"
-    },
-    {
-      "date": "2026-11-18",
-      "project": "AutoZone - Miami, FL",
-      "from": "Summit General Contractors",
-      "received": "Wed 10:48 AM"
-    },
-    {
-      "date": "2026-11-17",
-      "project": "Bob's Discount Furniture - Ocoee, FL",
-      "from": "Marco Contractors, Inc.",
-      "received": "Tue 1:19 PM"
     }
   ],
   "tasks": {
@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-19T12:25:30-05:00",
+  "updatedAt": "2026-11-19T14:27:41-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
