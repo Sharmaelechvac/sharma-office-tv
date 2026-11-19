@@ -4,19 +4,19 @@
   ],
   "news": [
     {
-      "headline": "FLOOD WATCH — NWS Melbourne: Flood Watch for Orange, Osceola, Seminole, Volusia, Brevard & most of east-central Florida through Fri Nov 20 7 PM — 3–6 in. of rain, isolated 8–12 in.; Flood Warning continues for St. Johns River near Cocoa at major flood stage — 17.2 ft Wed 8:15 AM (flood stage 16 ft), forecast 17.4 ft by Sat, approaching the flood of record; moderate flash-flood risk Wed–Fri, high surf / rip-current risk through Friday",
+      "headline": "RECORD FLOOD — NWS Melbourne: St. Johns River near Cocoa at 18.0 ft at 5:15 AM Thu, above the flood of record (flood stage 16 ft), forecast to stay above record levels through late week/weekend; Flood Watch for Orange, Osceola, Seminole, Volusia, Brevard & most of east-central Florida through Fri Nov 20 7 PM — 3–6 in. of rain, isolated 8–12 in.; Flash Flood Warnings Thu morning for central Brevard incl. Melbourne, Titusville, Rockledge, Cocoa & Merritt Island",
       "source": "National Weather Service, Melbourne",
-      "date": "2026-11-18"
+      "date": "2026-11-19"
     },
     {
-      "headline": "U.S. housing starts rose 9.9% in October to 1.309 million annual rate, beating forecasts — single-family starts up 4.0% to 864,000, completions up 6.5% to 1.272 million — but building permits plunged 7.4% to 1.295 million, lowest since May 2020, with single-family permits down 8.7% to 772,000",
+      "headline": "U.S. housing starts rose 9.9% in October to 1.309 million annual rate, beating forecasts — single-family starts up 4.0% to 864,000 — but building permits plunged 7.4% to 1.295 million, with single-family permits down 8.7% to 772,000, lowest since January 2023",
       "source": "Reuters / U.S. Census Bureau",
       "date": "2026-11-18"
     },
     {
-      "headline": "Builder confidence fell 4 points to 25 in November — lowest since April 2012 — NAHB/Wells Fargo HMI; 46% of builders cut prices (post-Covid high), 68% offered incentives, buyer traffic fell to 16",
-      "source": "NAHB",
-      "date": "2026-11-17"
+      "headline": "Sarasota County drops fight over 864 homes near Celery Fields — commission voted 3-2 Nov 17 not to appeal a circuit court ruling requiring staff to process D.R. Horton's Live Local Act proposal for 864 homes on 51 acres; a mediated 126-home settlement remains on the table",
+      "source": "Sarasota Herald-Tribune",
+      "date": "2026-11-18"
     },
     {
       "headline": "Florida's 9th-edition building code takes effect Dec 31 — permit application date governs which edition applies; Miami-Dade portal cutoff is 4 PM Dec 30, with new flood documentation and coastal corrosion rules",
@@ -24,18 +24,18 @@
       "date": "2026-11-13"
     },
     {
-      "headline": "Copper tumbled below $13,000 Wed — LME 3-month fell 5.4% in midmorning U.S. trading to $12,505.50/ton, lowest since April, amid strong dollar, China demand concerns and AI-stock selloff; North American clean copper scrap fell another 2¢/lb Tue",
-      "source": "Morningstar / Dow Jones Newswires",
-      "date": "2026-11-18"
+      "headline": "Copper plunged to a seven-month low Wed Nov 18 — LME copper settled at $12,471/ton and Comex front-month at $5.6595/lb, both lowest since April, amid strong dollar and AI-demand doubts; North American clean copper scrap fell 31¢/lb in the Nov 18 session",
+      "source": "ScrapMonster / Dow Jones",
+      "date": "2026-11-19"
     },
     {
-      "headline": "Leap Partners acquires Crowther Heating & Air Conditioning in Kilmarnock, VA — its second Virginia acquisition in two months; 37 HVAC, plumbing and electrical companies acquired in four years",
-      "source": "PR Newswire",
-      "date": "2026-11-17"
+      "headline": "Regency Electric acquires Tekline Electrical Services of Chandler, AZ — expanding the Colorado commercial electrical contractor into Arizona; Tekline serves manufacturing, healthcare, education, hospitality and industrial markets",
+      "source": "Pulse2",
+      "date": "2026-11-19"
     },
     {
-      "headline": "Fed minutes out Wed afternoon read hawkish — FOMC participants considered larger rate hikes if inflation worsens, with Board member Waller calling for a 50 bp move; October meeting held funds at 3.75–4.00%, markets price ~95% chance of a Dec hike; Nvidia's $115.8B revenue beat faded as stocks stayed lower Wed",
-      "source": "XTB / CNBC",
+      "headline": "Fed minutes released Wed Nov 18 read hawkish — almost all October FOMC participants judged further rate hikes likely in months ahead to return inflation to 2%; October meeting held funds at 3.75–4.00% by 10–2 vote, next meeting Dec 8–9, with Gov. Waller calling for a 50 bp December move",
+      "source": "Transport Topics / Federal Reserve",
       "date": "2026-11-18"
     },
     {
@@ -44,14 +44,14 @@
       "date": "2026-11-16"
     },
     {
-      "headline": "NBA: Heat (8-6, 5 straight wins) host 1-13 Milwaukee Bucks tonight Wed 7 PM ET on ESPN at Kaseya Center — Giannis faces his former team for the first time on Vice City Night; last out Mon — Magic 115, Celtics 105 (Bane 24 pts, Orlando's 4th straight win) · Heat 128, Rockets 110",
-      "source": "Sports Illustrated / ESPN schedule",
-      "date": "2026-11-18"
+      "headline": "NBA Wed: Heat 137, Bucks 130 — Giannis Antetokounmpo 27 pts, 13 reb, 9 ast in his first game vs. his former team, Miami's 6th straight win; 76ers 121, Magic 115 — Embiid 26 for Philadelphia, Franz Wagner 27 pts & 11 ast for Orlando",
+      "source": "Reuters",
+      "date": "2026-11-19"
     },
     {
-      "headline": "NFL Week 11 Sun Nov 22 — all Florida teams on the road: Dolphins at Bills 1 PM ET, Buccaneers at Lions 1 PM ET, Jaguars at Giants 4:25 PM ET",
-      "source": "NFL",
-      "date": "2026-11-17"
+      "headline": "NFL Week 11 Sun Nov 22 — all Florida teams on the road: Buccaneers (3-6) at Lions 1 PM ET, Dolphins (1-8) at Bills 1 PM ET, Jaguars (7-2) at Giants 4:25 PM ET; Bucs QB Baker Mayfield missed practice Wed with a foot injury, Jaguars C Robert Hainsey out with a knee sprain",
+      "source": "NFL / Buccaneers.com",
+      "date": "2026-11-19"
     }
   ],
   "newBids": [
@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-18T16:26:49.446509-05:00",
+  "updatedAt": "2026-11-19T07:00:29-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
