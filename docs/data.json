@@ -57,6 +57,12 @@
   "newBids": [
     {
       "date": "2026-11-19",
+      "project": "Dollar Tree #11775 - Green Cove Springs, FL",
+      "from": "Summit General Contractors",
+      "received": "Thu 10:25 AM"
+    },
+    {
+      "date": "2026-11-19",
       "project": "TJ Maxx Bartow, FL",
       "from": "Horizon Retail Construction",
       "received": "Thu 9:36 AM"
@@ -102,12 +108,6 @@
       "project": "Jessamine Project",
       "from": "NOK Construction",
       "received": "Tue 11/17"
-    },
-    {
-      "date": "2026-11-17",
-      "project": "Burrito Guyz Project",
-      "from": "S.A Casey Construction, Inc.",
-      "received": "Tue 8:23 AM"
     }
   ],
   "tasks": {
@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-19T10:25:29-05:00",
+  "updatedAt": "2026-11-19T11:25:14-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
