@@ -336,6 +336,28 @@
     .main.targets-many .ring-core .days { font-size: 38px; }
     .main.targets-many .ring-core .unit { font-size: 18px; }
     .main.targets-many .ring-core .unit-sub { font-size: 13px; }
+    /* Fix 2026-11-19: hero + up to 2 goals sit side by side so nothing overlaps */
+    .main.targets-many.targets-side .targets { display: grid; grid-template-columns: 1.15fr 1fr; gap: 12px; }
+    .main.targets-many.targets-side .targets > .target:not(.target-mini) { padding: 16px 18px 16px; justify-content: center; }
+    .main.targets-many.targets-side .targets > .target:not(.target-mini) .target-name { font-size: 44px; margin: 6px 0 4px; }
+    .main.targets-many.targets-side .mini-row { grid-template-columns: 1fr !important; grid-auto-rows: 1fr; min-height: 0; }
+    .main.targets-many.targets-side .target-mini { padding: 10px 16px 10px; justify-content: center; min-height: 0; overflow: hidden; }
+    .main.targets-many.targets-side .target-mini .target-name { font-size: 28px; margin: 2px 0 2px; }
+    .main.targets-many.targets-side .target-mini .target-from { font-size: 24px; }
+    .main.targets-many.targets-side .target-mini .target-loc,
+    .main.targets-many.targets-side .target-mini .target-when { display: inline; font-size: 20px; margin-top: 0; }
+    .main.targets-many.targets-side .target-mini .mini-sub { margin-top: 2px; }
+    .main.targets-many.targets-side .target-mini .target-loc + .target-when::before { content: " · "; }
+    /* Fix 2026-11-19: Sanjay // Today steps down in size before hiding anything */
+    .owner-list.tight .own-item .ttl { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .owner-list.tight .own-item .meta { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .owner-list.tighter .own-item { padding: 5px 0; }
+    .owner-list.tighter .own-item .tm, .owner-list.tighter .own-item .ttl { font-size: 24px; }
+    .owner-list.tighter .own-item .ttl { -webkit-line-clamp: 1; }
+    .owner-list.tighter .own-item .meta { font-size: 20px; margin-top: 0; }
+    .owner-list.tighter .own-day { font-size: 20px; margin: 6px 0 0; }
+    .owner-list.tightest .own-item.compact .meta { display: none; }
+    .owner-list.snug .own-item .meta { display: none; }
     .mini-row {
       display: grid;
       gap: 12px;
@@ -1434,7 +1456,7 @@
       const main = document.getElementById("main");
       const host = document.getElementById("targets");
       host.replaceChildren();
-      main.classList.remove("targets-0", "targets-1", "targets-2", "targets-many");
+      main.classList.remove("targets-0", "targets-1", "targets-2", "targets-many", "targets-side");
       const n = items.length;
       const bidItems = items.filter((t) => t.kind === "bid");
       items.forEach((t) => {
@@ -1466,6 +1488,7 @@
         });
       } else {
         main.classList.add("targets-many");
+        if (n <= 3) main.classList.add("targets-side");
         const hero = el("section", "hud target");
         fillTargetCard(hero, items[0], 0, n);
         host.append(hero);
@@ -1478,8 +1501,10 @@
           card.append(el("div", "kicker", t.kind === "manual" ? (t.type || "Goal") : "Bid"));
           card.append(el("div", "target-name", t.project));
           if (t.from) card.append(el("div", "target-from", t.from));
-          if (t.location) card.append(el("div", "target-loc", t.location));
-          if (t.kind === "manual") card.append(el("div", "target-when", t.status || "IN PURSUIT"));
+          const sub = el("div", "mini-sub");
+          if (t.location) sub.append(el("span", "target-loc", t.location));
+          if (t.kind === "manual") sub.append(el("span", "target-when", t.status || "IN PURSUIT"));
+          if (sub.childNodes.length) card.append(sub);
           row.append(card);
         });
         if (rest.length > 3) row.append(el("div", "empty", "+" + (rest.length - 3) + " more"));
@@ -1934,7 +1959,17 @@
         if (day !== today) list.append(el("div", "own-day", shortDateLabel(day, day)));
         for (const it of byDay[day]) list.append(renderOwnerItem(it, compact));
       }
-      const refit = () => { if (document.getElementById("owner-list") === list) fitOverflow(list, ".own-item"); };
+      const refit = () => {
+        if (document.getElementById("owner-list") !== list) return;
+        [...list.children].forEach((n) => { n.style.display = ""; });
+        [...list.querySelectorAll(":scope > .empty.more")].forEach((n) => n.remove());
+        list.classList.remove("tight", "tighter", "tightest", "snug");
+        for (const lvl of ["tight", "tighter", "tightest", "snug"]) {
+          if (list.scrollHeight <= list.clientHeight + 1) break;
+          list.classList.add(lvl);
+        }
+        fitOverflow(list, ".own-item");
+      };
       requestAnimationFrame(refit);
       if (document.fonts && document.fonts.ready) document.fonts.ready.then(refit);
     }
