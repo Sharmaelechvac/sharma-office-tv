@@ -18,5 +18,13 @@
       "type": "Pursuit",
       "status": "IN PURSUIT"
     }
+  ],
+  "bids": [
+    {
+      "date": "2026-11-17",
+      "project": "Jessamine Project",
+      "from": "NOK Construction",
+      "received": "Tue 11/17"
+    }
   ]
 }

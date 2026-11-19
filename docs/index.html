@@ -336,6 +336,16 @@
     .main.targets-many .ring-core .days { font-size: 38px; }
     .main.targets-many .ring-core .unit { font-size: 18px; }
     .main.targets-many .ring-core .unit-sub { font-size: 13px; }
+    /* Fix 2026-11-19: two target cards fit the row instead of spilling into the header */
+    .main.targets-2 .target { justify-content: center; padding: 14px 18px 14px; min-height: 0; overflow: hidden; }
+    .main.targets-2 .target-name { font-size: 40px; margin: 4px 0 4px; }
+    .main.targets-2 .target-from { font-size: 24px; }
+    .main.targets-2 .target-loc, .main.targets-2 .target-when { font-size: 20px; margin-top: 2px; }
+    .main.targets-2 .ring-wrap { width: 120px; height: 120px; margin-top: 6px; flex: 0 0 auto; }
+    .main.targets-2 .ring-core .days { font-size: 40px; }
+    .main.targets-2 .ring-core .unit { font-size: 16px; }
+    .main.targets-2 .ring-core .unit-sub { font-size: 12px; }
+    .main.targets-2 .ring-core .status { font-size: 16px; }
     /* Fix 2026-11-19: hero + up to 2 goals sit side by side so nothing overlaps */
     .main.targets-many.targets-side .targets { display: grid; grid-template-columns: 1.15fr 1fr; gap: 12px; }
     .main.targets-many.targets-side .targets > .target:not(.target-mini) { padding: 16px 18px 16px; justify-content: center; }
@@ -1123,7 +1133,7 @@
     let lastData = null;
     let lastUpdatedAt = null;
     let dataLoadError = false;
-    let boardConfig = { pursuing: [], targets: [] };
+    let boardConfig = { pursuing: [], targets: [], bids: [] };
     let lastTickerKey = "";
 
     function stripPII(text) {
@@ -1310,7 +1320,11 @@
     }
 
     function collectBids(data) {
-      const raw = (data && (data.newBids || data.bids || data.new_bids)) || [];
+      const scanned = (data && (data.newBids || data.bids || data.new_bids)) || [];
+      // Pinned bids from board-config.json stay on the board even when the hourly scan rewrites newBids (2026-11-19)
+      const pinned = (boardConfig && Array.isArray(boardConfig.bids)) ? boardConfig.bids : [];
+      const seen = new Set(scanned.map((b) => String((b && (b.project || b.name || b.title)) || "").toLowerCase().trim()));
+      const raw = scanned.concat(pinned.filter((b) => b && !seen.has(String(b.project || b.name || b.title || "").toLowerCase().trim())));
       return raw.map((b) => {
         if (!b) return null;
         const project = stripPII(prettyName(b.project || b.name || b.title || ""));
@@ -2069,7 +2083,8 @@
         if (!cfg || typeof cfg !== "object") return;
         boardConfig = {
           pursuing: Array.isArray(cfg.pursuing) ? cfg.pursuing : (boardConfig.pursuing || []),
-          targets: Array.isArray(cfg.targets) ? cfg.targets : (boardConfig.targets || [])
+          targets: Array.isArray(cfg.targets) ? cfg.targets : (boardConfig.targets || []),
+          bids: Array.isArray(cfg.bids) ? cfg.bids : (boardConfig.bids || [])
         };
       } catch (e) { /* keep last config */ }
     }
