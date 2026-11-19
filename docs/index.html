@@ -5,13 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
   <title>Sharma Electric & HVAC · Office TV</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
       --void: #0b1530;
-      --panel: #1a2f61;
+      --panel: #264387;
       --gold: #F0A846;
       --gold-dim: rgba(240, 168, 70, 0.45);
       --gold-soft: rgba(240, 168, 70, 0.18);
@@ -27,7 +24,7 @@
       height: 100%;
       overflow: hidden;
       color: var(--white);
-      font-family: Inter, sans-serif;
+      font-family: -apple-system, "SF Pro Text", Inter, "Segoe UI", sans-serif;
       font-size: 28px;
       line-height: 1.25;
       -webkit-font-smoothing: antialiased;
@@ -39,7 +36,7 @@
       height: 100vh;
       overflow: hidden;
       background:
-        radial-gradient(ellipse at 50% 42%, #1a2f61 0%, #102044 42%, #0b1530 78%);
+        radial-gradient(ellipse at 50% 42%, #264387 0%, #102044 42%, #0b1530 78%);
     }
     .stage::before {
       content: "";
@@ -129,7 +126,7 @@
     .hdr-wx .wx-copy { min-width: 0; overflow: hidden; }
     .hdr-wx .wx-copy .loc { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .hdr-wx .wx-rain {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 22px;
       font-weight: 500;
       color: var(--mute);
@@ -151,7 +148,7 @@
     .logo-chip img { height: 100px; width: auto; display: block; }
     .brand-meta { display: flex; flex-direction: column; gap: 4px; justify-content: center; }
     .brand-meta .lock-title {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 32px;
       letter-spacing: 0.18em;
@@ -161,7 +158,7 @@
       text-shadow: 0 0 16px rgba(240, 168, 70, 0.25);
     }
     .brand-meta .lock-sub {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 20px;
       font-weight: 500;
       color: var(--gold);
@@ -170,7 +167,7 @@
       line-height: 1;
     }
     .kicker {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       letter-spacing: 0.18em;
       text-transform: uppercase;
@@ -179,7 +176,7 @@
     }
     .brand-meta .kicker { font-size: 28px; color: var(--white); letter-spacing: 0.16em; }
     .brand-meta .sub {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 24px;
       font-weight: 500;
       color: var(--gold);
@@ -192,13 +189,13 @@
       align-items: flex-end;
       justify-content: center;
       gap: 4px;
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       flex: 0 0 auto;
       min-width: max-content;
     }
     .hdr-right .ops, .hdr-right .updated { line-height: 1.1; }
     .ops {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 28px;
       letter-spacing: 0.18em;
@@ -217,7 +214,7 @@
     }
     .flag-stale {
       display: none;
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 24px;
       letter-spacing: 0.14em;
@@ -261,7 +258,7 @@
       gap: 0;
     }
     .own-day {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 24px;
       letter-spacing: 0.16em;
@@ -281,7 +278,7 @@
     }
     .own-item:last-child { border-bottom: 0; }
     .own-item .tm {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-weight: 500;
       font-size: 28px;
       color: var(--gold);
@@ -297,7 +294,7 @@
     }
     .own-item .meta {
       grid-column: 1 / -1;
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 24px;
       font-weight: 500;
       color: var(--mute);
@@ -310,7 +307,7 @@
     .own-item.compact .ttl { font-size: 24px; }
     .own-item.compact .meta { font-size: 22px; }
     .owner .awaiting {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 28px;
       letter-spacing: 0.08em;
@@ -415,7 +412,7 @@
     .panel-head.bar .tag { white-space: nowrap; }
     .panel-head .kicker { font-size: 24px; color: var(--gold); letter-spacing: 0.14em; }
     .panel-head .tag {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 22px;
       font-weight: 500;
       color: var(--mute);
@@ -425,7 +422,7 @@
 
     .systems { display: flex; flex-direction: column; }
     .clock {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-weight: 600;
       font-size: 68px;
       line-height: 0.95;
@@ -442,7 +439,7 @@
     }
     .dow {
       margin-top: 10px;
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 28px;
       letter-spacing: 0.16em;
@@ -450,7 +447,7 @@
     }
     .full-date {
       margin-top: 2px;
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 24px;
       font-weight: 500;
       color: var(--mute);
@@ -465,7 +462,7 @@
       border-top: 1px solid var(--gold-soft);
     }
     .temp {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-weight: 600;
       font-size: 64px;
       line-height: 1;
@@ -474,14 +471,14 @@
     }
     .wx-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
     .wx-copy .cond {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 28px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
     }
     .wx-copy .loc {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 24px;
       color: var(--mute);
       line-height: 1.25;
@@ -504,7 +501,7 @@
       pointer-events: none;
     }
     .gauge-num .v {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-weight: 600;
       font-size: 36px;
       line-height: 1;
@@ -513,7 +510,7 @@
     }
     .rain-meta { text-align: center; }
     .rain-meta .lbl {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 24px;
       letter-spacing: 0.16em;
@@ -522,7 +519,7 @@
       margin-bottom: 4px;
     }
     .rain-meta .line {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 24px;
       font-weight: 500;
       color: var(--white);
@@ -540,7 +537,7 @@
       padding: 22px 22px 24px;
     }
     .target-name {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 56px;
       line-height: 0.95;
@@ -551,7 +548,7 @@
     }
     .main.targets-1 .target-name { font-size: 84px; }
     .target-from {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 28px;
       font-weight: 500;
       color: var(--gold);
@@ -559,7 +556,7 @@
     }
     .target-loc, .target-when {
       margin-top: 4px;
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 24px;
       font-weight: 500;
       color: var(--mute);
@@ -581,7 +578,7 @@
       align-items: center; justify-content: center;
     }
     .ring-core .days {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-weight: 600;
       font-size: 72px;
       line-height: 0.9;
@@ -590,7 +587,7 @@
     }
     .main.targets-1 .ring-core .days { font-size: 96px; }
     .ring-core .unit {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 24px;
       letter-spacing: 0.18em;
@@ -599,7 +596,7 @@
       margin-top: 4px;
     }
     .ring-core .unit-sub {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 20px;
       font-weight: 500;
       color: var(--mute);
@@ -608,7 +605,7 @@
       margin-top: 2px;
     }
     .ring-core .status {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 26px;
       letter-spacing: 0.12em;
@@ -630,7 +627,7 @@
       text-align: center;
     }
     .empty-target .msg {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 48px;
       letter-spacing: 0.14em;
@@ -650,14 +647,14 @@
 
     .mission { display: flex; flex-direction: column; }
     .next-addr {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 32px;
       line-height: 1.05;
       margin: 8px 0 6px;
     }
     .next-trade {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 26px;
       letter-spacing: 0.04em;
@@ -665,7 +662,7 @@
     }
     .next-meta {
       margin-top: 4px;
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 24px;
       font-weight: 500;
       color: var(--mute);
@@ -682,7 +679,7 @@
     }
     .week-row:last-child { border-bottom: 0; }
     .week-row .d {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 20px;
       font-weight: 500;
       color: var(--gold);
@@ -699,7 +696,7 @@
     .systems .panel-head .tag { white-space: nowrap; }
     .week-row .t span {
       display: block;
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 19px;
       font-weight: 500;
       color: var(--mute);
@@ -747,7 +744,7 @@
       white-space: nowrap;
     }
     .today-head .tag {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 20px;
       font-weight: 500;
       letter-spacing: 0.1em;
@@ -765,7 +762,7 @@
     }
     .today-job { min-width: 0; flex: 1 1 auto; }
     .today-job .addr {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 36px;
       line-height: 1.05;
@@ -779,7 +776,7 @@
     }
     .today-job.solo .addr { font-size: 44px; }
     .today-job .trade {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 28px;
       letter-spacing: 0.06em;
@@ -787,14 +784,14 @@
       color: var(--gold);
     }
     .today-job .meta {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 28px;
       font-weight: 500;
       color: var(--mute);
       letter-spacing: 0.04em;
     }
     .today-empty {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 32px;
       letter-spacing: 0.1em;
@@ -811,7 +808,7 @@
       gap: 8px 18px;
     }
     .today-next .nxt-kicker {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 24px;
       letter-spacing: 0.16em;
@@ -819,19 +816,19 @@
       color: var(--gold);
     }
     .today-next .addr {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 32px;
       line-height: 1.05;
     }
     .today-next .trade {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 28px;
       color: var(--gold);
     }
     .today-next .meta {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 28px;
       font-weight: 500;
       color: var(--mute);
@@ -863,7 +860,7 @@
       white-space: normal;
     }
     .insp-head .tag {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 20px;
       font-weight: 500;
       letter-spacing: 0.1em;
@@ -890,7 +887,7 @@
     }
     .insp-item:first-child { border-left: 0; padding-left: 4px; }
     .insp-item .tm {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-weight: 600;
       font-size: 23px;
       color: var(--gold);
@@ -899,14 +896,14 @@
       white-space: nowrap;
     }
     .insp-item .addr {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 29px;
       line-height: 1.05;
       letter-spacing: 0.01em;
     }
     .insp-item .type {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 22px;
       letter-spacing: 0.06em;
@@ -915,14 +912,14 @@
       line-height: 1.15;
     }
     .insp-item .meta {
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 21px;
       font-weight: 500;
       color: var(--mute);
       line-height: 1.25;
     }
     .insp-item .status {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 22px;
       letter-spacing: 0.1em;
@@ -932,7 +929,7 @@
     }
     .insp-item .status.partial, .insp-item .status.done { color: var(--gold); }
     .insp-empty {
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 32px;
       letter-spacing: 0.1em;
@@ -955,7 +952,7 @@
       display: flex;
       align-items: center;
       padding: 0 22px;
-      font-family: "Barlow Semi Condensed", sans-serif;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 24px;
       letter-spacing: 0.2em;
@@ -990,8 +987,8 @@
       display: inline-flex;
       align-items: center;
       background: #F0A846;
-      color: #1a2f61;
-      font-family: "Barlow Semi Condensed", sans-serif;
+      color: #264387;
+      font-family: -apple-system, "SF Pro Display", Inter, "Segoe UI", sans-serif;
       font-weight: 700;
       font-size: 22px;
       letter-spacing: 0.12em;
@@ -1022,7 +1019,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-family: "IBM Plex Mono", monospace;
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 24px;
       font-weight: 500;
       color: var(--mute);
