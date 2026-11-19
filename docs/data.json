@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-19T07:00:29-05:00",
+  "updatedAt": "2026-11-19T07:39:52-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
@@ -219,7 +219,8 @@
       "date": "2026-11-19",
       "time": "All day",
       "title": "HVAC Rough — Lot 69 Bella Collina, 16051 Vetta Dr (Logan Construction)",
-      "location": "16051 Vetta Dr, Montverde, FL"
+      "location": "16051 Vetta Dr, Montverde, FL",
+      "notes": "HVAC only · Quote #1258 (3 systems, R-454B) · Tommy Logan (321) 432-1706"
     },
     {
       "date": "2026-11-20",
@@ -232,10 +233,27 @@
       "date": "2026-11-21",
       "time": "All day",
       "title": "Momma Sharma's Birthday"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "8:00 AM",
+      "title": "BNI Networking",
+      "location": "Winter Park Golf Course, Winter Park, FL"
     }
   ],
   "todayInspections": {
-    "date": "2026-11-18",
-    "entries": []
+    "date": "2026-11-19",
+    "entries": [
+      {
+        "time": "3:46 PM",
+        "title": "212 Marion Oaks Golf Rd, Ocala",
+        "type": "Rough Mechanical — HVAC",
+        "number": "#268802-2026",
+        "inspector": "Randy Johnston",
+        "inspectorPhone": "Marion Building Safety (352) 438-2400",
+        "status": "Scheduled",
+        "notes": "Permit BLDR-26-09-23294 · EXJ Root · Crew covers"
+      }
+    ]
   }
 }
