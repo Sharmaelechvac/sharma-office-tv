@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#264387">
+  <meta name="color-scheme" content="light">
+  <script>(function(){try{if(localStorage.getItem("sk-scheme")==="dark"){var d=document.documentElement;d.setAttribute("data-scheme","dark");var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d.getAttribute("data-theme")==="track"?"#1C1C1E":"#1a2f61"}}catch(e){}})()</script>
   <title>Sharma Electric & HVAC · Office TV</title>
   <style>
     :root {
@@ -341,7 +344,7 @@
     .main.targets-2 .ring-wrap { width: 120px; height: 120px; margin-top: 6px; flex: 0 0 auto; }
     .main.targets-2 .ring-core .days { font-size: 40px; }
     .main.targets-2 .ring-core .unit { font-size: 16px; }
-    .main.targets-2 .ring-core .unit-sub { font-size: 12px; }
+    .main.targets-2 .ring-core .unit-sub { font-size:13px; }
     .main.targets-2 .ring-core .status { font-size: 16px; }
     /* Fix 2026-11-19: hero + up to 2 goals sit side by side so nothing overlaps */
     .main.targets-many.targets-side .targets { display: grid; grid-template-columns: 1.15fr 1fr; gap: 12px; }
@@ -547,6 +550,11 @@
       text-shadow: 0 0 28px rgba(240, 168, 70, 0.4);
     }
     .main.targets-1 .target-name { font-size: 84px; }
+    .target-sqft { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-variant-numeric: tabular-nums; color: var(--gold, #F0A846); margin-top: 2px; font-size: 24px; }
+    .mini-sub .target-sqft { font-size: 20px; }
+    .bid-logo-wrap { position: relative; display: inline-block; width: 30px; height: 30px; margin-right: 9px; vertical-align: -7px; }
+    .bid-badge { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: #264387; color: #fff; font-weight: 700; font-size: 13px; border-radius: 7px; letter-spacing: .02em; }
+    .bid-logo { position: absolute; inset: 0; width: 30px; height: 30px; object-fit: contain; background: #fff; border-radius: 7px; }
     .target-from {
       font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       font-size: 28px;
@@ -1316,6 +1324,25 @@
       return pursuingTokens().some((t) => name.indexOf(t) !== -1);
     }
 
+    function slugifyName(name) { return String(name || "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, ""); }
+    function initialsOf(name) {
+      const words = String(name || "").replace(/[^A-Za-z0-9 ]/g, " ").split(/\s+/).filter(Boolean);
+      if (!words.length) return "?";
+      return (words[0][0] + (words.length > 1 ? words[1][0] : "")).toUpperCase();
+    }
+    function logoNode(company) {
+      const wrap = el("span", "bid-logo-wrap");
+      const badge = el("span", "bid-badge", initialsOf(company));
+      wrap.append(badge);
+      const img = document.createElement("img");
+      img.className = "bid-logo"; img.alt = ""; img.loading = "lazy";
+      img.onerror = () => img.remove();
+      img.src = "logos/" + slugifyName(company) + ".png";
+      wrap.append(img);
+      return wrap;
+    }
+    function fmtSqft(n) { return Number(n).toLocaleString("en-US") + " SQ FT"; }
+
     function collectBids(data) {
       const scanned = (data && (data.newBids || data.bids || data.new_bids)) || [];
       // Pinned bids from board-config.json stay on the board even when the hourly scan rewrites newBids (2026-11-19)
@@ -1331,7 +1358,9 @@
         const dueMs = parseDueMs(dueText) || parseDueMs(received);
         const dateISO = b.date || b.receivedDate || "";
         if (!project) return null;
-        return { kind: "bid", project, from, location: "", received, dueMs, dateISO, recency: receivedSortKey(dateISO, received) };
+        const sqftRaw = b.sqft != null ? b.sqft : (b.sqft_living != null ? b.sqft_living : null);
+        const sqft = sqftRaw != null && Number(sqftRaw) > 0 ? Number(sqftRaw) : null;
+        return { kind: "bid", project, from, location: "", received, dueMs, dateISO, sqft, recency: receivedSortKey(dateISO, received) };
       }).filter(Boolean).filter((b) => bidIsPursued(b.project));
     }
 
@@ -1453,7 +1482,8 @@
       head.append(el("div", "tag", tag));
       card.append(head);
       card.append(el("div", "target-name", t.project));
-      if (t.from) card.append(el("div", "target-from", t.from));
+      if (t.from) { const fromEl = el("div", "target-from"); fromEl.append(logoNode(t.from)); fromEl.append(document.createTextNode(t.from)); card.append(fromEl); }
+      if (t.sqft) card.append(el("div", "target-sqft", fmtSqft(t.sqft)));
       if (t.location) card.append(el("div", "target-loc", t.location));
       if (t.kind !== "manual") {
         const when = t.dueMs != null ? formatDueLabel(t.received) : formatReceivedLabel(t.dateISO, t.received);
@@ -1511,8 +1541,9 @@
           corners(card);
           card.append(el("div", "kicker", t.kind === "manual" ? (t.type || "Goal") : "Bid"));
           card.append(el("div", "target-name", t.project));
-          if (t.from) card.append(el("div", "target-from", t.from));
+          if (t.from) { const fromEl = el("div", "target-from"); fromEl.append(logoNode(t.from)); fromEl.append(document.createTextNode(t.from)); card.append(fromEl); }
           const sub = el("div", "mini-sub");
+          if (t.sqft) sub.append(el("span", "target-sqft", fmtSqft(t.sqft)));
           if (t.location) sub.append(el("span", "target-loc", t.location));
           if (t.kind === "manual") sub.append(el("span", "target-when", t.status || "IN PURSUIT"));
           if (sub.childNodes.length) card.append(sub);
