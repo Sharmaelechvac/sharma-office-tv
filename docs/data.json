@@ -57,6 +57,18 @@
   "newBids": [
     {
       "date": "2026-11-19",
+      "project": "Petfolk-Winter Park, FL",
+      "from": "CDO Group Inc",
+      "received": "Thu 3:05 PM"
+    },
+    {
+      "date": "2026-11-19",
+      "project": "Heartland Dental TI Auburndale FL",
+      "from": "MEC General Contractors",
+      "received": "Thu 2:45 PM"
+    },
+    {
+      "date": "2026-11-19",
       "project": "Haughton Patio",
       "from": "Nok Construction",
       "received": "Thu 2:10 PM"
@@ -96,18 +108,6 @@
       "project": "Site Development for the Orange City Public Works Operations Facility",
       "from": "Saboungi Construction",
       "received": "Wed 3:23 PM"
-    },
-    {
-      "date": "2026-11-18",
-      "project": "Polk County Utilities AMI Towers-Northeast Region",
-      "from": "SEMCO Construction, Inc.",
-      "received": "Wed 11:47 AM"
-    },
-    {
-      "date": "2026-11-18",
-      "project": "Valencia College Building 4 A&P Renovation",
-      "from": "S.A Casey Construction, Inc.",
-      "received": "Wed 10:54 AM"
     }
   ],
   "tasks": {
@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-19T14:57:05-05:00",
+  "updatedAt": "2026-11-19T15:26:20-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
