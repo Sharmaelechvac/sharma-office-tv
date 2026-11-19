@@ -4,18 +4,18 @@
   ],
   "news": [
     {
-      "headline": "RECORD FLOOD CONTINUES — NWS Melbourne: Flash Flood Warnings for central Brevard into Thu afternoon (to 1:45 PM), Flood Watch for Orange, Osceola, Seminole, Volusia, Brevard & most of east-central Florida through Fri Nov 20 7 PM; St. Johns River near Cocoa at 18.0 ft at 5:15 AM Thu, above the flood of record (flood stage 16 ft), forecast to stay above record levels through late week/weekend — 3–6 in. of rain forecast, isolated 8–12 in.",
+      "headline": "RECORD FLOOD CONTINUES INTO THU EVENING — NWS Melbourne: Flood Warning for southeastern Brevard until 6 PM Thu, Flash Flood Warning until 5 PM and Flood Warnings until 7 PM, Wind Advisory until 7 PM; Flood Watch for Orange, Osceola, Seminole, Volusia, Brevard & most of east-central Florida through Fri Nov 20 7 PM; St. Johns River near Cocoa at 18.0 ft at 5:15 AM Thu, above the flood of record (flood stage 16 ft), forecast to stay above record levels through late week/weekend — 3–6 in. of rain forecast, isolated 8–12 in.",
       "source": "National Weather Service, Melbourne",
       "date": "2026-11-19"
     },
     {
-      "headline": "U.S. housing starts rose 9.9% in October to 1.309 million annual rate — single-family starts up 4.0% to 864,000 — but building permits fell 7.4% to 1.295 million, with single-family permits down 8.7% to 772,000, lowest since January 2023",
-      "source": "NAHB / U.S. Census Bureau",
+      "headline": "Central Florida build costs eased in November — RoMac Whole House Commodity Index fell 1.1% to $53,443 (down $594), lumber driving the drop, but manufacturers have already announced January price increases and diesel is more than 50% above last year; Florida October single-family closings fell 10.1% from a year earlier to 19,049, with pending sales down 15.7%",
+      "source": "RoMac Building Supply",
       "date": "2026-11-18"
     },
     {
-      "headline": "Builder confidence fell 4 points to 25 in November, lowest since April 2012 — 46% of builders cut prices and buyer traffic fell to 16; Florida closed home sales fell 9.4% from a year earlier in October, and U.S. pending home sales fell 4.7% in October (South down 6.3%)",
-      "source": "NAHB / National Association of Realtors",
+      "headline": "U.S. housing starts rose 9.9% in October to 1.309 million annual rate — single-family starts up 4.0% to 864,000 — but building permits fell 7.4% to 1.295 million, with single-family permits down 8.7% to 772,000, lowest since January 2023; builder confidence fell 4 points to 25 in November, lowest since April 2012, with 46% of builders cutting prices",
+      "source": "NAHB / U.S. Census Bureau",
       "date": "2026-11-18"
     },
     {
@@ -24,18 +24,18 @@
       "date": "2026-11-13"
     },
     {
-      "headline": "Copper at seven-month low Thu midday — Comex copper $5.65/lb at 11:26 AM ET Nov 19, LME copper lowest since April amid strong dollar and AI-demand doubts; North American clean copper scrap fell 31¢/lb in the Nov 18 session, down 60¢/lb since Nov 11",
-      "source": "ScrapMonster / Yahoo Finance",
+      "headline": "Copper holds near seven-month low Thu afternoon — Comex copper $5.61/lb at 3:26 PM ET Nov 19, down 0.96%; LME copper lowest since April amid strong dollar and AI-demand doubts; North American clean copper scrap fell 31¢/lb in the Nov 18 session, down 60¢/lb since Nov 11",
+      "source": "Yahoo Finance / ScrapMonster",
       "date": "2026-11-19"
     },
     {
-      "headline": "Regency Electric acquires Tekline Electrical Services of Chandler, AZ — expanding the Colorado commercial electrical contractor into Arizona; Tekline serves manufacturing, healthcare, education, hospitality and industrial markets",
-      "source": "Pulse2",
+      "headline": "Regency Electric acquires Tekline Electrical Services of Chandler, AZ — deal closed Nov 3, terms undisclosed, expanding the Colorado commercial electrical contractor into Arizona; Tekline serves manufacturing, healthcare, education, hospitality and industrial markets",
+      "source": "Business Wire / Pulse2",
       "date": "2026-11-19"
     },
     {
-      "headline": "Fed minutes released Wed Nov 18 read hawkish — almost all October FOMC participants judged further rate hikes likely in months ahead to return inflation to 2%; funds held at 3.75–4.00% by 10–2 vote, next meeting Dec 8–9, markets pricing ~95% odds of a December hike, S&P 500 fell 0.23% Wed to 7,323.63 for a fifth straight loss",
-      "source": "Federal Reserve / TradingNerve",
+      "headline": "Fed minutes released Wed Nov 18 read hawkish — almost all October FOMC participants judged further rate hikes likely in months ahead to return inflation to 2%; funds held at 3.75–4.00%, next meeting Dec 8–9, markets pricing ~95% odds of a December hike and JPMorgan on Nov 19 added January and March 2027 hikes to its call, seeing 4.50–4.75% by March; S&P 500 fell 0.23% Wed to 7,323.63 for a fifth straight loss",
+      "source": "Federal Reserve / JPMorgan",
       "date": "2026-11-19"
     },
     {
@@ -44,13 +44,13 @@
       "date": "2026-11-16"
     },
     {
-      "headline": "NBA Wed: Heat 137, Bucks 130 — Giannis Antetokounmpo 27 pts, 13 reb, 9 ast in his first game vs. his former team, Miami's 6th straight win; 76ers 121, Magic 116 — Franz Wagner 27 pts & 11 ast for Orlando; Magic next at Brooklyn Fri Nov 20, Heat host Oklahoma City Sun Nov 22",
+      "headline": "NBA Wed: Heat 137, Bucks 130 — Giannis Antetokounmpo 27 pts, 13 reb, 9 ast in his first game vs. his former team, Miami's 6th straight win; 76ers 121, Magic 116 — Franz Wagner 27 pts & 11 ast for Orlando; Magic next at Brooklyn Fri Nov 20",
       "source": "Reuters / Sportradar",
       "date": "2026-11-19"
     },
     {
-      "headline": "NFL Week 11 Sun Nov 22 — all Florida teams on the road: Buccaneers (3-6) at Lions (7-2) 1 PM ET, Dolphins (1-8) at Bills (8-1) 1 PM ET, Jaguars (7-2) at Giants 4:25 PM ET; Bucs QB Baker Mayfield missed practice Wed with a foot injury — decision expected Fri, rookie Jalon Daniels would start if he cannot go",
-      "source": "Buccaneers.com / NFL",
+      "headline": "NFL Week 11 Sun Nov 22 — all Florida teams on the road: Buccaneers (3-6) at Lions (7-2) 1 PM ET, Dolphins at Bills 1 PM ET, Jaguars (7-2) at Giants 4:25 PM ET; Bucs QB Baker Mayfield returned to practice Thu after missing Wed with a foot injury and says he's ready to go — head coach Todd Bowles' decision expected Fri",
+      "source": "NBC Sports / Jaguars.com",
       "date": "2026-11-19"
     }
   ],
@@ -165,7 +165,7 @@
     ]
   },
   "toSchedule": [],
-  "updatedAt": "2026-11-19T15:26:20-05:00",
+  "updatedAt": "2026-11-19T15:57:30-05:00",
   "toScheduleGroups": [
     {
       "heading": "EXJ ROOT ROUGHS",
