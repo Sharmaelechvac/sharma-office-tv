@@ -4,17 +4,17 @@
  ],
  "news": [
   {
-   "headline": "RECORD FLOOD CONTINUES INTO THU EVENING \u2014 NWS Melbourne: Flood Warning for southeastern Brevard until 6 PM Thu, Flash Flood Warning until 5 PM and Flood Warnings until 7 PM, Wind Advisory until 7 PM; Flood Watch for Orange, Osceola, Seminole, Volusia, Brevard & most of east-central Florida through Fri Nov 20 7 PM; St. Johns River near Cocoa at 18.0 ft at 5:15 AM Thu, above the flood of record (flood stage 16 ft), forecast to stay above record levels through late week/weekend \u2014 3\u20136 in. of rain forecast, isolated 8\u201312 in.",
+   "headline": "MAJOR FLOODING CONTINUES FRI \u2014 NWS Melbourne 3:10 AM Fri: Flood Warning for the St. Johns River near Cocoa remains in effect until further notice \u2014 river at 18.6 ft at 2:15 AM Fri (flood stage 16.0 ft), forecast to stay in Major Flood Stage and crest at 18.7 ft, above the flood of record; Flood Warning for central Brevard until 8:30 AM Fri and Flood Watch for most of east-central Florida including Orange, Osceola, Seminole, Volusia and Brevard through Fri 7 PM",
    "source": "National Weather Service, Melbourne",
+   "date": "2026-11-20"
+  },
+  {
+   "headline": "Construction set to begin within months on Roche Bobois St. Pete Tower \u2014 29-story, 164-unit condo tower at 344 4th Street South in St. Petersburg, a $200 million project by Valor Capital",
+   "source": "Florida YIMBY",
    "date": "2026-11-19"
   },
   {
-   "headline": "Central Florida build costs eased in November \u2014 RoMac Whole House Commodity Index fell 1.1% to $53,443 (down $594), lumber driving the drop, but manufacturers have already announced January price increases and diesel is more than 50% above last year; Florida October single-family closings fell 10.1% from a year earlier to 19,049, with pending sales down 15.7%",
-   "source": "RoMac Building Supply",
-   "date": "2026-11-18"
-  },
-  {
-   "headline": "U.S. housing starts rose 9.9% in October to 1.309 million annual rate \u2014 single-family starts up 4.0% to 864,000 \u2014 but building permits fell 7.4% to 1.295 million, with single-family permits down 8.7% to 772,000, lowest since January 2023; builder confidence fell 4 points to 25 in November, lowest since April 2012, with 46% of builders cutting prices",
+   "headline": "U.S. housing starts rose 9.9% in October to a 1.309 million annual rate \u2014 single-family starts up 4.0% to 864,000 \u2014 but building permits fell 7.4% to 1.295 million, with single-family permits down 8.7% to 772,000, lowest since January 2023; builder confidence fell 4 points to 25 in November, lowest since April 2012, with 46% of builders cutting prices",
    "source": "NAHB / U.S. Census Bureau",
    "date": "2026-11-18"
   },
@@ -24,34 +24,34 @@
    "date": "2026-11-13"
   },
   {
-   "headline": "Copper holds near seven-month low Thu afternoon \u2014 Comex copper $5.61/lb at 3:26 PM ET Nov 19, down 0.96%; LME copper lowest since April amid strong dollar and AI-demand doubts; North American clean copper scrap fell 31\u00a2/lb in the Nov 18 session, down 60\u00a2/lb since Nov 11",
-   "source": "Yahoo Finance / ScrapMonster",
+   "headline": "Copper holds near seven-month low \u2014 COMEX copper closed Thu Nov 19 at $5.63/lb, and LME copper fell 1.4% on the day to $12,570/ton, as a strong dollar and demand doubts weighed on prices",
+   "source": "Yahoo Finance / Alcobra Metals",
    "date": "2026-11-19"
   },
   {
    "headline": "Regency Electric acquires Tekline Electrical Services of Chandler, AZ \u2014 deal closed Nov 3, terms undisclosed, expanding the Colorado commercial electrical contractor into Arizona; Tekline serves manufacturing, healthcare, education, hospitality and industrial markets",
-   "source": "Business Wire / Pulse2",
+   "source": "TheJobWalk",
    "date": "2026-11-19"
   },
   {
-   "headline": "Fed minutes released Wed Nov 18 read hawkish \u2014 almost all October FOMC participants judged further rate hikes likely in months ahead to return inflation to 2%; funds held at 3.75\u20134.00%, next meeting Dec 8\u20139, markets pricing ~95% odds of a December hike and JPMorgan on Nov 19 added January and March 2027 hikes to its call, seeing 4.50\u20134.75% by March; S&P 500 fell 0.23% Wed to 7,323.63 for a fifth straight loss",
-   "source": "Federal Reserve / JPMorgan",
+   "headline": "Fed minutes released Wed Nov 18 read hawkish \u2014 almost all October FOMC participants judged further rate hikes likely in months ahead to return inflation to 2%; funds held at 3.75\u20134.00%, next meeting Dec 8\u20139, with markets pricing over 90% odds of a December hike",
+   "source": "Federal Reserve / Kalshi",
    "date": "2026-11-19"
   },
   {
-   "headline": "Florida workers' comp: Commissioner Yaworsky approved NCCI's \u22127.4% average rate cut for new and renewal policies from Jan 1, 2027 \u2014 11th straight year of reductions",
-   "source": "Florida Office of Insurance Regulation",
-   "date": "2026-11-16"
-  },
-  {
-   "headline": "NBA Wed: Heat 137, Bucks 130 \u2014 Giannis Antetokounmpo 27 pts, 13 reb, 9 ast in his first game vs. his former team, Miami's 6th straight win; 76ers 121, Magic 116 \u2014 Franz Wagner 27 pts & 11 ast for Orlando; Magic next at Brooklyn Fri Nov 20",
-   "source": "Reuters / Sportradar",
+   "headline": "Markets fell hard Thu Nov 19 \u2014 S&P 500 down 2.0% to 7,176 for a sixth straight loss, Nasdaq down 2.25% to 23,886 and the Dow down about 1,100 points as investors retreated from growth stocks; initial jobless claims for the week ending Nov 14 came in at 203,000 vs. 197,000 expected",
+   "source": "Motley Fool / Daily Market Report",
    "date": "2026-11-19"
   },
   {
-   "headline": "NFL Week 11 Sun Nov 22 \u2014 all Florida teams on the road: Buccaneers (3-6) at Lions (7-2) 1 PM ET, Dolphins at Bills 1 PM ET, Jaguars (7-2) at Giants 4:25 PM ET; Bucs QB Baker Mayfield returned to practice Thu after missing Wed with a foot injury and says he's ready to go \u2014 head coach Todd Bowles' decision expected Fri",
-   "source": "NBC Sports / Jaguars.com",
-   "date": "2026-11-19"
+   "headline": "NBA: Heat 137, Bucks 130 on Wed \u2014 Miami's 6th straight win, Bam Adebayo 26 pts; 76ers 121, Magic 116 \u2014 Joel Embiid 26 pts, Franz Wagner 27 pts for Orlando; Magic (6-8) play tonight Fri Nov 20 at the Brooklyn Nets (3-11), 7:30 PM ET at Barclays Center, with Paolo Banchero out (ankle)",
+   "source": "TSN / Bleacher Nation",
+   "date": "2026-11-20"
+  },
+  {
+   "headline": "NFL Week 11 Sun Nov 22 \u2014 all Florida teams on the road: Buccaneers (3-6) at Lions (7-2) 1 PM ET, Dolphins (1-8) at Bills (8-1) 1 PM ET, Jaguars (7-2) at Giants (5-3-1) 4:25 PM ET",
+   "source": "Ask Kelly",
+   "date": "2026-11-20"
   }
  ],
  "newBids": [
@@ -167,7 +167,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-19T23:47:00-05:00",
+ "updatedAt": "2026-11-20T07:01:00-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
