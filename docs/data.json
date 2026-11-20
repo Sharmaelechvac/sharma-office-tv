@@ -57,6 +57,18 @@
  "newBids": [
   {
    "date": "2026-11-20",
+   "project": "Taco Bell Lakeland - Remodel",
+   "from": "Stansell Construction",
+   "received": "Fri 3:52 PM"
+  },
+  {
+   "date": "2026-11-20",
+   "project": "Valvoline Davenport",
+   "from": "MEC General Contractors",
+   "received": "Fri 3:44 PM"
+  },
+  {
+   "date": "2026-11-20",
    "project": "Valvoline: Davenport FL",
    "from": "R.E. Crawford Construction",
    "received": "Fri 1:31 PM"
@@ -98,18 +110,6 @@
    "project": "Dollar Tree #11775 - Green Cove Springs, FL",
    "from": "Summit General Contractors",
    "received": "Thu 10:25 AM"
-  },
-  {
-   "date": "2026-11-19",
-   "project": "TJ Maxx Bartow, FL",
-   "from": "Horizon Retail Construction",
-   "received": "Thu 9:36 AM"
-  },
-  {
-   "date": "2026-11-18",
-   "project": "Solana Ave TI- Winter Park FL",
-   "from": "MEC General Contractors",
-   "received": "Wed 3:30 PM"
   }
  ],
  "tasks": {
@@ -167,7 +167,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-20T15:58:13-05:00",
+ "updatedAt": "2026-11-20T16:25:34-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
