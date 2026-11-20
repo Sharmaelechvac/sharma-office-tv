@@ -56,6 +56,12 @@
  ],
  "newBids": [
   {
+   "date": "2026-11-20",
+   "project": "Valvoline: Davenport FL",
+   "from": "R.E. Crawford Construction",
+   "received": "Fri 1:31 PM"
+  },
+  {
    "date": "2026-11-19",
    "project": "Petfolk-Winter Park, FL",
    "from": "CDO Group Inc",
@@ -104,12 +110,6 @@
    "project": "Solana Ave TI- Winter Park FL",
    "from": "MEC General Contractors",
    "received": "Wed 3:30 PM"
-  },
-  {
-   "date": "2026-11-18",
-   "project": "Site Development for the Orange City Public Works Operations Facility",
-   "from": "Saboungi Construction",
-   "received": "Wed 3:23 PM"
   }
  ],
  "tasks": {
@@ -167,7 +167,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-20T12:00:09-05:00",
+ "updatedAt": "2026-11-20T14:25:20-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
