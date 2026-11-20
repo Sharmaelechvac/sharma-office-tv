@@ -4,17 +4,17 @@
  ],
  "news": [
   {
-   "headline": "MAJOR FLOODING CONTINUES FRI — NWS Melbourne 3:10 AM Fri: Flood Warning for the St. Johns River near Cocoa remains in effect until further notice — river at 18.6 ft at 2:15 AM Fri (flood stage 16.0 ft), forecast to stay in Major Flood Stage and crest at 18.7 ft, above the flood of record; Flood Warning for central Brevard until 8:30 AM Fri and Flood Watch for most of east-central Florida including Orange, Osceola, Seminole, Volusia and Brevard through Fri 7 PM",
-   "source": "National Weather Service, Melbourne",
+   "headline": "MAJOR FLOODING FRI — St. Johns River near Cocoa hit 18.7 ft at about 10 AM Fri, a new record more than a foot above the 1953 record of 17.6 ft; NWS Melbourne Flood Warning remains in effect until further notice (river was 18.6 ft at 2:15 AM, flood stage 16.0 ft), with a Flood Watch for east-central Florida including Orange, Osceola, Seminole, Volusia and Brevard through Fri 7 PM and flash flood warnings in Brevard Fri morning",
+   "source": "National Weather Service, Melbourne / Florida Today",
    "date": "2026-11-20"
   },
   {
-   "headline": "Construction set to begin within months on Roche Bobois St. Pete Tower — 29-story, 164-unit condo tower at 344 4th Street South in St. Petersburg, a $200 million project by Valor Capital",
-   "source": "Florida YIMBY",
+   "headline": "Construction set to begin within months on Roche Bobois St. Pete Tower — 29-story, 164-unit condo tower at 344 4th Street South in St. Petersburg, a $200 million project by Valor Capital, with about 40% of units already under contract",
+   "source": "Florida YIMBY / St. Pete Rising",
    "date": "2026-11-19"
   },
   {
-   "headline": "U.S. housing starts rose 9.9% in October to a 1.309 million annual rate — single-family starts up 4.0% to 864,000 — but building permits fell 7.4% to 1.295 million, with single-family permits down 8.7% to 772,000, lowest since January 2023; builder confidence fell 4 points to 25 in November, lowest since April 2012, with 46% of builders cutting prices",
+   "headline": "U.S. housing starts rose 9.9% in October to a 1.309 million annual rate — single-family starts up 4.0% to 864,000 — but building permits fell 7.4% to 1.295 million, lowest since May 2020, with single-family permits down 8.7% to 772,000, lowest since January 2023; builder confidence fell 4 points to 25 in November, lowest since April 2012, with 46% of builders cutting prices",
    "source": "NAHB / U.S. Census Bureau",
    "date": "2026-11-18"
   },
@@ -24,33 +24,33 @@
    "date": "2026-11-13"
   },
   {
-   "headline": "Copper holds near seven-month low — COMEX copper closed Thu Nov 19 at $5.63/lb, and LME copper fell 1.4% on the day to $12,570/ton, as a strong dollar and demand doubts weighed on prices",
-   "source": "Yahoo Finance / Alcobra Metals",
-   "date": "2026-11-19"
-  },
-  {
-   "headline": "Regency Electric acquires Tekline Electrical Services of Chandler, AZ — deal closed Nov 3, terms undisclosed, expanding the Colorado commercial electrical contractor into Arizona; Tekline serves manufacturing, healthcare, education, hospitality and industrial markets",
-   "source": "TheJobWalk",
-   "date": "2026-11-19"
-  },
-  {
-   "headline": "Fed minutes released Wed Nov 18 read hawkish — almost all October FOMC participants judged further rate hikes likely in months ahead to return inflation to 2%; funds held at 3.75–4.00%, next meeting Dec 8–9, with markets pricing over 90% odds of a December hike",
-   "source": "Federal Reserve / Kalshi",
-   "date": "2026-11-19"
-  },
-  {
-   "headline": "Markets fell hard Thu Nov 19 — S&P 500 down 2.0% to 7,176 for a sixth straight loss, Nasdaq down 2.25% to 23,886 and the Dow down about 1,100 points as investors retreated from growth stocks; initial jobless claims for the week ending Nov 14 came in at 203,000 vs. 197,000 expected",
-   "source": "Motley Fool / Daily Market Report",
-   "date": "2026-11-19"
-  },
-  {
-   "headline": "NBA: Heat 137, Bucks 130 on Wed — Miami's 6th straight win, Bam Adebayo 26 pts; 76ers 121, Magic 116 — Joel Embiid 26 pts, Franz Wagner 27 pts for Orlando; Magic (6-8) play tonight Fri Nov 20 at the Brooklyn Nets (3-11), 7:30 PM ET at Barclays Center, with Paolo Banchero out (ankle)",
-   "source": "TSN / Bleacher Nation",
+   "headline": "Copper eases Fri — LME copper closed at $12,453/ton, down 1.37% in overnight trading Fri Nov 20, and COMEX copper was $5.53/lb, down 1.88%, as of 8:59 AM EST Fri, near a seven-month low after a sharp mid-November selloff",
+   "source": "SMM / Yahoo Finance",
    "date": "2026-11-20"
   },
   {
-   "headline": "NFL Week 11 Sun Nov 22 — all Florida teams on the road: Buccaneers (3-6) at Lions (7-2) 1 PM ET, Dolphins (1-8) at Bills (8-1) 1 PM ET, Jaguars (7-2) at Giants (5-3-1) 4:25 PM ET",
-   "source": "Ask Kelly",
+   "headline": "MasTec to acquire Murphy Corporation for about $1.25 billion in cash — Murphy, a large mechanical contractor serving mission-critical markets with HVAC, plumbing and process work, is projected to generate about $775 million in 2026 revenue and about $140 million in Adjusted EBITDA, with about 1,600 employees including about 1,200 union craft professionals",
+   "source": "MasTec, Inc.",
+   "date": "2026-11-20"
+  },
+  {
+   "headline": "Fed minutes read hawkish — almost all October FOMC participants judged further rate hikes likely to return inflation to 2%; funds held at 3.75–4.00%, next meeting Dec 8–9, with markets pricing about 97% odds of a December hike on Fri morning",
+   "source": "Federal Reserve / Premarket Daily",
+   "date": "2026-11-20"
+  },
+  {
+   "headline": "Markets fell hard Thu Nov 19 — S&P 500 down 2.02% to 7,175.83 for a sixth straight loss, Dow down 2.19% to 49,097.06 and Nasdaq down 2.25% to 23,879.20, VIX at 28.44; Freddie Mac said the 30-year fixed mortgage averaged 7.28% for the week ending Nov 19, up 17 basis points from 7.11%, with the 15-year at 6.66%",
+   "source": "NordFX / Freddie Mac",
+   "date": "2026-11-19"
+  },
+  {
+   "headline": "NBA: Heat 137, Bucks 130 on Wed night — Bam Adebayo 26 pts (21 in the first half), Giannis Antetokounmpo 27 pts for Milwaukee, Miami's win reported Thu; 76ers 121, Magic 116 — Joel Embiid 26 pts, VJ Edgecombe 24, halting Orlando's four-game winning streak; Magic play tonight Fri Nov 20 at the Brooklyn Nets, 7:30 PM ET",
+   "source": "TSN",
+   "date": "2026-11-19"
+  },
+  {
+   "headline": "NFL Sun Nov 22 — all Florida teams on the road: Buccaneers (3-6) at Lions (7-2) 1 PM ET, Dolphins (1-8) at Bills (8-1) 1 PM ET, Jaguars (7-2) at Giants (5-3-1) 4:25 PM ET",
+   "source": "Gridiron & Wine / Kickoff Pools",
    "date": "2026-11-20"
   }
  ],
@@ -167,7 +167,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-20T07:38:43-05:00",
+ "updatedAt": "2026-11-20T12:00:09-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
