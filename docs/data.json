@@ -4,29 +4,29 @@
  ],
  "news": [
   {
-   "headline": "MAJOR FLOODING SAT — NWS Melbourne Flood Warning remains in effect until further notice for the St. Johns River near Cocoa: stage was 18.7 ft at 8:15 PM Fri, with a 24-hour max of 18.8 ft, forecast to hold steady at 18.8 ft this weekend into early next week (flood stage 16.0 ft); Orlando Sat high 78°F with PM showers, Melbourne thunderstorms likely",
-   "source": "National Weather Service, Melbourne / Weather.com",
-   "date": "2026-11-20"
+   "headline": "MAJOR FLOODING SAT — NWS Melbourne (6:30 AM Sat): River Flood Warnings remain in effect for Cocoa, Geneva, Astor, DeLand and Sanford on the St. Johns River — all five points are in Major Flood Stage or forecast to reach it; Astor was at 4.0 ft at 7:30 AM Sat (flood stage 2.3 ft) and forecast to hold steady; scattered showers and isolated storms today (30-60%, highest south of Orlando/Cape Canaveral) could aggravate saturated, flooded areas; Orlando high 79°F, Melbourne 80°F",
+   "source": "National Weather Service, Melbourne",
+   "date": "2026-11-21"
   },
   {
-   "headline": "Fort Meade data center faces a new vote after plan revisions — Stonebridge shifted the 4.4-million-square-foot hyperscale project west, added a 120-acre wildlife preserve and moved the on-site power plant north; new City Commission approval is expected to be sought by January, with construction in Q2 2027 if approved, generating 4,000 construction jobs at peak",
+   "headline": "Fort Meade data center faces a new vote after plan revisions — Stonebridge shifted the 4.4-million-square-foot hyperscale project west, added a 120-acre wildlife preserve and moved the on-site power plant north; first reading expected week of Dec 14 with a final vote Jan 12, and construction in Q2 2027 if approved",
    "source": "The Ledger",
    "date": "2026-11-20"
   },
   {
-   "headline": "Central Florida builders push fall incentives verified Nov 20 — Dream Finders Homes offers rates from 5.49% on select quick move-in homes closing by Nov 30, Mattamy Homes offers an FHA 5/1 ARM at 4.75% plus closing costs on contracts Nov 9–22 closing by Dec 31, and Taylor Morrison offers a 4.99% conventional fixed rate on eligible quick move-in homes",
-   "source": "New Home Guide Orlando",
-   "date": "2026-11-20"
+   "headline": "Florida home sales slowed in October — Florida Realtors (released Nov 16): single-family closed sales 19,049, down 10.1% year over year, median price $420,000 up 2.2%; condo-townhouse sales 6,862, down 5%, median $290,000 down 3.3%; new pending single-family sales down 15.7%",
+   "source": "Florida Realtors",
+   "date": "2026-11-16"
   },
   {
-   "headline": "Florida's 9th-edition building code takes effect Dec 31, 2026 — the edition in effect on the permit application date governs the work for the life of the permit; the 2026 codes include the 2023 National Electrical Code, and Miami-Dade portal submissions after 4 PM Dec 30 will be subject to the 2026 edition",
-   "source": "Greenberg Traurig / Flagler County",
+   "headline": "Florida's 9th-edition building code takes effect Dec 31, 2026 — the edition in effect on the permit application date governs the work for the life of the permit; the 2026 codes are based on the 2024 International Codes and include the 2023 National Electrical Code, and Miami-Dade portal submissions after 4 PM Dec 30 will be subject to the 2026 edition",
+   "source": "Greenberg Traurig / Inspected",
    "date": "2026-11-13"
   },
   {
-   "headline": "Copper selloff deepens Fri — COMEX copper ended the week down 9.91% at $5.4770/lb, down 14.80 cents (2.63%) on Fri Nov 20",
-   "source": "Morningstar / Dow Jones Market Data",
-   "date": "2026-11-20"
+   "headline": "Copper stays in selloff Sat — latest quote $5.49/lb on Nov 21 (9:06 AM EST), down 2.64%; COMEX copper closed Fri Nov 20 at $5.4770/lb, down 9.91% for the week",
+   "source": "Morningstar / Dow Jones Market Data / CommodityWatch",
+   "date": "2026-11-21"
   },
   {
    "headline": "MasTec to acquire Murphy Corporation for about $1.25 billion in cash — Murphy, a large mechanical contractor with HVAC, plumbing and process work for mission-critical markets, is projected to generate about $775 million in 2026 revenue and about $140 million in Adjusted EBITDA, with about 1,600 employees including about 1,200 union craft professionals",
@@ -39,12 +39,12 @@
    "date": "2026-11-20"
   },
   {
-   "headline": "Mortgage rates rise — Freddie Mac said the 30-year fixed mortgage averaged 7.28% for the week ending Nov 19, up 17 basis points from 7.11%; CME FedWatch on Fri priced about a 91.4% chance of a 25-basis-point Fed hike at the Dec 8–9 meeting",
-   "source": "Freddie Mac / Real Estate News",
-   "date": "2026-11-20"
+   "headline": "Mortgage rates rise — Freddie Mac said the 30-year fixed mortgage averaged 7.28% for the week ending Nov 19, up 17 basis points from 7.11% the prior week; the 15-year fixed averaged 6.66%",
+   "source": "Freddie Mac",
+   "date": "2026-11-19"
   },
   {
-   "headline": "NBA: Magic 113, Nets 111 on Fri night — Franz Wagner scored 35 points including the tiebreaking jumper with 2.8 seconds left, Orlando improves to 7-8 and 3-0 in NBA Cup; Heat 137, Bucks 130 on Wed — Giannis Antetokounmpo 27 pts, 14 reb, 9 ast in his first game against his former team, Bam Adebayo 26 pts, Miami's sixth straight win",
+   "headline": "NBA: Magic 113, Nets 111 on Fri night — Franz Wagner scored 35 points including the tiebreaking jumper with 2.8 seconds left, Orlando improves to 3-0 in NBA Cup group play and beats Brooklyn for the 10th straight time",
    "source": "Reuters",
    "date": "2026-11-20"
   },
@@ -167,7 +167,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-21T07:45:37-05:00",
+ "updatedAt": "2026-11-21T11:59:39-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
