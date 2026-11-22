@@ -4,19 +4,19 @@
  ],
  "news": [
   {
-   "headline": "NWS Melbourne Sun Nov 22, 2:30 AM discussion: dry conditions across east central Florida through Monday, rain chances below 10%, highs mid-70s north to low 80s south today and in the 70s Monday; prolonged river flooding continues along the St. Johns River, high rip current risk along the coast and a Small Craft Advisory in offshore waters through early afternoon; rain chances return Tue night into Wed at 40-70%",
-   "source": "National Weather Service, Melbourne",
+   "headline": "NWS Melbourne Sun Nov 22 afternoon: sunny and dry in Melbourne, 79°F at 4 PM with rain chances 1-10% through Monday; River Flood Warning continues — St. Johns River near Cocoa was at a record 18.7 feet at 8:15 AM in major flood, above Lake Harney at 12.8 feet forecast to crest at 13.1 feet tonight, Astor in major flood and Sanford in moderate flood forecast to reach major this week; Rip Current Statement in effect until 7 PM Sun",
+   "source": "National Weather Service, Melbourne / Weather.com",
    "date": "2026-11-22"
   },
   {
-   "headline": "Construction starts on 20-story Sarasota waterfront tower — 1000 Boulevard of the Arts: Kolter Urban has selected Fort Lauderdale-based Moss to lead construction, with the team mobilizing on site; the mixed-use tower brings 117 luxury condominium residences alongside a Hyatt Centric Harborside hotel replacing the demolished Hyatt Regency Sarasota, residences start at $1.5 million, completion slated for 2028",
-   "source": "Sarasota Herald-Tribune",
+   "headline": "Gateway Jax opens Vandeveer at Pearl Square in downtown Jacksonville — the seven-story, 205-unit rental building at 515 North Pearl Street opened Nov 18 as the first completed residential building at Pearl Square, a nine-block mixed-use district planning four apartment buildings totaling about 1,270 units through 2030; the $66 million project includes more than 22,000 square feet of ground-floor retail",
+   "source": "Florida YIMBY / Jacksonville.com",
    "date": "2026-11-22"
   },
   {
-   "headline": "Builder sentiment at a 14-year low as Florida sales slowed — NAHB/Wells Fargo index fell to 25 in November, the lowest since April 2012, with 46% of builders cutting prices; Florida Realtors October single-family closed sales were 19,049, down 10.1% year over year, median price $420,000 up 2.2%, with new pending single-family sales down 15.7%",
-   "source": "CNBC / Florida Realtors via RoMac Building Supply",
-   "date": "2026-11-18"
+   "headline": "Vertical construction underway on Cypress Grove Apartments in Largo — Orlando-based Archway Partners' $31.85 million project south of downtown Largo will bring 84 income-restricted apartments in three garden-style buildings, affordable for at least 30 years, with completion expected late 2027; site preparation began in June",
+   "source": "St. Pete Rising via The Cooldown",
+   "date": "2026-11-22"
   },
   {
    "headline": "Florida's 9th-edition building code takes effect Dec 31, 2026 — the edition in effect on the permit application date governs the work for the life of the permit; the 2026 codes are based on the 2024 International Codes and include the 2023 National Electrical Code, and Miami-Dade portal submissions after 4 PM Dec 30 will be subject to the 2026 edition",
@@ -24,8 +24,8 @@
    "date": "2026-11-13"
   },
   {
-   "headline": "Copper eases after a sharp fall, but wire costs remain elevated year over year — copper last closed at $5.4850/lb on Fri Nov 20, down 15.3% in the past month; ABC analysis of PPI data put construction input prices up 11.5% year over year in October, with copper wire and cable up 25.5% and iron and steel up 25.1%",
-   "source": "Dalsnafin (Yahoo Finance) / Associated Builders and Contractors",
+   "headline": "Copper fell more than 5% Wed to its lowest since April — LME three-month copper fell 4.6% Nov 18 to $12,471 per tonne and Comex fell as much as 6.7% to $5.5835/lb on a strong dollar and AI-spending doubts; wire costs remain elevated year over year, with ABC analysis of PPI data putting construction input prices up 11.5% year over year in October and copper wire and cable up 25.5%",
+   "source": "MetalsCost / Associated Builders and Contractors",
    "date": "2026-11-20"
   },
   {
@@ -35,22 +35,22 @@
   },
   {
    "headline": "Markets in correction heading into Thanksgiving week — on Fri Nov 20 the S&P 500 fell 3.7% to 6,910.39, the Nasdaq fell 5.28% to 22,617.73 and the Dow fell 1.93% to 48,147.33; for the week the S&P 500 lost 8.6%, its worst week in more than 18 months, as the AI trade unwound; U.S. markets close Thu Nov 26 for Thanksgiving",
-   "source": "TipRanks / Pulsafi / Morningstar",
+   "source": "Motley Fool / Associated Press",
+   "date": "2026-11-20"
+  },
+  {
+   "headline": "Mortgage rates Sun Nov 22 — Bankrate's 30-year fixed national average is 7.41% today; Mortgage News Daily put the daily average at 7.33% on Fri Nov 20, down from 7.45% Thu as the stock selloff pushed bond yields down, Freddie Mac's weekly average was 7.28% on Nov 19, and CME FedWatch on Friday put a 91.4% chance on a 25-basis-point Fed hike at the Dec 8-9 meeting",
+   "source": "Bankrate / Real Estate News / Freddie Mac",
    "date": "2026-11-22"
   },
   {
-   "headline": "Mortgage rates Sun Nov 22 — Bankrate's 30-year fixed national average is 7.41% today (7.40% rate / 7.48% APR in its Nov 22 table, as of 6:30 AM); Freddie Mac's weekly average was 7.28% on Nov 19, and Fed minutes from the Oct 27-28 meeting showed almost all officials expect further rate hikes, with the next decision on Wed Dec 9",
-   "source": "Bankrate / Freddie Mac / FunderIntel",
+   "headline": "NBA Sun Nov 22 — both Florida teams play tonight: Miami Heat (9-6) host the Oklahoma City Thunder (10-6) at 6 PM ET at Kaseya Center, and Orlando Magic (7-8) are at the Washington Wizards (6-11) at 7 PM ET at Capital One Arena; Magic are without Paolo Banchero (ankle) and Jonathan Isaac (knee)",
+   "source": "StatSummit / Ticketmaster",
    "date": "2026-11-22"
   },
   {
-   "headline": "NBA Sun Nov 22 — both Florida teams play today: Miami Heat (9-6) host the Oklahoma City Thunder at 6 PM ET at Kaseya Center, and Orlando Magic (7-8) are at the Washington Wizards (6-11) at 7 PM ET at Capital One Arena; Magic are without Paolo Banchero (ankle) and Jonathan Isaac (knee)",
-   "source": "Ticketmaster / Oklahoman / Sportsbook Wire",
-   "date": "2026-11-22"
-  },
-  {
-   "headline": "NFL Week 11 Sun Nov 22 — all Florida teams on the road: Tampa Bay Buccaneers (3-6) at Detroit Lions (7-2) 1 PM ET on FOX, Miami Dolphins (1-8) at Buffalo Bills (8-1) 1 PM ET on CBS, Jacksonville Jaguars (7-2) at New York Giants 4:25 PM ET on CBS",
-   "source": "USA Today / FanSided (506 Sports)",
+   "headline": "NFL Week 11 Sun Nov 22, early-game snapshot at 2:25 PM ET — Detroit Lions led the Tampa Bay Buccaneers (3-6) 10-7 at halftime and the Buffalo Bills led the Miami Dolphins (1-8) 20-6 in the second quarter; Jacksonville Jaguars (7-2) at New York Giants follows at 4:25 PM ET on CBS",
+   "source": "DAZN / FirstFeed News (ESPN scores)",
    "date": "2026-11-22"
   }
  ],
@@ -167,7 +167,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-22T12:00:08-05:00",
+ "updatedAt": "2026-11-22T15:57:55-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
