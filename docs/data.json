@@ -167,7 +167,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-22T07:01:44-05:00",
+ "updatedAt": "2026-11-22T07:51:42-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -211,32 +211,6 @@
  ],
  "mySchedule": [
   {
-   "date": "2026-11-19",
-   "time": "All day",
-   "title": "DNR El Prado – Underground electrical",
-   "location": "4008 W El Prado Blvd, Tampa, FL 33629",
-   "notes": "Mukherjee Residence (DNR Contracting). Underground electrical incl. Ufer bond."
-  },
-  {
-   "date": "2026-11-19",
-   "time": "All day",
-   "title": "HVAC Rough — Lot 69 Bella Collina, 16051 Vetta Dr (Logan Construction)",
-   "location": "16051 Vetta Dr, Montverde, FL",
-   "notes": "HVAC only · Quote #1258 (3 systems, R-454B) · Tommy Logan (321) 432-1706"
-  },
-  {
-   "date": "2026-11-20",
-   "time": "10:00 AM",
-   "title": "TUG Installation — 498 Marion Oaks Golf Rd (EXJ Root)",
-   "location": "498 Marion Oaks Golf Rd, Ocala, FL 34473",
-   "notes": "Service: TUG Installation. Parcel 8005-0767-22."
-  },
-  {
-   "date": "2026-11-21",
-   "time": "All day",
-   "title": "Momma Sharma's Birthday"
-  },
-  {
    "date": "2026-11-24",
    "time": "8:00 AM",
    "title": "BNI Networking",
@@ -244,7 +218,7 @@
   }
  ],
  "todayInspections": {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "entries": []
  }
 }
