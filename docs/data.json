@@ -4,14 +4,14 @@
  ],
  "news": [
   {
-   "headline": "MAJOR FLOODING CONTINUES SAT PM — NWS Melbourne (3:01 PM Sat): River Flood Warnings remain in effect for Cocoa, Geneva, Astor, DeLand and Sanford on the St. Johns River — all five points are in Major Flood Stage or forecast to reach it; Cocoa was at 18.8 ft Sat morning (flood stage 16.0 ft), Geneva at 12.2 ft forecast to crest at 13.0 ft Sun afternoon, Astor steady at 4.0 ft; scattered showers and isolated storms today could aggravate saturated, flooded areas, with gusty winds 45-55 mph and small hail possible in the strongest storms; Orlando high 76°F",
-   "source": "National Weather Service, Melbourne",
-   "date": "2026-11-21"
+   "headline": "River Flood Warning still in effect Sun for the Melbourne area — Weather.com alerts for Melbourne list a SEVERE River Flood Warning in effect and a Rip Current Statement until Sun 7:00 PM EST; Orlando has no alerts issued today, with a high of 75°F (low 63°F) and mostly cloudy skies clearing to sun in the afternoon; Melbourne high 78°F",
+   "source": "National Weather Service, Melbourne / Weather.com",
+   "date": "2026-11-22"
   },
   {
-   "headline": "Minto sells 18-acre Westlake parcel to Eastwind for the city's first apartments — The Avery at Westlake, a 360-unit community in eight garden-style buildings, closed Nov 19; the Westlake City Council approved the site plan Aug 4",
-   "source": "Florida YIMBY",
-   "date": "2026-11-21"
+   "headline": "Construction starts on 20-story Sarasota waterfront tower — 1000 Boulevard of the Arts: Kolter Urban has selected Fort Lauderdale-based Moss to lead construction, with the team mobilizing on site; the mixed-use tower brings 117 luxury condominium residences alongside a Hyatt Centric Harborside hotel replacing the demolished Hyatt Regency Sarasota, residences start at $1.5 million, completion slated for 2028",
+   "source": "Sarasota Herald-Tribune",
+   "date": "2026-11-22"
   },
   {
    "headline": "Florida home sales slowed in October — Florida Realtors (released Nov 16): single-family closed sales 19,049, down 10.1% year over year, median price $420,000 up 2.2%; condo-townhouse sales 6,862, down 5%, median $290,000 down 3.3%; new pending single-family sales down 15.7%",
@@ -24,34 +24,34 @@
    "date": "2026-11-13"
   },
   {
-   "headline": "Copper stays in selloff Sat — latest quote $5.49/lb on Nov 21 (1:06 PM EST), down 2.64%; COMEX copper last closed Fri Nov 20 at $5.4770/lb",
-   "source": "CommodityWatch / Dow Jones Market Data",
+   "headline": "Copper suffers worst week of 2026 — Comex copper fell more than 9% for the week through Fri Nov 20, with the front contract at about $5.46/lb Friday, its lowest since March; copper is down nearly 16% in the past month, from $6.67/lb on Oct 28 to $5.45 on Friday, as hedge funds cut net longs to 28,700 contracts by Nov 17",
+   "source": "Barron's / COINOTAG (CFTC data)",
    "date": "2026-11-21"
   },
   {
-   "headline": "MasTec to acquire Murphy Corporation for about $1.25 billion in cash — Murphy, a large mechanical contractor with HVAC, plumbing and process work for mission-critical markets, is projected to generate about $775 million in 2026 revenue and about $140 million in Adjusted EBITDA, with about 1,600 employees including about 1,200 union craft professionals",
-   "source": "MasTec, Inc. / ACHR News",
+   "headline": "Midterm results could accelerate state push for A3 refrigerants — ACHR News: ACCA, PHCC and HARDI warn differing state rules could push ultra-low-GWP A3 refrigerants such as R-290 (propane) before contractors have adjusted to the A2L transition, and urge contractors to monitor state legislation and comment early on proposed refrigerant and code changes",
+   "source": "ACHR News",
    "date": "2026-11-20"
   },
   {
-   "headline": "Markets plunge for the week — on Fri Nov 20 the S&P 500 fell 3.7% to 6,910.39, the Nasdaq fell 5.28% to 22,617.73 and the Dow fell 1.93% to 48,147.33; for the week the S&P 500 lost 8.6%, the Nasdaq 10% and the Dow 8%, the worst week since April 2025",
-   "source": "Investopedia / Associated Press",
+   "headline": "Markets plunge for the week — on Fri Nov 20 the S&P 500 fell 3.7% to 6,910.39, the Nasdaq fell 5.28% to 22,617.73 and the Dow fell 1.93% to 48,147.33; for the week the S&P 500 lost 8.61%, entering correction territory as the AI trade unwound",
+   "source": "Motley Fool / Morningstar (Dow Jones Market Data)",
    "date": "2026-11-20"
   },
   {
-   "headline": "Mortgage rates ease Sat — Zillow data via Yahoo Finance put the 30-year fixed purchase rate at 7.18% on Sat Nov 21, down 15 basis points from Friday, with the 15-year fixed at 6.57%; Mortgage News Daily put the 30-year at 7.33% on Fri Nov 20, its lowest since Nov 10",
-   "source": "Zillow via Yahoo Finance / Mortgage News Daily",
-   "date": "2026-11-21"
+   "headline": "Mortgage rates Sun Nov 22 — Bankrate's 30-year fixed national average is 7.41% today (7.40% rate / 7.48% APR in its Nov 22 table, as of 6:30 AM); Mortgage News Daily put the 30-year at 7.33% on Fri Nov 20, its lowest since Nov 10, after the stock selloff pushed the 10-year Treasury below 5%",
+   "source": "Bankrate / Mortgage News Daily via Real Estate News",
+   "date": "2026-11-22"
   },
   {
-   "headline": "NBA: Magic 113, Nets 111 on Fri night — Franz Wagner scored 35 points including the tiebreaking jumper with 2.8 seconds left, Orlando beats Brooklyn for the 10th straight time; no Florida NBA game Sat — Magic next at Wizards Sun Nov 22 at 7 PM ET, Heat host the Thunder Sun Nov 22 at 6 PM ET",
-   "source": "Reuters",
-   "date": "2026-11-20"
+   "headline": "NBA: Magic won at Brooklyn 113-111 on Fri Nov 20, Heat last won 137-130 over Milwaukee on Wed Nov 18 — both Florida teams play today Sun Nov 22: Heat host the Oklahoma City Thunder at 6 PM ET at Kaseya Center, Magic are at the Washington Wizards at 7 PM ET",
+   "source": "Sportradar / Ticketmaster",
+   "date": "2026-11-22"
   },
   {
    "headline": "NFL Sun Nov 22 — all Florida teams on the road: Buccaneers at Lions 1 PM ET (FOX), Dolphins at Bills 1 PM ET (CBS), Jaguars at Giants 4:25 PM ET (CBS)",
-   "source": "Awful Announcing",
-   "date": "2026-11-20"
+   "source": "USA Today / Sports Illustrated",
+   "date": "2026-11-22"
   }
  ],
  "newBids": [
@@ -167,7 +167,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-21T15:57:08-05:00",
+ "updatedAt": "2026-11-22T07:01:44-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
