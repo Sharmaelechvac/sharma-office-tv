@@ -4,8 +4,8 @@
  ],
  "news": [
   {
-   "headline": "River Flood Warning still in effect Sun for the Melbourne area — Weather.com alerts for Melbourne list a SEVERE River Flood Warning in effect and a Rip Current Statement until Sun 7:00 PM EST; Orlando has no alerts issued today, with a high of 75°F (low 63°F) and mostly cloudy skies clearing to sun in the afternoon; Melbourne high 78°F",
-   "source": "National Weather Service, Melbourne / Weather.com",
+   "headline": "NWS Melbourne Sun Nov 22, 2:30 AM discussion: dry conditions across east central Florida through Monday, rain chances below 10%, highs mid-70s north to low 80s south today and in the 70s Monday; prolonged river flooding continues along the St. Johns River, high rip current risk along the coast and a Small Craft Advisory in offshore waters through early afternoon; rain chances return Tue night into Wed at 40-70%",
+   "source": "National Weather Service, Melbourne",
    "date": "2026-11-22"
   },
   {
@@ -14,19 +14,19 @@
    "date": "2026-11-22"
   },
   {
-   "headline": "Florida home sales slowed in October — Florida Realtors (released Nov 16): single-family closed sales 19,049, down 10.1% year over year, median price $420,000 up 2.2%; condo-townhouse sales 6,862, down 5%, median $290,000 down 3.3%; new pending single-family sales down 15.7%",
-   "source": "Florida Realtors",
-   "date": "2026-11-16"
+   "headline": "Builder sentiment at a 14-year low as Florida sales slowed — NAHB/Wells Fargo index fell to 25 in November, the lowest since April 2012, with 46% of builders cutting prices; Florida Realtors October single-family closed sales were 19,049, down 10.1% year over year, median price $420,000 up 2.2%, with new pending single-family sales down 15.7%",
+   "source": "CNBC / Florida Realtors via RoMac Building Supply",
+   "date": "2026-11-18"
   },
   {
    "headline": "Florida's 9th-edition building code takes effect Dec 31, 2026 — the edition in effect on the permit application date governs the work for the life of the permit; the 2026 codes are based on the 2024 International Codes and include the 2023 National Electrical Code, and Miami-Dade portal submissions after 4 PM Dec 30 will be subject to the 2026 edition",
-   "source": "Greenberg Traurig / Inspected",
+   "source": "Greenberg Traurig",
    "date": "2026-11-13"
   },
   {
-   "headline": "Copper suffers worst week of 2026 — Comex copper fell more than 9% for the week through Fri Nov 20, with the front contract at about $5.46/lb Friday, its lowest since March; copper is down nearly 16% in the past month, from $6.67/lb on Oct 28 to $5.45 on Friday, as hedge funds cut net longs to 28,700 contracts by Nov 17",
-   "source": "Barron's / COINOTAG (CFTC data)",
-   "date": "2026-11-21"
+   "headline": "Copper eases after a sharp fall, but wire costs remain elevated year over year — copper last closed at $5.4850/lb on Fri Nov 20, down 15.3% in the past month; ABC analysis of PPI data put construction input prices up 11.5% year over year in October, with copper wire and cable up 25.5% and iron and steel up 25.1%",
+   "source": "Dalsnafin (Yahoo Finance) / Associated Builders and Contractors",
+   "date": "2026-11-20"
   },
   {
    "headline": "Midterm results could accelerate state push for A3 refrigerants — ACHR News: ACCA, PHCC and HARDI warn differing state rules could push ultra-low-GWP A3 refrigerants such as R-290 (propane) before contractors have adjusted to the A2L transition, and urge contractors to monitor state legislation and comment early on proposed refrigerant and code changes",
@@ -34,23 +34,23 @@
    "date": "2026-11-20"
   },
   {
-   "headline": "Markets plunge for the week — on Fri Nov 20 the S&P 500 fell 3.7% to 6,910.39, the Nasdaq fell 5.28% to 22,617.73 and the Dow fell 1.93% to 48,147.33; for the week the S&P 500 lost 8.61%, entering correction territory as the AI trade unwound",
-   "source": "Motley Fool / Morningstar (Dow Jones Market Data)",
-   "date": "2026-11-20"
-  },
-  {
-   "headline": "Mortgage rates Sun Nov 22 — Bankrate's 30-year fixed national average is 7.41% today (7.40% rate / 7.48% APR in its Nov 22 table, as of 6:30 AM); Mortgage News Daily put the 30-year at 7.33% on Fri Nov 20, its lowest since Nov 10, after the stock selloff pushed the 10-year Treasury below 5%",
-   "source": "Bankrate / Mortgage News Daily via Real Estate News",
+   "headline": "Markets in correction heading into Thanksgiving week — on Fri Nov 20 the S&P 500 fell 3.7% to 6,910.39, the Nasdaq fell 5.28% to 22,617.73 and the Dow fell 1.93% to 48,147.33; for the week the S&P 500 lost 8.6%, its worst week in more than 18 months, as the AI trade unwound; U.S. markets close Thu Nov 26 for Thanksgiving",
+   "source": "TipRanks / Pulsafi / Morningstar",
    "date": "2026-11-22"
   },
   {
-   "headline": "NBA: Magic won at Brooklyn 113-111 on Fri Nov 20, Heat last won 137-130 over Milwaukee on Wed Nov 18 — both Florida teams play today Sun Nov 22: Heat host the Oklahoma City Thunder at 6 PM ET at Kaseya Center, Magic are at the Washington Wizards at 7 PM ET",
-   "source": "Sportradar / Ticketmaster",
+   "headline": "Mortgage rates Sun Nov 22 — Bankrate's 30-year fixed national average is 7.41% today (7.40% rate / 7.48% APR in its Nov 22 table, as of 6:30 AM); Freddie Mac's weekly average was 7.28% on Nov 19, and Fed minutes from the Oct 27-28 meeting showed almost all officials expect further rate hikes, with the next decision on Wed Dec 9",
+   "source": "Bankrate / Freddie Mac / FunderIntel",
    "date": "2026-11-22"
   },
   {
-   "headline": "NFL Sun Nov 22 — all Florida teams on the road: Buccaneers at Lions 1 PM ET (FOX), Dolphins at Bills 1 PM ET (CBS), Jaguars at Giants 4:25 PM ET (CBS)",
-   "source": "USA Today / Sports Illustrated",
+   "headline": "NBA Sun Nov 22 — both Florida teams play today: Miami Heat (9-6) host the Oklahoma City Thunder at 6 PM ET at Kaseya Center, and Orlando Magic (7-8) are at the Washington Wizards (6-11) at 7 PM ET at Capital One Arena; Magic are without Paolo Banchero (ankle) and Jonathan Isaac (knee)",
+   "source": "Ticketmaster / Oklahoman / Sportsbook Wire",
+   "date": "2026-11-22"
+  },
+  {
+   "headline": "NFL Week 11 Sun Nov 22 — all Florida teams on the road: Tampa Bay Buccaneers (3-6) at Detroit Lions (7-2) 1 PM ET on FOX, Miami Dolphins (1-8) at Buffalo Bills (8-1) 1 PM ET on CBS, Jacksonville Jaguars (7-2) at New York Giants 4:25 PM ET on CBS",
+   "source": "USA Today / FanSided (506 Sports)",
    "date": "2026-11-22"
   }
  ],
@@ -167,7 +167,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-22T07:51:42-05:00",
+ "updatedAt": "2026-11-22T12:00:08-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
