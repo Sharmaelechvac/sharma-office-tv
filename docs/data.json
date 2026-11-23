@@ -167,7 +167,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-22T15:57:55-05:00",
+ "updatedAt": "2026-11-22T21:31:48-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -211,10 +211,64 @@
  ],
  "mySchedule": [
   {
+   "date": "2026-11-23",
+   "time": "All day",
+   "title": "1 · Manny — Eunice: inspection cleanup (first stop)",
+   "location": ""
+  },
+  {
+   "date": "2026-11-23",
+   "time": "All day",
+   "title": "2 · Manny — 212 Marion Oaks Golf Rd: electrical rough-in",
+   "location": "Ocala"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "All day",
+   "title": "3 · Sanjay — 498 Marion Oaks Golf Rd: TUG install",
+   "location": "Ocala"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "All day",
+   "title": "4 · Sanjay — 2670 SW 177 Place Rd: underground",
+   "location": "Ocala"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "All day",
+   "title": "5 · Sanjay — 16463 SE 89th Terrace: underground (Infinity)",
+   "location": "Ocala"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "All day",
+   "title": "6 · Sanjay — 6188 SW 174th Place: underground (Morgan/VTX)",
+   "location": "Ocala"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "All day",
+   "title": "7 · Sanjay — 15133 SW 27th Ct: pass by, TUG check (last)",
+   "location": "Ocala"
+  },
+  {
    "date": "2026-11-24",
    "time": "8:00 AM",
    "title": "BNI Networking",
    "location": "Winter Park Golf Course, Winter Park, FL"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "In person",
+   "title": "Arbor Watch payment delivery — Wonsetler office (closed 12–1 PM)",
+   "location": "717 N Magnolia Ave, Orlando"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "12:00 PM",
+   "title": "Epic Theater Lee Vista bid due",
+   "location": "Petrie Construction"
   }
  ],
  "todayInspections": {
