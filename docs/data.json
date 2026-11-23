@@ -56,6 +56,12 @@
  ],
  "newBids": [
   {
+   "date": "2026-11-23",
+   "project": "2 New Construction Homes - South Tampa",
+   "from": "Elite Construction Services LLC",
+   "received": "Mon 9:59 AM"
+  },
+  {
    "date": "2026-11-20",
    "project": "Taco Bell Lakeland - Remodel",
    "from": "Stansell Construction",
@@ -104,12 +110,6 @@
    "received": "Thu 11:35 AM",
    "sqft": 55048,
    "due": "Mon Dec 7, 6:00 PM ET"
-  },
-  {
-   "date": "2026-11-19",
-   "project": "Dollar Tree #11775 - Green Cove Springs, FL",
-   "from": "Summit General Contractors",
-   "received": "Thu 10:25 AM"
   }
  ],
  "tasks": {
@@ -177,7 +177,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-23T07:51:53-05:00",
+ "updatedAt": "2026-11-23T10:25:38-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
