@@ -177,7 +177,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-23T07:32:22-05:00",
+ "updatedAt": "2026-11-23T07:38:24-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -294,7 +294,7 @@
   }
  ],
  "todayInspections": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "entries": []
  }
 }
