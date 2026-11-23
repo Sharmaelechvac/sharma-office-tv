@@ -177,7 +177,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-23T07:38:24-05:00",
+ "updatedAt": "2026-11-23T07:51:53-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -241,43 +241,49 @@
   {
    "date": "2026-11-23",
    "time": "All day",
-   "title": "3 · Sanjay — 498 Marion Oaks Golf Rd: TUG install",
+   "title": "3 · Sanjay — drop off materials at 212 Marion Oaks Golf Rd (for Manny)",
+   "location": "212 Marion Oaks Golf Rd, Ocala, FL"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "All day",
+   "title": "4 · Sanjay — 498 Marion Oaks Golf Rd: TUG install",
    "location": "Ocala"
   },
   {
    "date": "2026-11-23",
    "time": "All day",
-   "title": "4 · Sanjay — 614 Marion Oaks Trail: underground (Z Brothers)",
+   "title": "5 · Sanjay — 614 Marion Oaks Trail: underground (Z Brothers)",
    "location": "614 Marion Oaks Trail, Ocala, FL"
   },
   {
    "date": "2026-11-23",
    "time": "All day",
-   "title": "5 · Sanjay — 2670 SW 177 Place Rd: underground",
+   "title": "6 · Sanjay — 2670 SW 177 Place Rd: underground",
    "location": "Ocala"
   },
   {
    "date": "2026-11-23",
    "time": "All day",
-   "title": "6 · Sanjay — 16463 SE 89th Terrace: underground (Infinity)",
+   "title": "7 · Sanjay — 16463 SE 89th Terrace: underground (Infinity)",
    "location": "Ocala"
   },
   {
    "date": "2026-11-23",
    "time": "All day",
-   "title": "7 · Sanjay — 6188 SW 174th Place: underground (Morgan/VTX)",
+   "title": "8 · Sanjay — 6188 SW 174th Place: underground (Morgan/VTX)",
    "location": "Ocala"
   },
   {
    "date": "2026-11-23",
    "time": "All day",
-   "title": "8 · Sanjay — 15133 SW 27th Ct: pass by, TUG check (last)",
+   "title": "9 · Sanjay — 15133 SW 27th Ct: pass by, TUG check (last)",
    "location": "Ocala"
   },
   {
    "date": "2026-11-23",
    "time": "All day",
-   "title": "9 · Roberto — 9700 Blandford Rd: electrical trim (MRCELA)",
+   "title": "10 · Roberto — 9700 Blandford Rd: electrical trim (MRCELA)",
    "location": "Orlando"
   },
   {
