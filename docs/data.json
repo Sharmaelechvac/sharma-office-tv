@@ -177,7 +177,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-22T23:49:55-05:00",
+ "updatedAt": "2026-11-23T00:21:50-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -267,6 +267,12 @@
    "time": "All day",
    "title": "7 · Sanjay — 15133 SW 27th Ct: pass by, TUG check (last)",
    "location": "Ocala"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "All day",
+   "title": "8 · Roberto — 9700 Blandford Rd: electrical trim (MRCELA)",
+   "location": "Orlando"
   },
   {
    "date": "2026-11-24",
