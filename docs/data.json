@@ -167,13 +167,17 @@
   ],
   "2026-11-23": [
    {
+    "title": "Grab materials — first, before the route",
+    "detail": "Sanjay's first task Mon morning, ahead of 498 TUG → 2670 / 16463 / 6188 undergrounds → 15133 pass-by"
+   },
+   {
     "title": "Matt permit — first thing",
     "detail": "Solar permit · 4400 Harbour Lights Ct · AsBuilt Roofing (Matt Osborn) · confirm permit is pulled + schedule the inspection"
    }
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-22T23:46:04-05:00",
+ "updatedAt": "2026-11-22T23:49:55-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -216,6 +220,12 @@
   }
  ],
  "mySchedule": [
+  {
+   "date": "2026-11-23",
+   "time": "First",
+   "title": "Grab materials — before the route",
+   "location": ""
+  },
   {
    "date": "2026-11-23",
    "time": "All day",
