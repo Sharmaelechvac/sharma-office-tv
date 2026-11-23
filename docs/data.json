@@ -4,18 +4,18 @@
  ],
  "news": [
   {
-   "headline": "NWS Melbourne Mon Nov 23, 2:25 AM: River Flood Warnings remain in effect for the St. Johns River at Cocoa, Geneva, Astor, DeLand and Sanford — all five points are in Major Flood Stage or forecast to reach it in coming days, with prolonged flooding expected and additional rises possible from mid-week rain; Melbourne is cloudy Mon at midday at 67°F, high 70°F, rain chance 1% at noon",
-   "source": "National Weather Service, Melbourne / Weather.com",
+   "headline": "NWS Melbourne Mon Nov 23, 2:49 PM: Flood Watch issued for the Treasure Coast, Brevard and Okeechobee from 1 AM Wednesday through 1 AM Thursday; River Flood Warnings remain in effect for the St. Johns River at Cocoa, Geneva, Astor, DeLand and Sanford — all five points in Major Flood Stage or forecast to reach it, with prolonged flooding expected and additional rises possible from mid-week rain",
+   "source": "National Weather Service, Melbourne",
    "date": "2026-11-23"
   },
   {
-   "headline": "$150 million construction permit issued for 42-story 1775 Biscayne in Miami — Florida YIMBY reports Nov 23 the permit for the mixed-use tower under construction at 1775 Biscayne Boulevard in Miami's Arts & Entertainment District",
-   "source": "Florida YIMBY",
+   "headline": "Namdar Group lands $345 million construction loan to build West Brickell rental tower — Commercial Observer: the SCALE Lending loan covers a 42-story, 871,000-square-foot tower at 250 Southwest Seventh Street in Miami with 1,008 apartments, filed under Florida's Live Local Act, completion expected May 2029",
+   "source": "Commercial Observer",
    "date": "2026-11-23"
   },
   {
-   "headline": "Rockledge Villas, a 93-unit community in Rockledge, sold for $11 million — Marcus & Millichap arranged the sale of the 87,629-square-foot property at 1525 S. Fiske Blvd., with eight two-story buildings on a 6-acre lot",
-   "source": "Multifamily & Affordable Housing Business",
+   "headline": "Miami Beach rejects 38-story Live Local towers at Southgate — the city ruled the 910 West Avenue site ineligible for the Live Local Act, blocking a plan for a pair of 38-story towers with 442 units, including 178 workforce rentals",
+   "source": "Groundbreak Miami",
    "date": "2026-11-23"
   },
   {
@@ -24,27 +24,27 @@
    "date": "2026-11-13"
   },
   {
-   "headline": "Copper roars back Mon Nov 23 after entering a bear market Fri — Comex copper for December delivery jumped as much as 5.5% to $5.787 a pound in early New York trade, trading at $5.762 ($12,703 a tonne), after settling Fri at $5.485, down 9.9% on the week and 20.4% below the Sep 9 record settlement of $6.889; the rebound followed Nvidia reinstating Jensen Huang as CEO",
-   "source": "Mining.com",
+   "headline": "Comex copper settles 2.74% higher at $5.6270 on Mon Nov 23 — front-month copper for November delivery gained 15.00 cents a pound, settling at $5.6270 after roaring back from a bear market in early trade",
+   "source": "Morningstar / Dow Jones Market Data",
    "date": "2026-11-23"
   },
   {
-   "headline": "Midterm results could accelerate state push for A3 refrigerants — ACHR News: ACCA, PHCC and HARDI warn differing state rules could push ultra-low-GWP A3 refrigerants such as R-290 (propane) before contractors have adjusted to the A2L transition, and urge contractors to monitor state legislation and comment early on proposed refrigerant and code changes",
+   "headline": "HVAC manufacturers report increased Q3 revenue — ACHR News Nov 23: Carrier, Trane Technologies and Lennox posted improved residential and commercial revenue, data centers are driving commercial demand with Johnson Controls reporting record backlogs, and contractors face continued price increases from tariffs and high fuel prices",
    "source": "ACHR News",
-   "date": "2026-11-20"
-  },
-  {
-   "headline": "Stocks rebound sharply Mon Nov 23 as Nvidia reinstates CEO Huang — Barchart: S&P 500 up 5.15%, Dow up 3.05% and Nasdaq 100 up 7.34% in Monday trade, more than recovering Fri's plunges of 3.70% in the S&P 500 and 5.76% in the Nasdaq 100; Nvidia soared more than 30% and the iShares Semiconductor ETF rose more than 13%",
-   "source": "Barchart",
    "date": "2026-11-23"
   },
   {
-   "headline": "Mortgage rates hold Mon Nov 23 — Freddie Mac's 30-year fixed average remains 7.28% as of Thu's survey; futures still price a high chance of a 25-basis-point Fed hike at the Dec 8-9 meeting, Treasury Secretary Bessent warned Sun the Fed may make a policy mistake if it over-tightens, and October PCE inflation and the Q3 GDP second estimate are due Wed",
-   "source": "Candid Dragon / Freddie Mac",
+   "headline": "Stocks climb Mon afternoon Nov 23 on Nvidia rally — WSJ: Nasdaq up 6.8%, S&P 500 up 5% and Dow up 3.3% Monday afternoon, with Nvidia soaring as much as 36% after Jensen Huang's return as chief executive",
+   "source": "Wall Street Journal",
    "date": "2026-11-23"
   },
   {
-   "headline": "NBA Sun Nov 22 — Miami Heat beat the Oklahoma City Thunder 123-113 at Kaseya Center, Bam Adebayo posting a triple-double with 24 points, 15 rebounds and 12 assists for Miami's seventh straight win; Orlando Magic lost at the Washington Wizards 116-96, Kyshawn George scoring 24 for Washington and Tristan da Silva leading Orlando with 18 off the bench",
+   "headline": "Mortgage rates today Mon Nov 23 — average 30-year fixed is 7.15%, down 0.05% from yesterday, with the 15-year fixed at 6.32%; the Fed held its benchmark steady Oct 28, its next decision is due Dec 9, and Wednesday's PCE inflation report is the week's big watch",
+   "source": "MortgageResearch.com",
+   "date": "2026-11-23"
+  },
+  {
+   "headline": "NBA Sun Nov 22 — Miami Heat beat the Oklahoma City Thunder 123-113 at Kaseya Center, Bam Adebayo posting a triple-double with 24 points, 15 rebounds and 12 assists for Miami's seventh straight win; Orlando Magic lost at the Washington Wizards 116-96",
    "source": "Reuters / Field Level Media",
    "date": "2026-11-22"
   },
@@ -177,7 +177,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-23T12:00:13-05:00",
+ "updatedAt": "2026-11-23T15:56:46-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
