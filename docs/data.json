@@ -4,19 +4,19 @@
  ],
  "news": [
   {
-   "headline": "NWS Melbourne Mon Nov 23, 2:25 AM: River Flood Warnings remain in effect for the St. Johns River at Cocoa, Geneva, Astor, DeLand and Sanford — all five points are in Major Flood Stage or forecast to reach it in coming days, with prolonged flooding expected and additional rises possible from mid-week rain; near Cocoa the river was at 18.7 feet Sun 8:15 PM, above its previous record, and Melbourne is cloudy Mon morning at 65°F at 7 AM, high 71°F, rain chances 1-2% through the afternoon",
+   "headline": "NWS Melbourne Mon Nov 23, 2:25 AM: River Flood Warnings remain in effect for the St. Johns River at Cocoa, Geneva, Astor, DeLand and Sanford — all five points are in Major Flood Stage or forecast to reach it in coming days, with prolonged flooding expected and additional rises possible from mid-week rain; Melbourne is cloudy Mon at midday at 67°F, high 70°F, rain chance 1% at noon",
    "source": "National Weather Service, Melbourne / Weather.com",
    "date": "2026-11-23"
   },
   {
-   "headline": "Construction underway on 1000 Boulevard of the Arts in downtown Sarasota — Kolter Urban's 20-story waterfront tower will bring 117 luxury condominium residences alongside the Hyatt Centric Harborside hotel replacing the demolished Hyatt Regency; Fort Lauderdale-based Moss is general contractor, residences start at $1.5 million, completion slated for 2028",
-   "source": "Sarasota Herald-Tribune",
-   "date": "2026-11-22"
+   "headline": "$150 million construction permit issued for 42-story 1775 Biscayne in Miami — Florida YIMBY reports Nov 23 the permit for the mixed-use tower under construction at 1775 Biscayne Boulevard in Miami's Arts & Entertainment District",
+   "source": "Florida YIMBY",
+   "date": "2026-11-23"
   },
   {
-   "headline": "25-story tower planned under the Live Local Act at 215 5th Street in West Palm Beach — designed by Arquitectonica for PF Fund WPB, the mixed-use building would contain 91 residences, including 39 condominiums and 52 rental apartments, plus ground-floor retail",
-   "source": "Florida YIMBY",
-   "date": "2026-11-22"
+   "headline": "Rockledge Villas, a 93-unit community in Rockledge, sold for $11 million — Marcus & Millichap arranged the sale of the 87,629-square-foot property at 1525 S. Fiske Blvd., with eight two-story buildings on a 6-acre lot",
+   "source": "Multifamily & Affordable Housing Business",
+   "date": "2026-11-23"
   },
   {
    "headline": "Florida's 9th-edition building code takes effect Dec 31, 2026 — the edition in effect on the permit application date governs the work for the life of the permit; the 2026 codes are based on the 2024 International Codes and include the 2023 National Electrical Code, and Miami-Dade portal submissions after 4 PM Dec 30 will be subject to the 2026 edition",
@@ -24,8 +24,8 @@
    "date": "2026-11-13"
   },
   {
-   "headline": "Copper rebounds Mon Nov 23 after plunging more than 9% last week — the selloff was triggered by concerns over slowing AI infrastructure and data-center spending, which has driven copper demand for power distribution and cooling; Monday's modest recovery suggests some traders viewed the drop as overdone, with demand from renewables, EVs and traditional data centers still supporting prices",
-   "source": "Emergent",
+   "headline": "Copper roars back Mon Nov 23 after entering a bear market Fri — Comex copper for December delivery jumped as much as 5.5% to $5.787 a pound in early New York trade, trading at $5.762 ($12,703 a tonne), after settling Fri at $5.485, down 9.9% on the week and 20.4% below the Sep 9 record settlement of $6.889; the rebound followed Nvidia reinstating Jensen Huang as CEO",
+   "source": "Mining.com",
    "date": "2026-11-23"
   },
   {
@@ -34,23 +34,23 @@
    "date": "2026-11-20"
   },
   {
-   "headline": "Mortgage rates Mon Nov 23 — Bankrate's 30-year fixed national average is 7.41% today; Freddie Mac's weekly average was 7.28% on Nov 19, Mortgage News Daily's daily average was 7.33% on Fri Nov 20 after the stock selloff pushed bond yields down, and CME FedWatch on Friday put a 91.4% chance on a 25-basis-point Fed hike at the Dec 8-9 meeting; PCE inflation report is due Nov 25",
-   "source": "Bankrate / Freddie Mac / Mortgage News Daily",
+   "headline": "Stocks rebound sharply Mon Nov 23 as Nvidia reinstates CEO Huang — Barchart: S&P 500 up 5.15%, Dow up 3.05% and Nasdaq 100 up 7.34% in Monday trade, more than recovering Fri's plunges of 3.70% in the S&P 500 and 5.76% in the Nasdaq 100; Nvidia soared more than 30% and the iShares Semiconductor ETF rose more than 13%",
+   "source": "Barchart",
    "date": "2026-11-23"
   },
   {
-   "headline": "Markets in correction heading into Thanksgiving week — on Fri Nov 20 the S&P 500 fell 3.7% to 6,910.39, the Nasdaq fell 5.28% to 22,617.73 and the Dow fell 1.93% to 48,147.33; for the week the S&P 500 lost 8.6%, its worst week in more than 18 months, as the AI trade unwound; U.S. markets close Thu Nov 26 for Thanksgiving",
-   "source": "Associated Press / Investopedia",
-   "date": "2026-11-20"
+   "headline": "Mortgage rates hold Mon Nov 23 — Freddie Mac's 30-year fixed average remains 7.28% as of Thu's survey; futures still price a high chance of a 25-basis-point Fed hike at the Dec 8-9 meeting, Treasury Secretary Bessent warned Sun the Fed may make a policy mistake if it over-tightens, and October PCE inflation and the Q3 GDP second estimate are due Wed",
+   "source": "Candid Dragon / Freddie Mac",
+   "date": "2026-11-23"
   },
   {
-   "headline": "NBA Sun Nov 22 — Miami Heat (10-6) beat the Oklahoma City Thunder 123-113 at Kaseya Center, Bam Adebayo posting a triple-double with 24 points, 15 rebounds and 12 assists for Miami's seventh straight win; Orlando Magic (7-9) lost at the Washington Wizards 116-96, Kyshawn George scoring 24 for Washington",
+   "headline": "NBA Sun Nov 22 — Miami Heat beat the Oklahoma City Thunder 123-113 at Kaseya Center, Bam Adebayo posting a triple-double with 24 points, 15 rebounds and 12 assists for Miami's seventh straight win; Orlando Magic lost at the Washington Wizards 116-96, Kyshawn George scoring 24 for Washington and Tristan da Silva leading Orlando with 18 off the bench",
    "source": "Reuters / Field Level Media",
    "date": "2026-11-22"
   },
   {
-   "headline": "NFL Week 11 Sun Nov 22 — all three Florida teams lost: Detroit Lions beat the Tampa Bay Buccaneers (3-7) 31-21, Buffalo Bills beat the Miami Dolphins (1-9) 26-9, and New York Giants upset the Jacksonville Jaguars (7-3) 23-18; Jahmyr Gibbs ran for 98 yards and two touchdowns for Detroit, Josh Allen passed for 304 yards for Buffalo, and Trevor Lawrence passed for 301 yards for Jacksonville",
-   "source": "Field Level Media / iHeart",
+   "headline": "NFL Week 11 Sun Nov 22 — all three Florida teams lost: Detroit Lions beat the Tampa Bay Buccaneers 31-21, Buffalo Bills beat the Miami Dolphins 26-9, and New York Giants upset the Jacksonville Jaguars 23-18; next up Sun Nov 29, Jaguars host the Titans and Dolphins host the Jets",
+   "source": "iHeart / Field Level Media",
    "date": "2026-11-22"
   }
  ],
@@ -177,7 +177,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-23T10:25:38-05:00",
+ "updatedAt": "2026-11-23T12:00:13-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
