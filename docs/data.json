@@ -57,6 +57,12 @@
  "newBids": [
   {
    "date": "2026-11-24",
+   "project": "Plan 3898 QD Stick (Ocala Market)",
+   "from": "Southern Impression Homes",
+   "received": "Tue 10:13 AM"
+  },
+  {
+   "date": "2026-11-24",
    "project": "Confluence Condominiums",
    "from": "Licciardello Construction",
    "received": "Tue 8:38 AM"
@@ -102,12 +108,6 @@
    "project": "Haughton Patio",
    "from": "Nok Construction",
    "received": "Thu 2:10 PM"
-  },
-  {
-   "date": "2026-11-19",
-   "project": "RejuvenX Chiropractic-TI",
-   "from": "EnviroStruct, LLC",
-   "received": "Thu 2:04 PM"
   }
  ],
  "tasks": {
@@ -175,7 +175,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-24T09:25:26-05:00",
+ "updatedAt": "2026-11-24T10:25:59-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
