@@ -57,6 +57,18 @@
  "newBids": [
   {
    "date": "2026-11-24",
+   "project": "United Airlines MCO Club Remodel - Orlando International Airport: Electrical",
+   "from": "Johnson-Laux Construction",
+   "received": "Tue 4:26 PM"
+  },
+  {
+   "date": "2026-11-24",
+   "project": "United Airlines MCO Club Remodel - Orlando International Airport: HVAC",
+   "from": "Johnson-Laux Construction",
+   "received": "Tue 4:25 PM"
+  },
+  {
+   "date": "2026-11-24",
    "project": "AYR Wellness - Orange City FL",
    "from": "Marco Contractors, Inc.",
    "received": "Tue 4:07 PM"
@@ -96,18 +108,6 @@
    "project": "Confluence Condominiums",
    "from": "Licciardello Construction",
    "received": "Tue 8:38 AM"
-  },
-  {
-   "date": "2026-11-23",
-   "project": "2 New Construction Homes - South Tampa",
-   "from": "Elite Construction Services LLC",
-   "received": "Mon 9:59 AM"
-  },
-  {
-   "date": "2026-11-20",
-   "project": "Taco Bell Lakeland - Remodel",
-   "from": "Stansell Construction",
-   "received": "Fri 3:52 PM"
   }
  ],
  "tasks": {
@@ -175,7 +175,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-24T16:25:24-05:00",
+ "updatedAt": "2026-11-24T17:25:39-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
