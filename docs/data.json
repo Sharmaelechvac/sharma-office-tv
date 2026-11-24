@@ -57,6 +57,18 @@
  "newBids": [
   {
    "date": "2026-11-24",
+   "project": "Aldi Miami Lakes #262 RPB-162",
+   "from": "Case Contracting",
+   "received": "Tue 1:23 PM"
+  },
+  {
+   "date": "2026-11-24",
+   "project": "Bath & Body Works 2056 Lakeland, FL",
+   "from": "Horizon Retail Construction",
+   "received": "Tue 12:52 PM"
+  },
+  {
+   "date": "2026-11-24",
    "project": "Plan 3898 QD Stick (Ocala Market)",
    "from": "Southern Impression Homes",
    "received": "Tue 10:13 AM"
@@ -96,18 +108,6 @@
    "project": "Petfolk-Winter Park, FL",
    "from": "CDO Group Inc",
    "received": "Thu 3:05 PM"
-  },
-  {
-   "date": "2026-11-19",
-   "project": "Heartland Dental TI Auburndale FL",
-   "from": "MEC General Contractors",
-   "received": "Thu 2:45 PM"
-  },
-  {
-   "date": "2026-11-19",
-   "project": "Haughton Patio",
-   "from": "Nok Construction",
-   "received": "Thu 2:10 PM"
   }
  ],
  "tasks": {
@@ -175,7 +175,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-24T11:59:44-05:00",
+ "updatedAt": "2026-11-24T13:25:23-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
