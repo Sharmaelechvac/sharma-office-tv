@@ -4,18 +4,18 @@
  ],
  "news": [
   {
-   "headline": "NWS Melbourne Mon Nov 23, 2:49 PM: Flood Watch issued for the Treasure Coast, Brevard and Okeechobee from 1 AM Wednesday through 1 AM Thursday; River Flood Warnings remain in effect for the St. Johns River at Cocoa, Geneva, Astor, DeLand and Sanford — all five points in Major Flood Stage or forecast to reach it, with prolonged flooding expected and additional rises possible from mid-week rain",
-   "source": "National Weather Service, Melbourne",
+   "headline": "Central Florida Tue Nov 24: Flood Watch in effect for the Treasure Coast, Brevard and Okeechobee Wed 1 AM through Thu 1 AM, River Flood Warning remains in effect and a Coastal Flood Advisory runs Wed 5 AM through Thu 11 AM; Melbourne Tue high 74°F / low 67°F, Wed rain chance 80% — NWS Melbourne river warnings for the St. Johns at Cocoa, Geneva, Astor, DeLand and Sanford remain in Major Flood Stage until further notice",
+   "source": "Weather.com / National Weather Service, Melbourne",
+   "date": "2026-11-24"
+  },
+  {
+   "headline": "Central Florida builder incentives stay aggressive, updated Nov 23 — benchmark 30-year fixed averaged 7.28% for the week ending Nov 19 (Freddie Mac, up from 7.11%), with Taylor Morrison returning a 4.99% quick move-in offer in Orlando, M/I Homes adding a 4.875% 7/6 ARM, and David Weekley Fall Into Savings live through Nov 30",
+   "source": "Central Florida Builder Incentives Tracker / Freddie Mac PMMS",
    "date": "2026-11-23"
   },
   {
-   "headline": "Namdar Group lands $345 million construction loan to build West Brickell rental tower — Commercial Observer: the SCALE Lending loan covers a 42-story, 871,000-square-foot tower at 250 Southwest Seventh Street in Miami with 1,008 apartments, filed under Florida's Live Local Act, completion expected May 2029",
+   "headline": "Namdar Group lands $345 million construction loan to build West Brickell rental tower — Commercial Observer: the SCALE Lending loan covers a 42-story, 871,000-square-foot tower at 250 Southwest Seventh Street in Miami with 1,008 apartments, completion expected May 2029, JMA as general contractor",
    "source": "Commercial Observer",
-   "date": "2026-11-23"
-  },
-  {
-   "headline": "Miami Beach rejects 38-story Live Local towers at Southgate — the city ruled the 910 West Avenue site ineligible for the Live Local Act, blocking a plan for a pair of 38-story towers with 442 units, including 178 workforce rentals",
-   "source": "Groundbreak Miami",
    "date": "2026-11-23"
   },
   {
@@ -24,8 +24,8 @@
    "date": "2026-11-13"
   },
   {
-   "headline": "Comex copper settles 2.74% higher at $5.6270 on Mon Nov 23 — front-month copper for November delivery gained 15.00 cents a pound, settling at $5.6270 after roaring back from a bear market in early trade",
-   "source": "Morningstar / Dow Jones Market Data",
+   "headline": "Comex copper settles 2.74% higher at $5.6270 on Mon Nov 23 — front-month copper for November delivery gained 15.00 cents a pound, settling at $5.6270 after December copper roared back from a bear market intraday, jumping as much as 5.5% to $5.787",
+   "source": "Morningstar / Dow Jones Market Data / Mining.com",
    "date": "2026-11-23"
   },
   {
@@ -34,24 +34,24 @@
    "date": "2026-11-23"
   },
   {
-   "headline": "Stocks climb Mon afternoon Nov 23 on Nvidia rally — WSJ: Nasdaq up 6.8%, S&P 500 up 5% and Dow up 3.3% Monday afternoon, with Nvidia soaring as much as 36% after Jensen Huang's return as chief executive",
-   "source": "Wall Street Journal",
+   "headline": "Stocks close sharply higher Mon Nov 23 on Nvidia rally — Nasdaq Composite surged 6.51% to 24,089.56, S&P 500 climbed 4.73% to 7,237.17 and Dow rose 3.01% to 49,595.31, with Nvidia up 31.5% after its board reinstated Jensen Huang as chief executive",
+   "source": "Investopedia / Reuters",
    "date": "2026-11-23"
   },
   {
-   "headline": "Mortgage rates today Mon Nov 23 — average 30-year fixed is 7.15%, down 0.05% from yesterday, with the 15-year fixed at 6.32%; the Fed held its benchmark steady Oct 28, its next decision is due Dec 9, and Wednesday's PCE inflation report is the week's big watch",
+   "headline": "Mortgage rates Mon Nov 23 — average 30-year fixed is 7.15%, down 0.05% from yesterday, with the 15-year fixed at 6.32%; the Fed held its benchmark steady Oct 28, its next decision is due Dec 9, and Wednesday's PCE inflation report is the week's big watch",
    "source": "MortgageResearch.com",
    "date": "2026-11-23"
   },
   {
-   "headline": "NBA Sun Nov 22 — Miami Heat beat the Oklahoma City Thunder 123-113 at Kaseya Center, Bam Adebayo posting a triple-double with 24 points, 15 rebounds and 12 assists for Miami's seventh straight win; Orlando Magic lost at the Washington Wizards 116-96",
-   "source": "Reuters / Field Level Media",
-   "date": "2026-11-22"
+   "headline": "NBA Mon Nov 23 — Miami Heat beat the Oklahoma City Thunder 123-113, Bam Adebayo posting a triple-double with 24 points, 15 rebounds and 12 assists for Miami's seventh straight win; Orlando Magic lost at the Washington Wizards 116-96; Magic host the Detroit Pistons Tue Nov 24 in NBA Cup play",
+   "source": "Flashscore",
+   "date": "2026-11-23"
   },
   {
-   "headline": "NFL Week 11 Sun Nov 22 — all three Florida teams lost: Detroit Lions beat the Tampa Bay Buccaneers 31-21, Buffalo Bills beat the Miami Dolphins 26-9, and New York Giants upset the Jacksonville Jaguars 23-18; next up Sun Nov 29, Jaguars host the Titans and Dolphins host the Jets",
-   "source": "iHeart / Field Level Media",
-   "date": "2026-11-22"
+   "headline": "NFL Week 11 Sun Nov 22 — all three Florida teams lost: Detroit Lions beat the Tampa Bay Buccaneers 31-21, Buffalo Bills beat the Miami Dolphins 26-9, and New York Giants beat the Jacksonville Jaguars 23-18",
+   "source": "Field Level Media",
+   "date": "2026-11-23"
   }
  ],
  "newBids": [
@@ -177,7 +177,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-23T22:02:48-05:00",
+ "updatedAt": "2026-11-24T07:00:37-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
