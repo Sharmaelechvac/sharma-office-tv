@@ -4,19 +4,19 @@
  ],
  "news": [
   {
-   "headline": "Central Florida Tue Nov 24: River Flood Warning in effect, Flood Watch Wed 1 AM through Thu 1 AM and Coastal Flood Advisory Wed 5 AM through Thu 11 AM for Melbourne; Tue high 74°F / low 67°F, Wed rain chance 90% with 0.46 in expected — Sanford Tue high 73°F, Wed rain 70%",
-   "source": "Weather.com / National Weather Service, Melbourne",
+   "headline": "Central Florida Tue Nov 24: NWS Melbourne Flood Watch Wed 1 AM through Thu 1 AM and Coastal Flood Advisory Wed 5 AM through Thu 11 AM for Brevard, Treasure Coast and Okeechobee; river Flood Warnings continue on the St. Johns at Sanford (8.03 ft at 8:30 AM, forecast near 8.4 ft), Geneva, Astor, Deland and Cocoa — Melbourne Tue high near 75°F / low 67°F, Wed rain chance 60%",
+   "source": "National Weather Service, Melbourne / Florida Today",
    "date": "2026-11-24"
   },
   {
-   "headline": "Southwest Florida new-construction buyer's window Nov 24 — builders in Naples and Fort Myers are carrying more finished inventory than planned, have pulled back on new starts (down roughly 50% in the Naples area per the Naples Area Board of Realtors September report) and are using incentives to move homes before spring",
-   "source": "floridanapleswaterfront.com / Southwest Florida MLS",
-   "date": "2026-11-24"
+   "headline": "Florida housing Oct 2026 — Florida Realtors Nov 16: existing single-family closed sales fell 10.1% year over year to 19,049, the third straight monthly decline, while the statewide median rose 2.2% to $420,000; condo-townhouse sales fell 5% to 6,862 with median down 3.3% to $290,000, and new pending single-family sales dropped 15.7%",
+   "source": "Florida Realtors / Morningstar",
+   "date": "2026-11-16"
   },
   {
-   "headline": "Existing-home sales fell 5.5% in October to a 3.75 million annual rate, the lowest since August 2010 — NAR Nov 12: median price $416,700 up 0.4% year over year, inventory rose to 1.59 million units, and NAR Chief Economist Lawrence Yun tied the drop to mortgage rates at their highest since 2000 aside from one month in 2023",
-   "source": "National Association of Realtors / Wall Street Journal",
-   "date": "2026-11-12"
+   "headline": "Orlando-area new homes Nov 2026 — Momentum tracker checked Nov 1-23 lists 24 communities in Orange, Osceola, Seminole and Lake counties, 14 selling and 10 coming soon, with listed starts from $289,990 in Howey-in-the-Hills to $813,990 in Orlando; Orange County single-family median was $501,000 in the October Stellar MLS pulse",
+   "source": "Momentum Realty / Stellar MLS",
+   "date": "2026-11-23"
   },
   {
    "headline": "Florida's 9th-edition building code takes effect Dec 31, 2026 — the edition in effect on the permit application date governs the work for the life of the permit; the 2026 codes are based on the 2024 International Codes and include the 2023 National Electrical Code, and Miami-Dade portal submissions after 4 PM Dec 30 will be subject to the 2026 edition",
@@ -24,8 +24,8 @@
    "date": "2026-11-13"
   },
   {
-   "headline": "Copper gives back Monday's Nvidia bounce Tue Nov 24 — ING via FXStreet: copper reversed Monday's gains Tuesday, dropping more than 2% toward $12,000/t as focus shifted back to Chinese demand and U.S. interest rates; a COMEX quote at 10:40 AM EST Nov 24 was $5.47/lb, down 4.49%",
-   "source": "FXStreet / ING / dalsnafin.com",
+   "headline": "Copper falls Tue Nov 24 PM — Morningstar / Dow Jones at 1:53 PM ET: front-month COMEX copper settled 4.70% lower at $5.3625/lb, erasing Monday's Nvidia bounce as Chinese demand and U.S. rate concerns returned; a 2:43 PM quote was $5.48/lb, down 4.32%",
+   "source": "Morningstar / Dow Jones / FX Leaders",
    "date": "2026-11-24"
   },
   {
@@ -34,23 +34,23 @@
    "date": "2026-11-23"
   },
   {
-   "headline": "Wall Street opens lower Tue Nov 24 as the Nvidia-fueled AI rally fades — Reuters: Dow fell 100.7 points (0.20%) at the open to 49,494.6, S&P 500 fell 64.8 points (0.90%) to 7,172.33 and Nasdaq Composite dropped 343.7 points (1.43%) to 23,745.86, after Monday's surge (S&P +4.73% to 7,237.17, Nasdaq +6.51%, Dow +3.01%)",
+   "headline": "Wall Street opens lower Tue Nov 24 as the Nvidia-fueled AI rally fades — Reuters: Dow fell 100.7 points (0.20%) at the open to 49,494.6, S&P 500 fell 64.8 points (0.90%) to 7,172.33 and Nasdaq Composite dropped 343.7 points (1.43%) to 23,745.86, after Monday's surge",
    "source": "Reuters",
    "date": "2026-11-24"
   },
   {
-   "headline": "Mortgage rates Tue Nov 24 — Bankrate national average 30-year fixed is 7.42%, up from yesterday, with the 15-year fixed at 6.77%; Freddie Mac's weekly average was 7.28% for the week ending Nov 19, and the Fed's final meeting of the year concludes Dec 9 with a quarter-point hike expected per CME FedWatch",
-   "source": "WSJ / Bankrate / Freddie Mac",
+   "headline": "Mortgage rates Tue Nov 24 — Mortgage News Daily 30-year fixed at 7.32%, down 0.02 on the day, while Freddie Mac's weekly average was 7.28% for the week ending Nov 19; FHFA raised the 2027 conforming loan limit to $855,400 from $832,750, and markets expect a quarter-point hike at the Fed's Dec 8-9 meeting with the benchmark at 3.75%-4.00%",
+   "source": "Mortgage News Daily / Freddie Mac / FHFA",
    "date": "2026-11-24"
   },
   {
-   "headline": "NBA Mon Nov 23 — Miami Heat beat the Oklahoma City Thunder 123-113, Bam Adebayo posting a triple-double with 24 points, 15 rebounds and 12 assists; Orlando Magic lost at the Washington Wizards 116-96; Magic host the Detroit Pistons Tue Nov 24 at 7:00 PM in NBA Cup play at Kia Center",
+   "headline": "NBA Mon Nov 23 — Miami Heat beat the Oklahoma City Thunder 123-113, Bam Adebayo posting a triple-double with 24 points, 15 rebounds and 12 assists; Orlando Magic lost at the Washington Wizards 116-96; Magic (7-9) host the Detroit Pistons (10-6) Tue Nov 24 in NBA Cup play at Kia Center",
    "source": "GameDay Tourist / Iskoran",
    "date": "2026-11-23"
   },
   {
-   "headline": "NFL Week 11 Sun Nov 22 — all three Florida teams lost: Detroit Lions beat the Tampa Bay Buccaneers 31-21, Buffalo Bills beat the Miami Dolphins 26-9, and New York Giants beat the Jacksonville Jaguars 23-18",
-   "source": "Field Level Media / iHeart",
+   "headline": "NFL — all three Florida teams lost Sun Nov 22: Detroit Lions beat the Tampa Bay Buccaneers 31-21, Buffalo Bills beat the Miami Dolphins 26-9, and New York Giants beat the Jacksonville Jaguars 23-18; Week 12 ahead: Jets at Dolphins and Titans at Jaguars Sun Nov 29 at 1 PM, Panthers at Buccaneers Mon Nov 30 at 8:15 PM",
+   "source": "Field Level Media / iHeart / NFL",
    "date": "2026-11-23"
   }
  ],
@@ -175,7 +175,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-24T13:25:23-05:00",
+ "updatedAt": "2026-11-24T15:56:33-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
