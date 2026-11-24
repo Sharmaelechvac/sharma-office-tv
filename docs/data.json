@@ -177,7 +177,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-23T21:54:29-05:00",
+ "updatedAt": "2026-11-23T22:02:48-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -309,6 +309,12 @@
    "time": "12:00 PM",
    "title": "Epic Theater Lee Vista bid due",
    "location": "Petrie Construction"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "3:00 PM",
+   "title": "Sanjay — meet Sunny at TIFA",
+   "location": "11567 Regency Village Dr, Orlando"
   },
   {
    "date": "2026-11-25",
