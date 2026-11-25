@@ -4,12 +4,12 @@
  ],
  "news": [
   {
-   "headline": "Central Florida Wed Nov 25: NWS Melbourne Flood Watch Wed 1 AM through Thu 1 AM and Coastal Flood Advisory Wed 5 AM through Thu 11 AM in effect, with a River Flood Warning and Rip Current Statement through Fri 1 AM — Melbourne Wed morning light rain 69°F, high near 71°F / low 62°F, rain chance 100% with about 0.57 in expected",
+   "headline": "Central Florida Wed Nov 25 midday: NWS Melbourne Flood Watch through Thu 1 AM, Coastal Flood Advisory through Thu 11 AM, River Flood Warning and Rip Current Statement through Fri 1 AM, and Small Craft Advisory through Thu 7 PM remain in effect — Melbourne at noon rain 70°F, high near 71°F / low 62°F, rain chance easing after midday",
    "source": "National Weather Service, Melbourne / Weather.com",
    "date": "2026-11-25"
   },
   {
-   "headline": "Florida housing Oct 2026 — Florida Realtors Nov 16: existing single-family closed sales fell 10.1% year over year to 19,049, the third straight monthly decline, while the statewide median rose 2.2% to $420,000; condo-townhouse sales fell 5% to 6,862 with median down 3.3% to $290,000, and new pending single-family sales dropped 15.7%",
+   "headline": "Florida housing Oct 2026 — Florida Realtors Nov 16: existing single-family closed sales fell 10.1% year over year to 19,049, the third straight monthly decline, while the statewide median rose 2.2% to $420,000; condo-townhouse sales fell 5% to 6,862 with median down 3.3% to $290,000, and new pending single-family sales dropped 15.7% — next statewide release Dec 16",
    "source": "Florida Realtors",
    "date": "2026-11-16"
   },
@@ -24,29 +24,29 @@
    "date": "2026-11-10"
   },
   {
-   "headline": "Copper falls Tue Nov 24 — Morningstar / Dow Jones at 1:53 PM ET: front-month COMEX copper settled 4.70% lower at $5.3625/lb; ScrapMonster Nov 25 reported North American copper scrap fell 25 cents/lb on Nov 24 for #1 Bare Bright, #1 and #2 Wire and Tubing, and #3 Light Copper",
-   "source": "Morningstar / Dow Jones / ScrapMonster",
-   "date": "2026-11-24"
+   "headline": "Copper in a bear market Wed Nov 25 — WSJ: LME copper fell 2% Wednesday to $11,646 a metric ton, its lowest since December last year, on track for a 17% monthly decline; ScrapMonster Nov 25 put spot near $5.31/lb and reported North American copper scrap fell 25 cents/lb on Nov 24 for #1 Bare Bright, #1 and #2 Wire and Tubing, and #3 Light Copper, even as China's Yangshan import premium stayed near record levels around $450/ton",
+   "source": "Wall Street Journal / ScrapMonster",
+   "date": "2026-11-25"
   },
   {
-   "headline": "HVAC manufacturers report increased Q3 revenue — ACHR News Nov 23: Carrier, Trane Technologies and Lennox posted improved residential and commercial revenue, data centers are driving commercial demand with Johnson Controls reporting record backlogs, and contractors face continued price increases from tariffs and high fuel prices",
+   "headline": "HVAC M&A multiples fall back to earth — ACHR News, updated Nov 24: average EBITDA multiples for HVAC companies have fallen from their 2021-2023 highs, smaller and midsize contractors have not necessarily seen the same decline, and private equity remains active in HVAC",
    "source": "ACHR News",
-   "date": "2026-11-23"
-  },
-  {
-   "headline": "Wall Street closes mixed Tue Nov 24 — Dow Jones rose 423.39 points (0.85%) to close above 50,000 at 50,018.70 on a rotation into value, while the S&P 500 fell 0.50% to 7,201.09 and the Nasdaq Composite fell 1.48% to 23,733.54 as the AI rally fizzled",
-   "source": "Investopedia / Motley Fool",
    "date": "2026-11-24"
   },
   {
-   "headline": "Mortgage rates and the Fed — Bankrate Nov 24 put the average 30-year fixed at 7.33%, with 56% of polled experts expecting rates to drop in the week of Nov 25–Dec 2; October PCE inflation is due Wed Nov 25, and futures price about a 95% chance of a quarter-point Fed hike at the Dec 8-9 meeting, lifting the target from 3.75%-4.00% to 4.00%-4.25%",
-   "source": "Bankrate / DataPorium",
-   "date": "2026-11-24"
+   "headline": "Inflation rose Wed Nov 25 — Reuters / BEA: October PCE price index rose 0.3% in the month and 3.8% year over year, up from 3.6% in September, with core PCE up 3.3% year over year from 3.1%; financial markets have priced in a quarter-point Fed rate hike at the Dec 8-9 meeting from the current 3.75%-4.00% range",
+   "source": "Reuters / U.S. Bureau of Economic Analysis",
+   "date": "2026-11-25"
   },
   {
-   "headline": "NBA Tue Nov 24 — Detroit Pistons beat the Orlando Magic 104-86 in NBA Cup play at Kia Center, Isaiah Joe scoring 21 points as Orlando (7-10) took its first NBA Cup loss; Miami Heat (10-6), on a seven-game win streak, visit the Philadelphia 76ers Wed Nov 25 at 5 PM ET in NBA Cup play, with Giannis Antetokounmpo questionable (groin)",
-   "source": "Reuters / AP / theScore",
-   "date": "2026-11-24"
+   "headline": "Wall Street slides Wed morning Nov 25 — as of about 10:43 AM ET the S&P 500 was down 2.70% at 7,007.01, the Nasdaq down 4.01% and the Dow down 1.56% amid an AI / chip sell-off, with the 10-year Treasury yield down 8 basis points to 4.82%; Bankrate put the average 30-year fixed mortgage at 7.34% Wednesday, and MBA said mortgage applications rose 6.1% in the week ended Nov 20 with purchase applications up 10%",
+   "source": "Pulsafi / AP / Bankrate / MBA",
+   "date": "2026-11-25"
+  },
+  {
+   "headline": "NBA — Orlando Magic remain atop NBA Cup East Group A at 3-1 despite Tue Nov 24's 104-86 loss to Detroit, Isaiah Joe scoring 21 for the Pistons; Miami Heat are 2-0 and undefeated in Cup Group B, and Miami (10-6) visits the Philadelphia 76ers Wed Nov 25 at 5 PM ET in NBA Cup play",
+   "source": "The SportsCast / Reuters / AP",
+   "date": "2026-11-25"
   },
   {
    "headline": "NFL — all three Florida teams lost Sun Nov 22: Detroit Lions beat the Tampa Bay Buccaneers 31-21, Buffalo Bills beat the Miami Dolphins 26-9, and New York Giants beat the Jacksonville Jaguars 23-18; Week ahead: Jets at Dolphins and Titans at Jaguars Sun Nov 29 at 1 PM, Panthers at Buccaneers Mon Nov 30 at 8:15 PM",
@@ -118,7 +118,7 @@
   "2026-11-23"
  ],
  "toSchedule": [],
- "updatedAt": "2026-11-25T09:08:23-05:00",
+ "updatedAt": "2026-11-25T12:00:21-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
