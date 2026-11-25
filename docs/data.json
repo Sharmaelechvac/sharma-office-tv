@@ -175,7 +175,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-25T07:00:14-05:00",
+ "updatedAt": "2026-11-25T07:39:20-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -334,7 +334,17 @@
   }
  ],
  "todayInspections": {
-  "date": "2026-11-24",
-  "entries": []
+  "date": "2026-11-25",
+  "entries": [
+   {
+    "title": "498 Marion Oaks Golf Rd",
+    "type": "TUG / Preliminary Power Release — Electrical",
+    "number": "#269952-2026",
+    "inspector": "Robert Ray",
+    "inspectorPhone": "Marion Building Safety (352) 438-2400",
+    "status": "Scheduled",
+    "notes": "Permit BLDR-26-09-25458 · EXJ Root · Crew covers — Sanjay doesn't need to attend"
+   }
+  ]
  }
 }
