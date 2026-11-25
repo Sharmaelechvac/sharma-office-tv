@@ -110,72 +110,15 @@
    "received": "Tue 10:13 AM"
   }
  ],
- "tasks": {
-  "2026-11-10": [
-   {
-    "detail": "132 Balmy Coast Rd, Groveland · NOK Construction",
-    "title": "Glaze — bathroom rough-in"
-   }
-  ],
-  "2026-11-11": [
-   {
-    "detail": "2107 Corena Dr project",
-    "title": "Call Billy Hastings"
-   },
-   {
-    "detail": "",
-    "title": "Roberto at Lake Nona"
-   },
-   {
-    "detail": "Sebring townhouses open item",
-    "title": "Call Z Brothers — exhaust fans"
-   }
-  ],
-  "2026-11-12": [
-   {
-    "detail": "3:00–4:00 PM · Lot 69, Bella Collina, 16051 Vetta Dr · HVAC only · Tommy's cell (321) 432-1706",
-    "title": "House walk with Tommy Logan — Logan Construction"
-   }
-  ],
-  "2026-11-16": [
-   {
-    "detail": "9:00 AM · county inspection today · BR Ross Construction",
-    "title": "178 Fisher Loop — electrical underground"
-   },
-   {
-    "detail": "Z Brothers Construction · Santiago Plan 2118 · after Fisher Loop",
-    "title": "Underground — 614 Marion Oaks Trail, Ocala"
-   },
-   {
-    "detail": "EXJ Root · TUG inspection Tue 11/17 · #261557-2026",
-    "title": "TUG install — 14065 SW 48th Ave, Ocala"
-   },
-   {
-    "detail": "EXJ Root · TUG inspection Tue 11/17 · #261558-2026",
-    "title": "TUG install — 16321 SW 26th Terrace Rd, Ocala"
-   },
-   {
-    "detail": "EXJ Root · TUG inspection Tue 11/17 · #261556-2026",
-    "title": "TUG install — 601 Marion Oaks Golf Rd, Ocala"
-   },
-   {
-    "title": "Walk — W Eunice Dr, Citrus Springs",
-    "detail": "Z Brothers · end of day · house number to confirm"
-   }
-  ],
-  "2026-11-23": [
-   {
-    "title": "Grab materials — first, before the route",
-    "detail": "Sanjay's first task Mon morning, ahead of 498 TUG → 2670 / 16463 / 6188 undergrounds → 15133 pass-by"
-   },
-   {
-    "title": "Matt permit — first thing",
-    "detail": "Solar permit · 4400 Harbour Lights Ct · AsBuilt Roofing (Matt Osborn) · confirm permit is pulled + schedule the inspection"
-   }
-  ]
- },
+ "tasks": [
+  "2026-11-10",
+  "2026-11-11",
+  "2026-11-12",
+  "2026-11-16",
+  "2026-11-23"
+ ],
  "toSchedule": [],
- "updatedAt": "2026-11-25T09:03:35-05:00",
+ "updatedAt": "2026-11-25T09:05:25-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -318,25 +261,25 @@
    "date": "2026-11-25",
    "time": "9:30 AM",
    "title": "Sanjay — meet Daniel Denault at Antle (NOK)",
-   "location": "3119 Colorado Ave, Orlando"
+   "location": "3119 Colorado Ave, Orlando, FL"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "",
+   "title": "1 · Sanjay — drop check at Wonsetler office (closed 12–1 PM)",
+   "location": "717 N. Magnolia Ave, Orlando"
   },
   {
    "date": "2026-11-25",
    "time": "All day",
-   "title": "1 · Wilquer & Dad — 17385 SW 25th Cir: HVAC rough-in (EXJ Root)",
-   "location": "Ocala"
+   "title": "2 · Wilquer & Dad — 17385 SW 25th Cir: HVAC rough-in (EXJ Root)",
+   "location": "17385 SW 25th Cir, Ocala, FL"
   },
   {
    "date": "2026-11-25",
    "time": "All day",
-   "title": "2 · Roberto — Cromwell: with Sunny",
+   "title": "3 · Roberto — Cromwell: with Sunny",
    "location": ""
-  },
-  {
-   "date": "2026-11-25",
-   "time": "In person",
-   "title": "3 · Sanjay — drop check at Wonsetler office (closed 12–1 PM)",
-   "location": "717 N Magnolia Ave, Orlando"
   },
   {
    "date": "2026-11-25",
