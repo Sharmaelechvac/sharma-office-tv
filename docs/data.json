@@ -175,7 +175,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-25T07:39:20-05:00",
+ "updatedAt": "2026-11-25T07:44:20-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -313,6 +313,12 @@
    "time": "3:00 PM",
    "title": "Sanjay — meet Sunny at TIFA",
    "location": "11567 Regency Village Dr, Orlando"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "9:30 AM",
+   "title": "Sanjay — meet Daniel Denault at Antle (NOK)",
+   "location": "3119 Colorado Ave, Orlando"
   },
   {
    "date": "2026-11-25",
