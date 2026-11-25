@@ -118,7 +118,7 @@
   "2026-11-23"
  ],
  "toSchedule": [],
- "updatedAt": "2026-11-25T09:05:25-05:00",
+ "updatedAt": "2026-11-25T09:07:05-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -266,19 +266,25 @@
   {
    "date": "2026-11-25",
    "time": "",
-   "title": "1 · Sanjay — drop check at Wonsetler office (closed 12–1 PM)",
+   "title": "1 · Sanjay — Wells Fargo, downtown Orlando (get the check)",
+   "location": "Downtown Orlando"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "",
+   "title": "2 · Sanjay — drop check at Wonsetler office (closed 12–1 PM)",
    "location": "717 N. Magnolia Ave, Orlando"
   },
   {
    "date": "2026-11-25",
    "time": "All day",
-   "title": "2 · Wilquer & Dad — 17385 SW 25th Cir: HVAC rough-in (EXJ Root)",
+   "title": "3 · Wilquer & Dad — 17385 SW 25th Cir: HVAC rough-in (EXJ Root)",
    "location": "17385 SW 25th Cir, Ocala, FL"
   },
   {
    "date": "2026-11-25",
    "time": "All day",
-   "title": "3 · Roberto — Cromwell: with Sunny",
+   "title": "4 · Roberto — Cromwell: with Sunny",
    "location": ""
   },
   {
