@@ -175,7 +175,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-24T17:25:39-05:00",
+ "updatedAt": "2026-11-24T21:46:38-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -319,6 +319,18 @@
    "time": "All day",
    "title": "1 · HVAC rough-in — 17385 SW 25th Cir (EXJ Root)",
    "location": "Ocala"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "All day",
+   "title": "2 · Roberto — Cromwell: with Sunny",
+   "location": ""
+  },
+  {
+   "date": "2026-11-25",
+   "time": "In person",
+   "title": "3 · Sanjay — drop check at Wonsetler office (closed 12–1 PM)",
+   "location": "717 N Magnolia Ave, Orlando"
   }
  ],
  "todayInspections": {
