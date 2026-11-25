@@ -175,7 +175,7 @@
   ]
  },
  "toSchedule": [],
- "updatedAt": "2026-11-25T07:47:57-05:00",
+ "updatedAt": "2026-11-25T07:58:01-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -337,6 +337,12 @@
    "time": "In person",
    "title": "3 · Sanjay — drop check at Wonsetler office (closed 12–1 PM)",
    "location": "717 N Magnolia Ave, Orlando"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "1:00 PM",
+   "title": "Roberto — Sal Rivas",
+   "location": ""
   }
  ],
  "todayInspections": {
