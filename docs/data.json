@@ -4,19 +4,19 @@
  ],
  "news": [
   {
-   "headline": "Central Florida Thu Nov 26 morning: NWS Melbourne River Flood Warning remains in effect, with a Rip Current Statement through Fri 1 AM, a Coastal Flood Advisory through Thu 11 AM and a Small Craft Advisory through Thu 7 PM \u2014 Melbourne at 7 AM mostly cloudy 61\u00b0F, wind W 15 mph gusting 25 mph, rain chance about 2%, Thu high 71\u00b0F / low 54\u00b0F",
+   "headline": "Central Florida Thu Nov 26 midday: NWS Melbourne River Flood Warning remains in effect, with a Rip Current Statement through Fri 1 AM and a Small Craft Advisory through Thu 7 PM \u2014 Melbourne at noon mostly cloudy 67\u00b0F, wind W 17 mph gusting 27 mph, rain chance about 1%, Thu high 70\u00b0F / low 54\u00b0F",
    "source": "National Weather Service, Melbourne / Weather.com",
    "date": "2026-11-26"
   },
   {
-   "headline": "Builders outlook \u2014 Florida Trend Nov 23: NAHB chief economist Robert Dietz said building-material prices are up 10% from a year ago, with labor costs and mortgage rates of about 7% weighing on homebuilders in Jacksonville and beyond; he expects flat single-family trends next year but sees opportunity in remodeling and active-adult communities",
-   "source": "Florida Trend / Jacksonville Daily Record",
-   "date": "2026-11-23"
+   "headline": "Florida construction Nov 26 \u2014 Four West Developers selected MGM Construction Group as general contractor for SQUARE Hallandale, an 8-story Class A office condominium at 400 West Hallandale Beach Boulevard in Hallandale Beach; the $90 million development will encompass nearly 360,000 square feet",
+   "source": "Florida YIMBY",
+   "date": "2026-11-26"
   },
   {
-   "headline": "Florida construction starts \u2014 McDowell Housing Partners closed $35.9 million in financing and began construction Nov 25 on Clara Landings, an 84-unit affordable housing development at 4470 Santa Barbara Blvd in Naples, financed with Florida Housing Finance Corporation tax-exempt bonds, 4% Low-Income Housing Tax Credits and $10 million in CDBG-DR funds; completion expected Spring 2028",
-   "source": "WiseVoter / McDowell Housing Partners",
-   "date": "2026-11-25"
+   "headline": "Florida housing Nov 26 \u2014 construction is complete on 2200 Brickell, a 5-story condominium at 2200 Brickell Avenue in Miami; the building received its final certificate of occupancy on November 10 and yields 103 condominium residences, developed by Aria Development Group, Largo and Place Projects, with Ortega Construction as general contractor",
+   "source": "Florida YIMBY",
+   "date": "2026-11-26"
   },
   {
    "headline": "Florida's 9th-edition building code takes effect Dec 31, 2026 \u2014 the edition in effect on the permit application date governs the work for the life of the permit; the 2026 codes are based on the 2024 International Codes and include the 2023 National Electrical Code, and Miami-Dade portal submissions after 4 PM Dec 30 will be subject to the 2026 edition",
@@ -24,19 +24,19 @@
    "date": "2026-11-13"
   },
   {
-   "headline": "Copper bear market deepens Wed Nov 25 \u2014 ScrapMonster: LME copper fell 5.05% in Nov 24 trading to about $11,859 a metric ton, roughly 20% below its September peak near $14,900, while North American clean copper scrap grades fell 25 cents/lb on Nov 24 and China's Yangshan import premium eased to about $450/ton from a record near $500 \u2014 physical supply still tight despite lower futures",
-   "source": "ScrapMonster",
+   "headline": "Copper steadies Thu Nov 26 after sharp drop \u2014 ScrapMonster (market data Nov 25): North American clean copper grades slipped another 1 cent/lb after a 25 cent/lb drop Nov 24, E.C. Aluminum Wire gained 1 cent/lb, and LME copper stood at $11,758 per metric tonne, down 2.46% on the day; U.S. copper futures rebounded 0.74% Thu to $5.3760/lb from an 11-month low",
+   "source": "ScrapMonster / Economies.com",
+   "date": "2026-11-26"
+  },
+  {
+   "headline": "HVAC Nov 25 \u2014 ACHR News: heat pumps rose from about 28% of new homes in 2022 to nearly 48% in partial-year 2026 in a HERS dataset of more than 2.1 million rated homes, and AHRI put heat pumps at 44.7% of combined cooling equipment shipments in August 2026, up from 31% in August 2016",
+   "source": "ACHR News / HVAC Zone",
    "date": "2026-11-25"
   },
   {
-   "headline": "HVAC week in review Nov 25 \u2014 ACHR News data via HVAC Zone: heat pumps rose from about 28% of new homes in 2022 to nearly 48% in partial-year 2026 in a HERS dataset of more than 2.1 million rated homes, and AHRI put heat pumps at 44.7% of combined cooling equipment shipments in August 2026, up from 31% in August 2016; manufacturers posted higher third-quarter revenue, with data centers driving commercial demand and more price increases signaled",
-   "source": "HVAC Zone / ACHR News",
-   "date": "2026-11-25"
-  },
-  {
-   "headline": "Inflation rose Wed Nov 25 \u2014 BEA: October PCE price index rose 0.3% in the month and 3.8% year over year, up from 3.6% in September, with core PCE up 3.3% year over year; personal income rose 0.7% and spending 0.3%, and markets priced a near-certain quarter-point Fed rate hike at the Dec 8-9 meeting from the current 3.75%-4.00% range; U.S. stock and bond markets are closed Thu Nov 26 for Thanksgiving and close early Fri",
-   "source": "U.S. Bureau of Economic Analysis / CNBC",
-   "date": "2026-11-25"
+   "headline": "Markets closed Thu Nov 26 for Thanksgiving \u2014 U.S. stock and bond markets are closed Thu and reopen Fri with an early 1 PM ET stock close; Wednesday's close was mixed: S&P 500 fell 0.25% to 7,182, Dow gained 0.33% to 50,182 and Nasdaq fell 0.62% to 23,585, with markets pricing a near-certain Fed rate hike at the Dec 8-9 meeting",
+   "source": "Investor's Business Daily / IC Markets / Morningstar",
+   "date": "2026-11-26"
   },
   {
    "headline": "FHFA Nov 24: the 2027 conforming loan limit for one-unit properties rises to $855,400 in most of the U.S., up $22,650 (2.72%) from 2026, with a high-cost ceiling of $1,283,100; limits will be higher in all but 24 counties, reflecting the rise in average U.S. home values between Q3 2025 and Q3 2026",
@@ -118,7 +118,7 @@
   "2026-11-23"
  ],
  "toSchedule": [],
- "updatedAt": "2026-11-26T10:25:26-05:00",
+ "updatedAt": "2026-11-26T11:59:51-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
