@@ -4,19 +4,19 @@
  ],
  "news": [
   {
-   "headline": "Central Florida Fri Nov 27 midday: NWS Melbourne (2:50 AM discussion) — drier, cooler air moves in through Saturday, mostly precipitation-free thru Sunday afternoon; prolonged river flooding continues along the St. Johns River with all east-central Florida points in Major Flood Stage; highs low 60s north to low 70s south, lows low to mid 50s; rain chances return Monday (20-40%) and Tuesday (40-60%)",
+   "headline": "Central Florida Fri Nov 27 afternoon: NWS Melbourne (2:04 PM discussion) — drier, cooler air moves in through Saturday, mostly precipitation-free thru Sunday afternoon; prolonged river flooding continues along the St. Johns River with all east-central Florida points in Major Flood Stage; highs mostly in the 60s Saturday (low 70s Treasure Coast), lows mainly in the 50s; rain chances return Monday (20-40%) and Tuesday (50-70%)",
    "source": "National Weather Service, Melbourne",
    "date": "2026-11-27"
   },
   {
-   "headline": "Miami construction — City Commission approved Midtown Park, a $2 billion, five-acre mixed-use district in Midtown Miami announced Nov 24: up to 924 residential units, more than 120,000 sq ft of ground-floor retail/restaurant, about 60,000 sq ft of office and nearly two acres of public parks; Phase 1 is a 28-story, 280-home tower with pricing from the low $600,000s, targeted for 2029",
-   "source": "Florida YIMBY / PROFILEmiami",
-   "date": "2026-11-27"
+   "headline": "Florida housing Oct 2026 — Florida Realtors (released Nov 16): closed sales of existing single-family homes fell 10.1% year-over-year to 19,049, while the statewide median sale price rose 2.2% to $420,000, the eighth consecutive month of year-over-year gains; condo/townhouse closings fell 5% to 6,862 with median down 3.3% to $290,000",
+   "source": "Florida Realtors",
+   "date": "2026-11-16"
   },
   {
-   "headline": "Northeast Florida permits Nov 27 — St. Johns County single-family permits fell 12.7% Jan-Oct 2026 vs the same months of 2025, the only decline among the four NEFBA-tracked counties (Clay +19.7%, Duval +12.8%, Nassau +6.5%); the region issued 7,860 permits Jan-Oct vs 7,622 a year earlier, with October alone up about 16% to 801",
-   "source": "St. Johns County Living / NEFBA via Jacksonville Daily Record",
-   "date": "2026-11-27"
+   "headline": "Builder sentiment — NAHB/Wells Fargo Housing Market Index fell 4 points to 25 in November, its lowest since April 2012; 46% of builders cut prices (a post-Covid high) with an average cut of 6%; NAHB chief economist Robert Dietz cited building-material costs pushed higher by tariffs, a shortage of construction workers, mortgage rates above 7% and softer consumer confidence",
+   "source": "NAHB",
+   "date": "2026-11-17"
   },
   {
    "headline": "Florida's 9th-edition building code takes effect Dec 31, 2026 — the edition in effect on the permit application date governs the work for the life of the permit; the 2026 codes are based on the 2024 International Codes and include the 2023 National Electrical Code, and Miami-Dade portal submissions after 4 PM Dec 30 will be subject to the 2026 edition",
@@ -24,9 +24,9 @@
    "date": "2026-11-13"
   },
   {
-   "headline": "Copper bounced Thu Nov 26 — benchmark LME copper rose 1.9% to $11,867 per metric tonne as AI equities recovered, after falling about 17% over the past four weeks from September's record $14,875 per tonne; zinc jumped 3.5% to $3,511 a tonne on a smelter shutdown",
-   "source": "Kitco News",
-   "date": "2026-11-26"
+   "headline": "Copper surged Fri Nov 27 — three-month LME copper rose as much as 6.5% to above $12,600 per tonne, its biggest intraday gain since January, on short-covering as U.S. equities rebounded; on track for its first weekly gain since early October after falling below $11,500 earlier in the week, though still about 20% below September's record",
+   "source": "Mining.com / Bloomberg",
+   "date": "2026-11-27"
   },
   {
    "headline": "HVAC — ACHR News: heat pumps rose from about 28% of new homes in 2022 to nearly 48% in partial-year 2026 in an Ekotrope/HERS dataset of more than 2.1 million rated homes, and AHRI put heat pumps at 44.7% of combined cooling equipment shipments in August 2026, up from 31% in August 2016",
@@ -34,8 +34,8 @@
    "date": "2026-11-23"
   },
   {
-   "headline": "Markets Fri Nov 27 — U.S. futures surged as investors returned from Thanksgiving: S&P 500 futures up 1.65% to 7,314.50 and Nasdaq-100 futures up about 2.4-2.5% in early trading, with the NYSE closing early today at 1 PM ET; CME FedWatch priced a 99.4% chance of a Fed rate hike at the Dec 8-9 FOMC, lifting the target range to 4.00-4.25%",
-   "source": "Reuters / TradingView / Financial Advisor",
+   "headline": "Markets close Fri Nov 27 — Wall Street ended the shortened Black Friday session higher: Dow rose 597.69 points (1.19%) to 50,780.64, S&P 500 gained 115.56 (1.61%) to 7,298.34 and Nasdaq Composite gained 543.70 (2.31%) to 24,129.50, with trading closing at 1 PM ET; ahead, the Fed meets Dec 8-9 with futures pricing a December rate hike as near-certain",
+   "source": "Reuters",
    "date": "2026-11-27"
   },
   {
@@ -44,13 +44,13 @@
    "date": "2026-11-24"
   },
   {
-   "headline": "NBA — Philadelphia 76ers beat the Miami Heat 111-104 on Wed Nov 25 (Heat now 10-7), and the Detroit Pistons beat the Orlando Magic 104-86 on Tue Nov 24; next: Heat at the New York Knicks Fri Nov 27 at 7 PM ET, Magic at the Washington Wizards Sat Nov 28 at 5 PM ET",
-   "source": "StatSummit / Sports Illustrated",
+   "headline": "NBA — Philadelphia 76ers beat the Miami Heat 111-104 on Wed Nov 25 (Heat now 10-7), and the Detroit Pistons beat the Orlando Magic 104-86 on Tue Nov 24 (Magic 7-10); next: Heat at the New York Knicks Fri Nov 27 at 7 PM ET, Magic at the Washington Wizards Sat Nov 28 at 5 PM ET",
+   "source": "StatMuse / StatSummit",
    "date": "2026-11-27"
   },
   {
    "headline": "NFL Thanksgiving Thu Nov 26 — all three games decided in the final minute: Chicago Bears 39, Detroit Lions 35; Philadelphia Eagles 39, Dallas Cowboys 38; Buffalo Bills 13, Kansas City Chiefs 10 on a 57-yard field goal as time expired; no Florida team played Thanksgiving — ahead: Jets at Dolphins and Titans at Jaguars Sun Nov 29 at 1 PM ET, Panthers at Buccaneers Mon Nov 30 at 8:15 PM ET",
-   "source": "Reuters / Field Level Media",
+   "source": "Associated Press / Reuters",
    "date": "2026-11-27"
   }
  ],
@@ -118,7 +118,7 @@
   "2026-11-23"
  ],
  "toSchedule": [],
- "updatedAt": "2026-11-27T12:00:47-05:00",
+ "updatedAt": "2026-11-27T15:57:23-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
