@@ -118,7 +118,7 @@
   "2026-11-23"
  ],
  "toSchedule": [],
- "updatedAt": "2026-11-27T07:00:45-05:00",
+ "updatedAt": "2026-11-27T07:38:40-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
@@ -176,142 +176,9 @@
    ]
   }
  ],
- "mySchedule": [
-  {
-   "date": "2026-11-23",
-   "time": "First",
-   "title": "Grab materials — before the route",
-   "location": ""
-  },
-  {
-   "date": "2026-11-23",
-   "time": "All day",
-   "title": "1 · Manny — Eunice: inspection cleanup (first stop)",
-   "location": ""
-  },
-  {
-   "date": "2026-11-23",
-   "time": "All day",
-   "title": "2 · Manny — 212 Marion Oaks Golf Rd: electrical rough-in",
-   "location": "Ocala"
-  },
-  {
-   "date": "2026-11-23",
-   "time": "All day",
-   "title": "3 · Sanjay — drop off materials at 212 Marion Oaks Golf Rd (for Manny)",
-   "location": "212 Marion Oaks Golf Rd, Ocala, FL"
-  },
-  {
-   "date": "2026-11-23",
-   "time": "All day",
-   "title": "4 · Sanjay — 498 Marion Oaks Golf Rd: TUG install",
-   "location": "Ocala"
-  },
-  {
-   "date": "2026-11-23",
-   "time": "All day",
-   "title": "5 · Sanjay — 614 Marion Oaks Trail: underground (Z Brothers)",
-   "location": "614 Marion Oaks Trail, Ocala, FL"
-  },
-  {
-   "date": "2026-11-23",
-   "time": "All day",
-   "title": "6 · Sanjay — 2670 SW 177 Place Rd: underground",
-   "location": "Ocala"
-  },
-  {
-   "date": "2026-11-23",
-   "time": "All day",
-   "title": "7 · Sanjay — 16463 SE 89th Terrace: underground (Infinity)",
-   "location": "Ocala"
-  },
-  {
-   "date": "2026-11-23",
-   "time": "All day",
-   "title": "8 · Sanjay — 6188 SW 174th Place: underground (Morgan/VTX)",
-   "location": "Ocala"
-  },
-  {
-   "date": "2026-11-23",
-   "time": "All day",
-   "title": "9 · Sanjay — 15133 SW 27th Ct: pass by, TUG check (last)",
-   "location": "Ocala"
-  },
-  {
-   "date": "2026-11-23",
-   "time": "All day",
-   "title": "10 · Roberto — 9700 Blandford Rd: electrical trim (MRCELA)",
-   "location": "Orlando"
-  },
-  {
-   "date": "2026-11-24",
-   "time": "All day",
-   "title": "1 · Manny — 212 Marion Oaks Golf Rd: electrical rough-in",
-   "location": "Ocala"
-  },
-  {
-   "date": "2026-11-24",
-   "time": "All day",
-   "title": "2 · Sanjay & Roberto — 9700 Blandford Rd: electrical trim (MRCELA)",
-   "location": "Orlando"
-  },
-  {
-   "date": "2026-11-24",
-   "time": "In person",
-   "title": "Arbor Watch payment delivery — Wonsetler office (closed 12–1 PM)",
-   "location": "717 N Magnolia Ave, Orlando"
-  },
-  {
-   "date": "2026-11-24",
-   "time": "12:00 PM",
-   "title": "Epic Theater Lee Vista bid due",
-   "location": "Petrie Construction"
-  },
-  {
-   "date": "2026-11-24",
-   "time": "3:00 PM",
-   "title": "Sanjay — meet Sunny at TIFA",
-   "location": "11567 Regency Village Dr, Orlando"
-  },
-  {
-   "date": "2026-11-25",
-   "time": "9:30 AM",
-   "title": "Sanjay — meet Daniel Denault at Antle (NOK)",
-   "location": "3119 Colorado Ave, Orlando, FL"
-  },
-  {
-   "date": "2026-11-25",
-   "time": "",
-   "title": "1 · Sanjay — Wells Fargo, downtown Orlando (get the check)",
-   "location": "131 N Orange Ave, Orlando, FL 32801"
-  },
-  {
-   "date": "2026-11-25",
-   "time": "",
-   "title": "2 · Sanjay — drop check at Wonsetler office (closed 12–1 PM)",
-   "location": "717 N. Magnolia Ave, Orlando"
-  },
-  {
-   "date": "2026-11-25",
-   "time": "All day",
-   "title": "3 · Wilquer & Dad — 17385 SW 25th Cir: HVAC rough-in (EXJ Root)",
-   "location": "17385 SW 25th Cir, Ocala, FL"
-  },
-  {
-   "date": "2026-11-25",
-   "time": "All day",
-   "title": "4 · Roberto — Cromwell: with Sunny",
-   "location": ""
-  },
-  {
-   "date": "2026-11-25",
-   "time": "1:00 PM",
-   "title": "Roberto — Sal Rivas",
-   "location": ""
-  }
- ],
+ "mySchedule": [],
  "todayInspections": {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "entries": []
  }
 }
