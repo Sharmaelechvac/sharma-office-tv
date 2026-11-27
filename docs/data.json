@@ -57,6 +57,24 @@
  "newBids": [
   {
    "date": "2026-11-26",
+   "project": "Bath & Body Works #2056 Lakeside Village - Lakeland, FL: Mechanical",
+   "from": "Elite Retail Services",
+   "received": "Thu 10:53 PM"
+  },
+  {
+   "date": "2026-11-26",
+   "project": "Bath & Body Works #2056 Lakeside Village - Lakeland, FL: HVAC",
+   "from": "Elite Retail Services",
+   "received": "Thu 10:53 PM"
+  },
+  {
+   "date": "2026-11-26",
+   "project": "Bath & Body Works #2056 Lakeside Village - Lakeland, FL: Electrical",
+   "from": "Elite Retail Services",
+   "received": "Thu 10:51 PM"
+  },
+  {
+   "date": "2026-11-26",
    "project": "New House - 105 E Orlando St, Orlando, FL: Electrical & HVAC",
    "from": "BR Ross Construction",
    "received": "Thu 9:58 AM"
@@ -90,24 +108,6 @@
    "project": "AYR Wellness - Orange City FL",
    "from": "Marco Contractors, Inc.",
    "received": "Tue 4:07 PM"
-  },
-  {
-   "date": "2026-11-24",
-   "project": "AYR Wellness - Belleview FL",
-   "from": "Marco Contractors, Inc.",
-   "received": "Tue 3:48 PM"
-  },
-  {
-   "date": "2026-11-24",
-   "project": "Steak n Shake - Remodel - Exterior Refresh - Multiple Locations: Electrical",
-   "from": "DAVACO LP",
-   "received": "Tue 3:39 PM"
-  },
-  {
-   "date": "2026-11-24",
-   "project": "Aldi Miami Lakes #262 RPB-162",
-   "from": "Case Contracting",
-   "received": "Tue 1:23 PM"
   }
  ],
  "tasks": [
@@ -118,7 +118,7 @@
   "2026-11-23"
  ],
  "toSchedule": [],
- "updatedAt": "2026-11-26T19:24:00-05:00",
+ "updatedAt": "2026-11-26T23:25:03-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
