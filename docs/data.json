@@ -56,6 +56,12 @@
  ],
  "newBids": [
   {
+   "date": "2026-11-27",
+   "project": "2380 W 25 - Sanford, FL: Electrical & HVAC",
+   "from": "Sovanic, Inc.",
+   "received": "Fri 7:36 AM"
+  },
+  {
    "date": "2026-11-26",
    "project": "Bath & Body Works #2056 Lakeside Village - Lakeland, FL: Mechanical",
    "from": "Elite Retail Services",
@@ -102,12 +108,6 @@
    "project": "United Airlines MCO Club Remodel - Orlando International Airport: HVAC",
    "from": "Johnson-Laux Construction",
    "received": "Tue 4:25 PM"
-  },
-  {
-   "date": "2026-11-24",
-   "project": "AYR Wellness - Orange City FL",
-   "from": "Marco Contractors, Inc.",
-   "received": "Tue 4:07 PM"
   }
  ],
  "tasks": [
@@ -118,7 +118,7 @@
   "2026-11-23"
  ],
  "toSchedule": [],
- "updatedAt": "2026-11-27T07:38:40-05:00",
+ "updatedAt": "2026-11-27T09:25:46-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
