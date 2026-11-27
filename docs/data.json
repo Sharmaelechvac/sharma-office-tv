@@ -4,19 +4,19 @@
  ],
  "news": [
   {
-   "headline": "Central Florida Fri Nov 27 morning: NWS Melbourne River Flood Warning remains in effect for Melbourne — 7 AM fair 56°F, wind S 7 mph, humidity 93%; today mostly cloudy, high 69°F / low 56°F, wind W 11 mph gusting 18 mph, rain chance 0%; Sat high 68°F / low 58°F, rain 10%",
-   "source": "Weather.com / National Weather Service, Melbourne",
+   "headline": "Central Florida Fri Nov 27 midday: NWS Melbourne (2:50 AM discussion) — drier, cooler air moves in through Saturday, mostly precipitation-free thru Sunday afternoon; prolonged river flooding continues along the St. Johns River with all east-central Florida points in Major Flood Stage; highs low 60s north to low 70s south, lows low to mid 50s; rain chances return Monday (20-40%) and Tuesday (40-60%)",
+   "source": "National Weather Service, Melbourne",
    "date": "2026-11-27"
   },
   {
-   "headline": "Florida construction Nov 27 — The Club in Gulf Breeze will be razed for a 216-unit apartment complex at 1230 Crane Cove Blvd, built by Sunchase Companies under Florida's Live Local Act on commercially zoned land; the county gave preliminary approval for the development order Nov 25, with demolition and groundbreaking expected early next year",
-   "source": "Pensacola News Journal",
+   "headline": "Miami construction — City Commission approved Midtown Park, a $2 billion, five-acre mixed-use district in Midtown Miami announced Nov 24: up to 924 residential units, more than 120,000 sq ft of ground-floor retail/restaurant, about 60,000 sq ft of office and nearly two acres of public parks; Phase 1 is a 28-story, 280-home tower with pricing from the low $600,000s, targeted for 2029",
+   "source": "Florida YIMBY / PROFILEmiami",
    "date": "2026-11-27"
   },
   {
-   "headline": "Florida housing — October single-family closed sales fell 10.1% year over year to 19,049, while the statewide median sale price rose 2.2% to $420,000, the eighth consecutive month of year-over-year gains; condo-townhouse median fell 3.3% to $290,000, with 4.6 months of single-family supply",
-   "source": "Florida Realtors",
-   "date": "2026-11-16"
+   "headline": "Northeast Florida permits Nov 27 — St. Johns County single-family permits fell 12.7% Jan-Oct 2026 vs the same months of 2025, the only decline among the four NEFBA-tracked counties (Clay +19.7%, Duval +12.8%, Nassau +6.5%); the region issued 7,860 permits Jan-Oct vs 7,622 a year earlier, with October alone up about 16% to 801",
+   "source": "St. Johns County Living / NEFBA via Jacksonville Daily Record",
+   "date": "2026-11-27"
   },
   {
    "headline": "Florida's 9th-edition building code takes effect Dec 31, 2026 — the edition in effect on the permit application date governs the work for the life of the permit; the 2026 codes are based on the 2024 International Codes and include the 2023 National Electrical Code, and Miami-Dade portal submissions after 4 PM Dec 30 will be subject to the 2026 edition",
@@ -34,8 +34,8 @@
    "date": "2026-11-23"
   },
   {
-   "headline": "Markets Fri Nov 27 — U.S. stock futures surged as investors returned from Thanksgiving: at 2:13 AM ET Dow E-minis were up 446 points (0.89%), S&P 500 E-minis up 1.65% and Nasdaq 100 E-minis up 2.47% (Reuters); NYSE closes early today at 1 PM ET, and traders priced a 99% chance of a Fed rate hike next month on CME FedWatch",
-   "source": "Reuters / KTWB",
+   "headline": "Markets Fri Nov 27 — U.S. futures surged as investors returned from Thanksgiving: S&P 500 futures up 1.65% to 7,314.50 and Nasdaq-100 futures up about 2.4-2.5% in early trading, with the NYSE closing early today at 1 PM ET; CME FedWatch priced a 99.4% chance of a Fed rate hike at the Dec 8-9 FOMC, lifting the target range to 4.00-4.25%",
+   "source": "Reuters / TradingView / Financial Advisor",
    "date": "2026-11-27"
   },
   {
@@ -44,13 +44,13 @@
    "date": "2026-11-24"
   },
   {
-   "headline": "NBA — Philadelphia 76ers beat the Miami Heat 111-104 on Wed Nov 25 (Heat now 10-7), and the Detroit Pistons beat the Orlando Magic 104-86 on Tue Nov 24 (Magic 7-10); the Magic also signed Kevin Porter Jr. on Nov 26; next: Heat at the New York Knicks Fri Nov 27 at 7 PM ET, Magic at the Washington Wizards Sat Nov 28 at 5 PM ET",
-   "source": "StatMuse / Sportradar",
-   "date": "2026-11-26"
+   "headline": "NBA — Philadelphia 76ers beat the Miami Heat 111-104 on Wed Nov 25 (Heat now 10-7), and the Detroit Pistons beat the Orlando Magic 104-86 on Tue Nov 24; next: Heat at the New York Knicks Fri Nov 27 at 7 PM ET, Magic at the Washington Wizards Sat Nov 28 at 5 PM ET",
+   "source": "StatSummit / Sports Illustrated",
+   "date": "2026-11-27"
   },
   {
-   "headline": "NFL Thanksgiving Thu Nov 26 — all three games were decided in the final minute: Chicago Bears 39, Detroit Lions 35; Philadelphia Eagles 39, Dallas Cowboys 38; Buffalo Bills 13, Kansas City Chiefs 10 on a 57-yard field goal as time expired; no Florida team played Thanksgiving — ahead: Jets at Dolphins and Titans at Jaguars Sun Nov 29 at 1 PM ET, Panthers at Buccaneers Mon Nov 30 at 8:15 PM ET",
-   "source": "Reuters",
+   "headline": "NFL Thanksgiving Thu Nov 26 — all three games decided in the final minute: Chicago Bears 39, Detroit Lions 35; Philadelphia Eagles 39, Dallas Cowboys 38; Buffalo Bills 13, Kansas City Chiefs 10 on a 57-yard field goal as time expired; no Florida team played Thanksgiving — ahead: Jets at Dolphins and Titans at Jaguars Sun Nov 29 at 1 PM ET, Panthers at Buccaneers Mon Nov 30 at 8:15 PM ET",
+   "source": "Reuters / Field Level Media",
    "date": "2026-11-27"
   }
  ],
@@ -118,7 +118,7 @@
   "2026-11-23"
  ],
  "toSchedule": [],
- "updatedAt": "2026-11-27T10:27:09-05:00",
+ "updatedAt": "2026-11-27T12:00:47-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
