@@ -4,19 +4,14 @@
  ],
  "news": [
   {
-   "headline": "Central Florida Fri Nov 27 afternoon: NWS Melbourne (2:04 PM discussion) — drier, cooler air moves in through Saturday, mostly precipitation-free thru Sunday afternoon; prolonged river flooding continues along the St. Johns River with all east-central Florida points in Major Flood Stage; highs mostly in the 60s Saturday (low 70s Treasure Coast), lows mainly in the 50s; rain chances return Monday (20-40%) and Tuesday (50-70%)",
-   "source": "National Weather Service, Melbourne",
+   "headline": "Central Florida Sat Nov 28 — Melbourne clear and 57°F at 7 AM, turning cloudy with a high of 68°F and low of 59°F, rain chance near 0-3% all day; a River Flood Warning remains in effect for the area; warmer Sunday (high 77°F) with scattered thunderstorms possible Sunday night (20% rain chance)",
+   "source": "Weather.com",
+   "date": "2026-11-28"
+  },
+  {
+   "headline": "Lakeland leads the nation in declining apartment construction — RentCafe/Yardi report (via Business Observer, Nov 27): Lakeland-Winter Haven is on track to add just 1,066 apartments in 2026, down 74.3% from 2025, the steepest drop in the U.S.; Jacksonville fell 72.4% to 2,063 units, while Florida statewide still adds 50,392 units, second only to Texas — Orlando 8,790 and Tampa 7,596 projected",
+   "source": "Business Observer / RentCafe",
    "date": "2026-11-27"
-  },
-  {
-   "headline": "Florida housing Oct 2026 — Florida Realtors (released Nov 16): closed sales of existing single-family homes fell 10.1% year-over-year to 19,049, while the statewide median sale price rose 2.2% to $420,000, the eighth consecutive month of year-over-year gains; condo/townhouse closings fell 5% to 6,862 with median down 3.3% to $290,000",
-   "source": "Florida Realtors",
-   "date": "2026-11-16"
-  },
-  {
-   "headline": "Builder sentiment — NAHB/Wells Fargo Housing Market Index fell 4 points to 25 in November, its lowest since April 2012; 46% of builders cut prices (a post-Covid high) with an average cut of 6%; NAHB chief economist Robert Dietz cited building-material costs pushed higher by tariffs, a shortage of construction workers, mortgage rates above 7% and softer consumer confidence",
-   "source": "NAHB",
-   "date": "2026-11-17"
   },
   {
    "headline": "Florida's 9th-edition building code takes effect Dec 31, 2026 — the edition in effect on the permit application date governs the work for the life of the permit; the 2026 codes are based on the 2024 International Codes and include the 2023 National Electrical Code, and Miami-Dade portal submissions after 4 PM Dec 30 will be subject to the 2026 edition",
@@ -24,18 +19,18 @@
    "date": "2026-11-13"
   },
   {
-   "headline": "Copper surged Fri Nov 27 — three-month LME copper rose as much as 6.5% to above $12,600 per tonne, its biggest intraday gain since January, on short-covering as U.S. equities rebounded; on track for its first weekly gain since early October after falling below $11,500 earlier in the week, though still about 20% below September's record",
-   "source": "Mining.com / Bloomberg",
+   "headline": "Copper surged Fri Nov 27 — LME copper rallied as much as 6.5% intraday, its biggest jump since January, to trade above $12,600 a tonne, and was 4.7% higher at $12,429.50 a tonne as of 2:01 PM Shanghai time, rebounding as AI-stock sentiment stabilized after the metal fell back from September's record near $15,000",
+   "source": "Moneyweb / Bloomberg",
    "date": "2026-11-27"
   },
   {
-   "headline": "HVAC — ACHR News: heat pumps rose from about 28% of new homes in 2022 to nearly 48% in partial-year 2026 in an Ekotrope/HERS dataset of more than 2.1 million rated homes, and AHRI put heat pumps at 44.7% of combined cooling equipment shipments in August 2026, up from 31% in August 2016",
-   "source": "ACHR News",
-   "date": "2026-11-23"
+   "headline": "HVAC shipments — AHRI data reported by ACHR News: U.S. shipments of central air conditioners and air-source heat pumps rose 27.3% in September to 673,286 units (central AC up 40.9% to 370,855; heat pumps up 13.8% to 302,431), with year-to-date combined shipments up 7.9% to 7.06 million; gas furnace shipments slipped 0.4% in September and are down 4.4% for the year",
+   "source": "ACHR News / AHRI",
+   "date": "2026-11-17"
   },
   {
-   "headline": "Markets close Fri Nov 27 — Wall Street ended the shortened Black Friday session higher: Dow rose 597.69 points (1.19%) to 50,780.64, S&P 500 gained 115.56 (1.61%) to 7,298.34 and Nasdaq Composite gained 543.70 (2.31%) to 24,129.50, with trading closing at 1 PM ET; ahead, the Fed meets Dec 8-9 with futures pricing a December rate hike as near-certain",
-   "source": "Reuters",
+   "headline": "Markets close Fri Nov 27 — Wall Street ended the shortened Black Friday session sharply higher: Dow rose 591.99 points (1.18%) to 50,774.94, S&P 500 gained 1.60% to 7,297.49 and Nasdaq Composite gained 543.70 (2.31%) to 24,129.50; ahead, the Fed meets Dec 8-9",
+   "source": "Associated Press",
    "date": "2026-11-27"
   },
   {
@@ -44,13 +39,18 @@
    "date": "2026-11-24"
   },
   {
-   "headline": "NBA — Philadelphia 76ers beat the Miami Heat 111-104 on Wed Nov 25 (Heat now 10-7), and the Detroit Pistons beat the Orlando Magic 104-86 on Tue Nov 24 (Magic 7-10); next: Heat at the New York Knicks Fri Nov 27 at 7 PM ET, Magic at the Washington Wizards Sat Nov 28 at 5 PM ET",
-   "source": "StatMuse / StatSummit",
+   "headline": "Florida Live Local Act fight — Attorney General James Uthmeier filed a Nov 12 amicus brief backing a developer whose workforce-housing application Sarasota County refused to consider under the Live Local Act (SITC, Inc. v. Sarasota County); on Nov 4 Circuit Judge Hunter W. Carroll ruled against the county in the related D.R. Horton, Inc. v. Sarasota County case and ordered that project to move forward in review",
+   "source": "Issuewire / The World Insiders",
    "date": "2026-11-27"
   },
   {
-   "headline": "NFL Thanksgiving Thu Nov 26 — all three games decided in the final minute: Chicago Bears 39, Detroit Lions 35; Philadelphia Eagles 39, Dallas Cowboys 38; Buffalo Bills 13, Kansas City Chiefs 10 on a 57-yard field goal as time expired; no Florida team played Thanksgiving — ahead: Jets at Dolphins and Titans at Jaguars Sun Nov 29 at 1 PM ET, Panthers at Buccaneers Mon Nov 30 at 8:15 PM ET",
-   "source": "Associated Press / Reuters",
+   "headline": "NBA — Miami Heat beat the New York Knicks 108-105 on Fri Nov 27 at Madison Square Garden in NBA Cup play, ending New York's six-game winning streak: Bam Adebayo scored a team-high 25 points and Giannis Antetokounmpo had 22 points and a career-high 23 rebounds; next: Orlando Magic at the Washington Wizards Sat Nov 28 at 5 PM ET",
+   "source": "Reuters / Associated Press",
+   "date": "2026-11-27"
+  },
+  {
+   "headline": "NFL — no Florida team plays Sat Nov 28; ahead Sun Nov 29 at 1 PM ET: New York Jets at Miami Dolphins (CBS, Hard Rock Stadium) and Tennessee Titans at Jacksonville Jaguars (FOX, EverBank Stadium); Mon Nov 30 at 8:15 PM ET: Carolina Panthers at Tampa Bay Buccaneers (ESPN, Raymond James Stadium)",
+   "source": "Sports Illustrated / NFL schedule",
    "date": "2026-11-27"
   }
  ],
@@ -118,7 +118,7 @@
   "2026-11-23"
  ],
  "toSchedule": [],
- "updatedAt": "2026-11-27T15:57:23-05:00",
+ "updatedAt": "2026-11-28T07:00:54-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
