@@ -4,12 +4,17 @@
  ],
  "news": [
   {
-   "headline": "Central Florida Sat Nov 28 — Melbourne clear and 57°F at 7 AM, turning cloudy with a high of 68°F and low of 59°F, rain chance near 0-3% all day; a River Flood Warning remains in effect for the area; warmer Sunday (high 77°F) with scattered thunderstorms possible Sunday night (20% rain chance)",
-   "source": "Weather.com",
+   "headline": "Central Florida Sat Nov 28 — NWS Melbourne (1:55 AM): drier, cooler air persists through the weekend, mostly precipitation-free through Sunday afternoon; highs today low to mid 60s north to upper 60s-low 70s south, warming to widespread 70s Sunday; scattered showers return Sunday evening (20-40%), rising Monday (30-50%) and Tuesday (40-70%) as the next front sinks in; river flood warnings remain in effect for the St. Johns River at Cocoa, Geneva, Astor, DeLand and Sanford, all in Major Flood Stage",
+   "source": "NWS Melbourne",
    "date": "2026-11-28"
   },
   {
-   "headline": "Lakeland leads the nation in declining apartment construction — RentCafe/Yardi report (via Business Observer, Nov 27): Lakeland-Winter Haven is on track to add just 1,066 apartments in 2026, down 74.3% from 2025, the steepest drop in the U.S.; Jacksonville fell 72.4% to 2,063 units, while Florida statewide still adds 50,392 units, second only to Texas — Orlando 8,790 and Tampa 7,596 projected",
+   "headline": "St. Johns River flooding — Sanford topped its 2022 record Saturday morning: the gauge near Sanford (Lake Monroe) read 8.98 feet at 7:30 AM Sat Nov 28, just above the 8.96-foot record from 2022, with a forecast crest near 9.2 feet around 7 AM Sunday and 9.0-9.2 feet into early next week; DeLand is forecast to crest at 6.6 feet early Tuesday, above its 6.33-foot record, and every gauge from Cocoa to Astor is in major flood stage",
+   "source": "The Florida Press / NWS",
+   "date": "2026-11-28"
+  },
+  {
+   "headline": "Lakeland leads the nation in declining apartment construction — RentCafe/Yardi report (via Business Observer, Nov 27): Lakeland-Winter Haven is on track to add just 1,066 apartments in 2026, down 74.3% from 2025, the steepest drop in the U.S.; Jacksonville fell 72.4% to 2,063 units, while Florida statewide still adds 50,392 units, second only to Texas; nationally 442,395 apartments are expected to open in 2026, down 27% from 2025",
    "source": "Business Observer / RentCafe",
    "date": "2026-11-27"
   },
@@ -19,39 +24,34 @@
    "date": "2026-11-13"
   },
   {
-   "headline": "Copper surged Fri Nov 27 — LME copper rallied as much as 6.5% intraday, its biggest jump since January, to trade above $12,600 a tonne, and was 4.7% higher at $12,429.50 a tonne as of 2:01 PM Shanghai time, rebounding as AI-stock sentiment stabilized after the metal fell back from September's record near $15,000",
-   "source": "Moneyweb / Bloomberg",
-   "date": "2026-11-27"
+   "headline": "Copper surged — LME copper jumped as much as 6.5% intraday to above $12,600 a tonne, its biggest one-day rise since January, as short sellers covered positions; Comex March futures briefly hit $5.76/lb before easing to $5.603/lb",
+   "source": "Geomechanics / LME",
+   "date": "2026-11-28"
   },
   {
    "headline": "HVAC shipments — AHRI data reported by ACHR News: U.S. shipments of central air conditioners and air-source heat pumps rose 27.3% in September to 673,286 units (central AC up 40.9% to 370,855; heat pumps up 13.8% to 302,431), with year-to-date combined shipments up 7.9% to 7.06 million; gas furnace shipments slipped 0.4% in September and are down 4.4% for the year",
    "source": "ACHR News / AHRI",
-   "date": "2026-11-17"
+   "date": "2026-11-13"
   },
   {
-   "headline": "Markets close Fri Nov 27 — Wall Street ended the shortened Black Friday session sharply higher: Dow rose 591.99 points (1.18%) to 50,774.94, S&P 500 gained 1.60% to 7,297.49 and Nasdaq Composite gained 543.70 (2.31%) to 24,129.50; ahead, the Fed meets Dec 8-9",
-   "source": "Associated Press",
-   "date": "2026-11-27"
+   "headline": "Markets — Wall Street closed its best week in more than a year on Fri Nov 27: Dow rose 591.99 points (1.18%) to 50,774.94, S&P 500 gained 1.60% to 7,297.49 and Nasdaq Composite gained 2.31% to 24,129.50; for the week the S&P 500 gained 5.6%, Nasdaq 6.68% and Dow 5.46%; the Fed's pre-meeting quiet period began at midnight today through Dec 10, with futures pricing about a 99% chance of a quarter-point hike at the Dec 8-9 meeting",
+   "source": "Reuters",
+   "date": "2026-11-28"
   },
   {
-   "headline": "FHFA Nov 24: the 2027 conforming loan limit for one-unit properties rises to $855,400 in most of the U.S., up $22,650 (2.72%) from 2026, with a high-cost ceiling of $1,283,100; limits will be higher in all but 24 counties, reflecting the rise in average U.S. home values between Q3 2025 and Q3 2026",
-   "source": "FHFA / HousingWire",
+   "headline": "FHFA Nov 24: the 2027 conforming loan limit for one-unit properties rises to $855,400 in most of the U.S., up $22,650 (2.72%) from 2026, with a high-cost ceiling of $1,283,100 and Monroe County, Florida at $1,035,000; limits will be higher in all but 24 counties, reflecting the rise in average U.S. home values between Q3 2025 and Q3 2026",
+   "source": "FHFA",
    "date": "2026-11-24"
   },
   {
-   "headline": "Florida Live Local Act fight — Attorney General James Uthmeier filed a Nov 12 amicus brief backing a developer whose workforce-housing application Sarasota County refused to consider under the Live Local Act (SITC, Inc. v. Sarasota County); on Nov 4 Circuit Judge Hunter W. Carroll ruled against the county in the related D.R. Horton, Inc. v. Sarasota County case and ordered that project to move forward in review",
-   "source": "Issuewire / The World Insiders",
+   "headline": "NBA — Miami Heat beat the New York Knicks 108-105 on Fri Nov 27 at Madison Square Garden in NBA Cup play, eliminating the defending champions from Cup contention; Miami led by as many as 23 points and never trailed until midway through the fourth quarter; the Orlando Magic were knocked out of the Cup despite a 3-1 run; next: Orlando Magic at the Washington Wizards Sat Nov 28 at 5 PM ET, Miami Heat at the Cleveland Cavaliers Sun Nov 29 at 3:30 PM ET",
+   "source": "Eurohoops",
    "date": "2026-11-27"
   },
   {
-   "headline": "NBA — Miami Heat beat the New York Knicks 108-105 on Fri Nov 27 at Madison Square Garden in NBA Cup play, ending New York's six-game winning streak: Bam Adebayo scored a team-high 25 points and Giannis Antetokounmpo had 22 points and a career-high 23 rebounds; next: Orlando Magic at the Washington Wizards Sat Nov 28 at 5 PM ET",
-   "source": "Reuters / Associated Press",
-   "date": "2026-11-27"
-  },
-  {
-   "headline": "NFL — no Florida team plays Sat Nov 28; ahead Sun Nov 29 at 1 PM ET: New York Jets at Miami Dolphins (CBS, Hard Rock Stadium) and Tennessee Titans at Jacksonville Jaguars (FOX, EverBank Stadium); Mon Nov 30 at 8:15 PM ET: Carolina Panthers at Tampa Bay Buccaneers (ESPN, Raymond James Stadium)",
-   "source": "Sports Illustrated / NFL schedule",
-   "date": "2026-11-27"
+   "headline": "NFL — no Florida team plays Sat Nov 28 and there are no NFL games today; ahead Sun Nov 29 at 1 PM ET: New York Jets at Miami Dolphins (CBS, Hard Rock Stadium) and Tennessee Titans at Jacksonville Jaguars (FOX, EverBank Stadium); Mon Nov 30 at 8:15 PM ET: Carolina Panthers at Tampa Bay Buccaneers (ESPN, Raymond James Stadium)",
+   "source": "Democrat and Chronicle / NFL schedule",
+   "date": "2026-11-28"
   }
  ],
  "newBids": [
@@ -118,7 +118,7 @@
   "2026-11-23"
  ],
  "toSchedule": [],
- "updatedAt": "2026-11-28T07:38:50-05:00",
+ "updatedAt": "2026-11-28T12:00:12-05:00",
  "toScheduleGroups": [
   {
    "heading": "EXJ ROOT ROUGHS",
